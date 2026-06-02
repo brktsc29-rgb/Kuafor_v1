@@ -1,0 +1,102 @@
+@keyframes fadeRise {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-rise {
+  animation: fadeRise 0.8s ease-out both;
+}
+
+.fade-rise-delay {
+  animation: fadeRise 0.8s ease-out 0.3s both;
+}
+
+.fade-rise-delay-2 {
+  animation: fadeRise 0.8s ease-out 0.6s both;
+}
+
+@keyframes introOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(1.02);
+  }
+}
+
+.intro-out {
+  animation: introOut 0.7s ease-out forwards;
+}
+
+@keyframes float1 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes float2 {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(5deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+.float-rose-1 {
+  animation: float1 6s ease-in-out infinite;
+}
+
+.float-rose-2 {
+  animation: float2 8s ease-in-out 1s infinite;
+}
+
+@keyframes pulse-soft {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 12px rgba(37, 211, 102, 0);
+  }
+}
+
+.pulse-whatsapp {
+  animation: pulse-soft 2s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.shimmer-border {
+  background: linear-gradient(
+    90deg,
+    #B9816F 0%,
+    #e8c4b0 50%,
+    #B9816F 100%
+  );
+  background-size: 200% auto;
+  animation: shimmer 3s linear infinite;
+}
