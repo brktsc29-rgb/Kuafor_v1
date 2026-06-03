@@ -116,7 +116,7 @@ export default function AwardsCTA() {
           className="mt-14"
           style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.40)', fontSize: '0.72rem', letterSpacing: '0.08em' }}
         >
-          Güneşli Mah. Güneşli Cad. No:42 — Bağcılar, İstanbul
+          Turhal, Tokat &mdash; 2005&apos;ten beri hizmetinizdeyiz
         </motion.p>
       </div>
     </section>

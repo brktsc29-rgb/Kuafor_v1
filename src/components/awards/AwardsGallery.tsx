@@ -2,12 +2,17 @@ import { useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
+const COLLAGE = '/images/284CFAFD-7C99-440A-9E04-1C5A55683283.png'
+// 5 cols × 4 rows — pos(col, row)
+const pos = (col: number, row: number) =>
+  `${col * 25}% ${parseFloat((row * 33.333).toFixed(2))}%`
+
 const IMAGES = [
-  { src: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1600&q=95', caption: 'Saç Tasarımı',     idx: '01' },
-  { src: 'https://images.unsplash.com/photo-1560066984-138daaa6e4b6?auto=format&fit=crop&w=1600&q=95', caption: 'Salon Deneyimi',     idx: '02' },
-  { src: 'https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=1600&q=95', caption: 'Renk Uygulaması', idx: '03' },
-  { src: 'https://images.unsplash.com/photo-1582095133179-bfd08e2fb6b8?auto=format&fit=crop&w=1600&q=95', caption: 'Profesyonel Kesim', idx: '04' },
-  { src: 'https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=1600&q=95', caption: 'Röfle & Ombre',    idx: '05' },
+  { pos: pos(0, 0), caption: 'Saç Tasarımı',      idx: '01' },
+  { pos: pos(3, 2), caption: 'Salon Deneyimi',     idx: '02' },
+  { pos: pos(4, 2), caption: 'Renk Uygulaması',    idx: '03' },
+  { pos: pos(1, 1), caption: 'Profesyonel Kesim',  idx: '04' },
+  { pos: pos(3, 1), caption: 'Röfle & Ombre',      idx: '05' },
 ]
 
 export default function AwardsGallery() {
@@ -77,17 +82,18 @@ export default function AwardsGallery() {
           <div
             key={img.idx}
             className="flex-shrink-0 relative overflow-hidden group"
-            style={{
-              width: 'clamp(240px, 28vw, 400px)',
-              height: '68vh',
-              borderRadius: 20,
-            }}
+            style={{ width: 'clamp(240px, 28vw, 400px)', height: '68vh', borderRadius: 20 }}
           >
-            <img
-              src={img.src}
-              alt={img.caption}
-              className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+            {/* Collage crop */}
+            <div
+              className="absolute inset-0 transition-transform duration-700 ease-out group-hover:scale-105"
+              style={{
+                backgroundImage: `url('${COLLAGE}')`,
+                backgroundSize: '500% 400%',
+                backgroundPosition: img.pos,
+              }}
             />
+            {/* Bottom gradient */}
             <div
               className="absolute inset-0"
               style={{ background: 'linear-gradient(to top, rgba(8,6,4,0.75) 0%, transparent 48%)' }}

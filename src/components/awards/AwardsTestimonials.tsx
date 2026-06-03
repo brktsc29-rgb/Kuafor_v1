@@ -32,13 +32,16 @@ export default function AwardsTestimonials() {
       className="relative py-20 md:py-36 px-6 md:px-14 overflow-hidden"
       style={{ background: '#F3ECE7', borderTop: '1px solid rgba(42,33,29,0.10)' }}
     >
-      {/* Giant decorative quote mark */}
+      {/* Giant decorative image */}
       <div
         aria-hidden
         className="absolute inset-0 flex items-center justify-center pointer-events-none select-none"
-        style={{ fontFamily: 'Instrument Serif, serif', fontSize: 'clamp(14rem, 35vw, 40rem)', color: 'rgba(42,33,29,0.04)', lineHeight: 1 }}
       >
-        &ldquo;
+        <img
+          src="/images/75EB7243-3A51-4F0C-9018-76DEE47AC5F7.png"
+          alt=""
+          className="w-full h-full object-cover opacity-[0.07]"
+        />
       </div>
 
       <div className="max-w-screen-xl mx-auto relative z-10">

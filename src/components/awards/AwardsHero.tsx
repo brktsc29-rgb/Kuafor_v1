@@ -125,7 +125,7 @@ export default function AwardsHero({ active }: { active: boolean }) {
         style={{ inset: '-40px', x: l1x, y: l1y }}
       >
         <img
-          src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=3200&q=95"
+          src="/images/4E3D1939-0CFB-4C8B-8CE3-7A787126B37C.png"
           alt=""
           aria-hidden
           className="w-full h-full object-cover"
@@ -241,7 +241,7 @@ export default function AwardsHero({ active }: { active: boolean }) {
           className="mb-6 md:mb-8"
           style={{ fontFamily: 'Inter, sans-serif', color: '#B9816F', fontSize: '0.62rem', letterSpacing: '0.38em', textTransform: 'uppercase' }}
         >
-          İstanbul · Bağcılar · Est. 2016
+          Turhal, Tokat · Est. 2005
         </p>
 
         <h1
