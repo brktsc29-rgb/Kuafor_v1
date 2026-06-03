@@ -3,11 +3,11 @@ import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 const IMAGES = [
-  { src: 'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=900&q=85', caption: 'Saç Tasarımı',         idx: '01' },
-  { src: 'https://images.unsplash.com/photo-1560066984-138daaa6e4b6?auto=format&fit=crop&w=900&q=85', caption: 'Salon Deneyimi',        idx: '02' },
-  { src: 'https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=900&q=85', caption: 'Renk Uygulaması',       idx: '03' },
-  { src: 'https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=900&q=85', caption: 'Profesyonel Bakım',     idx: '04' },
-  { src: 'https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=900&q=85', caption: 'Röfle & Ombre',          idx: '05' },
+  { src: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1600&q=95', caption: 'Saç Tasarımı',     idx: '01' },
+  { src: 'https://images.unsplash.com/photo-1560066984-138daaa6e4b6?auto=format&fit=crop&w=1600&q=95', caption: 'Salon Deneyimi',     idx: '02' },
+  { src: 'https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=1600&q=95', caption: 'Renk Uygulaması', idx: '03' },
+  { src: 'https://images.unsplash.com/photo-1582095133179-bfd08e2fb6b8?auto=format&fit=crop&w=1600&q=95', caption: 'Profesyonel Kesim', idx: '04' },
+  { src: 'https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=1600&q=95', caption: 'Röfle & Ombre',    idx: '05' },
 ]
 
 export default function AwardsGallery() {

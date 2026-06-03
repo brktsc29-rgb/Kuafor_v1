@@ -307,7 +307,7 @@ export default function HeroSection() {
                 style={{ borderRadius: '36px' }}
               >
                 <img
-                  src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80"
+                  src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=2400&q=95"
                   alt="Lüks saç tasarımı"
                   className="hero-portrait-anim w-full max-w-[480px] object-cover block"
                   style={{

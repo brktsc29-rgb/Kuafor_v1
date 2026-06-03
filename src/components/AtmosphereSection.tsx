@@ -43,7 +43,7 @@ export default function AtmosphereSection() {
             />
 
             <img
-              src="https://images.unsplash.com/photo-1560066984-138daaa6e4b6?auto=format&fit=crop&w=1200&q=80"
+              src="https://images.unsplash.com/photo-1560066984-138daaa6e4b6?auto=format&fit=crop&w=2400&q=95"
               alt="HÜLYA Beauty Studio — salon iç mekan"
               className="relative w-full object-cover"
               style={{

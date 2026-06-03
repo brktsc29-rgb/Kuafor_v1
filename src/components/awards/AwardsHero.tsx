@@ -125,7 +125,7 @@ export default function AwardsHero({ active }: { active: boolean }) {
         style={{ inset: '-40px', x: l1x, y: l1y }}
       >
         <img
-          src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=2400&q=95"
+          src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=3200&q=95"
           alt=""
           aria-hidden
           className="w-full h-full object-cover"
@@ -160,7 +160,7 @@ export default function AwardsHero({ active }: { active: boolean }) {
         }}
       >
         <img
-          src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=900&q=92"
+          src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=1200&q=95"
           alt=""
           className="w-full h-full object-cover"
           style={{ filter: 'brightness(0.90) contrast(1.05) saturate(1.08)' }}

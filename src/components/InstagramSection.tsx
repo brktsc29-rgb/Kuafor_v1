@@ -1,35 +1,35 @@
 const galleryImages = [
   {
-    src: 'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=400&q=80',
+    src: 'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=95',
     alt: 'Lüks saç tasarımı',
   },
   {
-    src: 'https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=400&q=80',
+    src: 'https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=800&q=95',
     alt: 'Profesyonel saç boyama',
   },
   {
-    src: 'https://images.unsplash.com/photo-1560066984-138daaa6e4b6?auto=format&fit=crop&w=400&q=80',
-    alt: 'Salon iç mekan',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=400&q=80',
-    alt: 'Saç bakımı',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=400&q=80',
-    alt: 'Makyaj uygulaması',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1496440788672-7a5ab58e0c81?auto=format&fit=crop&w=400&q=80',
+    src: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=95',
     alt: 'Saç şekillendirme',
   },
   {
-    src: 'https://images.unsplash.com/photo-1485875437342-9b39470b3d95?auto=format&fit=crop&w=400&q=80',
-    alt: 'Ombre saç boyama',
+    src: 'https://images.unsplash.com/photo-1560066984-138daaa6e4b6?auto=format&fit=crop&w=800&q=95',
+    alt: 'Salon deneyimi',
   },
   {
-    src: 'https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=400&q=80',
-    alt: 'Röfle uygulaması',
+    src: 'https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=800&q=95',
+    alt: 'Röfle & ombre',
+  },
+  {
+    src: 'https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=800&q=95',
+    alt: 'Renk uygulaması',
+  },
+  {
+    src: 'https://images.unsplash.com/photo-1582095133179-bfd08e2fb6b8?auto=format&fit=crop&w=800&q=95',
+    alt: 'Profesyonel kesim',
+  },
+  {
+    src: 'https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=800&q=95',
+    alt: 'Makyaj & bakım',
   },
 ]
 

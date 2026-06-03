@@ -72,7 +72,7 @@ export default function AwardsStory() {
         >
           <img
             ref={imgRef}
-            src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1000&q=85"
+            src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=1600&q=95"
             alt="HÜLYA Studio"
             className="absolute inset-0 w-full h-full object-cover"
             style={{ transform: 'scale(1.16)', transformOrigin: 'center' }}
