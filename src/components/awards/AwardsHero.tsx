@@ -125,7 +125,7 @@ export default function AwardsHero({ active }: { active: boolean }) {
           src="/images/4E3D1939-0CFB-4C8B-8CE3-7A787126B37C.png"
           alt=""
           aria-hidden
-          className="w-full h-full object-cover object-top"
+          className="w-full h-full object-cover object-center"
           style={{ filter: 'brightness(0.88) contrast(1.06) saturate(1.12)' }}
         />
       </motion.div>
