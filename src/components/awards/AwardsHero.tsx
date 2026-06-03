@@ -119,14 +119,14 @@ export default function AwardsHero({ active }: { active: boolean }) {
       {/* ── LAYER 1 · Main portrait (slowest parallax) ── */}
       <motion.div
         className="absolute pointer-events-none"
-        style={{ inset: '-40px', x: l1x, y: l1y }}
+        style={{ inset: '-20px', x: l1x, y: l1y }}
       >
         <img
           src="/images/4E3D1939-0CFB-4C8B-8CE3-7A787126B37C.png"
           alt=""
           aria-hidden
           className="w-full h-full object-cover object-center"
-          style={{ filter: 'brightness(0.88) contrast(1.06) saturate(1.12)' }}
+          style={{ filter: 'brightness(0.88) contrast(1.06) saturate(1.12)', transform: 'scale(0.92)', transformOrigin: 'center' }}
         />
       </motion.div>
 
@@ -217,7 +217,7 @@ export default function AwardsHero({ active }: { active: boolean }) {
           style={{
             fontFamily: 'Instrument Serif, serif',
             color: '#FFF8F5',
-            fontSize: 'clamp(4rem, 15vw, 17rem)',
+            fontSize: 'clamp(3.2rem, 10vw, 11rem)',
             letterSpacing: '-2.5px',
             lineHeight: 0.88,
             margin: 0,
