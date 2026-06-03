@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 
 const STATS = [
   { value: '10K+', label: 'Mutlu Müşteri' },
-  { value: '8+',   label: 'Yıl Deneyim'  },
+  { value: '21+',  label: 'Yıl Deneyim'  },
   { value: '4.9★', label: 'Ortalama Puan'},
 ]
 
@@ -90,10 +90,10 @@ export default function AwardsStory() {
             <em style={{ color: '#C98F7A', fontStyle: 'italic' }}>Farklı Bakış</em>
           </h2>
           <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.70)', fontSize: '0.88rem', lineHeight: 1.82, marginBottom: 14 }}>
-            HÜLYA Hair &amp; Beauty Studio olarak güzelliğin yalnızca görünüşten ibaret olmadığına inanıyoruz. Her ziyaretinizde kendinizi yenilediğinizi ve değer gördüğünüzü hissetmeniz için çalışıyoruz.
+            HÜLYA Hair &amp; Beauty Studio olarak güzelliğin yalnızca görünüşten ibaret olmadığına inanıyoruz. 2005'ten bu yana Turhal, Tokat'ta her müşterimize değer verdiğimizi ve özel hissettirdiğimizi gururla söylüyoruz.
           </p>
           <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.70)', fontSize: '0.88rem', lineHeight: 1.82, marginBottom: 40 }}>
-            İstanbul&apos;un kalbinde, yılların deneyimi ve içten bir tutkuyla hizmet veriyoruz. Ekibimiz her seferinde sizi en iyi hissettirecek sonuçlar için titizlikle çalışır.
+            Yirmi yılı aşkın deneyimimiz ve içten bir tutkuyla hizmet veriyoruz. Ekibimiz her seferinde sizi en iyi hissettirecek sonuçlar için titizlikle çalışır.
           </p>
 
           {/* Stats */}
