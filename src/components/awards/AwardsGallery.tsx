@@ -3,11 +3,11 @@ import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 const IMAGES = [
-  { src: '/images/ChatGPT Image 4 Haz 2026 01_39_53.png', caption: 'Saç Tasarımı',     idx: '01' },
-  { src: '/images/ChatGPT Image 4 Haz 2026 01_41_20.png', caption: 'Salon Deneyimi',    idx: '02' },
-  { src: '/images/ChatGPT Image 4 Haz 2026 01_42_29.png', caption: 'Renk Uygulaması',   idx: '03' },
-  { src: '/images/ChatGPT Image 4 Haz 2026 01_44_01.png', caption: 'Profesyonel Kesim', idx: '04' },
-  { src: '/images/ChatGPT Image 4 Haz 2026 01_45_13.png', caption: 'Röfle & Ombre',     idx: '05' },
+  { src: '/images/ChatGPT Image 4 Haz 2026 01_39_53.webp', caption: 'Saç Tasarımı',     idx: '01' },
+  { src: '/images/ChatGPT Image 4 Haz 2026 01_41_20.webp', caption: 'Salon Deneyimi',    idx: '02' },
+  { src: '/images/ChatGPT Image 4 Haz 2026 01_42_29.webp', caption: 'Renk Uygulaması',   idx: '03' },
+  { src: '/images/ChatGPT Image 4 Haz 2026 01_44_01.webp', caption: 'Profesyonel Kesim', idx: '04' },
+  { src: '/images/ChatGPT Image 4 Haz 2026 01_45_13.webp', caption: 'Röfle & Ombre',     idx: '05' },
 ]
 
 function PhotoCard({ img }: { img: typeof IMAGES[0] }) {

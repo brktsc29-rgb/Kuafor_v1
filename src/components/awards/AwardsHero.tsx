@@ -122,7 +122,7 @@ export default function AwardsHero({ active }: { active: boolean }) {
         style={{ inset: '-20px', x: l1x, y: l1y }}
       >
         <img
-          src="/images/4E3D1939-0CFB-4C8B-8CE3-7A787126B37C.png"
+          src="/images/4E3D1939-0CFB-4C8B-8CE3-7A787126B37C.webp"
           alt=""
           aria-hidden
           className="w-full h-full object-cover object-center"
