@@ -161,7 +161,7 @@ export default function IntroScreen({ onEnter, exiting }: IntroScreenProps) {
           style={{ fontFamily: 'Inter, sans-serif', color: '#6F6F6F' }}
         >
           Modern saç tasarımı, profesyonel renklendirme ve özel gün stilleriniz
-          için. İstanbul&apos;un kalbinde güzelliğinize değer katıyoruz.
+          için. Tokat&apos;un kalbinde güzelliğinize değer katıyoruz.
         </p>
 
         {/* CTA button */}

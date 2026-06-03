@@ -45,7 +45,7 @@ export default function Footer() {
               className="text-sm leading-relaxed mb-6"
               style={{ fontFamily: 'Inter, sans-serif', color: '#7A6A63' }}
             >
-              İstanbul&apos;un en prestijli güzellik deneyimi. Profesyonel ekibimiz ve
+              Tokat&apos;un en prestijli güzellik deneyimi. Profesyonel ekibimiz ve
               premium ürünlerimizle sizi en güzel halinize kavuşturuyoruz.
             </p>
 
@@ -162,7 +162,7 @@ export default function Footer() {
               style={{ fontFamily: 'Inter, sans-serif', color: '#7A6A63' }}
             >
               <p>Güneşli Mah. Güneşli Cad. No:42</p>
-              <p>Bağcılar, İstanbul</p>
+              <p>Turhal, Tokat</p>
               <a
                 href="tel:+905001234567"
                 className="block mt-2 transition-colors duration-200"

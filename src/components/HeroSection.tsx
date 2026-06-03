@@ -258,7 +258,7 @@ export default function HeroSection() {
                 {[
                   { icon: '⭐', value: '4.9 / 5',   label: 'Müşteri Memnuniyeti' },
                   { icon: '👩', value: '10.000+',    label: 'Mutlu Müşteri' },
-                  { icon: '📍', value: 'İstanbul',   label: 'Bağcılar' },
+                  { icon: '📍', value: 'Tokat',   label: 'Turhal' },
                 ].map((stat, i) => (
                   <div key={i} className="flex items-center gap-2">
                     {i > 0 && (

@@ -113,11 +113,31 @@ export default function AwardsCTA() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.9, duration: 0.6 }}
-          className="mt-14"
+          className="mt-14 mb-10"
           style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.40)', fontSize: '0.72rem', letterSpacing: '0.08em' }}
         >
           Turhal, Tokat &mdash; 2005&apos;ten beri hizmetinizdeyiz
         </motion.p>
+
+        {/* Google Maps */}
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 1.1, duration: 0.7 }}
+          className="w-full max-w-2xl mx-auto overflow-hidden"
+          style={{ borderRadius: 20, border: '1px solid rgba(42,33,29,0.10)', boxShadow: '0 8px 32px rgba(42,33,29,0.08)' }}
+        >
+          <iframe
+            title="HÜLYA Studio Konum"
+            src="https://maps.google.com/maps?q=Turhal,+Tokat,+T%C3%BCrkiye&output=embed&z=14"
+            width="100%"
+            height="300"
+            style={{ border: 0, display: 'block' }}
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
+        </motion.div>
       </div>
     </section>
   )

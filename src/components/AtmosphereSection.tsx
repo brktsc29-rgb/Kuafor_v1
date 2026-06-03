@@ -100,7 +100,7 @@ export default function AtmosphereSection() {
               className="text-sm leading-relaxed mb-8"
               style={{ fontFamily: 'Inter, sans-serif', color: '#7A6A63' }}
             >
-              İstanbul'un kalbinde, Bağcılar'da yer alan HÜLYA Beauty Studio,
+              Tokat'un kalbinde, Turhal'da yer alan HÜLYA Beauty Studio,
               güzellik ritüellerini bir deneyime dönüştürmek için tasarlandı.
               Modern estetik ile geleneksel bakım anlayışını harmanlayan salonumuzda,
               her ziyaret sizi kendinizin en güzel haliyle karşılaştırır.
