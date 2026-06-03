@@ -175,3 +175,30 @@
   animation: scrollLinePulse 2.2s ease-in-out infinite;
   transform-origin: left center;
 }
+
+/* ─── CAMPAIGN PLAYER ─── */
+
+/* Ken Burns: slow zoom + drift for each image slot */
+@keyframes cpKb1 {
+  0%   { transform: scale(1.00) translate(0,    0);    }
+  100% { transform: scale(1.18) translate(-2%,  1.5%); }
+}
+@keyframes cpKb2 {
+  0%   { transform: scale(1.12) translateX(-3.5%); }
+  100% { transform: scale(1.12) translateX( 2.5%); }
+}
+@keyframes cpKb3 {
+  0%   { transform: scale(1.00) translate( 2%,  1.5%); }
+  100% { transform: scale(1.17) translate(-1%, -0.5%);  }
+}
+
+.cp-kb-1 { animation: cpKb1 26s ease-in-out infinite alternate; }
+.cp-kb-2 { animation: cpKb2 22s ease-in-out infinite alternate; }
+.cp-kb-3 { animation: cpKb3 30s ease-in-out infinite alternate; }
+
+/* REC indicator blink */
+@keyframes cpRecBlink {
+  0%, 100% { opacity: 1;   }
+  50%       { opacity: 0.2; }
+}
+.cp-rec-blink { animation: cpRecBlink 1.4s ease-in-out infinite; }
