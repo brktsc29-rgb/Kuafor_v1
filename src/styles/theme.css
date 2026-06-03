@@ -37,66 +37,113 @@
 }
 
 @keyframes float1 {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-15px);
-  }
-  100% {
-    transform: translateY(0);
-  }
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
 }
 
 @keyframes float2 {
-  0% {
-    transform: translateY(0) rotate(0deg);
-  }
-  50% {
-    transform: translateY(-10px) rotate(5deg);
-  }
-  100% {
-    transform: translateY(0) rotate(0deg);
-  }
+  0% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(5deg); }
+  100% { transform: translateY(0) rotate(0deg); }
 }
 
-.float-rose-1 {
-  animation: float1 6s ease-in-out infinite;
-}
-
-.float-rose-2 {
-  animation: float2 8s ease-in-out 1s infinite;
-}
+.float-rose-1 { animation: float1 6s ease-in-out infinite; }
+.float-rose-2 { animation: float2 8s ease-in-out 1s infinite; }
 
 @keyframes pulse-soft {
-  0%, 100% {
-    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.4);
-  }
-  50% {
-    box-shadow: 0 0 0 12px rgba(37, 211, 102, 0);
-  }
+  0%, 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.4); }
+  50% { box-shadow: 0 0 0 12px rgba(37, 211, 102, 0); }
 }
 
-.pulse-whatsapp {
-  animation: pulse-soft 2s ease-in-out infinite;
-}
+.pulse-whatsapp { animation: pulse-soft 2s ease-in-out infinite; }
 
 @keyframes shimmer {
-  0% {
-    background-position: -200% center;
-  }
-  100% {
-    background-position: 200% center;
-  }
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
 }
 
 .shimmer-border {
-  background: linear-gradient(
-    90deg,
-    #B9816F 0%,
-    #e8c4b0 50%,
-    #B9816F 100%
-  );
+  background: linear-gradient(90deg, #B9816F 0%, #e8c4b0 50%, #B9816F 100%);
   background-size: 200% auto;
   animation: shimmer 3s linear infinite;
 }
+
+/* ─── HERO PREMIUM EFFECTS ─── */
+
+@keyframes heroBlobFloat1 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33%       { transform: translate(32px, -22px) scale(1.06); }
+  66%       { transform: translate(-18px, 14px) scale(0.96); }
+}
+
+@keyframes heroBlobFloat2 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  40%       { transform: translate(-28px, 18px) scale(1.05); }
+  70%       { transform: translate(22px, -16px) scale(0.97); }
+}
+
+@keyframes heroBlobFloat3 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  30%       { transform: translate(16px, 26px) scale(1.04); }
+  65%       { transform: translate(-26px, -12px) scale(0.95); }
+}
+
+.hero-blob-1 { animation: heroBlobFloat1 18s ease-in-out infinite; }
+.hero-blob-2 { animation: heroBlobFloat2 24s ease-in-out 3s infinite; }
+.hero-blob-3 { animation: heroBlobFloat3 30s ease-in-out 6s infinite; }
+
+@keyframes heroRibbonDrift {
+  0%   { transform: translateX(0) translateY(0); }
+  50%  { transform: translateX(36px) translateY(-8px); }
+  100% { transform: translateX(0) translateY(0); }
+}
+
+@keyframes heroRibbonDriftAlt {
+  0%   { transform: translateX(0) translateY(0); }
+  50%  { transform: translateX(-42px) translateY(10px); }
+  100% { transform: translateX(0) translateY(0); }
+}
+
+.hero-ribbon     { animation: heroRibbonDrift    22s ease-in-out infinite; }
+.hero-ribbon-alt { animation: heroRibbonDriftAlt 30s ease-in-out 4s infinite; }
+
+@keyframes heroParticleA {
+  0%, 100% { transform: translate(0, 0);     opacity: 0.22; }
+  25%       { transform: translate(9px, -14px); opacity: 0.32; }
+  50%       { transform: translate(-6px, -22px); opacity: 0.15; }
+  75%       { transform: translate(-11px, -9px); opacity: 0.28; }
+}
+
+@keyframes heroParticleB {
+  0%, 100% { transform: translate(0, 0);     opacity: 0.18; }
+  30%       { transform: translate(-13px, 9px); opacity: 0.28; }
+  65%       { transform: translate(11px, 16px); opacity: 0.12; }
+}
+
+@keyframes heroParticleC {
+  0%, 100% { transform: translate(0, 0);      opacity: 0.20; }
+  40%       { transform: translate(8px, -18px);  opacity: 0.30; }
+  80%       { transform: translate(-9px, 10px);  opacity: 0.14; }
+}
+
+.hero-particle-a { animation: heroParticleA var(--dur, 14s) ease-in-out var(--delay, 0s) infinite; }
+.hero-particle-b { animation: heroParticleB var(--dur, 18s) ease-in-out var(--delay, 0s) infinite; }
+.hero-particle-c { animation: heroParticleC var(--dur, 12s) ease-in-out var(--delay, 0s) infinite; }
+
+@keyframes heroPortraitScale {
+  from { transform: scale(1); }
+  to   { transform: scale(1.03); }
+}
+
+.hero-portrait-anim {
+  animation: heroPortraitScale 15s ease-in-out infinite alternate;
+  transform-origin: center bottom;
+}
+
+@keyframes heroFadeUp {
+  from { opacity: 0; transform: translateY(22px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.hero-fade-up { animation: heroFadeUp 0.8s ease-out both; }
