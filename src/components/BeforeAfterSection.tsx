@@ -50,7 +50,7 @@ export default function BeforeAfterSection() {
             }}
           >
             <img
-              src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=600&q=80"
+              src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=1200&q=95"
               alt="Öncesi — bakıma muhtaç saç"
               className="w-full object-cover transition-transform duration-500 group-hover:scale-105"
               style={{ aspectRatio: '4/5' }}
@@ -135,7 +135,7 @@ export default function BeforeAfterSection() {
             }}
           >
             <img
-              src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=600&q=80"
+              src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=1200&q=95"
               alt="Sonrası — lüks saç tasarımı"
               className="w-full object-cover transition-transform duration-500 group-hover:scale-105"
               style={{ aspectRatio: '4/5' }}

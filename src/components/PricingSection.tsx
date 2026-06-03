@@ -100,7 +100,7 @@ export default function PricingSection() {
           {plans.map((plan, idx) => (
             <div
               key={idx}
-              className={`relative rounded-3xl p-8 flex flex-col transition-all duration-300 hover:-translate-y-1 ${plan.highlight ? 'scale-[1.04] shadow-2xl' : 'hover:shadow-xl'}`}
+              className={`relative rounded-3xl p-8 flex flex-col transition-all duration-300 hover:-translate-y-1 ${plan.highlight ? 'md:scale-[1.04] shadow-2xl' : 'hover:shadow-xl'}`}
               style={
                 plan.highlight
                   ? {

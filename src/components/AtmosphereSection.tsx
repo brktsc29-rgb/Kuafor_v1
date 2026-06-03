@@ -43,7 +43,7 @@ export default function AtmosphereSection() {
             />
 
             <img
-              src="https://images.unsplash.com/photo-1560066984-138daaa6e4b6?auto=format&fit=crop&w=1200&q=80"
+              src="https://images.unsplash.com/photo-1560066984-138daaa6e4b6?auto=format&fit=crop&w=2400&q=95"
               alt="HÜLYA Beauty Studio — salon iç mekan"
               className="relative w-full object-cover"
               style={{
@@ -55,7 +55,7 @@ export default function AtmosphereSection() {
 
             {/* Floating stat card */}
             <div
-              className="absolute -right-5 bottom-10 px-5 py-4"
+              className="absolute right-0 sm:-right-5 bottom-10 px-5 py-4"
               style={{
                 backdropFilter: 'blur(16px)',
                 WebkitBackdropFilter: 'blur(16px)',
