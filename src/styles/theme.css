@@ -147,3 +147,31 @@
 }
 
 .hero-fade-up { animation: heroFadeUp 0.8s ease-out both; }
+
+/* ─── AWARDS PAGE ─── */
+
+/* Hide default cursor on awards page */
+.awards-page,
+.awards-page * {
+  cursor: none !important;
+}
+
+/* Marquee keyframes */
+@keyframes marqueeScroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+@keyframes marqueeScrollRev {
+  from { transform: translateX(-50%); }
+  to   { transform: translateX(0); }
+}
+
+/* Scroll indicator pulse */
+@keyframes scrollLinePulse {
+  0%, 100% { opacity: 0.4; transform: scaleX(1); }
+  50%       { opacity: 1;   transform: scaleX(1.35); }
+}
+.awards-scroll-line {
+  animation: scrollLinePulse 2.2s ease-in-out infinite;
+  transform-origin: left center;
+}
