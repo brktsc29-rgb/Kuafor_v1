@@ -14,6 +14,8 @@ import AwardsStory       from './awards/AwardsStory'
 import AwardsTestimonials from './awards/AwardsTestimonials'
 import AwardsCTA         from './awards/AwardsCTA'
 import AwardsFooter      from './awards/AwardsFooter'
+import CookieBanner      from './awards/CookieBanner'
+import KVKKModal         from './awards/KVKKModal'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -74,6 +76,8 @@ export default function AwardsPage() {
       </main>
 
       <AwardsFooter />
+      <CookieBanner />
+      <KVKKModal />
     </div>
   )
 }

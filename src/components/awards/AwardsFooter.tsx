@@ -64,9 +64,14 @@ export default function AwardsFooter() {
           <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(248,245,242,0.18)', fontSize: '0.58rem', letterSpacing: '0.16em', textTransform: 'uppercase' }}>
             2005&apos;ten beri Turhal&apos;ın güzellik adresi
           </p>
-          <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(201,143,122,0.55)', fontSize: '0.58rem', letterSpacing: '0.12em' }}>
-            Tokat · Türkiye
-          </p>
+          <button
+            onClick={() => document.getElementById('kvkk-modal')?.classList.remove('hidden')}
+            style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(201,143,122,0.55)', fontSize: '0.58rem', letterSpacing: '0.12em', background: 'none', border: 'none', cursor: 'pointer', padding: 0 }}
+            onMouseEnter={e => (e.currentTarget.style.color = 'rgba(201,143,122,0.90)')}
+            onMouseLeave={e => (e.currentTarget.style.color = 'rgba(201,143,122,0.55)')}
+          >
+            Gizlilik Politikası · KVKK
+          </button>
         </div>
       </div>
     </footer>
