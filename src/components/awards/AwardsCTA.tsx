@@ -130,7 +130,7 @@ export default function AwardsCTA() {
         >
           <iframe
             title="HÜLYA Studio Konum"
-            src="https://maps.google.com/maps?q=Turhal,+Tokat,+T%C3%BCrkiye&output=embed&z=15"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.999600145139!2d36.08035847639812!3d40.386701471444475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x407ded8ffd05f5e9%3A0x3bc7ace5c8e629d2!2zSMO8bHlhIEt1YWbDtnI!5e0!3m2!1str!2str!4v1780525279040!5m2!1str!2str"
             width="100%"
             height="300"
             style={{ border: 0, display: 'block' }}
