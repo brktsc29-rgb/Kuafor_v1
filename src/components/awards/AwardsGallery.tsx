@@ -2,29 +2,22 @@ import { useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-const COLLAGE = '/images/284CFAFD-7C99-440A-9E04-1C5A55683283.png'
-const pos = (col: number, row: number) =>
-  `${col * 25}% ${parseFloat((row * 33.333).toFixed(2))}%`
-
 const IMAGES = [
-  { pos: pos(0, 0), caption: 'Saç Tasarımı',     idx: '01' },
-  { pos: pos(3, 2), caption: 'Salon Deneyimi',    idx: '02' },
-  { pos: pos(4, 2), caption: 'Renk Uygulaması',   idx: '03' },
-  { pos: pos(1, 1), caption: 'Profesyonel Kesim', idx: '04' },
-  { pos: pos(3, 1), caption: 'Röfle & Ombre',     idx: '05' },
+  { src: '/images/ChatGPT Image 4 Haz 2026 01_39_53.png', caption: 'Saç Tasarımı',     idx: '01' },
+  { src: '/images/ChatGPT Image 4 Haz 2026 01_41_20.png', caption: 'Salon Deneyimi',    idx: '02' },
+  { src: '/images/ChatGPT Image 4 Haz 2026 01_42_29.png', caption: 'Renk Uygulaması',   idx: '03' },
+  { src: '/images/ChatGPT Image 4 Haz 2026 01_44_01.png', caption: 'Profesyonel Kesim', idx: '04' },
+  { src: '/images/ChatGPT Image 4 Haz 2026 01_45_13.png', caption: 'Röfle & Ombre',     idx: '05' },
 ]
 
 function PhotoCard({ img }: { img: typeof IMAGES[0] }) {
   return (
-    <div className="relative overflow-hidden group" style={{ borderRadius: 16 }}>
-      <div
-        className="w-full transition-transform duration-700 ease-out group-hover:scale-105"
-        style={{
-          paddingBottom: '130%',
-          backgroundImage: `url('${COLLAGE}')`,
-          backgroundSize: '500% 400%',
-          backgroundPosition: img.pos,
-        }}
+    <div className="relative overflow-hidden group w-full h-full" style={{ borderRadius: 16 }}>
+      <img
+        src={img.src}
+        alt={img.caption}
+        loading="lazy"
+        className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
       />
       <div
         className="absolute inset-0"
@@ -36,7 +29,7 @@ function PhotoCard({ img }: { img: typeof IMAGES[0] }) {
         </span>
       </div>
       <div className="absolute top-3 right-3">
-        <span style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(255,255,255,0.3)', fontSize: '0.55rem', letterSpacing: '0.2em' }}>
+        <span style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(255,255,255,0.35)', fontSize: '0.55rem', letterSpacing: '0.2em' }}>
           {img.idx}
         </span>
       </div>
@@ -92,8 +85,12 @@ export default function AwardsGallery() {
           <em style={{ color: '#C98F7A', fontStyle: 'italic' }}>Galerisi</em>
         </h2>
         <div className="grid grid-cols-2 gap-3">
-          {IMAGES.map(img => (
-            <div key={img.idx} className={img.idx === '01' ? 'col-span-2' : ''}>
+          {IMAGES.map((img, i) => (
+            <div
+              key={img.idx}
+              className={i === 0 ? 'col-span-2' : ''}
+              style={{ aspectRatio: i === 0 ? '16/9' : '3/4' }}
+            >
               <PhotoCard img={img} />
             </div>
           ))}
@@ -130,31 +127,10 @@ export default function AwardsGallery() {
           {IMAGES.map(img => (
             <div
               key={img.idx}
-              className="flex-shrink-0 relative overflow-hidden group"
-              style={{ width: 'clamp(240px, 28vw, 400px)', height: '68vh', borderRadius: 20 }}
+              className="flex-shrink-0"
+              style={{ width: 'clamp(240px, 28vw, 400px)', height: '68vh', borderRadius: 20, overflow: 'hidden' }}
             >
-              <div
-                className="absolute inset-0 transition-transform duration-700 ease-out group-hover:scale-105"
-                style={{
-                  backgroundImage: `url('${COLLAGE}')`,
-                  backgroundSize: '500% 400%',
-                  backgroundPosition: img.pos,
-                }}
-              />
-              <div
-                className="absolute inset-0"
-                style={{ background: 'linear-gradient(to top, rgba(8,6,4,0.75) 0%, transparent 48%)' }}
-              />
-              <div className="absolute bottom-5 left-5">
-                <span style={{ fontFamily: 'Instrument Serif, serif', color: '#FFF8F5', fontSize: '1.05rem', fontStyle: 'italic' }}>
-                  {img.caption}
-                </span>
-              </div>
-              <div className="absolute top-4 right-4">
-                <span style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(255,255,255,0.3)', fontSize: '0.58rem', letterSpacing: '0.2em' }}>
-                  {img.idx}
-                </span>
-              </div>
+              <PhotoCard img={img} />
             </div>
           ))}
         </div>
