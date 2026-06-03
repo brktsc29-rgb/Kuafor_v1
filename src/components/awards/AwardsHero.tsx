@@ -161,7 +161,8 @@ export default function AwardsHero({ active }: { active: boolean }) {
       >
         <img
           src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=1200&q=95"
-          alt=""
+          alt="HÜLYA Beauty Studio"
+          loading="lazy"
           className="w-full h-full object-cover"
           style={{ filter: 'brightness(0.90) contrast(1.05) saturate(1.08)' }}
         />

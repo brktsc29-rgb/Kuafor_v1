@@ -40,6 +40,7 @@ export default function AwardsTestimonials() {
         <img
           src="/images/75EB7243-3A51-4F0C-9018-76DEE47AC5F7.png"
           alt=""
+          loading="lazy"
           className="w-full h-full object-cover opacity-[0.07]"
         />
       </div>

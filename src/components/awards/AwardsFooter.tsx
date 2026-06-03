@@ -1,4 +1,9 @@
-const LINKS = ['Hizmetler', 'Galeri', 'Hikayemiz', 'İletişim']
+const LINKS = [
+  { label: 'Hizmetler', href: '#hizmetler' },
+  { label: 'Galeri',    href: '#galeri'    },
+  { label: 'Hikayemiz', href: '#hikayemiz' },
+  { label: 'İletişim',  href: '#iletisim'  },
+]
 
 export default function AwardsFooter() {
   return (
@@ -18,21 +23,21 @@ export default function AwardsFooter() {
           <nav className="flex items-center gap-6 flex-wrap justify-center">
             {LINKS.map(l => (
               <a
-                key={l}
-                href={`#${l.toLowerCase()}`}
+                key={l.href}
+                href={l.href}
                 className="text-[0.65rem] tracking-[0.14em] uppercase transition-colors duration-200"
                 style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(248,245,242,0.42)' }}
                 onMouseEnter={e => (e.currentTarget.style.color = 'rgba(248,245,242,0.90)')}
                 onMouseLeave={e => (e.currentTarget.style.color = 'rgba(248,245,242,0.42)')}
               >
-                {l}
+                {l.label}
               </a>
             ))}
           </nav>
 
           <div className="text-center md:text-right">
             <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(248,245,242,0.32)', fontSize: '0.68rem' }}>
-              &copy; 2026 HÜLYA Studio
+              &copy; {new Date().getFullYear()} HÜLYA Studio
             </p>
             <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(248,245,242,0.22)', fontSize: '0.60rem', letterSpacing: '0.08em', marginTop: 3 }}>
               Turhal, Tokat
