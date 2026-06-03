@@ -10,8 +10,15 @@ const LINKS = [
   { label: 'İletişim',  href: '#iletisim'  },
 ]
 
+const LINK_COLOR_DEFAULT  = '#5A4A41'
+const LINK_COLOR_SCROLLED = 'rgba(42,33,29,0.60)'
+const LINK_COLOR_HOVER    = '#2A211D'
+
 export default function AwardsNav({ ready }: { ready: boolean }) {
-  const navRef = useRef<HTMLElement>(null)
+  const navRef      = useRef<HTMLElement>(null)
+  const logoRef     = useRef<HTMLParagraphElement>(null)
+  const linksRef    = useRef<(HTMLAnchorElement | null)[]>([])
+  const isScrolled  = useRef(false)
 
   useEffect(() => {
     if (!ready) return
@@ -20,20 +27,28 @@ export default function AwardsNav({ ready }: { ready: boolean }) {
     const ctx = gsap.context(() => {
       ScrollTrigger.create({
         start: 'top -80px',
-        onEnter: () =>
+        onEnter: () => {
+          isScrolled.current = true
           gsap.to(navRef.current, {
-            background: 'rgba(10,8,6,0.88)',
+            background: 'rgba(248,245,242,0.92)',
             backdropFilter: 'blur(24px)',
-            borderBottomColor: 'rgba(255,255,255,0.06)',
+            borderBottomColor: 'rgba(42,33,29,0.08)',
             duration: 0.4,
-          }),
-        onLeaveBack: () =>
+          })
+          gsap.to(logoRef.current, { color: '#2A211D', duration: 0.3 })
+          gsap.to(linksRef.current.filter(Boolean), { color: LINK_COLOR_SCROLLED, duration: 0.3 })
+        },
+        onLeaveBack: () => {
+          isScrolled.current = false
           gsap.to(navRef.current, {
             background: 'transparent',
             backdropFilter: 'blur(0px)',
             borderBottomColor: 'transparent',
             duration: 0.4,
-          }),
+          })
+          gsap.to(logoRef.current, { color: '#FFF8F5', duration: 0.3 })
+          gsap.to(linksRef.current.filter(Boolean), { color: LINK_COLOR_DEFAULT, duration: 0.3 })
+        },
       })
     }, navRef)
 
@@ -56,7 +71,7 @@ export default function AwardsNav({ ready }: { ready: boolean }) {
           animate={ready ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.1, duration: 0.6, ease: 'easeOut' }}
         >
-          <p style={{ fontFamily: 'Instrument Serif, serif', color: '#FFF8F5', fontSize: '1.55rem', letterSpacing: '-0.4px' }}>
+          <p ref={logoRef} style={{ fontFamily: 'Instrument Serif, serif', color: '#FFF8F5', fontSize: '1.55rem', letterSpacing: '-0.4px' }}>
             HÜLYA
           </p>
         </motion.div>
@@ -67,14 +82,15 @@ export default function AwardsNav({ ready }: { ready: boolean }) {
           animate={ready ? { opacity: 1 } : {}}
           transition={{ delay: 0.25, duration: 0.6 }}
         >
-          {LINKS.map(l => (
+          {LINKS.map((l, i) => (
             <li key={l.href}>
               <a
+                ref={el => { linksRef.current[i] = el }}
                 href={l.href}
                 className="text-[0.68rem] tracking-[0.16em] uppercase transition-colors duration-200"
-                style={{ fontFamily: 'Inter, sans-serif', color: '#5A4A41' }}
-                onMouseEnter={e => (e.currentTarget.style.color = '#FFF8F5')}
-                onMouseLeave={e => (e.currentTarget.style.color = '#5A4A41')}
+                style={{ fontFamily: 'Inter, sans-serif', color: LINK_COLOR_DEFAULT }}
+                onMouseEnter={e => (e.currentTarget.style.color = LINK_COLOR_HOVER)}
+                onMouseLeave={e => (e.currentTarget.style.color = isScrolled.current ? LINK_COLOR_SCROLLED : LINK_COLOR_DEFAULT)}
               >
                 {l.label}
               </a>
@@ -87,7 +103,7 @@ export default function AwardsNav({ ready }: { ready: boolean }) {
           target="_blank"
           rel="noopener noreferrer"
           className="rounded-full px-5 py-2 text-[0.72rem] tracking-wide"
-          style={{ fontFamily: 'Inter, sans-serif', background: '#B9816F', color: '#FFF8F5' }}
+          style={{ fontFamily: 'Inter, sans-serif', background: '#C98F7A', color: '#FFF8F5' }}
           initial={{ opacity: 0, scale: 0.92 }}
           animate={ready ? { opacity: 1, scale: 1 } : {}}
           transition={{ delay: 0.4, duration: 0.5 }}

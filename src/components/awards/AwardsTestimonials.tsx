@@ -29,20 +29,20 @@ export default function AwardsTestimonials() {
 
   return (
     <section
-      className="relative py-28 md:py-48 px-6 md:px-14 overflow-hidden"
-      style={{ background: '#0A0806', borderTop: '1px solid rgba(255,255,255,0.05)' }}
+      className="relative py-20 md:py-36 px-6 md:px-14 overflow-hidden"
+      style={{ background: '#F3ECE7', borderTop: '1px solid rgba(42,33,29,0.10)' }}
     >
       {/* Giant decorative quote mark */}
       <div
         aria-hidden
         className="absolute inset-0 flex items-center justify-center pointer-events-none select-none"
-        style={{ fontFamily: 'Instrument Serif, serif', fontSize: 'clamp(14rem, 35vw, 40rem)', color: 'rgba(255,255,255,0.018)', lineHeight: 1 }}
+        style={{ fontFamily: 'Instrument Serif, serif', fontSize: 'clamp(14rem, 35vw, 40rem)', color: 'rgba(42,33,29,0.04)', lineHeight: 1 }}
       >
         &ldquo;
       </div>
 
       <div className="max-w-screen-xl mx-auto relative z-10">
-        <p style={{ fontFamily: 'Inter, sans-serif', color: '#B9816F', fontSize: '0.6rem', letterSpacing: '0.32em', textTransform: 'uppercase', marginBottom: 40 }}>
+        <p style={{ fontFamily: 'Inter, sans-serif', color: '#C98F7A', fontSize: '0.6rem', letterSpacing: '0.32em', textTransform: 'uppercase', marginBottom: 40 }}>
           Müşteri Deneyimleri
         </p>
 
@@ -59,7 +59,7 @@ export default function AwardsTestimonials() {
               <blockquote
                 style={{
                   fontFamily: 'Instrument Serif, serif',
-                  color: '#FFF8F5',
+                  color: '#2A211D',
                   fontSize: 'clamp(1.6rem, 3.8vw, 4.2rem)',
                   lineHeight: 1.2,
                   letterSpacing: '-0.4px',
@@ -70,10 +70,10 @@ export default function AwardsTestimonials() {
               >
                 &ldquo;{ITEMS[idx].quote}&rdquo;
               </blockquote>
-              <p style={{ fontFamily: 'Inter, sans-serif', color: '#B9816F', fontSize: '0.82rem', fontWeight: 600 }}>
+              <p style={{ fontFamily: 'Inter, sans-serif', color: '#C98F7A', fontSize: '0.82rem', fontWeight: 600 }}>
                 {ITEMS[idx].author}
               </p>
-              <p style={{ fontFamily: 'Inter, sans-serif', color: '#4A3A33', fontSize: '0.72rem', marginTop: 3 }}>
+              <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.55)', fontSize: '0.72rem', marginTop: 3 }}>
                 {ITEMS[idx].role}
               </p>
             </motion.div>
@@ -91,7 +91,7 @@ export default function AwardsTestimonials() {
                 height: 5,
                 width: i === idx ? 32 : 5,
                 borderRadius: 3,
-                background: i === idx ? '#B9816F' : '#2A1A13',
+                background: i === idx ? '#C98F7A' : 'rgba(42,33,29,0.18)',
                 border: 'none',
                 cursor: 'pointer',
                 padding: 0,

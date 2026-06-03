@@ -41,16 +41,16 @@ export default function AwardsStatement() {
   return (
     <section
       ref={sectionRef}
-      className="py-36 md:py-56 px-6 md:px-14"
-      style={{ background: '#0D0B09' }}
+      className="py-16 md:py-32 px-6 md:px-14"
+      style={{ background: '#F8F5F2' }}
     >
       <div className="max-w-screen-xl mx-auto">
         <p
           aria-label={WORDS.join(' ')}
           style={{
             fontFamily: 'Instrument Serif, serif',
-            color: '#FFF8F5',
-            fontSize: 'clamp(2rem, 4.8vw, 5.8rem)',
+            color: '#2A211D',
+            fontSize: 'clamp(2.4rem, 4.8vw, 5.8rem)',
             lineHeight: 1.15,
             letterSpacing: '-0.3px',
           }}
@@ -59,7 +59,7 @@ export default function AwardsStatement() {
             <span
               key={i}
               ref={el => { wordRefs.current[i] = el }}
-              style={{ opacity: 0.1, display: 'inline-block', marginRight: '0.28em', marginBottom: '0.1em' }}
+              style={{ opacity: 0.1, display: 'inline-block', marginRight: '0.28em', marginBottom: '0.1em', color: '#2A211D' }}
             >
               {w}
             </span>

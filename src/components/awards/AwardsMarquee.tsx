@@ -5,9 +5,9 @@ export default function AwardsMarquee({ reverse = false }: { reverse?: boolean }
     <div
       className="overflow-hidden select-none"
       style={{
-        background: reverse ? '#0A0806' : '#B9816F',
-        borderTop:    '1px solid rgba(255,255,255,0.06)',
-        borderBottom: '1px solid rgba(255,255,255,0.06)',
+        background: reverse ? '#EFE5DF' : '#C98F7A',
+        borderTop:    `1px solid ${reverse ? 'rgba(42,33,29,0.10)' : 'rgba(42,33,29,0.08)'}`,
+        borderBottom: `1px solid ${reverse ? 'rgba(42,33,29,0.10)' : 'rgba(42,33,29,0.08)'}`,
         padding: '14px 0',
       }}
     >
@@ -24,7 +24,7 @@ export default function AwardsMarquee({ reverse = false }: { reverse?: boolean }
             key={i}
             style={{
               fontFamily: 'Instrument Serif, serif',
-              color: reverse ? '#B9816F' : '#0A0806',
+              color: reverse ? '#C98F7A' : '#F8F5F2',
               fontSize: 'clamp(0.82rem, 1.4vw, 1.05rem)',
               letterSpacing: '0.07em',
               whiteSpace: 'nowrap',

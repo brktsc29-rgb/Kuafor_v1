@@ -33,13 +33,13 @@ export default function AwardsCTA() {
     <section
       ref={sectionRef}
       id="iletisim"
-      className="relative py-32 md:py-52 px-6 md:px-14 overflow-hidden"
-      style={{ background: 'linear-gradient(160deg, #0F0D0B 0%, #1A1310 50%, #0F0D0B 100%)', borderTop: '1px solid rgba(255,255,255,0.05)' }}
+      className="relative py-20 md:py-36 px-6 md:px-14 overflow-hidden"
+      style={{ background: 'linear-gradient(160deg, #F3ECE7 0%, #EFE5DF 50%, #F3ECE7 100%)', borderTop: '1px solid rgba(42,33,29,0.10)' }}
     >
       {/* Glow */}
       <div
         className="absolute inset-0 pointer-events-none"
-        style={{ background: 'radial-gradient(ellipse at 50% 55%, rgba(185,129,111,0.1) 0%, transparent 65%)' }}
+        style={{ background: 'radial-gradient(ellipse at 50% 55%, rgba(201,143,122,0.18) 0%, transparent 65%)' }}
       />
 
       <div className="max-w-screen-xl mx-auto text-center relative z-10">
@@ -48,20 +48,20 @@ export default function AwardsCTA() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.55 }}
-          style={{ fontFamily: 'Inter, sans-serif', color: '#B9816F', fontSize: '0.6rem', letterSpacing: '0.36em', textTransform: 'uppercase', marginBottom: 22 }}
+          style={{ fontFamily: 'Inter, sans-serif', color: '#C98F7A', fontSize: '0.6rem', letterSpacing: '0.36em', textTransform: 'uppercase', marginBottom: 22 }}
         >
           Randevu Al
         </motion.p>
 
         <h2
           ref={headRef}
-          style={{ fontFamily: 'Instrument Serif, serif', color: '#FFF8F5', fontSize: 'clamp(3rem, 9vw, 11rem)', lineHeight: 0.9, letterSpacing: '-1.5px', marginBottom: 44 }}
+          style={{ fontFamily: 'Instrument Serif, serif', color: '#2A211D', fontSize: 'clamp(3rem, 9vw, 11rem)', lineHeight: 0.9, letterSpacing: '-1.5px', marginBottom: 44 }}
         >
           <div className="cta-line" style={{ overflow: 'hidden', opacity: 0 }}>
             <span style={{ display: 'block' }}>Güzelliğiniz</span>
           </div>
           <div className="cta-line" style={{ overflow: 'hidden', opacity: 0 }}>
-            <em style={{ color: '#B9816F', fontStyle: 'italic' }}>Bizi Bekliyor</em>
+            <em style={{ color: '#C98F7A', fontStyle: 'italic' }}>Bizi Bekliyor</em>
           </div>
         </h2>
 
@@ -70,7 +70,7 @@ export default function AwardsCTA() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.3, duration: 0.8 }}
-          style={{ fontFamily: 'Inter, sans-serif', color: '#4A3A33', fontSize: '0.9rem', lineHeight: 1.75, maxWidth: 480, margin: '0 auto 48px' }}
+          style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.65)', fontSize: '0.9rem', lineHeight: 1.75, maxWidth: 480, margin: '0 auto 48px' }}
         >
           Profesyonel ekibimizle tanışın, size özel bakım planınızı birlikte oluşturalım.
         </motion.p>
@@ -87,7 +87,7 @@ export default function AwardsCTA() {
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-3 rounded-full px-8 py-4 text-[0.82rem] font-medium"
-            style={{ fontFamily: 'Inter, sans-serif', background: '#B9816F', color: '#FFF8F5' }}
+            style={{ fontFamily: 'Inter, sans-serif', background: '#C98F7A', color: '#FFF8F5' }}
             whileHover={{ scale: 1.06, background: '#C9917F' } as never}
             whileTap={{ scale: 0.96 }}
             transition={{ duration: 0.2 }}
@@ -99,7 +99,7 @@ export default function AwardsCTA() {
           <motion.a
             href="tel:+905001234567"
             className="flex items-center gap-2 rounded-full px-8 py-4 text-[0.82rem]"
-            style={{ fontFamily: 'Inter, sans-serif', border: '1px solid rgba(185,129,111,0.32)', color: '#B9816F' }}
+            style={{ fontFamily: 'Inter, sans-serif', border: '1px solid rgba(201,143,122,0.45)', color: '#C98F7A' }}
             whileHover={{ borderColor: '#B9816F', scale: 1.06 } as never}
             whileTap={{ scale: 0.96 }}
             transition={{ duration: 0.2 }}
@@ -114,7 +114,7 @@ export default function AwardsCTA() {
           viewport={{ once: true }}
           transition={{ delay: 0.9, duration: 0.6 }}
           className="mt-14"
-          style={{ fontFamily: 'Inter, sans-serif', color: '#2A1A13', fontSize: '0.72rem', letterSpacing: '0.08em' }}
+          style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.40)', fontSize: '0.72rem', letterSpacing: '0.08em' }}
         >
           Güneşli Mah. Güneşli Cad. No:42 — Bağcılar, İstanbul
         </motion.p>

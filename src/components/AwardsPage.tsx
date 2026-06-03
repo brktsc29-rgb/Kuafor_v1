@@ -34,7 +34,7 @@ export default function AwardsPage() {
   }, [ready])
 
   return (
-    <div className="awards-page" style={{ background: '#0A0806' }}>
+    <div className="awards-page" style={{ background: '#F8F5F2' }}>
       {/* Loader — unmounts itself visually via GSAP, state removes it */}
       {!ready && <AwardsLoader onComplete={() => setReady(true)} />}
 

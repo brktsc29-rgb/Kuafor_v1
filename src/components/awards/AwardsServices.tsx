@@ -46,54 +46,54 @@ export default function AwardsServices() {
     <section
       ref={sectionRef}
       id="hizmetler"
-      className="py-24 md:py-40 px-6 md:px-14"
-      style={{ background: '#0D0B09', borderTop: '1px solid rgba(255,255,255,0.05)' }}
+      className="py-16 md:py-28 px-6 md:px-14"
+      style={{ background: '#F3ECE7', borderTop: '1px solid rgba(42,33,29,0.10)' }}
     >
       <div className="max-w-screen-xl mx-auto">
 
         {/* Header */}
         <div
           ref={headRef}
-          className="flex flex-col md:flex-row md:items-end justify-between mb-16 md:mb-24 gap-6"
+          className="flex flex-col md:flex-row md:items-end justify-between mb-12 md:mb-20 gap-6"
           style={{ opacity: 0 }}
         >
           <div>
-            <p style={{ fontFamily: 'Inter, sans-serif', color: '#B9816F', fontSize: '0.6rem', letterSpacing: '0.32em', textTransform: 'uppercase', marginBottom: 14 }}>
+            <p style={{ fontFamily: 'Inter, sans-serif', color: '#C98F7A', fontSize: '0.6rem', letterSpacing: '0.32em', textTransform: 'uppercase', marginBottom: 14 }}>
               Hizmetlerimiz
             </p>
-            <h2 style={{ fontFamily: 'Instrument Serif, serif', color: '#FFF8F5', fontSize: 'clamp(2.5rem, 6vw, 7.5rem)', lineHeight: 0.92, letterSpacing: '-1px' }}>
+            <h2 style={{ fontFamily: 'Instrument Serif, serif', color: '#2A211D', fontSize: 'clamp(2.5rem, 6vw, 7.5rem)', lineHeight: 0.92, letterSpacing: '-1px' }}>
               Lüks Güzellik<br />
-              <em style={{ color: '#B9816F', fontStyle: 'italic' }}>Deneyimi</em>
+              <em style={{ color: '#C98F7A', fontStyle: 'italic' }}>Deneyimi</em>
             </h2>
           </div>
-          <p style={{ fontFamily: 'Inter, sans-serif', color: '#4A3A33', fontSize: '0.83rem', lineHeight: 1.75, maxWidth: 300 }}>
+          <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.65)', fontSize: '0.83rem', lineHeight: 1.75, maxWidth: 300 }}>
             Her hizmetimiz, size özel hazırlanmış premium<br />bir deneyim sunmak için tasarlandı.
           </p>
         </div>
 
         {/* Rows */}
-        <div style={{ borderTop: '1px solid rgba(255,255,255,0.06)' }}>
+        <div style={{ borderTop: '1px solid rgba(42,33,29,0.10)' }}>
           {SERVICES.map((s, i) => (
             <motion.div
               key={s.n}
               ref={el => { rowRefs.current[i] = el }}
               className="group flex items-center justify-between gap-6 py-7 md:py-9"
-              style={{ borderBottom: '1px solid rgba(255,255,255,0.06)', opacity: 0, cursor: 'default' }}
+              style={{ borderBottom: '1px solid rgba(42,33,29,0.10)', opacity: 0, cursor: 'default' }}
               whileHover={{ x: 8 }}
               transition={{ type: 'spring', stiffness: 260, damping: 28 }}
             >
               <div className="flex items-center gap-6 md:gap-10">
-                <span style={{ fontFamily: 'Inter, sans-serif', color: '#B9816F', fontSize: '0.62rem', letterSpacing: '0.22em', minWidth: 26 }}>
+                <span style={{ fontFamily: 'Inter, sans-serif', color: '#C98F7A', fontSize: '0.62rem', letterSpacing: '0.22em', minWidth: 26 }}>
                   {s.n}
                 </span>
                 <div>
                   <h3
-                    className="transition-colors duration-300 group-hover:text-[#B9816F]"
-                    style={{ fontFamily: 'Instrument Serif, serif', color: '#FFF8F5', fontSize: 'clamp(1.1rem, 2.4vw, 2.2rem)' }}
+                    className="transition-colors duration-300 group-hover:text-[#C98F7A]"
+                    style={{ fontFamily: 'Instrument Serif, serif', color: '#2A211D', fontSize: 'clamp(1.1rem, 2.4vw, 2.2rem)' }}
                   >
                     {s.title}
                   </h3>
-                  <p style={{ fontFamily: 'Inter, sans-serif', color: '#4A3A33', fontSize: '0.78rem', marginTop: 3 }}>
+                  <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.65)', fontSize: '0.78rem', marginTop: 3 }}>
                     {s.desc}
                   </p>
                 </div>
@@ -104,10 +104,10 @@ export default function AwardsServices() {
                 className="hidden md:inline-block self-center flex-shrink-0"
                 style={{
                   fontFamily: 'Inter, sans-serif',
-                  color: '#3A2A23',
+                  color: 'rgba(42,33,29,0.50)',
                   fontSize: '0.56rem',
                   letterSpacing: '0.28em',
-                  border: '1px solid rgba(255,255,255,0.07)',
+                  border: '1px solid rgba(42,33,29,0.12)',
                   padding: '4px 10px',
                   borderRadius: 100,
                   transition: 'color 0.3s, border-color 0.3s',

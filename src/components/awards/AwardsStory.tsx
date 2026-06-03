@@ -59,8 +59,8 @@ export default function AwardsStory() {
     <section
       ref={sectionRef}
       id="hikayemiz"
-      className="py-24 md:py-40 px-6 md:px-14"
-      style={{ background: '#100E0C', borderTop: '1px solid rgba(255,255,255,0.05)' }}
+      className="py-16 md:py-28 px-6 md:px-14"
+      style={{ background: '#F8F5F2', borderTop: '1px solid rgba(42,33,29,0.10)' }}
     >
       <div className="max-w-screen-xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-20 items-center">
 
@@ -82,17 +82,17 @@ export default function AwardsStory() {
 
         {/* Text */}
         <div ref={textRef} style={{ opacity: 0 }}>
-          <p style={{ fontFamily: 'Inter, sans-serif', color: '#B9816F', fontSize: '0.6rem', letterSpacing: '0.32em', textTransform: 'uppercase', marginBottom: 20 }}>
+          <p style={{ fontFamily: 'Inter, sans-serif', color: '#C98F7A', fontSize: '0.6rem', letterSpacing: '0.32em', textTransform: 'uppercase', marginBottom: 20 }}>
             Hikayemiz
           </p>
-          <h2 style={{ fontFamily: 'Instrument Serif, serif', color: '#FFF8F5', fontSize: 'clamp(2rem, 4vw, 4.8rem)', lineHeight: 1.02, letterSpacing: '-0.5px', marginBottom: 24 }}>
+          <h2 style={{ fontFamily: 'Instrument Serif, serif', color: '#2A211D', fontSize: 'clamp(2rem, 4vw, 4.8rem)', lineHeight: 1.02, letterSpacing: '-0.5px', marginBottom: 24 }}>
             Güzelliğe<br />
-            <em style={{ color: '#B9816F', fontStyle: 'italic' }}>Farklı Bakış</em>
+            <em style={{ color: '#C98F7A', fontStyle: 'italic' }}>Farklı Bakış</em>
           </h2>
-          <p style={{ fontFamily: 'Inter, sans-serif', color: '#4A3A33', fontSize: '0.88rem', lineHeight: 1.82, marginBottom: 14 }}>
+          <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.70)', fontSize: '0.88rem', lineHeight: 1.82, marginBottom: 14 }}>
             HÜLYA Hair &amp; Beauty Studio olarak güzelliğin yalnızca görünüşten ibaret olmadığına inanıyoruz. Her ziyaretinizde kendinizi yenilediğinizi ve değer gördüğünüzü hissetmeniz için çalışıyoruz.
           </p>
-          <p style={{ fontFamily: 'Inter, sans-serif', color: '#4A3A33', fontSize: '0.88rem', lineHeight: 1.82, marginBottom: 40 }}>
+          <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.70)', fontSize: '0.88rem', lineHeight: 1.82, marginBottom: 40 }}>
             İstanbul&apos;un kalbinde, yılların deneyimi ve içten bir tutkuyla hizmet veriyoruz. Ekibimiz her seferinde sizi en iyi hissettirecek sonuçlar için titizlikle çalışır.
           </p>
 
@@ -104,10 +104,10 @@ export default function AwardsStory() {
                 whileHover={{ y: -4 }}
                 transition={{ type: 'spring', stiffness: 300, damping: 20 }}
               >
-                <div style={{ fontFamily: 'Instrument Serif, serif', color: '#B9816F', fontSize: '2.4rem', letterSpacing: '-0.5px' }}>
+                <div style={{ fontFamily: 'Instrument Serif, serif', color: '#C98F7A', fontSize: '2.4rem', letterSpacing: '-0.5px' }}>
                   {stat.value}
                 </div>
-                <div style={{ fontFamily: 'Inter, sans-serif', color: '#4A3A33', fontSize: '0.68rem', letterSpacing: '0.12em', textTransform: 'uppercase', marginTop: 2 }}>
+                <div style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.55)', fontSize: '0.68rem', letterSpacing: '0.12em', textTransform: 'uppercase', marginTop: 2 }}>
                   {stat.label}
                 </div>
               </motion.div>

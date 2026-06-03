@@ -47,11 +47,11 @@ export default function AwardsGallery() {
       ref={outerRef}
       id="galeri"
       className="overflow-hidden"
-      style={{ background: '#0A0806', position: 'relative' }}
+      style={{ background: '#EFE5DF', position: 'relative' }}
     >
       {/* Floating label */}
       <div className="absolute top-8 left-6 md:left-14 z-20">
-        <p style={{ fontFamily: 'Inter, sans-serif', color: '#4A3A33', fontSize: '0.58rem', letterSpacing: '0.3em', textTransform: 'uppercase' }}>
+        <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.45)', fontSize: '0.58rem', letterSpacing: '0.3em', textTransform: 'uppercase' }}>
           Galeri — {IMAGES.length.toString().padStart(2, '0')}
         </p>
       </div>
@@ -66,9 +66,9 @@ export default function AwardsGallery() {
           className="flex-shrink-0 flex flex-col justify-end"
           style={{ width: 'clamp(180px, 22vw, 340px)', height: '68vh', paddingBottom: 24, paddingRight: 20 }}
         >
-          <h2 style={{ fontFamily: 'Instrument Serif, serif', color: '#FFF8F5', fontSize: 'clamp(2rem, 4.5vw, 5.5rem)', lineHeight: 0.94, letterSpacing: '-0.5px' }}>
+          <h2 style={{ fontFamily: 'Instrument Serif, serif', color: '#2A211D', fontSize: 'clamp(2rem, 4.5vw, 5.5rem)', lineHeight: 0.94, letterSpacing: '-0.5px' }}>
             İlham<br />
-            <em style={{ color: '#B9816F', fontStyle: 'italic' }}>Galerisi</em>
+            <em style={{ color: '#C98F7A', fontStyle: 'italic' }}>Galerisi</em>
           </h2>
         </div>
 
