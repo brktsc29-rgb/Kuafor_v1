@@ -5,7 +5,7 @@ const LINKS = [
   { label: 'İletişim',  href: '#iletisim'  },
 ]
 
-export default function AwardsFooter() {
+export default function AwardsFooter({ onOpenKVKK }: { onOpenKVKK: () => void }) {
   return (
     <footer style={{ background: '#2A211D', borderTop: '1px solid rgba(248,245,242,0.06)' }}>
       <div className="max-w-screen-xl mx-auto px-6 md:px-14 pt-12 pb-8">
@@ -65,7 +65,7 @@ export default function AwardsFooter() {
             2005&apos;ten beri Turhal&apos;ın güzellik adresi
           </p>
           <button
-            onClick={() => document.getElementById('kvkk-modal')?.classList.remove('hidden')}
+            onClick={onOpenKVKK}
             style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(201,143,122,0.55)', fontSize: '0.58rem', letterSpacing: '0.12em', background: 'none', border: 'none', cursor: 'pointer', padding: 0 }}
             onMouseEnter={e => (e.currentTarget.style.color = 'rgba(201,143,122,0.90)')}
             onMouseLeave={e => (e.currentTarget.style.color = 'rgba(201,143,122,0.55)')}

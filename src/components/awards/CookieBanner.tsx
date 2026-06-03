@@ -1,7 +1,11 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
-export default function CookieBanner() {
+interface Props {
+  onOpenKVKK: () => void
+}
+
+export default function CookieBanner({ onOpenKVKK }: Props) {
   const [visible, setVisible] = useState(false)
 
   useEffect(() => {
@@ -45,7 +49,7 @@ export default function CookieBanner() {
               <p style={{ fontFamily: 'Inter, sans-serif', color: '#F8F5F2', fontSize: '0.78rem', lineHeight: 1.6 }}>
                 Sitemizde harita ve sosyal medya bağlantıları için çerezler kullanılmaktadır.{' '}
                 <button
-                  onClick={() => document.getElementById('kvkk-modal')?.classList.remove('hidden')}
+                  onClick={onOpenKVKK}
                   style={{ color: '#C98F7A', textDecoration: 'underline', background: 'none', border: 'none', cursor: 'pointer', fontFamily: 'inherit', fontSize: 'inherit', padding: 0 }}
                 >
                   Gizlilik Politikası

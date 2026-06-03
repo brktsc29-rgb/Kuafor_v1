@@ -21,6 +21,7 @@ gsap.registerPlugin(ScrollTrigger)
 
 export default function AwardsPage() {
   const [ready, setReady] = useState(false)
+  const [kvkkOpen, setKvkkOpen] = useState(false)
 
   useLenis()
 
@@ -75,9 +76,9 @@ export default function AwardsPage() {
         <AwardsCTA />
       </main>
 
-      <AwardsFooter />
-      <CookieBanner />
-      <KVKKModal />
+      <AwardsFooter onOpenKVKK={() => setKvkkOpen(true)} />
+      <CookieBanner onOpenKVKK={() => setKvkkOpen(true)} />
+      <KVKKModal isOpen={kvkkOpen} onClose={() => setKvkkOpen(false)} />
     </div>
   )
 }
