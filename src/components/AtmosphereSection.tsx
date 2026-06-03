@@ -55,7 +55,7 @@ export default function AtmosphereSection() {
 
             {/* Floating stat card */}
             <div
-              className="absolute -right-5 bottom-10 px-5 py-4"
+              className="absolute right-0 sm:-right-5 bottom-10 px-5 py-4"
               style={{
                 backdropFilter: 'blur(16px)',
                 WebkitBackdropFilter: 'blur(16px)',

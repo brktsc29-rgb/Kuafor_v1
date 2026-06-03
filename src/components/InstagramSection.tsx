@@ -80,11 +80,8 @@ export default function InstagramSection() {
 
         {/* Masonry-style grid */}
         <div
-          className="grid gap-4"
-          style={{
-            gridTemplateColumns: 'repeat(4, 1fr)',
-            gridAutoRows: '200px',
-          }}
+          className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4"
+          style={{ gridAutoRows: '160px' }}
         >
           {galleryImages.map((img, idx) => {
             // Make certain cells span 2 rows for visual interest

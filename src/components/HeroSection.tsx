@@ -173,7 +173,7 @@ export default function HeroSection() {
               </p>
 
               <h1
-                className="hero-fade-up text-5xl lg:text-7xl mb-4 leading-[1.0]"
+                className="hero-fade-up text-4xl sm:text-5xl lg:text-7xl mb-4 leading-[1.0]"
                 style={{
                   fontFamily: 'Instrument Serif, serif',
                   color: '#1F1A17',
@@ -329,7 +329,7 @@ export default function HeroSection() {
 
               {/* Floating rating card */}
               <div
-                className="hero-fade-up absolute bottom-8 -left-8 z-20 px-4 py-3 flex items-center gap-3"
+                className="hero-fade-up absolute bottom-8 left-0 sm:-left-6 lg:-left-8 z-20 px-4 py-3 flex items-center gap-3"
                 style={{
                   backdropFilter: 'blur(20px)',
                   WebkitBackdropFilter: 'blur(20px)',

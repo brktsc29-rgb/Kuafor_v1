@@ -125,7 +125,7 @@ export default function IntroScreen({ onEnter, exiting }: IntroScreenProps) {
           {/* CTA */}
           <button
             onClick={onEnter}
-            className="rounded-full px-6 py-2.5 text-sm text-white transition-all duration-300 hover:scale-[1.03]"
+            className="rounded-full px-4 py-2 text-xs sm:px-6 sm:py-2.5 sm:text-sm text-white transition-all duration-300 hover:scale-[1.03]"
             style={{ fontFamily: 'Inter, sans-serif', background: '#000000' }}
           >
             Salonu Keşfet
@@ -135,16 +135,16 @@ export default function IntroScreen({ onEnter, exiting }: IntroScreenProps) {
 
       {/* ── Hero copy ── */}
       <section
-        className="relative z-10 flex flex-col items-center justify-center text-center px-6 pb-40"
+        className="relative z-10 flex flex-col items-center justify-center text-center px-6 pb-16 sm:pb-28 md:pb-40"
         style={{ paddingTop: 'calc(8rem - 75px)' }}
       >
         {/* Headline */}
         <h1
-          className="fade-rise font-normal max-w-6xl text-5xl sm:text-7xl md:text-8xl"
+          className="fade-rise font-normal max-w-6xl text-3xl sm:text-5xl md:text-7xl lg:text-8xl"
           style={{
             fontFamily: 'Instrument Serif, serif',
-            lineHeight: 0.95,
-            letterSpacing: '-2.46px',
+            lineHeight: 1.0,
+            letterSpacing: 'clamp(-0.5px, -0.17vw, -2.46px)',
             color: '#000000',
           }}
         >
