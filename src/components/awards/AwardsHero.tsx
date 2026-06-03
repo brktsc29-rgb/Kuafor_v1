@@ -125,7 +125,7 @@ export default function AwardsHero({ active }: { active: boolean }) {
         style={{ inset: '-40px', x: l1x, y: l1y }}
       >
         <img
-          src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=3200&q=95"
+          src="/images/hero.jpg"
           alt=""
           aria-hidden
           className="w-full h-full object-cover"
