@@ -1,4 +1,4 @@
-const TRACK = 'HÜLYA · HAIR & BEAUTY · ISTANBUL · SAÇ TASARIMI · KERATİN · OMBRE · RÖFLE · GELİN SAÇI · MAKYAJ · PREMIUM STUDIO · '
+const TRACK = 'HÜLYA · HAIR & BEAUTY · TURHAL · TOKAT · SAÇ TASARIMI · KERATİN · OMBRE · RÖFLE · GELİN SAÇI · MAKYAJ · PREMIUM STUDIO · '
 
 export default function AwardsMarquee({ reverse = false }: { reverse?: boolean }) {
   return (
