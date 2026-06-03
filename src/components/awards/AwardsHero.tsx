@@ -122,20 +122,26 @@ export default function AwardsHero({ active }: { active: boolean }) {
       {/* ── LAYER 1 · Main portrait (slowest parallax) ── */}
       <motion.div
         className="absolute pointer-events-none"
-        style={{
-          inset: '-40px',           // oversized so edges never show during movement
-          x: l1x,
-          y: l1y,
-        }}
+        style={{ inset: '-40px', x: l1x, y: l1y }}
       >
         <img
-          src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1800&q=88"
+          src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=2400&q=95"
           alt=""
           aria-hidden
           className="w-full h-full object-cover"
-          style={{ filter: 'brightness(0.62) saturate(0.9)' }}
+          style={{ filter: 'brightness(0.88) contrast(1.06) saturate(1.12)' }}
         />
       </motion.div>
+
+      {/* ── Warm rose-gold center glow ── */}
+      <div
+        aria-hidden
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background: 'radial-gradient(ellipse 70% 65% at 62% 42%, rgba(185,129,111,0.18) 0%, transparent 70%)',
+          mixBlendMode: 'screen',
+        }}
+      />
 
       {/* ── LAYER 2 · Floating accent portrait (counter-moves) ── */}
       <motion.div
@@ -154,10 +160,10 @@ export default function AwardsHero({ active }: { active: boolean }) {
         }}
       >
         <img
-          src="https://images.unsplash.com/photo-1560066984-138daaa6e4b6?auto=format&fit=crop&w=800&q=80"
+          src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=900&q=92"
           alt=""
           className="w-full h-full object-cover"
-          style={{ filter: 'brightness(0.75) saturate(0.8)' }}
+          style={{ filter: 'brightness(0.90) contrast(1.05) saturate(1.08)' }}
         />
         {/* Subtle rose-gold vignette on accent card */}
         <div
@@ -204,18 +210,18 @@ export default function AwardsHero({ active }: { active: boolean }) {
         ))}
       </motion.div>
 
-      {/* ── Gradient veil — bottom-heavy dark ── */}
+      {/* ── Gradient veil — bottom-heavy, lighter in middle ── */}
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            'linear-gradient(0deg, rgba(8,6,4,0.95) 0%, rgba(8,6,4,0.55) 32%, rgba(8,6,4,0.18) 58%, rgba(8,6,4,0.0) 100%)',
+            'linear-gradient(0deg, rgba(8,6,4,0.90) 0%, rgba(8,6,4,0.32) 30%, rgba(8,6,4,0.06) 55%, rgba(8,6,4,0.0) 100%)',
         }}
       />
-      {/* Left-side vignette so text always readable */}
+      {/* Left vignette for text legibility */}
       <div
         className="absolute inset-0 pointer-events-none"
-        style={{ background: 'linear-gradient(90deg, rgba(8,6,4,0.65) 0%, transparent 52%)' }}
+        style={{ background: 'linear-gradient(90deg, rgba(8,6,4,0.55) 0%, rgba(8,6,4,0.15) 42%, transparent 65%)' }}
       />
 
       {/* Film grain */}
