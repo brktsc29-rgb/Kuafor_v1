@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState, FormEvent } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { motion } from 'framer-motion'
@@ -9,9 +9,29 @@ const WHATSAPP_SVG = (
   </svg>
 )
 
+const SERVICES = [
+  'Saç Kesimi', 'Ombre & Balayage', 'Röfle', 'Keratin Bakım',
+  'Gelin Saçı', 'Makyaj', 'Saç Boyama', 'Diğer',
+]
+
+const inputStyle = {
+  fontFamily: 'Inter, sans-serif',
+  fontSize: '0.85rem',
+  color: '#2A211D',
+  background: 'rgba(255,255,255,0.70)',
+  border: '1px solid rgba(42,33,29,0.14)',
+  borderRadius: 12,
+  padding: '13px 16px',
+  width: '100%',
+  outline: 'none',
+  transition: 'border-color 0.2s',
+}
+
 export default function AwardsCTA() {
   const sectionRef = useRef<HTMLElement>(null)
   const headRef    = useRef<HTMLHeadingElement>(null)
+  const [form, setForm]       = useState({ name: '', service: '', note: '' })
+  const [sent, setSent]       = useState(false)
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger)
@@ -28,6 +48,15 @@ export default function AwardsCTA() {
 
     return () => ctx.revert()
   }, [])
+
+  const handleSubmit = (e: FormEvent) => {
+    e.preventDefault()
+    const msg = `Merhaba, randevu almak istiyorum.%0AAd: ${encodeURIComponent(form.name)}%0AHizmet: ${encodeURIComponent(form.service || 'Belirtilmedi')}%0ANot: ${encodeURIComponent(form.note || '-')}`
+    window.open(`https://wa.me/905001234567?text=${msg}`, '_blank')
+    setSent(true)
+    setTimeout(() => setSent(false), 4000)
+    setForm({ name: '', service: '', note: '' })
+  }
 
   return (
     <section
@@ -124,12 +153,77 @@ export default function AwardsCTA() {
           </motion.a>
         </motion.div>
 
+        {/* ── Contact Form ── */}
+        <motion.form
+          onSubmit={handleSubmit}
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.7, duration: 0.6 }}
+          className="w-full max-w-lg mx-auto mt-14 text-left"
+        >
+          <div
+            className="p-6 md:p-8"
+            style={{ background: 'rgba(255,255,255,0.55)', borderRadius: 20, border: '1px solid rgba(42,33,29,0.10)', backdropFilter: 'blur(12px)', boxShadow: '0 8px 32px rgba(42,33,29,0.07)' }}
+          >
+            <p style={{ fontFamily: 'Inter, sans-serif', color: '#C98F7A', fontSize: '0.58rem', letterSpacing: '0.32em', textTransform: 'uppercase', marginBottom: 20 }}>
+              Hızlı Randevu Formu
+            </p>
+
+            <div className="flex flex-col gap-3">
+              <input
+                required
+                type="text"
+                placeholder="Adınız"
+                value={form.name}
+                onChange={e => setForm(f => ({ ...f, name: e.target.value }))}
+                style={inputStyle}
+                onFocus={e => (e.currentTarget.style.borderColor = '#C98F7A')}
+                onBlur={e => (e.currentTarget.style.borderColor = 'rgba(42,33,29,0.14)')}
+              />
+
+              <select
+                value={form.service}
+                onChange={e => setForm(f => ({ ...f, service: e.target.value }))}
+                style={{ ...inputStyle, color: form.service ? '#2A211D' : 'rgba(42,33,29,0.40)' }}
+                onFocus={e => (e.currentTarget.style.borderColor = '#C98F7A')}
+                onBlur={e => (e.currentTarget.style.borderColor = 'rgba(42,33,29,0.14)')}
+              >
+                <option value="" disabled>Hizmet Seçin</option>
+                {SERVICES.map(s => <option key={s} value={s}>{s}</option>)}
+              </select>
+
+              <textarea
+                rows={3}
+                placeholder="Notunuz (isteğe bağlı)"
+                value={form.note}
+                onChange={e => setForm(f => ({ ...f, note: e.target.value }))}
+                style={{ ...inputStyle, resize: 'none' }}
+                onFocus={e => (e.currentTarget.style.borderColor = '#C98F7A')}
+                onBlur={e => (e.currentTarget.style.borderColor = 'rgba(42,33,29,0.14)')}
+              />
+            </div>
+
+            <button
+              type="submit"
+              className="mt-4 w-full flex items-center justify-center gap-3 rounded-full py-4 text-[0.82rem] font-medium transition-opacity"
+              style={{ fontFamily: 'Inter, sans-serif', background: sent ? '#7A9E7E' : '#C98F7A', color: '#FFF8F5', border: 'none', cursor: 'pointer' }}
+            >
+              {sent ? (
+                '✓ WhatsApp Açılıyor...'
+              ) : (
+                <>{WHATSAPP_SVG} WhatsApp ile Gönder</>
+              )}
+            </button>
+          </div>
+        </motion.form>
+
         <motion.p
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.9, duration: 0.6 }}
-          className="mt-14 mb-10"
+          className="mt-10 mb-10"
           style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.40)', fontSize: '0.72rem', letterSpacing: '0.08em' }}
         >
           Turhal, Tokat &mdash; 2005&apos;ten beri hizmetinizdeyiz
