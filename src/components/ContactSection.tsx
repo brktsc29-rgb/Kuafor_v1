@@ -25,7 +25,7 @@ export default function ContactSection() {
         </svg>
       ),
       label: 'Adres',
-      value: 'Güneşli Mah. Güneşli Cad. No:42\nBağcılar, İstanbul 34212',
+      value: 'Güneşli Mah. Güneşli Cad. No:42\nTurhal, Tokat 34212',
     },
     {
       icon: (
@@ -207,7 +207,7 @@ export default function ContactSection() {
                   className="text-xs mt-1"
                   style={{ fontFamily: 'Inter, sans-serif', color: '#7A6A63' }}
                 >
-                  Bağcılar, İstanbul
+                  Turhal, Tokat
                 </p>
               </div>
             </div>
