@@ -52,7 +52,7 @@ export default function KVKKModal({ isOpen, onClose }: Props) {
             <div style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.75)', fontSize: '0.82rem', lineHeight: 1.85 }}>
               <p style={{ marginBottom: 20 }}>
                 <strong style={{ color: '#2A211D' }}>Veri Sorumlusu:</strong><br />
-                HÜLYA Hair &amp; Beauty Studio — Turhal, Tokat
+                HÜLYA Hair &amp; Beauty Studio · Turhal, Tokat
               </p>
 
               <h3 style={{ fontFamily: 'Instrument Serif, serif', color: '#2A211D', fontSize: '1.05rem', marginBottom: 8 }}>
@@ -93,7 +93,7 @@ export default function KVKKModal({ isOpen, onClose }: Props) {
               <p>
                 KVKK kapsamındaki talepleriniz için WhatsApp veya telefon aracılığıyla bizimle iletişime geçebilirsiniz.
                 <br />
-                <strong style={{ color: '#C98F7A' }}>HÜLYA Hair &amp; Beauty Studio — Turhal, Tokat</strong>
+                <strong style={{ color: '#C98F7A' }}>HÜLYA Hair &amp; Beauty Studio · Turhal, Tokat</strong>
               </p>
             </div>
 

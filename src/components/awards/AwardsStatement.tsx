@@ -3,7 +3,7 @@ import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 const WORDS = [
-  'Güzellik', 'bir', 'his,', 'bir', 'deneyim', '—', 'sanatın',
+  'Güzellik', 'bir', 'his,', 'bir', 'deneyim,', 'sanatın',
   'en', 'samimi', 'biçimi.', 'Her', 'müşterimiz', 'benzersiz,',
   'her', 'ziyaret', 'bir', 'dönüşüm', 'hikayesi.',
 ]

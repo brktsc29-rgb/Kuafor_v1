@@ -226,7 +226,7 @@ export default function AwardsCTA() {
           className="mt-10 mb-10"
           style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.40)', fontSize: '0.72rem', letterSpacing: '0.08em' }}
         >
-          Turhal, Tokat &mdash; 2005&apos;ten beri hizmetinizdeyiz
+          Turhal, Tokat &nbsp;·&nbsp; 2005&apos;ten beri hizmetinizdeyiz
         </motion.p>
 
         {/* Google Maps */}

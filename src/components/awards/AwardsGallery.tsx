@@ -78,7 +78,7 @@ export default function AwardsGallery() {
       {/* ── MOBILE: 2-column grid ── */}
       <div className="block lg:hidden px-5 py-16">
         <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.45)', fontSize: '0.58rem', letterSpacing: '0.3em', textTransform: 'uppercase', marginBottom: 8 }}>
-          Galeri — 05
+          Galeri 05
         </p>
         <h2 style={{ fontFamily: 'Instrument Serif, serif', color: '#2A211D', fontSize: '2.4rem', lineHeight: 0.94, letterSpacing: '-0.5px', marginBottom: 24 }}>
           İlham<br />
@@ -105,7 +105,7 @@ export default function AwardsGallery() {
       >
         <div className="absolute top-8 left-14 z-20">
           <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.45)', fontSize: '0.58rem', letterSpacing: '0.3em', textTransform: 'uppercase' }}>
-            Galeri — {IMAGES.length.toString().padStart(2, '0')}
+            Galeri {IMAGES.length.toString().padStart(2, '0')}
           </p>
         </div>
 
