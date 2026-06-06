@@ -120,7 +120,7 @@ export default function AwardsNav({ ready }: { ready: boolean }) {
           </motion.a>
 
           <motion.a
-            href="https://wa.me/905001234567"
+            href="https://wa.me/905412757160"
           target="_blank"
           rel="noopener noreferrer"
           className="rounded-full px-5 py-2 text-[0.72rem] tracking-wide"

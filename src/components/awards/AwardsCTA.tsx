@@ -52,7 +52,7 @@ export default function AwardsCTA() {
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault()
     const msg = `Merhaba, randevu almak istiyorum.%0AAd: ${encodeURIComponent(form.name)}%0AHizmet: ${encodeURIComponent(form.service || 'Belirtilmedi')}%0ANot: ${encodeURIComponent(form.note || '-')}`
-    window.open(`https://wa.me/905001234567?text=${msg}`, '_blank')
+    window.open(`https://wa.me/905412757160?text=${msg}`, '_blank')
     setSent(true)
     setTimeout(() => setSent(false), 4000)
     setForm({ name: '', service: '', note: '' })
@@ -112,7 +112,7 @@ export default function AwardsCTA() {
           transition={{ delay: 0.5, duration: 0.6 }}
         >
           <motion.a
-            href="https://wa.me/905001234567"
+            href="https://wa.me/905412757160"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-3 rounded-full px-8 py-4 text-[0.82rem] font-medium"
@@ -126,14 +126,14 @@ export default function AwardsCTA() {
           </motion.a>
 
           <motion.a
-            href="tel:+905001234567"
+            href="tel:+905412757160"
             className="flex items-center gap-2 rounded-full px-8 py-4 text-[0.82rem]"
             style={{ fontFamily: 'Inter, sans-serif', border: '1px solid rgba(201,143,122,0.45)', color: '#C98F7A' }}
             whileHover={{ borderColor: '#B9816F', scale: 1.06 } as never}
             whileTap={{ scale: 0.96 }}
             transition={{ duration: 0.2 }}
           >
-            +90 500 123 45 67
+            +90 (541) 275 71 60
           </motion.a>
 
           <motion.a
