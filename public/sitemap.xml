@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://kuafor-v1.vercel.app/</loc>
+    <loc>https://hulyastudio.com/</loc>
     <lastmod>2026-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://kuafor-v1.vercel.app/#hizmetler</loc>
+    <loc>https://hulyastudio.com/#hizmetler</loc>
     <lastmod>2026-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://kuafor-v1.vercel.app/#galeri</loc>
+    <loc>https://hulyastudio.com/#galeri</loc>
     <lastmod>2026-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kuafor-v1.vercel.app/#hikayemiz</loc>
+    <loc>https://hulyastudio.com/#hikayemiz</loc>
     <lastmod>2026-06-04</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kuafor-v1.vercel.app/#iletisim</loc>
+    <loc>https://hulyastudio.com/#iletisim</loc>
     <lastmod>2026-06-04</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
