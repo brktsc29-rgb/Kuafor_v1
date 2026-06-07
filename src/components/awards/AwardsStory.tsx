@@ -4,9 +4,9 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { motion } from 'framer-motion'
 
 const STATS = [
-  { value: '10K+', label: 'Mutlu Müşteri' },
-  { value: '21+',  label: 'Yıl Deneyim'  },
-  { value: '4.9★', label: 'Ortalama Puan'},
+  { value: '10.000+', label: 'Mutlu Misafir'       },
+  { value: '20+',     label: 'Yıllık Deneyim'      },
+  { value: '4.5★',    label: 'Google Değerlendirmesi' },
 ]
 
 export default function AwardsStory() {
@@ -86,15 +86,19 @@ export default function AwardsStory() {
           <p style={{ fontFamily: 'Inter, sans-serif', color: '#C98F7A', fontSize: '0.6rem', letterSpacing: '0.32em', textTransform: 'uppercase', marginBottom: 20 }}>
             Hikayemiz
           </p>
-          <h2 style={{ fontFamily: 'Instrument Serif, serif', color: '#2A211D', fontSize: 'clamp(2rem, 4vw, 4.8rem)', lineHeight: 1.02, letterSpacing: '-0.5px', marginBottom: 24 }}>
-            Güzelliğe<br />
-            <em style={{ color: '#C98F7A', fontStyle: 'italic' }}>Farklı Bakış</em>
+          <h2 style={{ fontFamily: 'Instrument Serif, serif', color: '#2A211D', fontSize: 'clamp(2rem, 4vw, 4.8rem)', lineHeight: 1.08, letterSpacing: '-0.5px', marginBottom: 28 }}>
+            Güzellik, Kendinizi<br />
+            <em style={{ color: '#C98F7A', fontStyle: 'italic' }}>İyi Hissettiğinizde</em><br />
+            Başlar.
           </h2>
           <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.70)', fontSize: '0.88rem', lineHeight: 1.82, marginBottom: 14 }}>
-            2005 yılında <strong style={{ color: '#2A211D', fontWeight: 600 }}>Sibel Erturhan</strong> tarafından kurulan HÜLYA Hair &amp; Beauty Studio, güzelliğin yalnızca görünüşten ibaret olmadığına inanır. Turhal, Tokat'ta yirmi yılı aşkın süredir her müşterimize değer verdiğimizi ve özel hissettirdiğimizi gururla söylüyoruz.
+            2005 yılından bu yana Hülya Hair Studio'da amacımız yalnızca saç tasarlamak değil; her müşterimizin kendini daha özgüvenli, daha mutlu ve daha özel hissetmesini sağlamak.
+          </p>
+          <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.70)', fontSize: '0.88rem', lineHeight: 1.82, marginBottom: 14 }}>
+            Yılların deneyimi, güncel teknikler ve samimi yaklaşımımızla Turhal'da binlerce kadının güzellik yolculuğuna eşlik ettik.
           </p>
           <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.70)', fontSize: '0.88rem', lineHeight: 1.82, marginBottom: 40 }}>
-            Sibel Erturhan ve <strong style={{ color: '#2A211D', fontWeight: 600 }}>Damla Erturhan</strong> olarak oluşturduğumuz ekibimiz, her seferinde sizi en iyi hissettirecek sonuçlar için titizlikle çalışır.
+            Bugün de aynı heyecanla, size en iyi hissettiren görünümü birlikte keşfediyoruz.
           </p>
 
           {/* Stats */}
