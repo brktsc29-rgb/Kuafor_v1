@@ -86,7 +86,7 @@ export default function AwardsStory() {
           <p style={{ fontFamily: 'Inter, sans-serif', color: '#C98F7A', fontSize: '0.6rem', letterSpacing: '0.32em', textTransform: 'uppercase', marginBottom: 20 }}>
             Hikayemiz
           </p>
-          <h2 style={{ fontFamily: 'Instrument Serif, serif', color: '#2A211D', fontSize: 'clamp(2rem, 4vw, 4.8rem)', lineHeight: 1.08, letterSpacing: '-0.5px', marginBottom: 28 }}>
+          <h2 style={{ fontFamily: 'Instrument Serif, serif', color: '#2A211D', fontSize: 'clamp(2.5rem, 6vw, 7.5rem)', lineHeight: 1.05, letterSpacing: '-1px', marginBottom: 28 }}>
             Güzellik, Kendinizi<br />
             <em style={{ color: '#C98F7A', fontStyle: 'italic' }}>İyi Hissettiğinizde</em><br />
             Başlar.
