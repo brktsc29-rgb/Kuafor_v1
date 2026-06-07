@@ -91,10 +91,10 @@ export default function AwardsStory() {
             <em style={{ color: '#C98F7A', fontStyle: 'italic' }}>Farklı Bakış</em>
           </h2>
           <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.70)', fontSize: '0.88rem', lineHeight: 1.82, marginBottom: 14 }}>
-            HÜLYA Hair &amp; Beauty Studio olarak güzelliğin yalnızca görünüşten ibaret olmadığına inanıyoruz. 2005'ten bu yana Turhal, Tokat'ta her müşterimize değer verdiğimizi ve özel hissettirdiğimizi gururla söylüyoruz.
+            2005 yılında <strong style={{ color: '#2A211D', fontWeight: 600 }}>Sibel Erturhan</strong> tarafından kurulan HÜLYA Hair &amp; Beauty Studio, güzelliğin yalnızca görünüşten ibaret olmadığına inanır. Turhal, Tokat'ta yirmi yılı aşkın süredir her müşterimize değer verdiğimizi ve özel hissettirdiğimizi gururla söylüyoruz.
           </p>
           <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.70)', fontSize: '0.88rem', lineHeight: 1.82, marginBottom: 40 }}>
-            Yirmi yılı aşkın deneyimimiz ve içten bir tutkuyla hizmet veriyoruz. Ekibimiz her seferinde sizi en iyi hissettirecek sonuçlar için titizlikle çalışır.
+            Sibel Erturhan ve <strong style={{ color: '#2A211D', fontWeight: 600 }}>Damla Erturhan</strong> olarak oluşturduğumuz ekibimiz, her seferinde sizi en iyi hissettirecek sonuçlar için titizlikle çalışır.
           </p>
 
           {/* Stats */}
