@@ -218,16 +218,20 @@ export default function AwardsCTA() {
           </div>
         </motion.form>
 
-        <motion.p
+        <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.9, duration: 0.6 }}
-          className="mt-10 mb-10"
-          style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.40)', fontSize: '0.72rem', letterSpacing: '0.08em' }}
+          className="mt-10 mb-10 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8"
+          style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.45)', fontSize: '0.72rem', letterSpacing: '0.06em' }}
         >
-          Turhal, Tokat &nbsp;·&nbsp; 2005&apos;ten beri hizmetinizdeyiz
-        </motion.p>
+          <span>Turhal, Tokat</span>
+          <span style={{ color: 'rgba(201,143,122,0.5)' }}>·</span>
+          <span>Pzt – Cmt &nbsp; 09:00 – 19:00</span>
+          <span style={{ color: 'rgba(201,143,122,0.5)' }}>·</span>
+          <span>2005&apos;ten beri hizmetinizdeyiz</span>
+        </motion.div>
 
         {/* Google Maps */}
         <motion.div
