@@ -92,7 +92,7 @@ export default function AwardsStory() {
             Başlar.
           </h2>
           <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.70)', fontSize: '0.88rem', lineHeight: 1.82, marginBottom: 14 }}>
-            2005 yılından bu yana Hülya Hair Studio'da amacımız yalnızca saç tasarlamak değil; her müşterimizin kendini daha özgüvenli, daha mutlu ve daha özel hissetmesini sağlamak.
+            2005 yılından bu yana Hülya Kuaför olarak amacımız yalnızca saç tasarlamak değil; her müşterimizin kendini daha özgüvenli, daha mutlu ve daha özel hissetmesini sağlamak.
           </p>
           <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.70)', fontSize: '0.88rem', lineHeight: 1.82, marginBottom: 14 }}>
             Yılların deneyimi, güncel teknikler ve samimi yaklaşımımızla Turhal'da binlerce kadının güzellik yolculuğuna eşlik ettik.
