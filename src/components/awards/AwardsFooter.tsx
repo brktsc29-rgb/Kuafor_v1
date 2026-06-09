@@ -17,7 +17,7 @@ export default function AwardsFooter({ onOpenKVKK }: { onOpenKVKK: () => void })
               HÜLYA
             </p>
             <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(248,245,242,0.38)', fontSize: '0.56rem', letterSpacing: '0.32em', textTransform: 'uppercase', marginTop: 3 }}>
-              Kuaför &amp; Beauty Studio
+              Hair &amp; Beauty Studio
             </p>
           </div>
 
