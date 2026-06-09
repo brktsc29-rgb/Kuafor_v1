@@ -39,9 +39,6 @@ export default function AwardsHero({ active }: { active: boolean }) {
   // Layer 1: main portrait — moves with mouse, slow
   const l1x = useTransform(sX, [-0.5, 0.5], ['-20px', '20px'])
   const l1y = useTransform(sY, [-0.5, 0.5], ['-14px', '14px'])
-  // Layer 2: accent portrait — slight counter-move
-  const l2x = useTransform(sX, [-0.5, 0.5], ['14px', '-14px'])
-  const l2y = useTransform(sY, [-0.5, 0.5], ['10px', '-10px'])
   // Layer 3: decorative lines — fast, dramatic
   const l3x = useTransform(fX, [-0.5, 0.5], ['-32px', '32px'])
   const l3y = useTransform(fY, [-0.5, 0.5], ['-22px', '22px'])
@@ -122,13 +119,13 @@ export default function AwardsHero({ active }: { active: boolean }) {
       {/* ── LAYER 1 · Main portrait (slowest parallax) ── */}
       <motion.div
         className="absolute pointer-events-none"
-        style={{ inset: '-40px', x: l1x, y: l1y }}
+        style={{ inset: '-20px', x: l1x, y: l1y }}
       >
         <img
-          src="/images/4E3D1939-0CFB-4C8B-8CE3-7A787126B37C.png"
+          src="/images/4E3D1939-0CFB-4C8B-8CE3-7A787126B37C.webp"
           alt=""
           aria-hidden
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-center"
           style={{ filter: 'brightness(0.88) contrast(1.06) saturate(1.12)' }}
         />
       </motion.div>
@@ -142,35 +139,6 @@ export default function AwardsHero({ active }: { active: boolean }) {
           mixBlendMode: 'screen',
         }}
       />
-
-      {/* ── LAYER 2 · Floating accent portrait (counter-moves) ── */}
-      <motion.div
-        aria-hidden
-        className="absolute pointer-events-none hidden lg:block"
-        style={{
-          right: '-2%',
-          top: '6%',
-          width: '30%',
-          aspectRatio: '2 / 3',
-          borderRadius: 24,
-          overflow: 'hidden',
-          x: l2x,
-          y: l2y,
-          boxShadow: '0 50px 100px rgba(0,0,0,0.55), inset 0 0 0 1px rgba(185,129,111,0.22)',
-        }}
-      >
-        <img
-          src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=1200&q=95"
-          alt=""
-          className="w-full h-full object-cover"
-          style={{ filter: 'brightness(0.90) contrast(1.05) saturate(1.08)' }}
-        />
-        {/* Subtle rose-gold vignette on accent card */}
-        <div
-          className="absolute inset-0"
-          style={{ background: 'linear-gradient(160deg, rgba(185,129,111,0.12) 0%, transparent 55%)' }}
-        />
-      </motion.div>
 
       {/* ── LAYER 3 · Decorative rose-gold lines (fastest parallax) ── */}
       <motion.div
@@ -249,7 +217,7 @@ export default function AwardsHero({ active }: { active: boolean }) {
           style={{
             fontFamily: 'Instrument Serif, serif',
             color: '#FFF8F5',
-            fontSize: 'clamp(4rem, 15vw, 17rem)',
+            fontSize: 'clamp(3.2rem, 10vw, 11rem)',
             letterSpacing: '-2.5px',
             lineHeight: 0.88,
             margin: 0,

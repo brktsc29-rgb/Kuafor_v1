@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" shape-rendering="geometricPrecision">
+  <!-- Background -->
+  <rect width="32" height="32" rx="7" fill="#1A1210"/>
+
+  <!-- Rose-gold H lettermark — thin elegant proportions -->
+  <!-- Left vertical bar -->
+  <rect x="5.5" y="5" width="4" height="22" rx="1" fill="#C98F7A"/>
+  <!-- Right vertical bar -->
+  <rect x="22.5" y="5" width="4" height="22" rx="1" fill="#C98F7A"/>
+  <!-- Crossbar -->
+  <rect x="5.5" y="13.5" width="21" height="5" rx="1" fill="#C98F7A"/>
+
+  <!-- Subtle top accent dot -->
+  <circle cx="16" cy="4.5" r="1.2" fill="#C98F7A" opacity="0.45"/>
+  <!-- Subtle bottom accent dot -->
+  <circle cx="16" cy="27.5" r="1.2" fill="#C98F7A" opacity="0.45"/>
+</svg>

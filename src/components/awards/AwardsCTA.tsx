@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState, FormEvent } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { motion } from 'framer-motion'
@@ -9,9 +9,29 @@ const WHATSAPP_SVG = (
   </svg>
 )
 
+const SERVICES = [
+  'Saç Kesimi', 'Ombre & Balayage', 'Röfle', 'Keratin Bakım',
+  'Gelin Saçı', 'Makyaj', 'Saç Boyama', 'Diğer',
+]
+
+const inputStyle = {
+  fontFamily: 'Inter, sans-serif',
+  fontSize: '0.85rem',
+  color: '#2A211D',
+  background: 'rgba(255,255,255,0.70)',
+  border: '1px solid rgba(42,33,29,0.14)',
+  borderRadius: 12,
+  padding: '13px 16px',
+  width: '100%',
+  outline: 'none',
+  transition: 'border-color 0.2s',
+}
+
 export default function AwardsCTA() {
   const sectionRef = useRef<HTMLElement>(null)
   const headRef    = useRef<HTMLHeadingElement>(null)
+  const [form, setForm]       = useState({ name: '', service: '', note: '' })
+  const [sent, setSent]       = useState(false)
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger)
@@ -28,6 +48,15 @@ export default function AwardsCTA() {
 
     return () => ctx.revert()
   }, [])
+
+  const handleSubmit = (e: FormEvent) => {
+    e.preventDefault()
+    const msg = `Merhaba, randevu almak istiyorum.%0AAd: ${encodeURIComponent(form.name)}%0AHizmet: ${encodeURIComponent(form.service || 'Belirtilmedi')}%0ANot: ${encodeURIComponent(form.note || '-')}`
+    window.open(`https://wa.me/905412757160?text=${msg}`, '_blank')
+    setSent(true)
+    setTimeout(() => setSent(false), 4000)
+    setForm({ name: '', service: '', note: '' })
+  }
 
   return (
     <section
@@ -83,7 +112,7 @@ export default function AwardsCTA() {
           transition={{ delay: 0.5, duration: 0.6 }}
         >
           <motion.a
-            href="https://wa.me/905001234567"
+            href="https://wa.me/905412757160"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-3 rounded-full px-8 py-4 text-[0.82rem] font-medium"
@@ -97,27 +126,112 @@ export default function AwardsCTA() {
           </motion.a>
 
           <motion.a
-            href="tel:+905001234567"
+            href="tel:+905412757160"
             className="flex items-center gap-2 rounded-full px-8 py-4 text-[0.82rem]"
             style={{ fontFamily: 'Inter, sans-serif', border: '1px solid rgba(201,143,122,0.45)', color: '#C98F7A' }}
             whileHover={{ borderColor: '#B9816F', scale: 1.06 } as never}
             whileTap={{ scale: 0.96 }}
             transition={{ duration: 0.2 }}
           >
-            +90 500 123 45 67
+            +90 (541) 275 71 60
+          </motion.a>
+
+          <motion.a
+            href="https://www.instagram.com/hulyaakuafor"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-3 rounded-full px-8 py-4 text-[0.82rem]"
+            style={{ fontFamily: 'Inter, sans-serif', border: '1px solid rgba(201,143,122,0.45)', color: '#C98F7A' }}
+            whileHover={{ borderColor: '#B9816F', scale: 1.06 } as never}
+            whileTap={{ scale: 0.96 }}
+            transition={{ duration: 0.2 }}
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+            </svg>
+            Instagram
           </motion.a>
         </motion.div>
 
-        <motion.p
+        {/* ── Contact Form ── */}
+        <motion.form
+          onSubmit={handleSubmit}
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.7, duration: 0.6 }}
+          className="w-full max-w-lg mx-auto mt-14 text-left"
+        >
+          <div
+            className="p-6 md:p-8"
+            style={{ background: 'rgba(255,255,255,0.55)', borderRadius: 20, border: '1px solid rgba(42,33,29,0.10)', backdropFilter: 'blur(12px)', boxShadow: '0 8px 32px rgba(42,33,29,0.07)' }}
+          >
+            <p style={{ fontFamily: 'Inter, sans-serif', color: '#C98F7A', fontSize: '0.58rem', letterSpacing: '0.32em', textTransform: 'uppercase', marginBottom: 20 }}>
+              Hızlı Randevu Formu
+            </p>
+
+            <div className="flex flex-col gap-3">
+              <input
+                required
+                type="text"
+                placeholder="Adınız"
+                value={form.name}
+                onChange={e => setForm(f => ({ ...f, name: e.target.value }))}
+                style={inputStyle}
+                onFocus={e => (e.currentTarget.style.borderColor = '#C98F7A')}
+                onBlur={e => (e.currentTarget.style.borderColor = 'rgba(42,33,29,0.14)')}
+              />
+
+              <select
+                value={form.service}
+                onChange={e => setForm(f => ({ ...f, service: e.target.value }))}
+                style={{ ...inputStyle, color: form.service ? '#2A211D' : 'rgba(42,33,29,0.40)' }}
+                onFocus={e => (e.currentTarget.style.borderColor = '#C98F7A')}
+                onBlur={e => (e.currentTarget.style.borderColor = 'rgba(42,33,29,0.14)')}
+              >
+                <option value="" disabled>Hizmet Seçin</option>
+                {SERVICES.map(s => <option key={s} value={s}>{s}</option>)}
+              </select>
+
+              <textarea
+                rows={3}
+                placeholder="Notunuz (isteğe bağlı)"
+                value={form.note}
+                onChange={e => setForm(f => ({ ...f, note: e.target.value }))}
+                style={{ ...inputStyle, resize: 'none' }}
+                onFocus={e => (e.currentTarget.style.borderColor = '#C98F7A')}
+                onBlur={e => (e.currentTarget.style.borderColor = 'rgba(42,33,29,0.14)')}
+              />
+            </div>
+
+            <button
+              type="submit"
+              className="mt-4 w-full flex items-center justify-center gap-3 rounded-full py-4 text-[0.82rem] font-medium transition-opacity"
+              style={{ fontFamily: 'Inter, sans-serif', background: sent ? '#7A9E7E' : '#C98F7A', color: '#FFF8F5', border: 'none', cursor: 'pointer' }}
+            >
+              {sent ? (
+                '✓ WhatsApp Açılıyor...'
+              ) : (
+                <>{WHATSAPP_SVG} WhatsApp ile Gönder</>
+              )}
+            </button>
+          </div>
+        </motion.form>
+
+        <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.9, duration: 0.6 }}
-          className="mt-14 mb-10"
-          style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.40)', fontSize: '0.72rem', letterSpacing: '0.08em' }}
+          className="mt-10 mb-10 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8"
+          style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.45)', fontSize: '0.72rem', letterSpacing: '0.06em' }}
         >
-          Turhal, Tokat &mdash; 2005&apos;ten beri hizmetinizdeyiz
-        </motion.p>
+          <span>Turhal, Tokat</span>
+          <span style={{ color: 'rgba(201,143,122,0.5)' }}>·</span>
+          <span>Pzt – Cmt &nbsp; 09:00 – 19:00</span>
+          <span style={{ color: 'rgba(201,143,122,0.5)' }}>·</span>
+          <span>2005&apos;ten beri hizmetinizdeyiz</span>
+        </motion.div>
 
         {/* Google Maps */}
         <motion.div
@@ -130,7 +244,7 @@ export default function AwardsCTA() {
         >
           <iframe
             title="HÜLYA Studio Konum"
-            src="https://maps.google.com/maps?q=Turhal,+Tokat,+T%C3%BCrkiye&output=embed&z=14"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.999600145139!2d36.08035847639812!3d40.386701471444475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x407ded8ffd05f5e9%3A0x3bc7ace5c8e629d2!2zSMO8bHlhIEt1YWbDtnI!5e0!3m2!1str!2str!4v1780525279040!5m2!1str!2str"
             width="100%"
             height="300"
             style={{ border: 0, display: 'block' }}

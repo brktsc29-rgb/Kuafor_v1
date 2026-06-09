@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hulyastudio.com/sitemap.xml

@@ -38,8 +38,9 @@ export default function AwardsTestimonials() {
         className="absolute inset-0 flex items-center justify-center pointer-events-none select-none"
       >
         <img
-          src="/images/75EB7243-3A51-4F0C-9018-76DEE47AC5F7.png"
+          src="/images/75EB7243-3A51-4F0C-9018-76DEE47AC5F7.webp"
           alt=""
+          loading="lazy"
           className="w-full h-full object-cover opacity-[0.07]"
         />
       </div>

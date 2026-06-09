@@ -14,11 +14,14 @@ import AwardsStory       from './awards/AwardsStory'
 import AwardsTestimonials from './awards/AwardsTestimonials'
 import AwardsCTA         from './awards/AwardsCTA'
 import AwardsFooter      from './awards/AwardsFooter'
+import CookieBanner      from './awards/CookieBanner'
+import KVKKModal         from './awards/KVKKModal'
 
 gsap.registerPlugin(ScrollTrigger)
 
 export default function AwardsPage() {
   const [ready, setReady] = useState(false)
+  const [kvkkOpen, setKvkkOpen] = useState(false)
 
   useLenis()
 
@@ -73,7 +76,9 @@ export default function AwardsPage() {
         <AwardsCTA />
       </main>
 
-      <AwardsFooter />
+      <AwardsFooter onOpenKVKK={() => setKvkkOpen(true)} />
+      <CookieBanner onOpenKVKK={() => setKvkkOpen(true)} />
+      <KVKKModal isOpen={kvkkOpen} onClose={() => setKvkkOpen(false)} />
     </div>
   )
 }
