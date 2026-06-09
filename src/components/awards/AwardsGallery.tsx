@@ -3,11 +3,11 @@ import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 const IMAGES = [
-  { src: '/images/ChatGPT Image 4 Haz 2026 01_39_53.webp', caption: 'Saç Tasarımı',     idx: '01' },
-  { src: '/images/ChatGPT Image 4 Haz 2026 01_41_20.webp', caption: 'Salon Deneyimi',    idx: '02' },
-  { src: '/images/ChatGPT Image 4 Haz 2026 01_42_29.webp', caption: 'Renk Uygulaması',   idx: '03' },
-  { src: '/images/ChatGPT Image 4 Haz 2026 01_44_01.webp', caption: 'Profesyonel Kesim', idx: '04' },
-  { src: '/images/ChatGPT Image 4 Haz 2026 01_45_13.webp', caption: 'Röfle & Ombre',     idx: '05' },
+  { src: '/images/ChatGPT Image 4 Haz 2026 01_39_53.webp', caption: 'Saç Tasarımı',     alt: 'Hülya Kuaför Turhal saç tasarımı',            idx: '01' },
+  { src: '/images/ChatGPT Image 4 Haz 2026 01_41_20.webp', caption: 'Salon Deneyimi',    alt: 'Tokat Turhal güzellik salonu iç mekan',        idx: '02' },
+  { src: '/images/ChatGPT Image 4 Haz 2026 01_42_29.webp', caption: 'Renk Uygulaması',   alt: 'Turhal kuaför saç renklendirme ombre röfle',   idx: '03' },
+  { src: '/images/ChatGPT Image 4 Haz 2026 01_44_01.webp', caption: 'Profesyonel Kesim', alt: 'Hülya Kuaför Turhal Tokat profesyonel kesim',  idx: '04' },
+  { src: '/images/ChatGPT Image 4 Haz 2026 01_45_13.webp', caption: 'Röfle & Ombre',     alt: 'Tokat kuaför röfle ombre balayage uygulaması', idx: '05' },
 ]
 
 function PhotoCard({ img }: { img: typeof IMAGES[0] }) {
@@ -15,7 +15,7 @@ function PhotoCard({ img }: { img: typeof IMAGES[0] }) {
     <div className="relative overflow-hidden group w-full h-full" style={{ borderRadius: 16 }}>
       <img
         src={img.src}
-        alt={img.caption}
+        alt={img.alt}
         loading="lazy"
         className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
       />
