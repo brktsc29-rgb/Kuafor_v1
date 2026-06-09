@@ -65,7 +65,7 @@ export default function AwardsCursor() {
     pointerEvents: 'none',
     zIndex: 9999,
     mixBlendMode: 'difference',
-    transform: 'translate(-50%,-50%)',
+    transform: 'translate(-200px,-200px)',
     borderRadius: '50%',
   }
 
