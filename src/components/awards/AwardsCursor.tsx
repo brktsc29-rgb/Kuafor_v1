@@ -1,12 +1,15 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { gsap } from 'gsap'
 
 export default function AwardsCursor() {
   const dotRef  = useRef<HTMLDivElement>(null)
   const ringRef = useRef<HTMLDivElement>(null)
+  const [visible, setVisible] = useState(false)
 
   useEffect(() => {
     if (window.matchMedia('(hover: none)').matches) return
+
+    setVisible(true)
 
     const dot  = dotRef.current!
     const ring = ringRef.current!
@@ -48,7 +51,6 @@ export default function AwardsCursor() {
     }
     refreshTargets()
 
-    // Re-scan after a tick in case DOM is still mounting
     const t = setTimeout(refreshTargets, 500)
 
     return () => {
@@ -57,6 +59,8 @@ export default function AwardsCursor() {
       clearTimeout(t)
     }
   }, [])
+
+  if (!visible) return null
 
   const base: React.CSSProperties = {
     position: 'fixed',
