@@ -6,6 +6,7 @@ import TokatGelinSaciPage from './pages/TokatGelinSaciPage'
 import TurhalKuaforPage from './pages/TurhalKuaforPage'
 import TokatOmbrePage from './pages/TokatOmbrePage'
 import TokatRoflePage from './pages/TokatRoflePage'
+import TokatMakyajPage from './pages/TokatMakyajPage'
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
           <Route path="/turhal-kuafor" element={<TurhalKuaforPage />} />
           <Route path="/tokat-ombre" element={<TokatOmbrePage />} />
           <Route path="/tokat-rofle" element={<TokatRoflePage />} />
+          <Route path="/tokat-makyaj" element={<TokatMakyajPage />} />
         </Routes>
       </BrowserRouter>
     </HelmetProvider>

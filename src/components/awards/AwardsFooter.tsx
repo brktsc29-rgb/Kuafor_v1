@@ -81,6 +81,15 @@ export default function AwardsFooter({ onOpenKVKK }: { onOpenKVKK: () => void })
             >
               Turhal Kuaför
             </Link>
+            <Link
+              to="/tokat-makyaj"
+              className="text-[0.65rem] tracking-[0.14em] uppercase transition-colors duration-200"
+              style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(201,143,122,0.65)', textDecoration: 'none' }}
+              onMouseEnter={e => (e.currentTarget.style.color = 'rgba(201,143,122,1)')}
+              onMouseLeave={e => (e.currentTarget.style.color = 'rgba(201,143,122,0.65)')}
+            >
+              Tokat Makyaj
+            </Link>
           </nav>
 
           <div className="flex flex-col items-center md:items-end gap-3">
