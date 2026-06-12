@@ -13,6 +13,7 @@ import AwardsServices    from './awards/AwardsServices'
 import AwardsGallery     from './awards/AwardsGallery'
 import AwardsStory       from './awards/AwardsStory'
 import AwardsTestimonials from './awards/AwardsTestimonials'
+import AwardsTrust       from './awards/AwardsTrust'
 import AwardsCTA         from './awards/AwardsCTA'
 import AwardsFooter      from './awards/AwardsFooter'
 import CookieBanner      from './awards/CookieBanner'
@@ -78,7 +79,10 @@ export default function AwardsPage() {
         {/* 8. Testimonials carousel */}
         <AwardsTestimonials />
 
-        {/* 9. Booking CTA */}
+        {/* 9. Trust signals */}
+        <AwardsTrust />
+
+        {/* 10. Booking CTA */}
         <AwardsCTA />
       </main>
 
