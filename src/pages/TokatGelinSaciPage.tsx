@@ -69,12 +69,12 @@ const STEPS = [
   {
     n:    '01',
     title: 'İlk Görüşme',
-    body:  'WhatsApp veya telefon ile kısa bir ön konuşma yapıyoruz. Saçınızın mevcut durumunu, gelinliğinizi ve hayal ettiğiniz stili öğreniyoruz. Bu bilgiler deneme seansı için doğru hazırlığı sağlıyor.',
+    body:  'WhatsApp veya telefon ile kısa bir ön konuşma yapıyoruz. Saçınızın mevcut durumunu, gelinliğinizi ve hayal ettiğiniz stili öğreniyoruz. Bu bilgiler düğün günü en doğru tasarımı oluşturmamızı sağlıyor.',
   },
   {
     n:    '02',
-    title: 'Deneme Seansı',
-    body:  'Düğününüzden 3–4 hafta önce salonumuza geliyorsunuz. Seçilen stili gerçek saçınız üzerinde oluşturuyor, varsa aksesuarları ve duvağı birlikte deniyoruz. Her detayı netleştirip onayınızla kapatıyoruz.',
+    title: 'Stil Belirleme',
+    body:  'WhatsApp üzerinden referans fotoğraflar paylaşarak tasarımı birlikte netleştiriyoruz. Gelinliğinize, aksesuar tercihlerinize ve saç yapınıza göre en uygun stili kararlaştırıyoruz. Düğün günü uygulamaya sürprizsiz başlıyoruz.',
   },
   {
     n:    '03',
@@ -91,15 +91,15 @@ const STEPS = [
 const FAQS: { q: string; a: string }[] = [
   {
     q: 'Gelin saçı için ne kadar önceden randevu almalıyım?',
-    a: 'Bahar ve yaz düğünleri için salon takvimi aylarca önceden doluyor. Nisan–eylül döneminde düğününüz varsa en az 3 ay önceden iletişime geçmenizi öneririz. Deneme seansı için de düğün gününden 3–4 hafta önceki bir tarih ayırıyoruz.',
+    a: 'Bahar ve yaz düğünleri için salon takvimi aylarca önceden doluyor. Nisan–eylül döneminde düğününüz varsa en az 3 ay önceden iletişime geçmenizi öneririz. Düğün gününden önce WhatsApp üzerinden stili netleştirmek için biraz zaman ayırıyoruz.',
   },
   {
     q: 'Deneme seansı yapılıyor mu?',
-    a: 'Evet, deneme seansı standart olarak yapıyoruz. Düğün günü herhangi bir sürprizle karşılaşmamak için deneme seansı çok önemli. Stili, aksesuarları ve duvak uyumunu o günde netleştiriyoruz.',
+    a: 'Hayır, ayrı bir deneme seansı düzenlenmüyor. Bunun yerine WhatsApp üzerinden referans fotoğraflar ve detaylı görüşme ile tasarımı önceden netleştiriyoruz. Düğün sabahı hazırlığa başlamadan önce de kısa bir konsültasyon yapılıyor; böylece sürpriz yaşanmıyor.',
   },
   {
     q: 'Saç aksesuarları ve taç kullanılabilir mi?',
-    a: 'Evet. Taç, saç iğnesi, çiçek veya her türlü aksesuar deneme seansında birlikte değerlendiriliyor. Aksesuarınızı kendi getirmenizi öneririz; böylece tasarım ona göre şekillendirilir.',
+    a: 'Evet. Taç, saç iğnesi, çiçek veya her türlü aksesuar düğün günü hazırlığında birlikte değerlendiriliyor. Aksesuarınızı kendi getirmenizi öneririz; böylece tasarım ona göre şekillendirilir.',
   },
   {
     q: 'Duvak takma işlemi dahil mi?',
@@ -107,15 +107,15 @@ const FAQS: { q: string; a: string }[] = [
   },
   {
     q: 'Tesettür gelin başı yapılıyor mu?',
-    a: 'Evet. Örtü uyumlu, başlık ve duvak ile birlikte tasarlanmış tesettür gelin başı hizmeti sunuyoruz. Deneme seansında örtünüzü veya başlığınızı getirmeniz, tasarımın tam istediğiniz gibi çıkması açısından çok yardımcı oluyor.',
+    a: 'Evet. Örtü uyumlu, başlık ve duvak ile birlikte tasarlanmış tesettür gelin başı hizmeti sunuyoruz. Düğün günü örtünüzü veya başlığınızı getirmeniz, tasarımın tam istediğiniz gibi çıkması açısından çok yardımcı oluyor.',
   },
   {
     q: 'Saçım kısaysa veya ince yapılıysa ne yapılabilir?',
-    a: 'Kısa ya da ince saçlar için tasarım seçenekleri sınırlı değil, sadece farklı teknikler kullanılıyor. Hangi stillerin saçınıza uyacağını deneme seansında gerçekçi biçimde değerlendiriyoruz. İhtiyaç halinde saç aksesuarları veya parçaların kullanımını da birlikte konuşabiliriz.',
+    a: 'Kısa ya da ince saçlar için tasarım seçenekleri sınırlı değil, sadece farklı teknikler kullanılıyor. Saçınızın fotoğrafını WhatsApp\'tan gönderirseniz hangi stillerin uyacağını önceden değerlendirebiliriz. İhtiyaç halinde saç aksesuarları veya parçaların kullanımını da birlikte konuşabiliriz.',
   },
   {
     q: 'Düğün günü hazırlık ne kadar sürer?',
-    a: 'Tasarımın karmaşıklığına bağlı olarak 1.5 ile 3 saat arasında değişiyor. Deneme seansından sonra tahmini süreyi daha net söyleyebiliyoruz. Düğün günü için yeterli zaman bırakmanızı, buna göre randevu saatini planlamanızı öneririz.',
+    a: 'Tasarımın karmaşıklığına bağlı olarak 1.5 ile 3 saat arasında değişiyor. Önceki görüşmemizde kararlaştırılan tasarıma göre tahmini süreyi belirtiyoruz. Düğün günü için yeterli zaman bırakmanızı, buna göre randevu saatini planlamanızı öneririz.',
   },
   {
     q: 'Kına gecesi veya nişan için de hizmet alabilir miyim?',
@@ -131,7 +131,7 @@ const FAQS: { q: string; a: string }[] = [
   },
   {
     q: 'Gelin saçı fiyatı nasıl belirleniyor?',
-    a: 'Saçın uzunluğu, seçilen tasarım ve deneme seansı dahil olup olmadığına göre fiyat değişiyor. Sabit bir liste yayınlamıyoruz çünkü her gelin farklı. WhatsApp\'tan saç durumunuzu ve istediğiniz stili belirtirseniz yaklaşık bilgi verebiliriz.',
+    a: 'Saçın uzunluğu ve seçilen tasarıma göre fiyat değişiyor. Sabit bir liste yayınlamıyoruz çünkü her gelin farklı. WhatsApp\'tan saç durumunuzu ve istediğiniz stili belirtirseniz yaklaşık bilgi verebiliriz.',
   },
   {
     q: 'Düğün sonrası bakım önerisinde bulunuyor musunuz?',

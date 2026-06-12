@@ -19,7 +19,7 @@ const SERVICES = [
     slug:   'gelin-makyaji',
     label:  'Gelin Makyajı',
     tag:    'ÖZEL GÜN',
-    desc:   'Saatlerce bozulmayan, fotoğrafa yansıyan ve size özel ton çalışması. Deneme seansı ile birlikte.',
+    desc:   'Saatlerce bozulmayan, fotoğrafa yansıyan ve size özel ton çalışması. Cilt tipinize uygun ürün seçimiyle.',
     bg:     'linear-gradient(160deg, #1A100C 0%, #2A1812 50%, #361E16 100%)',
     accent: '#C98F7A',
     imgPos: 'center center',
@@ -110,7 +110,7 @@ const FAQS = [
   },
   {
     q: 'Gelin makyajı için deneme seansı yapılıyor mu?',
-    a: 'Evet, kesinlikle tavsiye ediyoruz. Düğününden 3 ile 4 hafta önce deneme seansı yaparak tonu, stili ve kalıcılığı test ediyoruz. Böylece düğün günü sürprizle karşılaşmıyorsunuz.',
+    a: 'Hayır, ayrı bir deneme seansı yapılmıyor. Bunun yerine düğün günü öncesinde WhatsApp üzerinden referans görsel paylaşarak tonu ve stili netleştiriyoruz. Düğün sabahı hazırlığa başlamadan önce de kısa bir konsültasyon yapılıyor.',
   },
   {
     q: 'Makyaj ne kadar sürer?',
@@ -406,7 +406,7 @@ export default function TokatMakyajPage() {
               <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(248,245,242,0.65)', fontSize: '0.9rem', lineHeight: 1.85 }}>
                 HÜLYA Studio'da makyaj uygulamaları, cilt tipinize ve etkinliğin niteliğine göre
                 kişiselleştiriliyor. Gelin makyajında saç tasarımıyla eş zamanlı koordinasyon
-                sağlanıyor; deneme seansı ile düğün günü sürpriz yaşamıyorsunuz.
+                sağlanıyor; önceden WhatsApp üzerinden stil belirlenerek düğün günü sürpriz yaşanmıyor.
               </p>
               <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(248,245,242,0.65)', fontSize: '0.9rem', lineHeight: 1.85 }}>
                 Tokat Merkez, Zile, Erbaa ve Niksar'dan gelen müşterilerimize kapsamlı güzellik
