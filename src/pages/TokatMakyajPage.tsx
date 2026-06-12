@@ -22,6 +22,7 @@ const SERVICES = [
     desc:   'Saatlerce bozulmayan, fotoğrafa yansıyan ve size özel ton çalışması. Deneme seansı ile birlikte.',
     bg:     'linear-gradient(160deg, #1A100C 0%, #2A1812 50%, #361E16 100%)',
     accent: '#C98F7A',
+    imgPos: 'center 12%',
   },
   {
     slug:   'nisan-makyaji',
@@ -30,6 +31,7 @@ const SERVICES = [
     desc:   'Nişan töreninin ışıkları ve fotoğraf makinelerine dayanıklı, parlak ve zarif uygulama.',
     bg:     'linear-gradient(160deg, #180E0C 0%, #281610 50%, #321C12 100%)',
     accent: '#D4A090',
+    imgPos: 'center 8%',
   },
   {
     slug:   'gece-makyaji',
@@ -38,6 +40,7 @@ const SERVICES = [
     desc:   'Davet, mezuniyet ve özel etkinlikler için dramatik, kalıcı ve güçlü makyaj.',
     bg:     'linear-gradient(160deg, #0E0A0C 0%, #1A1016 50%, #22141C 100%)',
     accent: '#B9816F',
+    imgPos: 'center 10%',
   },
   {
     slug:   'dogal-makyaj',
@@ -46,6 +49,7 @@ const SERVICES = [
     desc:   'Ten renginizi öne çıkaran, hafif ve ferah bir görünüm. Ofis, kafe ve günlük kullanım için ideal.',
     bg:     'linear-gradient(160deg, #141008 0%, #221A0E 50%, #2C2212 100%)',
     accent: '#C98F7A',
+    imgPos: 'center 8%',
   },
   {
     slug:   'kina-makyaji',
@@ -54,6 +58,7 @@ const SERVICES = [
     desc:   'Kına gecesine özgü renkli, coşkulu ve kutlamaya uygun özel tasarım makyaj.',
     bg:     'linear-gradient(160deg, #1A0C08 0%, #2A1208 50%, #38180A 100%)',
     accent: '#D4A090',
+    imgPos: 'center 15%',
   },
   {
     slug:   'fotograf-makyaji',
@@ -62,6 +67,7 @@ const SERVICES = [
     desc:   'Stüdyo ışığı ve kamera için optimize edilmiş, HD uyumlu ve kalıcı profesyonel makyaj.',
     bg:     'linear-gradient(160deg, #0E0E0E 0%, #1A1A1A 50%, #242424 100%)',
     accent: '#B9816F',
+    imgPos: 'center 10%',
   },
   {
     slug:   'davet-makyaji',
@@ -70,6 +76,7 @@ const SERVICES = [
     desc:   'Mezuniyet, söz, davet ve özel geceler için şık, kalıcı ve etkinliğe uygun makyaj.',
     bg:     'linear-gradient(160deg, #14120A 0%, #221E0E 50%, #2C2810 100%)',
     accent: '#C98F7A',
+    imgPos: 'center 10%',
   },
 ]
 
@@ -173,6 +180,7 @@ function FAQItem({ q, a, open, onToggle }: { q: string; a: string; open: boolean
 export default function TokatMakyajPage() {
   const [openFaq, setOpenFaq]   = useState<number | null>(null)
   const [kvkkOpen, setKvkkOpen] = useState(false)
+  const [lightbox, setLightbox] = useState<string | null>(null)
 
   const schemaFAQ = {
     '@context': 'https://schema.org',
@@ -522,16 +530,25 @@ export default function TokatMakyajPage() {
                 transition={{ duration: 0.55, delay: i * 0.07 }}
                 style={{ background: s.bg, borderRadius: 16, overflow: 'hidden', border: '1px solid rgba(248,245,242,0.06)', minHeight: 200 }}
               >
-                <figure style={{ margin: 0, padding: 0, height: 260, overflow: 'hidden', position: 'relative' }}>
+                <figure
+                  onClick={() => setLightbox(`/images/makyaj/${s.slug}.webp`)}
+                  style={{ margin: 0, padding: 0, height: 260, overflow: 'hidden', position: 'relative', cursor: 'zoom-in' }}
+                >
                   <img
                     src={`/images/makyaj/${s.slug}.webp`}
                     alt={`Tokat ${s.label} - HÜLYA Studio`}
                     width={480}
                     height={320}
                     loading="lazy"
-                    style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top', display: 'block' }}
+                    style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: s.imgPos, display: 'block', transition: 'transform 0.4s ease' }}
                     onError={e => { (e.currentTarget as HTMLImageElement).style.display = 'none' }}
+                    onMouseEnter={e => { (e.currentTarget as HTMLImageElement).style.transform = 'scale(1.04)' }}
+                    onMouseLeave={e => { (e.currentTarget as HTMLImageElement).style.transform = 'scale(1)' }}
                   />
+                  {/* zoom hint */}
+                  <span style={{ position: 'absolute', bottom: 8, right: 10, background: 'rgba(0,0,0,0.45)', borderRadius: 100, padding: '3px 8px', fontFamily: 'Inter, sans-serif', color: 'rgba(255,255,255,0.7)', fontSize: '0.58rem', letterSpacing: '0.08em', backdropFilter: 'blur(4px)' }}>
+                    büyüt
+                  </span>
                   <figcaption style={{ display: 'none' }}>{`Tokat ${s.label} uygulaması - HÜLYA Studio`}</figcaption>
                 </figure>
                 <div style={{ padding: '20px 22px 24px' }}>
@@ -729,6 +746,55 @@ export default function TokatMakyajPage() {
           </div>
         </div>
       </footer>
+
+      {/* Lightbox */}
+      <AnimatePresence>
+        {lightbox && (
+          <motion.div
+            key="lightbox"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.22 }}
+            onClick={() => setLightbox(null)}
+            style={{
+              position: 'fixed', inset: 0, zIndex: 999,
+              background: 'rgba(0,0,0,0.92)',
+              display: 'flex', alignItems: 'center', justifyContent: 'center',
+              padding: 24, cursor: 'zoom-out',
+            }}
+          >
+            <motion.img
+              src={lightbox}
+              initial={{ scale: 0.88, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.88, opacity: 0 }}
+              transition={{ duration: 0.25 }}
+              onClick={e => e.stopPropagation()}
+              style={{
+                maxWidth: '100%', maxHeight: '90vh',
+                objectFit: 'contain',
+                borderRadius: 12,
+                boxShadow: '0 32px 80px rgba(0,0,0,0.6)',
+                cursor: 'default',
+              }}
+            />
+            <button
+              onClick={() => setLightbox(null)}
+              style={{
+                position: 'absolute', top: 20, right: 24,
+                background: 'rgba(255,255,255,0.1)', border: 'none',
+                color: '#fff', fontSize: '1.4rem', lineHeight: 1,
+                width: 40, height: 40, borderRadius: '50%',
+                cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center',
+                backdropFilter: 'blur(6px)',
+              }}
+            >
+              ×
+            </button>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       <KVKKModal isOpen={kvkkOpen} onClose={() => setKvkkOpen(false)} />
       <CookieBanner onOpenKVKK={() => setKvkkOpen(true)} />
