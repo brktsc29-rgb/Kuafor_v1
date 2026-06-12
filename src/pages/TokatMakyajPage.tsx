@@ -31,7 +31,7 @@ const SERVICES = [
     desc:   'Nişan töreninin ışıkları ve fotoğraf makinelerine dayanıklı, parlak ve zarif uygulama.',
     bg:     'linear-gradient(160deg, #180E0C 0%, #281610 50%, #321C12 100%)',
     accent: '#D4A090',
-    imgPos: 'center 70%',
+    imgPos: 'center 20%',
   },
   {
     slug:   'gece-makyaji',
