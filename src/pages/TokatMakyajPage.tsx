@@ -430,7 +430,7 @@ export default function TokatMakyajPage() {
             {/* Photo side */}
             <div style={{ position: 'relative', minHeight: 340, overflow: 'hidden' }}>
               <img
-                src="/images/makyaj/fotograf-makyaji.webp"
+                src="/images/makyaj/damla-erturhan.webp"
                 alt="Damla Erturhan — HÜLYA Studio Uzman Makyöz"
                 width={600}
                 height={700}
