@@ -36,7 +36,7 @@ const FAQS = [
   },
   {
     q: 'Gelin saçı için ne kadar önceden randevu almalıyım?',
-    a: 'Bahar ve yaz düğünleri için tarihler aylarca önceden dolabiliyor — nisan\'dan eylül\'e kadar olan dönemde erken planlamak önemli. Düğün gününden 3–4 hafta önce deneme randevusu da ayarlanması gerekiyor.',
+    a: 'Bahar ve yaz düğünleri için tarihler aylarca önceden dolabiliyor. Nisan\'dan eylül\'e kadar olan dönemde erken planlamak önemli. Düğün gününden 3–4 hafta önce deneme randevusu da ayarlanması gerekiyor.',
   },
   {
     q: 'Fiyat hakkında bilgi alabilir miyim?',
@@ -270,13 +270,13 @@ export default function TokatKuaforPage() {
               transition={{ duration: 0.7, delay: 0.15 }}
             >
               <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.72)', fontSize: '0.92rem', lineHeight: 1.85, marginBottom: 16 }}>
-                Sibel Erturhan, bu salonu kurarken büyük bir şey hedeflemiyordu — iyi iş yapmak ve her müşteriyle tek tek ilgilenmek yeterliydi. Yirmi yılın ardından hâlâ aynı anlayışla devam ediyoruz.
+                Sibel Erturhan, bu salonu kurarken büyük bir şey hedeflemiyordu; iyi iş yapmak ve her müşteriyle tek tek ilgilenmek yeterliydi. Yirmi yılın ardından hâlâ aynı anlayışla devam ediyoruz.
               </p>
               <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.72)', fontSize: '0.92rem', lineHeight: 1.85, marginBottom: 16 }}>
                 Damla Erturhan ile ikimiz bu salonu yürütüyoruz. Küçük bir ekip olmak bir kısıtlama değil, avantaj: her randevuya gerçekten zaman ayırabiliyoruz, kalabalık sıra bekletmiyoruz.
               </p>
               <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.72)', fontSize: '0.92rem', lineHeight: 1.85 }}>
-                Salon Turhal'da, fiziksel olarak tek konumda. Tokat Merkez, Zile, Erbaa ve Niksar'dan gelen misafirlerimizi burada ağırlıyoruz — başka bir şubemiz yok, hepsi aynı yer.
+                Salon Turhal'da, fiziksel olarak tek konumda. Tokat Merkez, Zile, Erbaa ve Niksar'dan gelen misafirlerimizi burada ağırlıyoruz. Başka bir şubemiz yok, hepsi aynı yer.
               </p>
             </motion.div>
           </div>
@@ -309,13 +309,13 @@ export default function TokatKuaforPage() {
                 transition={{ duration: 0.6, delay: 0.1 }}
               >
                 <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.72)', fontSize: '0.92rem', lineHeight: 1.85, marginBottom: 16 }}>
-                  Özellikle gelin saçı söz konusu olduğunda bu kararı kimse rastgele vermiyor. Düğün günü saçınız o gün çekilecek tüm fotoğraflarda duracak — bu yüzden Tokat Merkez'den, Zile'den, Erbaa'dan ve Niksar'dan gelin adayları uzun yıllardır bize geliyor.
+                  Özellikle gelin saçı söz konusu olduğunda bu kararı kimse rastgele vermiyor. Düğün günü saçınız o gün çekilecek tüm fotoğraflarda duracak. Bu yüzden Tokat Merkez'den, Zile'den, Erbaa'dan ve Niksar'dan gelin adayları uzun yıllardır bize geliyor.
                 </p>
                 <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.72)', fontSize: '0.92rem', lineHeight: 1.85, marginBottom: 16 }}>
                   Ombre ve röfle için gelenler de var. İyi bir renklendirme uygulaması aylar boyunca güzel durur; eksik yapılan bir işlem ise çok erken bozulur. Renk tekniklerinde yılların getirdiği bir tutarlılık var burada.
                 </p>
                 <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.72)', fontSize: '0.92rem', lineHeight: 1.85 }}>
-                  Uzak ilçelerden gelen misafirlerimiz için baskı da farklı. Onların yolculuk ettiklerini bilmek, işi doğru yapma sorumluluğunu artırıyor — ve bu iyi bir şey.
+                  Uzak ilçelerden gelen misafirlerimiz için baskı da farklı. Onların yolculuk ettiklerini bilmek, işi doğru yapma sorumluluğunu artırıyor. Bu iyi bir şey.
                 </p>
               </motion.div>
 
@@ -413,10 +413,10 @@ export default function TokatKuaforPage() {
               transition={{ duration: 0.7, delay: 0.15 }}
             >
               <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.72)', fontSize: '0.92rem', lineHeight: 1.85, marginBottom: 16 }}>
-                Gelin saçı için iki randevu gerekiyor. Önce deneme — düğünden 3–4 hafta önce yapılan bu seansta tasarımı netleştiriyoruz. Hangi stil, hangi aksesuar, saçın nasıl taşınması gerektiği hepsini o gün konuşuyoruz. Bazı gelinler kesin fikirle geliyor, bazıları seçeneklere bakmak istiyor; her iki durumda da başlangıç noktası aynı: saçınızı ve beklentinizi tanımak.
+                Gelin saçı için iki randevu gerekiyor. Önce deneme: düğünden 3–4 hafta önce yapılan bu seansta tasarımı netleştiriyoruz. Hangi stil, hangi aksesuar, saçın nasıl taşınması gerektiği hepsini o gün konuşuyoruz. Bazı gelinler kesin fikirle geliyor, bazıları seçeneklere bakmak istiyor; her iki durumda da başlangıç noktası aynı: saçınızı ve beklentinizi tanımak.
               </p>
               <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.72)', fontSize: '0.92rem', lineHeight: 1.85, marginBottom: 16 }}>
-                Düğün günü ise tasarımı uygulamak. Bu sefer biraz uzun sürebilir — sonucun saatlerce bozulmadan durması için gerekli ürün ve teknik seçimi özenle yapılıyor.
+                Düğün günü ise tasarımı uygulamak. Bu sefer biraz uzun sürebilir. Sonucun saatlerce bozulmadan durması için gerekli ürün ve teknik seçimi özenle yapılıyor.
               </p>
               <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.72)', fontSize: '0.92rem', lineHeight: 1.85 }}>
                 Nisan–eylül arası yoğun sezon. Bu dönemde tarihler çabuk doluyor; aylarca öncesinden planlamak hem rahatlatıcı hem mantıklı.
@@ -450,10 +450,10 @@ export default function TokatKuaforPage() {
               transition={{ duration: 0.7, delay: 0.15 }}
             >
               <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.72)', fontSize: '0.92rem', lineHeight: 1.85, marginBottom: 16 }}>
-                Renklendirme tekniği bir kez uygulandıktan sonra sonucu değiştirmek hem zaman hem maliyet demek. Bu yüzden öncesinde doğru karar vermek önemli — ve bunun için saçınızı gerçekten değerlendirmek gerekiyor.
+                Renklendirme tekniği bir kez uygulandıktan sonra sonucu değiştirmek hem zaman hem maliyet demek. Bu yüzden öncesinde doğru karar vermek önemli; bunun için saçınızı gerçekten değerlendirmek gerekiyor.
               </p>
               <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.72)', fontSize: '0.92rem', lineHeight: 1.85, marginBottom: 16 }}>
-                Ombre, saç boyunca yumuşak renk geçişi sağlar. Röfle, belirli tellere ince açık renk uygulamasıdır — doğal parlaklık için. Balayage ise fırça ile serbest uygulama, daha az düzenli ama daha organik görünüm.
+                Ombre, saç boyunca yumuşak renk geçişi sağlar. Röfle, belirli tellere ince açık renk uygulamasıdır; doğal parlaklık için. Balayage ise fırça ile serbest uygulama, daha az düzenli ama daha organik görünüm.
               </p>
               <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.72)', fontSize: '0.92rem', lineHeight: 1.85 }}>
                 Hangisinin size yakıştığını saçınızın doğal rengi, yapısı ve daha önce boyama geçmişine bakarak değerlendiriyoruz. İlk seanstan önce bu bilgileri paylaşmanızı istiyoruz.
@@ -487,10 +487,10 @@ export default function TokatKuaforPage() {
               transition={{ duration: 0.7, delay: 0.15 }}
             >
               <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.72)', fontSize: '0.92rem', lineHeight: 1.85, marginBottom: 16 }}>
-                Bir kesim kötü yapılırsa, haftalarca fark edilir. Yüz hatlarına uygun, saçın kolay şekillenmesini sağlayan, sıkça salone gitmeden iyi görünmeyi sürdüren bir uzunluk — bunlar doğru kesimden geliyor.
+                Bir kesim kötü yapılırsa, haftalarca fark edilir. Yüz hatlarına uygun, saçın kolay şekillenmesini sağlayan, sıkça salone gitmeden iyi görünmeyi sürdüren bir uzunluk. Bunlar doğru kesimden geliyor.
               </p>
               <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.72)', fontSize: '0.92rem', lineHeight: 1.85 }}>
-                Özel günler için ise stili uzun saatler boyunca canlı tutacak ürün ve teknik seçimi yapıyoruz. Nişan, mezuniyet, kına, özel etkinlik — stüdyodan çıkınca bozulmayacak bir tasarım için baştan doğru planlıyoruz.
+                Özel günler için ise stili uzun saatler boyunca canlı tutacak ürün ve teknik seçimi yapıyoruz. Nişan, mezuniyet, kına, özel etkinlik. Stüdyodan çıkınca bozulmayacak bir tasarım için baştan doğru planlıyoruz.
               </p>
             </motion.div>
           </div>
@@ -516,7 +516,7 @@ export default function TokatKuaforPage() {
                 Küçük bir yer. Kalabalık yok, gürültü yok. İlk soru her zaman aynı: Bugün ne yapmak istiyorsunuz?
               </p>
               <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.72)', fontSize: '0.92rem', lineHeight: 1.85, marginBottom: 16 }}>
-                Özel bir gününüz varsa, o günü anlatacak birkaç dakikanız olacak. Kafanız karışıksa, seçeneklere bakmak için zaman ayrılır. Saçınızın mevcut durumuna göre neyin mümkün olduğunu da açıkça söylüyoruz — zaman zaman "bu işlemi bu saç taşımaz" demek gerekiyor.
+                Özel bir gününüz varsa, o günü anlatacak birkaç dakikanız olacak. Kafanız karışıksa, seçeneklere bakmak için zaman ayrılır. Saçınızın mevcut durumuna göre neyin mümkün olduğunu da açıkça söylüyoruz. Zaman zaman "bu işlemi bu saç taşımaz" demek gerekiyor.
               </p>
               <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.72)', fontSize: '0.92rem', lineHeight: 1.85 }}>
                 Uzak ilçelerden gelen misafirlerimiz için randevu saatine sadakat önemli. Beklettirmemeye çalışırız.
@@ -577,7 +577,7 @@ export default function TokatKuaforPage() {
               className="mt-12"
               style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(248,245,242,0.50)', fontSize: '0.88rem', lineHeight: 1.82, maxWidth: 620 }}
             >
-              Hata da yapıyoruz zaman zaman — herkes yapar. Ama önemli olan o hatayı kabul etmek ve düzeltmek. Yirmi yıldır süren güven bu dürüstlükten geliyor.
+              Hata da yapıyoruz zaman zaman; herkes yapar. Ama önemli olan o hatayı kabul etmek ve düzeltmek. Yirmi yıldır süren güven bu dürüstlükten geliyor.
             </motion.p>
           </div>
         </section>
