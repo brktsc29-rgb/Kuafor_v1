@@ -522,7 +522,7 @@ export default function TokatMakyajPage() {
                 transition={{ duration: 0.55, delay: i * 0.07 }}
                 style={{ background: s.bg, borderRadius: 16, overflow: 'hidden', border: '1px solid rgba(248,245,242,0.06)', minHeight: 200 }}
               >
-                <figure style={{ margin: 0, padding: 0, height: 140, overflow: 'hidden', position: 'relative' }}>
+                <figure style={{ margin: 0, padding: 0, height: 260, overflow: 'hidden', position: 'relative' }}>
                   <img
                     src={`/images/makyaj/${s.slug}.webp`}
                     alt={`Tokat ${s.label} - HÜLYA Studio`}
