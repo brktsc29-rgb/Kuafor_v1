@@ -335,6 +335,7 @@ export default function TokatOmbrePage() {
               {[
                 { to: '/tokat-rofle', label: 'Tokat Röfle →' },
                 { to: '/tokat-gelin-saci', label: 'Tokat Gelin Saçı →' },
+                { to: '/tokat-makyaj', label: 'Tokat Makyaj →' },
                 { to: '/tokat-kuafor', label: 'Tüm Hizmetler →' },
               ].map(link => (
                 <Link key={link.to} to={link.to} style={{ fontFamily: 'Inter, sans-serif', color: '#C98F7A', fontSize: '0.78rem', letterSpacing: '0.06em', textDecoration: 'none' }} onMouseEnter={e => (e.currentTarget.style.opacity = '0.7')} onMouseLeave={e => (e.currentTarget.style.opacity = '1')}>{link.label}</Link>
@@ -388,7 +389,7 @@ export default function TokatOmbrePage() {
                 <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(248,245,242,0.38)', fontSize: '0.56rem', letterSpacing: '0.32em', textTransform: 'uppercase', marginTop: 3 }}>Hair &amp; Beauty Studio</p>
               </div>
               <nav className="flex items-center gap-6 flex-wrap justify-center">
-                {([['/', 'Ana Sayfa'], ['/tokat-kuafor', 'Tokat Kuaför'], ['/tokat-gelin-saci', 'Gelin Saçı'], ['/tokat-ombre', 'Ombre'], ['/tokat-rofle', 'Röfle']] as [string, string][]).map(([to, label]) => (
+                {([['/', 'Ana Sayfa'], ['/tokat-kuafor', 'Tokat Kuaför'], ['/tokat-gelin-saci', 'Gelin Saçı'], ['/tokat-ombre', 'Ombre'], ['/tokat-rofle', 'Röfle'], ['/tokat-makyaj', 'Makyaj']] as [string, string][]).map(([to, label]) => (
                   <Link key={to} to={to} style={{ fontFamily: 'Inter, sans-serif', color: to === '/tokat-ombre' ? 'rgba(201,143,122,0.85)' : 'rgba(248,245,242,0.42)', fontSize: '0.65rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none' }}>{label}</Link>
                 ))}
               </nav>

@@ -443,6 +443,7 @@ export default function TurhalKuaforPage() {
                 { to: '/tokat-ombre',      label: 'Tokat Ombre →' },
                 { to: '/tokat-rofle',      label: 'Tokat Röfle →' },
                 { to: '/tokat-kuafor',     label: 'Tokat Kuaför Hizmetleri →' },
+                { to: '/tokat-makyaj',     label: 'Tokat Makyaj →' },
               ].map(link => (
                 <Link
                   key={link.to}
@@ -599,6 +600,7 @@ export default function TurhalKuaforPage() {
                 <Link to="/tokat-kuafor" style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(248,245,242,0.42)', fontSize: '0.65rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none' }}>Tokat Kuaför</Link>
                 <Link to="/tokat-gelin-saci" style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(248,245,242,0.42)', fontSize: '0.65rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none' }}>Gelin Saçı</Link>
                 <Link to="/turhal-kuafor" style={{ fontFamily: 'Inter, sans-serif', color: '#C98F7A', fontSize: '0.65rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none' }}>Turhal Kuaför</Link>
+                <Link to="/tokat-makyaj" style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(201,143,122,0.65)', fontSize: '0.65rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none' }}>Makyaj</Link>
               </nav>
 
               <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(248,245,242,0.32)', fontSize: '0.68rem' }}>

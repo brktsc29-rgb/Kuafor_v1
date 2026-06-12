@@ -121,6 +121,14 @@ export default function AwardsServices() {
             >
               Turhal Kuaför →
             </Link>
+            <Link
+              to="/tokat-makyaj"
+              style={{ fontFamily: 'Inter, sans-serif', color: '#C98F7A', fontSize: '0.75rem', letterSpacing: '0.08em', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: 6 }}
+              onMouseEnter={e => (e.currentTarget.style.opacity = '0.7')}
+              onMouseLeave={e => (e.currentTarget.style.opacity = '1')}
+            >
+              Tokat Makyaj →
+            </Link>
           </div>
         </motion.div>
 
