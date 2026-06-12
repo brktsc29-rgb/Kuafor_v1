@@ -22,7 +22,7 @@ const SERVICES = [
     desc:   'Saatlerce bozulmayan, fotoğrafa yansıyan ve size özel ton çalışması. Deneme seansı ile birlikte.',
     bg:     'linear-gradient(160deg, #1A100C 0%, #2A1812 50%, #361E16 100%)',
     accent: '#C98F7A',
-    imgPos: 'center 0%',
+    imgPos: 'center center',
   },
   {
     slug:   'nisan-makyaji',
@@ -31,7 +31,7 @@ const SERVICES = [
     desc:   'Nişan töreninin ışıkları ve fotoğraf makinelerine dayanıklı, parlak ve zarif uygulama.',
     bg:     'linear-gradient(160deg, #180E0C 0%, #281610 50%, #321C12 100%)',
     accent: '#D4A090',
-    imgPos: 'center 0%',
+    imgPos: 'center center',
   },
   {
     slug:   'gece-makyaji',
@@ -40,7 +40,7 @@ const SERVICES = [
     desc:   'Davet, mezuniyet ve özel etkinlikler için dramatik, kalıcı ve güçlü makyaj.',
     bg:     'linear-gradient(160deg, #0E0A0C 0%, #1A1016 50%, #22141C 100%)',
     accent: '#B9816F',
-    imgPos: 'center 0%',
+    imgPos: 'center center',
   },
   {
     slug:   'dogal-makyaj',
@@ -49,7 +49,7 @@ const SERVICES = [
     desc:   'Ten renginizi öne çıkaran, hafif ve ferah bir görünüm. Ofis, kafe ve günlük kullanım için ideal.',
     bg:     'linear-gradient(160deg, #141008 0%, #221A0E 50%, #2C2212 100%)',
     accent: '#C98F7A',
-    imgPos: 'center 0%',
+    imgPos: 'center center',
   },
   {
     slug:   'kina-makyaji',
@@ -58,7 +58,7 @@ const SERVICES = [
     desc:   'Kına gecesine özgü renkli, coşkulu ve kutlamaya uygun özel tasarım makyaj.',
     bg:     'linear-gradient(160deg, #1A0C08 0%, #2A1208 50%, #38180A 100%)',
     accent: '#D4A090',
-    imgPos: 'center 0%',
+    imgPos: 'center center',
   },
   {
     slug:   'fotograf-makyaji',
