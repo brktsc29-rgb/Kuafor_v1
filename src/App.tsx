@@ -1,5 +1,6 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
 import { HelmetProvider } from 'react-helmet-async'
+import { useEffect } from 'react'
 import AwardsPage from './components/AwardsPage'
 import TokatKuaforPage from './pages/TokatKuaforPage'
 import TokatGelinSaciPage from './pages/TokatGelinSaciPage'
@@ -8,10 +9,17 @@ import TokatOmbrePage from './pages/TokatOmbrePage'
 import TokatRoflePage from './pages/TokatRoflePage'
 import TokatMakyajPage from './pages/TokatMakyajPage'
 
+function ScrollToTop() {
+  const { pathname } = useLocation()
+  useEffect(() => { window.scrollTo(0, 0) }, [pathname])
+  return null
+}
+
 export default function App() {
   return (
     <HelmetProvider>
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<AwardsPage />} />
           <Route path="/tokat-kuafor" element={<TokatKuaforPage />} />
