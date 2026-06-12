@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 const LINKS = [
   { label: 'Hizmetler', href: '#hizmetler' },
   { label: 'Galeri',    href: '#galeri'    },
@@ -34,6 +36,15 @@ export default function AwardsFooter({ onOpenKVKK }: { onOpenKVKK: () => void })
                 {l.label}
               </a>
             ))}
+            <Link
+              to="/tokat-kuafor"
+              className="text-[0.65rem] tracking-[0.14em] uppercase transition-colors duration-200"
+              style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(201,143,122,0.65)', textDecoration: 'none' }}
+              onMouseEnter={e => (e.currentTarget.style.color = 'rgba(201,143,122,1)')}
+              onMouseLeave={e => (e.currentTarget.style.color = 'rgba(201,143,122,0.65)')}
+            >
+              Tokat Kuaför
+            </Link>
           </nav>
 
           <div className="flex flex-col items-center md:items-end gap-3">

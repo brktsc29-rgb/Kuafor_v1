@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 
 const STATS = [
   { value: '10.000+', label: 'Mutlu Misafir'       },
@@ -97,9 +98,17 @@ export default function AwardsStory() {
           <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.70)', fontSize: '0.88rem', lineHeight: 1.82, marginBottom: 14 }}>
             Yılların deneyimi, güncel teknikler ve samimi yaklaşımımızla Turhal'da binlerce kadının güzellik yolculuğuna eşlik ettik.
           </p>
-          <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.70)', fontSize: '0.88rem', lineHeight: 1.82, marginBottom: 40 }}>
+          <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.70)', fontSize: '0.88rem', lineHeight: 1.82, marginBottom: 28 }}>
             Bugün de aynı heyecanla, size en iyi hissettiren görünümü birlikte keşfediyoruz.
           </p>
+          <Link
+            to="/tokat-kuafor"
+            style={{ fontFamily: 'Inter, sans-serif', color: '#C98F7A', fontSize: '0.78rem', letterSpacing: '0.06em', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: 6, marginBottom: 40 }}
+            onMouseEnter={e => (e.currentTarget.style.opacity = '0.7')}
+            onMouseLeave={e => (e.currentTarget.style.opacity = '1')}
+          >
+            Tokat Kuaför Hizmetleri →
+          </Link>
 
           {/* Stats */}
           <div className="flex flex-wrap gap-10">

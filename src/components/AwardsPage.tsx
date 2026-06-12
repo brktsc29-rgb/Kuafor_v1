@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { Helmet } from 'react-helmet-async'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useLenis } from '../hooks/useLenis'
@@ -38,6 +39,11 @@ export default function AwardsPage() {
 
   return (
     <div className="awards-page" style={{ background: '#F8F5F2' }}>
+      <Helmet>
+        <title>Hülya Kuaför | Tokat Gelin Saçı, Ombre ve Profesyonel Saç Tasarımı</title>
+        <meta name="description" content="Tokat'ta profesyonel kuaför hizmetleri. Gelin saçı, ombre, röfle, saç boyama ve modern saç tasarımı için Hülya Kuaför ile güzelliğinizi öne çıkarın." />
+        <link rel="canonical" href="https://hulyastudio.com/" />
+      </Helmet>
       {/* Loader — unmounts itself visually via GSAP, state removes it */}
       {!ready && <AwardsLoader onComplete={() => setReady(true)} />}
 

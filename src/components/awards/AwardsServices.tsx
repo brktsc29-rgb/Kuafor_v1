@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 
 const SERVICES = [
   { n: '01', title: 'Saç Kesimi & Tasarım',         desc: 'Yüz hatlarınıza özel kesim ve şekillendirme',    tag: 'SIGNATURE'  },
@@ -70,6 +71,24 @@ export default function AwardsServices() {
             Her hizmetimiz, size özel hazırlanmış premium<br />bir deneyim sunmak için tasarlandı.
           </p>
         </div>
+
+        {/* Tokat regional link */}
+        <motion.div
+          initial={{ opacity: 0, y: 12 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="mb-8"
+        >
+          <Link
+            to="/tokat-kuafor"
+            style={{ fontFamily: 'Inter, sans-serif', color: '#C98F7A', fontSize: '0.75rem', letterSpacing: '0.08em', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: 6 }}
+            onMouseEnter={e => (e.currentTarget.style.opacity = '0.7')}
+            onMouseLeave={e => (e.currentTarget.style.opacity = '1')}
+          >
+            Tokat Kuaför Hizmetleri hakkında bilgi alın →
+          </Link>
+        </motion.div>
 
         {/* Rows */}
         <div style={{ borderTop: '1px solid rgba(42,33,29,0.10)' }}>
