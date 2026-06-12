@@ -100,6 +100,44 @@ export default function TokatKuaforPage() {
             { '@type': 'ListItem', position: 2, name: 'Tokat Kuaför', item: 'https://hulyastudio.com/tokat-kuafor' },
           ],
         })}</script>
+        <script type="application/ld+json">{JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'HairSalon',
+          name: 'Hülya Kuaför',
+          alternateName: 'HÜLYA Hair & Beauty Studio',
+          url: 'https://hulyastudio.com/tokat-kuafor',
+          telephone: '+905412757160',
+          foundingDate: '2005',
+          address: {
+            '@type': 'PostalAddress',
+            addressLocality: 'Turhal',
+            addressRegion: 'Tokat',
+            addressCountry: 'TR',
+          },
+          geo: {
+            '@type': 'GeoCoordinates',
+            latitude: 40.3867,
+            longitude: 36.0836,
+          },
+          openingHoursSpecification: [{
+            '@type': 'OpeningHoursSpecification',
+            dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'],
+            opens: '09:00',
+            closes: '19:00',
+          }],
+          areaServed: [
+            { '@type': 'City', name: 'Tokat' },
+            { '@type': 'City', name: 'Turhal' },
+            { '@type': 'City', name: 'Zile' },
+            { '@type': 'City', name: 'Erbaa' },
+            { '@type': 'City', name: 'Niksar' },
+            { '@type': 'AdministrativeArea', name: 'Tokat Merkez' },
+          ],
+          sameAs: ['https://www.instagram.com/hulyaakuafor'],
+          founder: { '@type': 'Person', name: 'Sibel Erturhan' },
+          employee: { '@type': 'Person', name: 'Damla Erturhan' },
+          knowsAbout: ['Gelin Saçı','Ombre','Balayage','Röfle','Saç Boyama','Saç Kesimi','Profesyonel Saç Tasarımı','Saç Bakımı'],
+        })}</script>
       </Helmet>
 
       <div style={{ background: '#F8F5F2', minHeight: '100vh' }}>
