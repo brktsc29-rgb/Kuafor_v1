@@ -421,6 +421,22 @@ export default function TokatKuaforPage() {
               <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.72)', fontSize: '0.92rem', lineHeight: 1.85 }}>
                 Nisan–eylül arası yoğun sezon. Bu dönemde tarihler çabuk doluyor; aylarca öncesinden planlamak hem rahatlatıcı hem mantıklı.
               </p>
+              <motion.div
+                initial={{ opacity: 0, y: 8 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: 0.2 }}
+                className="mt-6"
+              >
+                <Link
+                  to="/tokat-gelin-saci"
+                  style={{ fontFamily: 'Inter, sans-serif', color: '#C98F7A', fontSize: '0.78rem', letterSpacing: '0.06em', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: 6 }}
+                  onMouseEnter={e => (e.currentTarget.style.opacity = '0.7')}
+                  onMouseLeave={e => (e.currentTarget.style.opacity = '1')}
+                >
+                  Tokat Gelin Saçı Tasarımları için tıklayın →
+                </Link>
+              </motion.div>
             </motion.div>
           </div>
         </section>

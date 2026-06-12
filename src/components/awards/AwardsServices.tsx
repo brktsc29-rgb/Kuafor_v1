@@ -80,14 +80,24 @@ export default function AwardsServices() {
           transition={{ duration: 0.5 }}
           className="mb-8"
         >
-          <Link
-            to="/tokat-kuafor"
-            style={{ fontFamily: 'Inter, sans-serif', color: '#C98F7A', fontSize: '0.75rem', letterSpacing: '0.08em', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: 6 }}
-            onMouseEnter={e => (e.currentTarget.style.opacity = '0.7')}
-            onMouseLeave={e => (e.currentTarget.style.opacity = '1')}
-          >
-            Tokat Kuaför Hizmetleri hakkında bilgi alın →
-          </Link>
+          <div className="flex flex-wrap gap-6">
+            <Link
+              to="/tokat-kuafor"
+              style={{ fontFamily: 'Inter, sans-serif', color: '#C98F7A', fontSize: '0.75rem', letterSpacing: '0.08em', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: 6 }}
+              onMouseEnter={e => (e.currentTarget.style.opacity = '0.7')}
+              onMouseLeave={e => (e.currentTarget.style.opacity = '1')}
+            >
+              Tokat Kuaför Hizmetleri →
+            </Link>
+            <Link
+              to="/tokat-gelin-saci"
+              style={{ fontFamily: 'Inter, sans-serif', color: '#C98F7A', fontSize: '0.75rem', letterSpacing: '0.08em', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: 6 }}
+              onMouseEnter={e => (e.currentTarget.style.opacity = '0.7')}
+              onMouseLeave={e => (e.currentTarget.style.opacity = '1')}
+            >
+              Tokat Gelin Saçı Tasarımları →
+            </Link>
+          </div>
         </motion.div>
 
         {/* Rows */}
