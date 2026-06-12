@@ -416,6 +416,90 @@ export default function TokatMakyajPage() {
         </div>
       </section>
 
+      {/* Makeup Artist Bio */}
+      <section style={{ background: '#080604', padding: 'clamp(48px, 8vw, 96px) 24px', borderTop: '1px solid rgba(248,245,242,0.05)' }}>
+        <div className="max-w-screen-xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="grid md:grid-cols-2 gap-0 overflow-hidden"
+            style={{ borderRadius: 20, border: '1px solid rgba(248,245,242,0.08)' }}
+          >
+            {/* Photo side */}
+            <div style={{ position: 'relative', minHeight: 340, overflow: 'hidden' }}>
+              <img
+                src="/images/makyaj/fotograf-makyaji.webp"
+                alt="Damla Erturhan — HÜLYA Studio Uzman Makyöz"
+                width={600}
+                height={700}
+                loading="lazy"
+                style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top', display: 'block', minHeight: 340 }}
+                onError={e => { (e.currentTarget as HTMLImageElement).style.display = 'none' }}
+              />
+              <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to right, transparent 50%, rgba(8,6,4,0.85) 100%)' }} />
+              <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(8,6,4,0.6) 0%, transparent 50%)' }} />
+            </div>
+
+            {/* Text side */}
+            <div
+              style={{
+                background: 'linear-gradient(160deg, #1A1410 0%, #0E0B09 100%)',
+                padding: 'clamp(32px, 5vw, 56px)',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                gap: 20,
+              }}
+            >
+              <div>
+                <p style={{ fontFamily: 'Inter, sans-serif', color: '#C98F7A', fontSize: '0.6rem', letterSpacing: '0.32em', textTransform: 'uppercase', marginBottom: 12 }}>
+                  Makyözünüz
+                </p>
+                <h2 style={{ fontFamily: 'Instrument Serif, serif', color: '#F8F5F2', fontSize: 'clamp(1.8rem, 3.5vw, 3rem)', lineHeight: 1, letterSpacing: '-0.5px', marginBottom: 4 }}>
+                  Damla Erturhan
+                </h2>
+                <p style={{ fontFamily: 'Inter, sans-serif', color: '#C98F7A', fontSize: '0.7rem', letterSpacing: '0.2em', textTransform: 'uppercase' }}>
+                  Uzman Makyöz · HÜLYA Studio
+                </p>
+              </div>
+
+              <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(248,245,242,0.65)', fontSize: '0.88rem', lineHeight: 1.85 }}>
+                Damla, profesyonel makyaj eğitimini tamamladıktan sonra HÜLYA Studio bünyesinde
+                uzmanlaşmış; gelin makyajı, nişan ve özel gün uygulamalarında yüzlerce müşteriye
+                hizmet vermiştir.
+              </p>
+
+              <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(248,245,242,0.65)', fontSize: '0.88rem', lineHeight: 1.85 }}>
+                Her yüze özel ten analizi yaparak doğru ton ve tekniği belirliyor; kalıcı baz
+                hazırlığı ile makyajın saatlerce bozulmadan kalmasını sağlıyor. Gelin makyajında
+                saç tasarımıyla koordineli çalışarak bütünlüklü bir görünüm sunuyor.
+              </p>
+
+              <div className="flex flex-wrap gap-2 pt-2">
+                {['Gelin Makyajı', 'Ton Analizi', 'HD Makyaj', 'Kalıcı Uygulama'].map(tag => (
+                  <span key={tag} style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(201,143,122,0.8)', fontSize: '0.62rem', letterSpacing: '0.16em', border: '1px solid rgba(201,143,122,0.25)', padding: '5px 12px', borderRadius: 100 }}>
+                    {tag}
+                  </span>
+                ))}
+              </div>
+
+              <a
+                href={WHATSAPP}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 self-start mt-2"
+                style={{ fontFamily: 'Inter, sans-serif', background: '#C98F7A', color: '#fff', fontSize: '0.72rem', letterSpacing: '0.1em', padding: '11px 22px', borderRadius: 100, textDecoration: 'none' }}
+              >
+                {WA_SVG}
+                Damla ile Randevu Al
+              </a>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Services Grid */}
       <section style={{ background: '#080604', padding: 'clamp(48px, 8vw, 96px) 24px' }}>
         <div className="max-w-screen-xl mx-auto">
