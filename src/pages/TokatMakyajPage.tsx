@@ -63,6 +63,14 @@ const SERVICES = [
     bg:     'linear-gradient(160deg, #0E0E0E 0%, #1A1A1A 50%, #242424 100%)',
     accent: '#B9816F',
   },
+  {
+    slug:   'davet-makyaji',
+    label:  'Davet Makyajı',
+    tag:    'ETKİNLİK',
+    desc:   'Mezuniyet, söz, davet ve özel geceler için şık, kalıcı ve etkinliğe uygun makyaj.',
+    bg:     'linear-gradient(160deg, #14120A 0%, #221E0E 50%, #2C2810 100%)',
+    accent: '#C98F7A',
+  },
 ]
 
 const PROCESS_STEPS = [
