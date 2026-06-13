@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 
 const STATS = [
   { value: '20+',  label: 'Yıllık Deneyim',     sub: '2005\'ten beri Turhal\'da' },
-  { value: '5000+', label: 'Mutlu Müşteri',      sub: 'Gelin, öğrenci, profesyonel' },
+  { value: '5',     label: 'İlçe Müşteri Tabanı', sub: 'Tokat, Turhal, Zile, Erbaa, Niksar' },
   { value: '6',    label: 'Uzman Hizmet',         sub: 'Kesim, renk, bakım ve daha fazlası' },
   { value: '100%', label: 'Kişiye Özel',          sub: 'Her işlem saça göre planlanır' },
 ]
