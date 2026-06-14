@@ -173,9 +173,20 @@ export default function TokatKuaforPage() {
         {/* ── Hero ── */}
         <section
           className="relative flex flex-col justify-end px-6 md:px-14 pb-16 md:pb-24 overflow-hidden"
-          style={{ background: 'linear-gradient(160deg, #1A1210 0%, #2A1C18 60%, #1A1210 100%)', minHeight: '60vh' }}
+          style={{ minHeight: '100svh' }}
         >
-          <div className="absolute inset-0 pointer-events-none" style={{ background: 'radial-gradient(ellipse at 60% 40%, rgba(201,143,122,0.12) 0%, transparent 60%)' }} />
+          <div
+            className="absolute inset-0"
+            style={{
+              backgroundImage: 'url(/images/4E3D1939-0CFB-4C8B-8CE3-7A787126B37C.webp)',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              filter: 'brightness(0.72)',
+            }}
+          />
+          <div className="absolute inset-0 pointer-events-none" style={{ background: 'linear-gradient(to top, rgba(8,6,4,0.92) 0%, rgba(8,6,4,0.45) 50%, rgba(8,6,4,0.15) 100%)' }} />
+          <div className="absolute inset-0 pointer-events-none" style={{ background: 'linear-gradient(to bottom, rgba(8,6,4,0.35) 0%, transparent 35%)' }} />
+          <div className="absolute inset-0 pointer-events-none" style={{ background: 'radial-gradient(ellipse at 60% 40%, rgba(201,143,122,0.10) 0%, transparent 55%)' }} />
 
           <div className="max-w-screen-xl mx-auto w-full relative z-10">
             <motion.p
@@ -598,6 +609,52 @@ export default function TokatKuaforPage() {
           </div>
         </section>
 
+        {/* ── İlgili Hizmetler ── */}
+        <section className="py-14 md:py-20 px-6 md:px-14" style={{ background: '#F8F5F2', borderTop: '1px solid rgba(42,33,29,0.08)' }}>
+          <div className="max-w-screen-xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="mb-8"
+            >
+              <p style={{ fontFamily: 'Inter, sans-serif', color: '#C98F7A', fontSize: '0.6rem', letterSpacing: '0.36em', textTransform: 'uppercase', marginBottom: 14 }}>
+                Diğer Sayfalar
+              </p>
+              <h2 style={{ fontFamily: 'Instrument Serif, serif', color: '#2A211D', fontSize: 'clamp(1.6rem, 3vw, 2.8rem)', lineHeight: 1.1, letterSpacing: '-0.3px' }}>
+                İlgili Hizmetler
+              </h2>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className="flex flex-col sm:flex-row flex-wrap gap-3"
+            >
+              {[
+                { to: '/tokat-gelin-saci', label: 'Gelin Saçı Tasarımları →' },
+                { to: '/tokat-ombre',      label: 'Tokat Ombre →' },
+                { to: '/tokat-rofle',      label: 'Tokat Röfle →' },
+                { to: '/turhal-kuafor',    label: 'Turhal Kuaför →' },
+                { to: '/tokat-makyaj',     label: 'Tokat Makyaj →' },
+              ].map(link => (
+                <Link
+                  key={link.to}
+                  to={link.to}
+                  className="inline-flex items-center rounded-full px-6 py-3"
+                  style={{ fontFamily: 'Inter, sans-serif', color: '#C98F7A', fontSize: '0.78rem', letterSpacing: '0.04em', textDecoration: 'none', border: '1px solid rgba(201,143,122,0.35)', background: 'rgba(201,143,122,0.04)' }}
+                  onMouseEnter={e => { e.currentTarget.style.background = 'rgba(201,143,122,0.10)' }}
+                  onMouseLeave={e => { e.currentTarget.style.background = 'rgba(201,143,122,0.04)' }}
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </motion.div>
+          </div>
+        </section>
+
         {/* ── FAQ ── */}
         <section className="py-16 md:py-28 px-6 md:px-14" style={{ background: '#F3ECE7', borderTop: '1px solid rgba(42,33,29,0.08)' }}>
           <div className="max-w-screen-xl mx-auto">
@@ -717,8 +774,10 @@ export default function TokatKuaforPage() {
 
               <nav className="flex items-center gap-6 flex-wrap justify-center">
                 <Link to="/" style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(248,245,242,0.42)', fontSize: '0.65rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none' }}>Ana Sayfa</Link>
-                <a href="/#hizmetler" style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(248,245,242,0.42)', fontSize: '0.65rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none' }}>Hizmetler</a>
-                <a href="/#iletisim" style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(248,245,242,0.42)', fontSize: '0.65rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none' }}>İletişim</a>
+                <Link to="/tokat-gelin-saci" style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(248,245,242,0.42)', fontSize: '0.65rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none' }}>Gelin Saçı</Link>
+                <Link to="/turhal-kuafor" style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(248,245,242,0.42)', fontSize: '0.65rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none' }}>Turhal</Link>
+                <Link to="/tokat-ombre" style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(248,245,242,0.42)', fontSize: '0.65rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none' }}>Ombre</Link>
+                <Link to="/tokat-rofle" style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(248,245,242,0.42)', fontSize: '0.65rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none' }}>Röfle</Link>
                 <Link to="/tokat-makyaj" style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(201,143,122,0.65)', fontSize: '0.65rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none' }}>Makyaj</Link>
               </nav>
 
