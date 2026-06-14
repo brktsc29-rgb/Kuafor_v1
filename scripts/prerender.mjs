@@ -187,6 +187,26 @@ if (!existsSync(serverBundle)) {
 const template   = readFileSync(join(distDir, 'index.html'), 'utf-8')
 const { render } = await import(pathToFileURL(serverBundle).href)
 
+// ── Strip Framer Motion initial animation styles ───────────────────────────────
+// Framer Motion bakes `initial` prop values (opacity:0, translateY) into the
+// server-rendered HTML. We remove them so Googlebot sees visible content.
+// Client-side React hydration restores and runs animations normally.
+function stripInitialStyles(html) {
+  return html.replace(/style="([^"]*)"/g, (_, attrs) => {
+    const cleaned = attrs
+      .split(';')
+      .map(p => p.trim())
+      .filter(p => {
+        if (!p) return false
+        if (p === 'opacity:0') return false
+        if (/^transform:translateY\(-?\d/.test(p)) return false
+        return true
+      })
+      .join(';')
+    return cleaned ? `style="${cleaned}"` : ''
+  })
+}
+
 // ── Render loop ───────────────────────────────────────────────────────────────
 const results = []
 let ok = 0
@@ -195,9 +215,11 @@ for (const route of ROUTES) {
   try {
     const { appHtml, head } = render(route)
 
-    const html = template
-      .replace('</head>', `${head || ''}\n</head>`)
-      .replace('id="root">', `id="root">${appHtml || ''}`)
+    const html = stripInitialStyles(
+      template
+        .replace('</head>', `${head || ''}\n</head>`)
+        .replace('id="root">', `id="root">${appHtml || ''}`)
+    )
 
     if (route === '/') {
       writeFileSync(join(distDir, 'index.html'), html, 'utf-8')
