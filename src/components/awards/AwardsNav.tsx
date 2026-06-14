@@ -58,7 +58,7 @@ export default function AwardsNav({ ready }: { ready: boolean }) {
   return (
     <nav
       ref={navRef}
-      className="fixed top-0 left-0 right-0 z-50 px-6 md:px-10 py-4"
+      className="fixed top-0 left-0 right-0 z-[9999] px-6 md:px-10 py-4"
       style={{
         background: 'transparent',
         borderBottom: '1px solid transparent',
