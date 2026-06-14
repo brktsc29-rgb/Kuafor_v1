@@ -93,7 +93,7 @@ export default function AwardsHero({ active }: { active: boolean }) {
 
       // Content fades + rises on scroll
       gsap.to([titleRef.current, subRef.current, dividerRef.current], {
-        y: -80, opacity: 0, ease: 'none',
+        y: -40, opacity: 0, ease: 'none',
         scrollTrigger: {
           trigger: section,
           start: 'top top',
@@ -114,7 +114,7 @@ export default function AwardsHero({ active }: { active: boolean }) {
     <section
       ref={sectionRef}
       className="relative flex items-end overflow-hidden"
-      style={{ height: '100svh', background: '#080604', isolation: 'isolate' }}
+      style={{ height: '100svh', background: '#080604', zIndex: 0 }}
     >
       {/* ── LAYER 1 · Hero video (slowest parallax) ── */}
       <motion.div
