@@ -44,6 +44,46 @@ export default function AwardsPage() {
         <title>Hülya Kuaför | Tokat Gelin Saçı, Ombre ve Profesyonel Saç Tasarımı</title>
         <meta name="description" content="Tokat'ta profesyonel kuaför hizmetleri. Gelin saçı, ombre, röfle, saç boyama ve modern saç tasarımı için Hülya Kuaför ile güzelliğinizi öne çıkarın." />
         <link rel="canonical" href="https://hulyastudio.com/" />
+        <meta property="og:title" content="Hülya Kuaför | Tokat Gelin Saçı ve Profesyonel Saç Tasarımı" />
+        <meta property="og:description" content="Turhal, Tokat'ta 20+ yıllık deneyimle gelin saçı, ombre, röfle ve saç bakım hizmetleri." />
+        <meta property="og:url" content="https://hulyastudio.com/" />
+        <meta property="og:type" content="website" />
+        <script type="application/ld+json">{JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'HairSalon',
+          name: 'Hülya Kuaför',
+          alternateName: 'HÜLYA Hair & Beauty Studio',
+          description: 'Turhal, Tokat\'ta 20 yılı aşkın deneyimle profesyonel kuaför hizmetleri. Gelin saçı, ombre, balayage, röfle, saç boyama ve makyaj.',
+          url: 'https://hulyastudio.com/',
+          telephone: '+905412757160',
+          address: {
+            '@type': 'PostalAddress',
+            streetAddress: 'Turhal',
+            addressLocality: 'Turhal',
+            addressRegion: 'Tokat',
+            postalCode: '60300',
+            addressCountry: 'TR',
+          },
+          geo: {
+            '@type': 'GeoCoordinates',
+            latitude: 40.3868,
+            longitude: 36.0820,
+          },
+          openingHours: 'Mo,Tu,We,Th,Fr,Sa 09:00-19:00',
+          areaServed: ['Tokat', 'Turhal', 'Zile', 'Erbaa', 'Niksar'],
+          hasMap: 'https://maps.google.com/?q=Hülya+Kuaför+Turhal+Tokat',
+          sameAs: ['https://www.instagram.com/hulyaakuafor'],
+          priceRange: '₺₺',
+          currenciesAccepted: 'TRY',
+          paymentAccepted: 'Cash, Credit Card',
+        })}</script>
+        <script type="application/ld+json">{JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Ana Sayfa', item: 'https://hulyastudio.com/' },
+          ],
+        })}</script>
       </Helmet>
       {/* Loader — unmounts itself visually via GSAP, state removes it */}
       {!ready && <AwardsLoader onComplete={() => setReady(true)} />}
