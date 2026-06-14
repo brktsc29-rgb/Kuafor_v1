@@ -116,14 +116,17 @@ export default function AwardsHero({ active }: { active: boolean }) {
       className="relative flex items-end overflow-hidden"
       style={{ height: '100svh', background: '#080604' }}
     >
-      {/* ── LAYER 1 · Main portrait (slowest parallax) ── */}
+      {/* ── LAYER 1 · Hero video (slowest parallax) ── */}
       <motion.div
         className="absolute pointer-events-none"
         style={{ inset: '-20px', x: l1x, y: l1y }}
       >
-        <img
-          src="/images/4E3D1939-0CFB-4C8B-8CE3-7A787126B37C.webp"
-          alt=""
+        <video
+          src="/videos/hero.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
           aria-hidden
           className="w-full h-full object-cover object-center"
           style={{ filter: 'brightness(0.88) contrast(1.06) saturate(1.12)' }}
