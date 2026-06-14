@@ -93,7 +93,7 @@ export default function AwardsHero({ active }: { active: boolean }) {
 
       // Content fades + rises on scroll
       gsap.to([titleRef.current, subRef.current, dividerRef.current], {
-        y: -40, opacity: 0, ease: 'none',
+        opacity: 0, ease: 'none',
         scrollTrigger: {
           trigger: section,
           start: 'top top',

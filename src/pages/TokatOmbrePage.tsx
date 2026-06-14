@@ -193,14 +193,22 @@ export default function TokatOmbrePage() {
 
         {/* Hero */}
         <section className="relative flex items-end overflow-hidden" style={{ height: '100svh', background: '#080604' }}>
-          {/* Ombre-inspired gradient as visual metaphor */}
-          <div className="absolute inset-0 pointer-events-none" style={{ background: 'linear-gradient(180deg, #1A0A04 0%, #2E1208 25%, #3D1A08 45%, #4A200A 65%, #5C2A0C 80%, #70380E 100%)' }} />
-          <div className="absolute inset-0 pointer-events-none" style={{ background: 'radial-gradient(ellipse 80% 60% at 60% 50%, rgba(185,129,111,0.22) 0%, transparent 65%)', mixBlendMode: 'screen' }} />
-          <div className="absolute inset-0 pointer-events-none" style={{ background: 'linear-gradient(0deg, rgba(8,6,4,0.94) 0%, rgba(8,6,4,0.40) 35%, rgba(8,6,4,0.10) 60%, transparent 100%)' }} />
-          <div className="absolute inset-0 pointer-events-none" style={{ background: 'linear-gradient(90deg, rgba(8,6,4,0.60) 0%, transparent 60%)' }} />
-
-          {/* Decorative gradient strip */}
-          <div className="absolute right-0 top-0 bottom-0 pointer-events-none hidden md:block" style={{ width: '40%', background: 'linear-gradient(180deg, #5C3010 0%, #9A5820 20%, #C48030 45%, #E0A040 65%, #F0C060 85%, #F8E080 100%)', opacity: 0.18 }} />
+          {/* Hero video */}
+          <div className="absolute inset-0 pointer-events-none">
+            <video
+              src="/videos/ombre-hero.mp4"
+              autoPlay
+              muted
+              loop
+              playsInline
+              aria-hidden
+              className="w-full h-full object-cover object-center"
+              style={{ filter: 'brightness(0.82) contrast(1.08) saturate(1.15)' }}
+            />
+          </div>
+          <div className="absolute inset-0 pointer-events-none" style={{ background: 'radial-gradient(ellipse 80% 60% at 60% 50%, rgba(185,129,111,0.18) 0%, transparent 65%)', mixBlendMode: 'screen' }} />
+          <div className="absolute inset-0 pointer-events-none" style={{ background: 'linear-gradient(0deg, rgba(8,6,4,0.92) 0%, rgba(8,6,4,0.38) 35%, rgba(8,6,4,0.08) 60%, transparent 100%)' }} />
+          <div className="absolute inset-0 pointer-events-none" style={{ background: 'linear-gradient(90deg, rgba(8,6,4,0.58) 0%, transparent 60%)' }} />
 
           <div className="relative z-10 w-full px-6 md:px-14 pb-14 md:pb-20 max-w-screen-xl mx-auto">
             <motion.p initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.1 }} style={{ fontFamily: 'Inter, sans-serif', color: '#B9816F', fontSize: '0.60rem', letterSpacing: '0.38em', textTransform: 'uppercase', marginBottom: 22 }}>
