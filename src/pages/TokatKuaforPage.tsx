@@ -15,7 +15,7 @@ const WA_SVG = (
 )
 
 const SERVICES = [
-  { title: 'Gelin Saçı',                    desc: 'Düğün günü ve öncesinde deneme seansıyla kişiye özel tasarım.'                 },
+  { title: 'Gelin Saçı',                    desc: 'Düğün günü için kişiye özel saç tasarımı; stil önceden WhatsApp ile netleştiriliyor.' },
   { title: 'Ombre & Balayage',               desc: 'Saç yapısına göre yumuşak renk geçişleri ve doğal görünüm.'                   },
   { title: 'Röfle',                          desc: 'İnce folyo tekniğiyle parlaklık ve derinlik katan renklendirme.'               },
   { title: 'Saç Boyama',                     desc: 'Tek renk veya çok renkli boyama uygulamaları, saç sağlığı korunarak.'         },
@@ -36,7 +36,7 @@ const FAQS = [
   },
   {
     q: 'Gelin saçı için ne kadar önceden randevu almalıyım?',
-    a: 'Bahar ve yaz düğünleri için tarihler aylarca önceden dolabiliyor. Nisan\'dan eylül\'e kadar olan dönemde erken planlamak önemli. Düğün gününden 3–4 hafta önce deneme randevusu da ayarlanması gerekiyor.',
+    a: 'Bahar ve yaz düğünleri için tarihler aylarca önceden dolabiliyor. Nisan\'dan eylül\'e kadar olan dönemde erken planlamak önemli. Randevu almadan önce WhatsApp\'tan düğün tarihinizi ve istediğiniz stili bildirmeniz yeterli.',
   },
   {
     q: 'Fiyat hakkında bilgi alabilir miyim?',
@@ -424,7 +424,7 @@ export default function TokatKuaforPage() {
               transition={{ duration: 0.7, delay: 0.15 }}
             >
               <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.72)', fontSize: '0.92rem', lineHeight: 1.85, marginBottom: 16 }}>
-                Gelin saçı için iki randevu gerekiyor. Önce deneme: düğünden 3–4 hafta önce yapılan bu seansta tasarımı netleştiriyoruz. Hangi stil, hangi aksesuar, saçın nasıl taşınması gerektiği hepsini o gün konuşuyoruz. Bazı gelinler kesin fikirle geliyor, bazıları seçeneklere bakmak istiyor; her iki durumda da başlangıç noktası aynı: saçınızı ve beklentinizi tanımak.
+                Gelin saçı için önce WhatsApp üzerinden görüşüyoruz. Hangi stil, hangi aksesuar, saçın nasıl taşınması gerektiğini referans görsellerle birlikte paylaşıyoruz. Bazı gelinler kesin fikirle geliyor, bazıları seçeneklere bakmak istiyor; her iki durumda da başlangıç noktası aynı: saçınızı ve beklentinizi tanımak.
               </p>
               <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.72)', fontSize: '0.92rem', lineHeight: 1.85, marginBottom: 16 }}>
                 Düğün günü ise tasarımı uygulamak. Bu sefer biraz uzun sürebilir. Sonucun saatlerce bozulmadan durması için gerekli ürün ve teknik seçimi özenle yapılıyor.

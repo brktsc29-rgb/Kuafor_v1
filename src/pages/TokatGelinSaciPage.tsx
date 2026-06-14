@@ -233,7 +233,7 @@ const HAIRSALON_SCHEMA = {
     '@type': 'OfferCatalog',
     name: 'Gelin Saçı Hizmetleri',
     itemListElement: [
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Gelin Saçı ve Deneme Seansı' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Gelin Saçı Tasarımı' } },
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Hollywood Waves' } },
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Topuz Modelleri' } },
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Tesettür Gelin Başı' } },
@@ -257,7 +257,7 @@ export default function TokatGelinSaciPage() {
         <meta name="description" content="Tokat'ta gelin saçı ve özel gün saç tasarımı hizmetleri. Hülya Kuaför, Turhal'daki salonunda Tokat genelinden gelin adaylarını ağırlamaktadır." />
         <link rel="canonical" href="https://hulyastudio.com/tokat-gelin-saci" />
         <meta property="og:title" content="Tokat Gelin Saçı | Hülya Kuaför" />
-        <meta property="og:description" content="Tokat'ta gelin saçı ve özel gün saç tasarımı. Hollywood waves, topuz, romantik ve tesettür gelin başı. Deneme seansı dahil." />
+        <meta property="og:description" content="Tokat'ta gelin saçı ve özel gün saç tasarımı. Hollywood waves, topuz, romantik ve tesettür gelin başı. WhatsApp ile stil görüşmesi." />
         <meta property="og:url" content="https://hulyastudio.com/tokat-gelin-saci" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
@@ -464,7 +464,7 @@ export default function TokatGelinSaciPage() {
               className="mt-8 text-center"
               style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.45)', fontSize: '0.75rem', lineHeight: 1.7 }}
             >
-              Stil seçimi için deneme seansında saçınızı birlikte değerlendiriyoruz.
+              Stil seçimi için WhatsApp üzerinden referans görsellerle saçınızı önceden birlikte değerlendiriyoruz.
             </motion.p>
           </div>
         </section>
@@ -497,7 +497,7 @@ export default function TokatGelinSaciPage() {
               {[
                 {
                   title: 'Yüz Şekli Analizi',
-                  body:  'Oval, yuvarlak, kare veya kalp yüz yapısına göre saç tasarımı farklılaşır. Doğru çerçeveleme, yüz hatlarını öne çıkarır; yanlış seçim ise en güzel stilin bile önüne geçebilir. Deneme seansında bunu birlikte değerlendiriyoruz.',
+                  body:  'Oval, yuvarlak, kare veya kalp yüz yapısına göre saç tasarımı farklılaşır. Doğru çerçeveleme, yüz hatlarını öne çıkarır; yanlış seçim ise en güzel stilin bile önüne geçebilir. WhatsApp görüşmesinde bunu birlikte değerlendiriyoruz.',
                 },
                 {
                   title: 'Gelinlik Uyumu',
@@ -505,11 +505,11 @@ export default function TokatGelinSaciPage() {
                 },
                 {
                   title: 'Duvak ve Aksesuar Uyumu',
-                  body:  'Duvak uzunluğu, saç aksesuarı konumu ve başlık seçimi deneme seansında birlikte ele alınıyor. Aksesuar ve duvağınızı getirmenizi istiyoruz; bu sayede tasarım gerçek bütünlük içinde değerlendirilebiliyor.',
+                  body:  'Duvak uzunluğu, saç aksesuarı konumu ve başlık seçimi düğün günü hazırlığa başlamadan önce kısa bir konsültasyonla birlikte ele alınıyor. Aksesuar ve duvağınızı getirmenizi istiyoruz; bu sayede tasarım gerçek bütünlük içinde değerlendirilebiliyor.',
                 },
                 {
-                  title: 'Deneme Süreci',
-                  body:  'Düğününüzden 3–4 hafta önce gerçekleştirilen deneme seansında seçilen stil uygulanıyor. Her detay sizinle onaylanıyor; düğün günü tamamen aynı sonuç, daha az sürede elde ediliyor.',
+                  title: 'Hazırlık Süreci',
+                  body:  'WhatsApp üzerinden referans görseller ve tercihler paylaşılıyor. Düğün sabahı hazırlığa başlamadan önce kısa bir konsültasyonla son detaylar netleştiriliyor; böylece sürpriz yaşanmıyor.',
                 },
               ].map((item, i) => (
                 <motion.div

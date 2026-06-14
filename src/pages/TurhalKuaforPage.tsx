@@ -16,7 +16,7 @@ const WA_SVG = (
 
 const SERVICES = [
   { title: 'Saç Kesimi & Şekillendirme', desc: 'Yüz hatlarına uygun kesim ve günlük yaşama göre şekillendirme.' },
-  { title: 'Gelin Saçı & Deneme',        desc: 'Düğün günü ve öncesinde deneme seansıyla kişiye özel tasarım.' },
+  { title: 'Gelin Saçı',                  desc: 'Düğün günü için kişiye özel saç tasarımı; stil WhatsApp üzerinden önceden netleştiriliyor.' },
   { title: 'Ombre & Balayage',           desc: 'Saç yapısına göre yumuşak renk geçişleri ve doğal görünüm.' },
   { title: 'Röfle',                      desc: 'İnce folyo tekniğiyle parlaklık ve derinlik katan renklendirme.' },
   { title: 'Keratin Bakım',              desc: 'Saçı besleyen, frizz\'i gideren ve uzun süre parlak tutan bakım uygulaması.' },
@@ -34,7 +34,7 @@ const FAQS = [
   },
   {
     q: 'Gelin saçı hizmeti veriyor musunuz?',
-    a: 'Evet. Gelin saçı ve deneme seansı hizmetleri sunuyoruz. Ayrıntılı bilgi için /tokat-gelin-saci sayfamıza bakabilirsiniz.',
+    a: 'Evet, gelin saçı hizmeti sunuyoruz. Ayrıntılı bilgi için Gelin Saçı sayfamıza göz atabilirsiniz.',
   },
   {
     q: 'Diğer ilçelerden geliyorum, yol ne kadar sürer?',

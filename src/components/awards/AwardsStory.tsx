@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 
 const STATS = [
-  { value: '10.000+', label: 'Mutlu Misafir'       },
+  { value: 'Yüzlerce', label: 'Mutlu Misafir'       },
   { value: '20+',     label: 'Yıllık Deneyim'      },
   { value: '4.5★',    label: 'Google Değerlendirmesi' },
 ]

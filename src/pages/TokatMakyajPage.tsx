@@ -413,7 +413,7 @@ export default function TokatMakyajPage() {
                 hizmeti sunuyoruz. Makyaj randevunuz için WhatsApp veya telefon yeterli.
               </p>
               <div className="flex flex-wrap gap-3 pt-2">
-                {['Kalıcı Makyaj', 'Ton Uyumu', 'Deneme Seansı'].map(tag => (
+                {['Özel Gün Makyajı', 'Ton Uyumu', 'Konsültasyon'].map(tag => (
                   <span key={tag} style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(248,245,242,0.55)', fontSize: '0.62rem', letterSpacing: '0.18em', border: '1px solid rgba(248,245,242,0.12)', padding: '5px 12px', borderRadius: 100 }}>
                     {tag}
                   </span>
