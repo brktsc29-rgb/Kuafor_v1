@@ -63,6 +63,8 @@ export default function AwardsNav({ ready }: { ready: boolean }) {
         background: 'transparent',
         borderBottom: '1px solid transparent',
         transition: 'background 0.4s, border-color 0.4s',
+        transform: 'translateZ(0)',
+        willChange: 'transform',
       }}
     >
       <div className="max-w-screen-xl mx-auto flex items-center justify-between">

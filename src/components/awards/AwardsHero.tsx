@@ -114,7 +114,7 @@ export default function AwardsHero({ active }: { active: boolean }) {
     <section
       ref={sectionRef}
       className="relative flex items-end overflow-hidden"
-      style={{ height: '100svh', background: '#080604' }}
+      style={{ height: '100svh', background: '#080604', isolation: 'isolate' }}
     >
       {/* ── LAYER 1 · Hero video (slowest parallax) ── */}
       <motion.div
