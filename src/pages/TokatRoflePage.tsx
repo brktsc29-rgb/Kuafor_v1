@@ -188,9 +188,9 @@ export default function TokatRoflePage() {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Ana Sayfa', item: 'https://hulyastudio.com/' },
-      { '@type': 'ListItem', position: 2, name: 'Tokat Kuaför', item: 'https://hulyastudio.com/tokat-kuafor' },
-      { '@type': 'ListItem', position: 3, name: 'Tokat Röfle', item: 'https://hulyastudio.com/tokat-rofle' },
+      { '@type': 'ListItem', position: 1, name: 'Ana Sayfa', item: 'https://www.hulyastudio.com/' },
+      { '@type': 'ListItem', position: 2, name: 'Tokat Kuaför', item: 'https://www.hulyastudio.com/tokat-kuafor' },
+      { '@type': 'ListItem', position: 3, name: 'Tokat Röfle', item: 'https://www.hulyastudio.com/tokat-rofle' },
     ],
   }
 
@@ -199,7 +199,7 @@ export default function TokatRoflePage() {
     '@type': 'HairSalon',
     name: 'HÜLYA Studio',
     description: 'Tokat\'ta profesyonel röfle, saç açma ve saç renklendirme hizmeti. Turhal merkezli kuaför salonu.',
-    url: 'https://hulyastudio.com/tokat-rofle',
+    url: 'https://www.hulyastudio.com/tokat-rofle',
     telephone: '+90-541-275-71-60',
     address: {
       '@type': 'PostalAddress',
@@ -229,10 +229,10 @@ export default function TokatRoflePage() {
       <Helmet>
         <title>Tokat Röfle | Saç Açma ve Saç Renklendirme | HÜLYA Studio Turhal</title>
         <meta name="description" content="Tokat'ta profesyonel röfle, klasik ve balayage tekniklerle saç açma ve renklendirme. Turhal'da 2005'ten beri hizmet veren HÜLYA Studio. Randevu için WhatsApp." />
-        <link rel="canonical" href="https://hulyastudio.com/tokat-rofle" />
+        <link rel="canonical" href="https://www.hulyastudio.com/tokat-rofle" />
         <meta property="og:title" content="Tokat Röfle | Saç Açma ve Saç Renklendirme | HÜLYA Studio" />
         <meta property="og:description" content="Tokat ve Turhal'da profesyonel röfle hizmeti. Klasik, balayage, parçalı ve tam röfle seçenekleri. 2005'ten beri güvenilir kuaför salonu." />
-        <meta property="og:url" content="https://hulyastudio.com/tokat-rofle" />
+        <meta property="og:url" content="https://www.hulyastudio.com/tokat-rofle" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">{JSON.stringify(schemaFAQ)}</script>
         <script type="application/ld+json">{JSON.stringify(schemaBreadcrumb)}</script>

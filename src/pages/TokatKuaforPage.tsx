@@ -91,13 +91,13 @@ export default function TokatKuaforPage() {
       <Helmet>
         <title>Tokat Kuaför | Hülya Kuaför Gelin Saçı, Ombre ve Saç Tasarımı</title>
         <meta name="description" content="Tokat'ta gelin saçı, ombre, röfle, saç boyama ve profesyonel saç tasarımı hizmetleri. Hülya Kuaför, Turhal'daki salonunda Tokat merkez ve çevre ilçelerden gelen misafirlerini ağırlamaktadır." />
-        <link rel="canonical" href="https://hulyastudio.com/tokat-kuafor" />
+        <link rel="canonical" href="https://www.hulyastudio.com/tokat-kuafor" />
         <script type="application/ld+json">{JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'BreadcrumbList',
           itemListElement: [
-            { '@type': 'ListItem', position: 1, name: 'Ana Sayfa', item: 'https://hulyastudio.com/' },
-            { '@type': 'ListItem', position: 2, name: 'Tokat Kuaför', item: 'https://hulyastudio.com/tokat-kuafor' },
+            { '@type': 'ListItem', position: 1, name: 'Ana Sayfa', item: 'https://www.hulyastudio.com/' },
+            { '@type': 'ListItem', position: 2, name: 'Tokat Kuaför', item: 'https://www.hulyastudio.com/tokat-kuafor' },
           ],
         })}</script>
         <script type="application/ld+json">{JSON.stringify({
@@ -105,7 +105,7 @@ export default function TokatKuaforPage() {
           '@type': 'HairSalon',
           name: 'Hülya Kuaför',
           alternateName: 'HÜLYA Hair & Beauty Studio',
-          url: 'https://hulyastudio.com/tokat-kuafor',
+          url: 'https://www.hulyastudio.com/tokat-kuafor',
           telephone: '+905412757160',
           foundingDate: '2005',
           address: {

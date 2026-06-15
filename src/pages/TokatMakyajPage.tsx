@@ -196,9 +196,9 @@ export default function TokatMakyajPage() {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Ana Sayfa',    item: 'https://hulyastudio.com/' },
-      { '@type': 'ListItem', position: 2, name: 'Tokat Kuafor', item: 'https://hulyastudio.com/tokat-kuafor' },
-      { '@type': 'ListItem', position: 3, name: 'Tokat Makyaj', item: 'https://hulyastudio.com/tokat-makyaj' },
+      { '@type': 'ListItem', position: 1, name: 'Ana Sayfa',    item: 'https://www.hulyastudio.com/' },
+      { '@type': 'ListItem', position: 2, name: 'Tokat Kuafor', item: 'https://www.hulyastudio.com/tokat-kuafor' },
+      { '@type': 'ListItem', position: 3, name: 'Tokat Makyaj', item: 'https://www.hulyastudio.com/tokat-makyaj' },
     ],
   }
 
@@ -207,7 +207,7 @@ export default function TokatMakyajPage() {
     '@type': 'BeautySalon',
     name: 'HULYA Studio',
     description: 'Tokat\'ta profesyonel makyaj, gelin makyaji, nisan makyaji ve ozel gun makyaji hizmeti. Turhal merkezli guzellik salonu.',
-    url: 'https://hulyastudio.com/tokat-makyaj',
+    url: 'https://www.hulyastudio.com/tokat-makyaj',
     telephone: '+90-541-275-71-60',
     address: {
       '@type': 'PostalAddress',
@@ -239,10 +239,10 @@ export default function TokatMakyajPage() {
       <Helmet>
         <title>Tokat Makyaj | Gelin Makyajı ve Profesyonel Makyaj | HÜLYA Studio Turhal</title>
         <meta name="description" content="Tokat'ta profesyonel makyaj hizmeti. Gelin makyajı, nişan, gece ve fotoğraf makyajı. Turhal'da 2005'ten beri hizmet veren HÜLYA Studio. Randevu için WhatsApp." />
-        <link rel="canonical" href="https://hulyastudio.com/tokat-makyaj" />
+        <link rel="canonical" href="https://www.hulyastudio.com/tokat-makyaj" />
         <meta property="og:title" content="Tokat Makyaj | Gelin Makyajı ve Profesyonel Makyaj | HÜLYA Studio" />
         <meta property="og:description" content="Tokat ve Turhal'da profesyonel makyaj hizmeti. Gelin, nişan, gece ve fotoğraf makyajı. 2005'ten beri güvenilir güzellik salonu." />
-        <meta property="og:url" content="https://hulyastudio.com/tokat-makyaj" />
+        <meta property="og:url" content="https://www.hulyastudio.com/tokat-makyaj" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">{JSON.stringify(schemaFAQ)}</script>
         <script type="application/ld+json">{JSON.stringify(schemaBreadcrumb)}</script>

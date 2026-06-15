@@ -121,9 +121,9 @@ const BREADCRUMB_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Ana Sayfa', item: 'https://hulyastudio.com/' },
-    { '@type': 'ListItem', position: 2, name: 'Tokat Kuaför', item: 'https://hulyastudio.com/tokat-kuafor' },
-    { '@type': 'ListItem', position: 3, name: 'Tokat Ombre', item: 'https://hulyastudio.com/tokat-ombre' },
+    { '@type': 'ListItem', position: 1, name: 'Ana Sayfa', item: 'https://www.hulyastudio.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Tokat Kuaför', item: 'https://www.hulyastudio.com/tokat-kuafor' },
+    { '@type': 'ListItem', position: 3, name: 'Tokat Ombre', item: 'https://www.hulyastudio.com/tokat-ombre' },
   ],
 }
 
@@ -132,7 +132,7 @@ const HAIRSALON_SCHEMA = {
   '@type': 'HairSalon',
   name: 'Hülya Hair & Beauty Studio',
   description: 'Tokat Turhal\'da ombre, sombre ve balayage saç renklendirme hizmetleri. Profesyonel teknik, kişiye özel renk analizi.',
-  url: 'https://hulyastudio.com/tokat-ombre',
+  url: 'https://www.hulyastudio.com/tokat-ombre',
   telephone: '+905412757160',
   address: { '@type': 'PostalAddress', streetAddress: 'Turhal', addressLocality: 'Turhal', addressRegion: 'Tokat', addressCountry: 'TR' },
   geo: { '@type': 'GeoCoordinates', latitude: 40.3868, longitude: 36.0820 },
@@ -172,10 +172,10 @@ export default function TokatOmbrePage() {
       <Helmet>
         <title>Tokat Ombre | Hülya Kuaför Saç Renklendirme ve Balayage</title>
         <meta name="description" content="Tokat'ta ombre, sombre ve balayage saç renklendirme hizmetleri. Turhal'daki salonumuzda kişiye özel renk analizi ve profesyonel uygulama." />
-        <link rel="canonical" href="https://hulyastudio.com/tokat-ombre" />
+        <link rel="canonical" href="https://www.hulyastudio.com/tokat-ombre" />
         <meta property="og:title" content="Tokat Ombre | Hülya Kuaför" />
         <meta property="og:description" content="Tokat ombre, sombre ve balayage. Turhal'da kişiye özel renk analizi." />
-        <meta property="og:url" content="https://hulyastudio.com/tokat-ombre" />
+        <meta property="og:url" content="https://www.hulyastudio.com/tokat-ombre" />
         <script type="application/ld+json">{JSON.stringify(FAQ_SCHEMA)}</script>
         <script type="application/ld+json">{JSON.stringify(BREADCRUMB_SCHEMA)}</script>
         <script type="application/ld+json">{JSON.stringify(HAIRSALON_SCHEMA)}</script>

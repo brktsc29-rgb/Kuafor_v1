@@ -202,9 +202,9 @@ const BREADCRUMB_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Ana Sayfa', item: 'https://hulyastudio.com/' },
-    { '@type': 'ListItem', position: 2, name: 'Tokat Kuaför', item: 'https://hulyastudio.com/tokat-kuafor' },
-    { '@type': 'ListItem', position: 3, name: 'Tokat Gelin Saçı', item: 'https://hulyastudio.com/tokat-gelin-saci' },
+    { '@type': 'ListItem', position: 1, name: 'Ana Sayfa', item: 'https://www.hulyastudio.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Tokat Kuaför', item: 'https://www.hulyastudio.com/tokat-kuafor' },
+    { '@type': 'ListItem', position: 3, name: 'Tokat Gelin Saçı', item: 'https://www.hulyastudio.com/tokat-gelin-saci' },
   ],
 }
 
@@ -213,7 +213,7 @@ const HAIRSALON_SCHEMA = {
   '@type': 'HairSalon',
   name: 'Hülya Hair & Beauty Studio',
   description: 'Tokat Turhal\'da gelin saçı ve özel gün saç tasarımı hizmetleri. Hollywood waves, topuz, dağınık topuz, romantik ve tesettür gelin başı.',
-  url: 'https://hulyastudio.com/tokat-gelin-saci',
+  url: 'https://www.hulyastudio.com/tokat-gelin-saci',
   telephone: '+905412757160',
   address: {
     '@type': 'PostalAddress',
@@ -255,10 +255,10 @@ export default function TokatGelinSaciPage() {
       <Helmet>
         <title>Tokat Gelin Saçı | Hülya Kuaför Düğün ve Nişan Saç Tasarımı</title>
         <meta name="description" content="Tokat'ta gelin saçı ve özel gün saç tasarımı hizmetleri. Hülya Kuaför, Turhal'daki salonunda Tokat genelinden gelin adaylarını ağırlamaktadır." />
-        <link rel="canonical" href="https://hulyastudio.com/tokat-gelin-saci" />
+        <link rel="canonical" href="https://www.hulyastudio.com/tokat-gelin-saci" />
         <meta property="og:title" content="Tokat Gelin Saçı | Hülya Kuaför" />
         <meta property="og:description" content="Tokat'ta gelin saçı ve özel gün saç tasarımı. Hollywood waves, topuz, romantik ve tesettür gelin başı. WhatsApp ile stil görüşmesi." />
-        <meta property="og:url" content="https://hulyastudio.com/tokat-gelin-saci" />
+        <meta property="og:url" content="https://www.hulyastudio.com/tokat-gelin-saci" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <script type="application/ld+json">{JSON.stringify(FAQ_SCHEMA)}</script>

@@ -108,7 +108,7 @@ globalThis.window = {
 // Node.js v22: navigator/location getter-only
 ;[
   ['navigator', { userAgent:'node/22', platform:'linux', language:'tr', languages:['tr'], onLine:true }],
-  ['location',  { href:'https://hulyastudio.com', pathname:'/', search:'', hash:'', origin:'https://hulyastudio.com', hostname:'hulyastudio.com', protocol:'https:' }],
+  ['location',  { href:'https://www.hulyastudio.com', pathname:'/', search:'', hash:'', origin:'https://www.hulyastudio.com', hostname:'hulyastudio.com', protocol:'https:' }],
   ['screen',    { width:1440, height:900, availWidth:1440, availHeight:900 }],
 ].forEach(([k,v])=>{
   try { Object.defineProperty(globalThis, k, { value:v, writable:true, configurable:true }) }

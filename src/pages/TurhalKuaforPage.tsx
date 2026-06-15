@@ -89,14 +89,14 @@ export default function TurhalKuaforPage() {
       <Helmet>
         <title>Turhal Kuaför | Hülya Hair &amp; Beauty Studio</title>
         <meta name="description" content="Turhal'da bayan kuaförü ve güzellik salonu. Saç kesimi, gelin saçı, ombre, röfle ve profesyonel saç tasarımı. Pzt–Cmt 09:00–19:00." />
-        <link rel="canonical" href="https://hulyastudio.com/turhal-kuafor" />
+        <link rel="canonical" href="https://www.hulyastudio.com/turhal-kuafor" />
         <script type="application/ld+json">{JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'BreadcrumbList',
           itemListElement: [
-            { '@type': 'ListItem', position: 1, name: 'Ana Sayfa',    item: 'https://hulyastudio.com/' },
-            { '@type': 'ListItem', position: 2, name: 'Tokat Kuaför', item: 'https://hulyastudio.com/tokat-kuafor' },
-            { '@type': 'ListItem', position: 3, name: 'Turhal Kuaför', item: 'https://hulyastudio.com/turhal-kuafor' },
+            { '@type': 'ListItem', position: 1, name: 'Ana Sayfa',    item: 'https://www.hulyastudio.com/' },
+            { '@type': 'ListItem', position: 2, name: 'Tokat Kuaför', item: 'https://www.hulyastudio.com/tokat-kuafor' },
+            { '@type': 'ListItem', position: 3, name: 'Turhal Kuaför', item: 'https://www.hulyastudio.com/turhal-kuafor' },
           ],
         })}</script>
         <script type="application/ld+json">{JSON.stringify({
@@ -104,7 +104,7 @@ export default function TurhalKuaforPage() {
           '@type': 'HairSalon',
           name: 'Hülya Kuaför',
           description: 'Turhal\'da bayan kuaförü ve güzellik salonu. Saç kesimi, gelin saçı, ombre, röfle ve profesyonel saç tasarımı.',
-          url: 'https://hulyastudio.com/turhal-kuafor',
+          url: 'https://www.hulyastudio.com/turhal-kuafor',
           telephone: '+905412757160',
           address: {
             '@type': 'PostalAddress',
