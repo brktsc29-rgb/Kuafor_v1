@@ -6,6 +6,8 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 export function useLenis() {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger)
+    // Prevent auto-refresh on iOS address bar resize (would temporarily move scroll to 0)
+    ScrollTrigger.config({ ignoreMobileResize: true })
 
     const lenis = new Lenis({
       duration: 1.2,

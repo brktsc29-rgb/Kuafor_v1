@@ -35,7 +35,7 @@ export default function AwardsPage() {
       document.body.style.overflow = 'hidden'
     } else {
       document.body.style.overflow = ''
-      ScrollTrigger.refresh()
+      requestAnimationFrame(() => { ScrollTrigger.refresh() })
     }
     return () => { document.body.style.overflow = '' }
   }, [ready])
