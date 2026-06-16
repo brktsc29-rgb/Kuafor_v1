@@ -1,6 +1,5 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import { Helmet } from 'react-helmet-async'
-import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useLenis } from '../hooks/useLenis'
 import AwardsLoader      from './awards/AwardsLoader'
@@ -19,15 +18,14 @@ import AwardsFooter      from './awards/AwardsFooter'
 import CookieBanner      from './awards/CookieBanner'
 import KVKKModal         from './awards/KVKKModal'
 
-if (!import.meta.env.SSR) {
-  gsap.registerPlugin(ScrollTrigger)
-}
 
 export default function AwardsPage() {
   const [ready, setReady] = useState(false)
   const [kvkkOpen, setKvkkOpen] = useState(false)
 
   useLenis()
+
+  const handleLoaderComplete = useCallback(() => setReady(true), [])
 
   // Lock scroll while loader is running
   useEffect(() => {
@@ -52,7 +50,7 @@ export default function AwardsPage() {
         <meta name="twitter:title" content="Hülya Kuaför | Hair & Beauty Studio — Turhal, Tokat" />
         <meta name="twitter:description" content="Turhal, Tokat'ta kuaför hizmetleri. Saç kesimi, ombre, gelin saçı ve makyaj. 2005'ten beri." />
       </Helmet>
-      {!ready && <AwardsLoader onComplete={() => setReady(true)} />}
+      {!ready && <AwardsLoader onComplete={handleLoaderComplete} />}
 
       <AwardsCursor />
 

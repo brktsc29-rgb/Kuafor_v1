@@ -1,5 +1,5 @@
 import { Routes, Route, useLocation } from 'react-router-dom'
-import { useEffect } from 'react'
+import { useLayoutEffect, useEffect } from 'react'
 import AwardsPage       from './components/AwardsPage'
 import TokatKuaforPage  from './pages/TokatKuaforPage'
 import TokatGelinSaciPage from './pages/TokatGelinSaciPage'
@@ -8,9 +8,11 @@ import TokatOmbrePage   from './pages/TokatOmbrePage'
 import TokatRoflePage   from './pages/TokatRoflePage'
 import TokatMakyajPage  from './pages/TokatMakyajPage'
 
+const useIsomorphicLayoutEffect = typeof window !== 'undefined' ? useLayoutEffect : useEffect
+
 function ScrollToTop() {
   const { pathname } = useLocation()
-  useEffect(() => { window.scrollTo(0, 0) }, [pathname])
+  useIsomorphicLayoutEffect(() => { window.scrollTo(0, 0) }, [pathname])
   return null
 }
 
