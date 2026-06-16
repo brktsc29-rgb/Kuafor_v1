@@ -23,19 +23,23 @@ export default function AwardsPage() {
   const [ready, setReady] = useState(false)
   const [kvkkOpen, setKvkkOpen] = useState(false)
 
-  useLenis()
+  useLenis(!ready)
 
   const handleLoaderComplete = useCallback(() => setReady(true), [])
 
-  // Lock scroll while loader is running
   useEffect(() => {
     if (!ready) {
       document.body.style.overflow = 'hidden'
-    } else {
-      document.body.style.overflow = ''
-      requestAnimationFrame(() => { ScrollTrigger.refresh() })
+      return () => { document.body.style.overflow = '' }
     }
-    return () => { document.body.style.overflow = '' }
+    document.body.style.overflow = ''
+    // Double-rAF: outer frame lets Lenis/GSAP ticker complete their first tick after
+    // the overflow lock is removed; inner frame calls refresh with correct scroll offsets.
+    let inner = 0
+    const outer = requestAnimationFrame(() => {
+      inner = requestAnimationFrame(() => { ScrollTrigger.refresh() })
+    })
+    return () => { cancelAnimationFrame(outer); cancelAnimationFrame(inner) }
   }, [ready])
 
   return (

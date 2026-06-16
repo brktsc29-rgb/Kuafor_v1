@@ -1,6 +1,5 @@
 import { useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 const IMAGES = [
   { src: '/images/ChatGPT Image 4 Haz 2026 01_39_53.webp', caption: 'Saç Tasarımı',     alt: 'Hülya Kuaför Turhal saç tasarımı',            idx: '01' },
@@ -44,8 +43,6 @@ export default function AwardsGallery() {
   useEffect(() => {
     const isDesktop = window.matchMedia('(min-width: 1024px)').matches
     if (!isDesktop) return
-
-    gsap.registerPlugin(ScrollTrigger)
 
     const outer = outerRef.current
     const inner = innerRef.current

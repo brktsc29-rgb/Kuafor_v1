@@ -1,5 +1,6 @@
 import { Routes, Route, useLocation } from 'react-router-dom'
-import { useLayoutEffect, useEffect } from 'react'
+import { useEffect } from 'react'
+import { lenisInstance } from './hooks/useLenis'
 import AwardsPage       from './components/AwardsPage'
 import TokatKuaforPage  from './pages/TokatKuaforPage'
 import TokatGelinSaciPage from './pages/TokatGelinSaciPage'
@@ -8,11 +9,15 @@ import TokatOmbrePage   from './pages/TokatOmbrePage'
 import TokatRoflePage   from './pages/TokatRoflePage'
 import TokatMakyajPage  from './pages/TokatMakyajPage'
 
-const useIsomorphicLayoutEffect = typeof window !== 'undefined' ? useLayoutEffect : useEffect
-
 function ScrollToTop() {
   const { pathname } = useLocation()
-  useIsomorphicLayoutEffect(() => { window.scrollTo(0, 0) }, [pathname])
+  useEffect(() => {
+    if (lenisInstance) {
+      lenisInstance.scrollTo(0, { immediate: true })
+    } else {
+      window.scrollTo(0, 0)
+    }
+  }, [pathname])
   return null
 }
 
