@@ -10,6 +10,7 @@ export default function AwardsCursor() {
     if (window.matchMedia('(hover: none)').matches) return
 
     setVisible(true)
+    document.body.style.cursor = 'none'
 
     const dot  = dotRef.current!
     const ring = ringRef.current!
@@ -54,6 +55,7 @@ export default function AwardsCursor() {
     const t = setTimeout(refreshTargets, 500)
 
     return () => {
+      document.body.style.cursor = ''
       gsap.ticker.remove(tick)
       document.removeEventListener('mousemove', onMove)
       clearTimeout(t)
