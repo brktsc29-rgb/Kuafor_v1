@@ -2,6 +2,7 @@ import { useEffect, useRef, useState, FormEvent } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { motion } from 'framer-motion'
+import { gtagEvent } from '../../lib/analytics'
 
 const WHATSAPP_SVG = (
   <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
@@ -51,6 +52,7 @@ export default function AwardsCTA() {
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault()
+    gtagEvent('appointment_submit', { event_category: 'conversion', event_label: 'contact_form' })
     const msg = `Merhaba, randevu almak istiyorum.%0AAd: ${encodeURIComponent(form.name)}%0AHizmet: ${encodeURIComponent(form.service || 'Belirtilmedi')}%0ANot: ${encodeURIComponent(form.note || '-')}`
     window.open(`https://wa.me/905412757160?text=${msg}`, '_blank')
     setSent(true)
