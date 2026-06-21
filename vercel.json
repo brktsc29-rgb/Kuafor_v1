@@ -7,6 +7,11 @@
       "has": [{ "type": "host", "value": "hulyastudio.com" }],
       "destination": "https://www.hulyastudio.com/:path*",
       "statusCode": 301
+    },
+    {
+      "source": "/tokat-rofle",
+      "destination": "/amasya-kuafor",
+      "statusCode": 301
     }
   ],
   "rewrites": [
