@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 
 const STATS = [
   { value: 'Yüzlerce', label: 'Mutlu Misafir'       },
-  { value: '20+',     label: 'Yıllık Deneyim'      },
+  { value: '16+',     label: 'Yıllık Deneyim'      },
   { value: '4.5★',    label: 'Google Değerlendirmesi' },
 ]
 

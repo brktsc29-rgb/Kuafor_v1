@@ -358,7 +358,7 @@ export default function TokatOmbrePage() {
             </motion.div>
             <motion.div initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.15 }}>
               <div className="relative overflow-hidden" style={{ borderRadius: 4, aspectRatio: '4/3', background: 'linear-gradient(160deg, #1A0E08 0%, #2E1A0E 100%)' }}>
-                <img src="/images/ombre/rofle.webp" alt="Tokat röfle saç renklendirme — Hülya Kuaför Turhal" className="absolute inset-0 w-full h-full" style={{ objectFit: 'cover', objectPosition: 'center top', opacity: 0.85 }} onError={e => { (e.target as HTMLImageElement).style.display = 'none' }} loading="lazy" />
+                <img src="/images/ombre/sombre.webp" alt="Tokat röfle saç renklendirme — Hülya Kuaför Turhal" className="absolute inset-0 w-full h-full" style={{ objectFit: 'cover', objectPosition: 'center top', opacity: 0.85 }} onError={e => { (e.target as HTMLImageElement).style.display = 'none' }} loading="lazy" />
                 <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(8,6,4,0.70) 0%, transparent 60%)' }} />
                 <div className="absolute bottom-0 left-0 right-0 p-5">
                   <span style={{ fontFamily: 'Inter, sans-serif', color: '#C98F7A', fontSize: '0.52rem', letterSpacing: '0.32em', textTransform: 'uppercase', background: 'rgba(8,6,4,0.55)', padding: '3px 8px', borderRadius: 100 }}>RÖFLE</span>
