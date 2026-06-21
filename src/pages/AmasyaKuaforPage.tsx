@@ -189,11 +189,12 @@ export default function AmasyaKuaforPage() {
 
         {/* Hero */}
         <section
-          className="relative flex flex-col justify-end px-6 md:px-14 pb-16 md:pb-24"
-          style={{ minHeight: '80svh', paddingTop: 100, background: 'linear-gradient(160deg, #1A1210 0%, #2A1C18 50%, #1A1210 100%)' }}
+          style={{ minHeight: '100svh', background: '#080604', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '0 0 72px', position: 'relative', overflow: 'hidden' }}
         >
-          <div className="absolute inset-0 pointer-events-none" style={{ background: 'radial-gradient(ellipse at 60% 40%, rgba(201,143,122,0.12) 0%, transparent 60%)' }} />
-          <div className="max-w-screen-xl mx-auto w-full relative z-10">
+          <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url(/images/4E3D1939-0CFB-4C8B-8CE3-7A787126B37C.webp)', backgroundSize: 'cover', backgroundPosition: 'center 20%', filter: 'brightness(0.45)' }} />
+          <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(8,6,4,0.95) 0%, rgba(8,6,4,0.4) 55%, rgba(8,6,4,0.15) 100%)' }} />
+          <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to right, rgba(8,6,4,0.55) 0%, transparent 60%)' }} />
+          <div className="relative px-6 md:px-14 max-w-screen-xl mx-auto w-full">
             <motion.p
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
