@@ -17,6 +17,10 @@ function ScrollToTop() {
     } else {
       window.scrollTo(0, 0)
     }
+    window.gtag?.('event', 'page_view', {
+      page_path: pathname,
+      page_title: document.title,
+    })
   }, [pathname])
   return null
 }
