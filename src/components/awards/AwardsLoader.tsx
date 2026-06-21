@@ -11,14 +11,15 @@ export default function AwardsLoader({ onComplete }: Props) {
   const countRef  = useRef<HTMLSpanElement>(null)
   const barRef    = useRef<HTMLDivElement>(null)
   const brandRef  = useRef<HTMLDivElement>(null)
+  const exitRef   = useRef<gsap.core.Timeline | null>(null)
 
   useEffect(() => {
     const obj = { n: 0 }
 
     const tl = gsap.timeline({
       onComplete() {
-        const exit = gsap.timeline({ onComplete })
-        exit
+        exitRef.current = gsap.timeline({ onComplete })
+        exitRef.current
           .to(topRef.current, { yPercent: -100, duration: 1.0, ease: 'power4.inOut' })
           .to(botRef.current, { yPercent: 100,  duration: 1.0, ease: 'power4.inOut' }, '<')
       },
@@ -43,7 +44,11 @@ export default function AwardsLoader({ onComplete }: Props) {
         0.4
       )
 
-    return () => { tl.kill() }
+    return () => {
+      tl.kill()
+      exitRef.current?.kill()
+      exitRef.current = null
+    }
   }, [onComplete])
 
   const sharedPanel: React.CSSProperties = {

@@ -1,5 +1,23 @@
 {
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "hulyastudio.com" }],
+      "destination": "https://www.hulyastudio.com/:path*",
+      "statusCode": 301
+    },
+    {
+      "source": "/tokat-rofle",
+      "destination": "/amasya-kuafor",
+      "statusCode": 301
+    }
+  ],
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+    {
+      "source": "/((?!sitemap.xml|robots.txt|favicon.svg|images|videos|assets).*)",
+      "destination": "/index.html"
+    }
   ]
 }

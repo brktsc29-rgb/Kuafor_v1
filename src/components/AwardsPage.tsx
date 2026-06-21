@@ -1,6 +1,5 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import { Helmet } from 'react-helmet-async'
-import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useLenis } from '../hooks/useLenis'
 import AwardsLoader      from './awards/AwardsLoader'
@@ -19,23 +18,28 @@ import AwardsFooter      from './awards/AwardsFooter'
 import CookieBanner      from './awards/CookieBanner'
 import KVKKModal         from './awards/KVKKModal'
 
-gsap.registerPlugin(ScrollTrigger)
 
 export default function AwardsPage() {
   const [ready, setReady] = useState(false)
   const [kvkkOpen, setKvkkOpen] = useState(false)
 
-  useLenis()
+  useLenis(!ready)
 
-  // Lock scroll while loader is running
+  const handleLoaderComplete = useCallback(() => setReady(true), [])
+
   useEffect(() => {
     if (!ready) {
       document.body.style.overflow = 'hidden'
-    } else {
-      document.body.style.overflow = ''
-      ScrollTrigger.refresh()
+      return () => { document.body.style.overflow = '' }
     }
-    return () => { document.body.style.overflow = '' }
+    document.body.style.overflow = ''
+    // Double-rAF: outer frame lets Lenis/GSAP ticker complete their first tick after
+    // the overflow lock is removed; inner frame calls refresh with correct scroll offsets.
+    let inner = 0
+    const outer = requestAnimationFrame(() => {
+      inner = requestAnimationFrame(() => { ScrollTrigger.refresh() })
+    })
+    return () => { cancelAnimationFrame(outer); cancelAnimationFrame(inner) }
   }, [ready])
 
   return (
@@ -43,86 +47,29 @@ export default function AwardsPage() {
       <Helmet>
         <title>Hülya Kuaför | Tokat Gelin Saçı, Ombre ve Profesyonel Saç Tasarımı</title>
         <meta name="description" content="Tokat'ta profesyonel kuaför hizmetleri. Gelin saçı, ombre, röfle, saç boyama ve modern saç tasarımı için Hülya Kuaför ile güzelliğinizi öne çıkarın." />
-        <link rel="canonical" href="https://hulyastudio.com/" />
+        <link rel="canonical" href="https://www.hulyastudio.com/" />
         <meta property="og:title" content="Hülya Kuaför | Tokat Gelin Saçı ve Profesyonel Saç Tasarımı" />
-        <meta property="og:description" content="Turhal, Tokat'ta 20+ yıllık deneyimle gelin saçı, ombre, röfle ve saç bakım hizmetleri." />
-        <meta property="og:url" content="https://hulyastudio.com/" />
-        <meta property="og:type" content="website" />
-        <script type="application/ld+json">{JSON.stringify({
-          '@context': 'https://schema.org',
-          '@type': 'HairSalon',
-          name: 'Hülya Kuaför',
-          alternateName: 'HÜLYA Hair & Beauty Studio',
-          description: 'Turhal, Tokat\'ta 20 yılı aşkın deneyimle profesyonel kuaför hizmetleri. Gelin saçı, ombre, balayage, röfle, saç boyama ve makyaj.',
-          url: 'https://hulyastudio.com/',
-          telephone: '+905412757160',
-          address: {
-            '@type': 'PostalAddress',
-            streetAddress: 'Turhal',
-            addressLocality: 'Turhal',
-            addressRegion: 'Tokat',
-            postalCode: '60300',
-            addressCountry: 'TR',
-          },
-          geo: {
-            '@type': 'GeoCoordinates',
-            latitude: 40.3868,
-            longitude: 36.0820,
-          },
-          openingHours: 'Mo,Tu,We,Th,Fr,Sa 09:00-19:00',
-          areaServed: ['Tokat', 'Turhal', 'Zile', 'Erbaa', 'Niksar'],
-          hasMap: 'https://maps.google.com/?q=Hülya+Kuaför+Turhal+Tokat',
-          sameAs: ['https://www.instagram.com/hulyaakuafor'],
-          priceRange: '₺₺',
-          currenciesAccepted: 'TRY',
-          paymentAccepted: 'Cash, Credit Card',
-        })}</script>
-        <script type="application/ld+json">{JSON.stringify({
-          '@context': 'https://schema.org',
-          '@type': 'BreadcrumbList',
-          itemListElement: [
-            { '@type': 'ListItem', position: 1, name: 'Ana Sayfa', item: 'https://hulyastudio.com/' },
-          ],
-        })}</script>
+        <meta property="og:description" content="Turhal, Tokat'ta 16+ yıllık deneyimle gelin saçı, ombre, röfle ve saç bakım hizmetleri." />
+        <meta property="og:url" content="https://www.hulyastudio.com/" />
+        <meta name="twitter:title" content="Hülya Kuaför | Hair & Beauty Studio — Turhal, Tokat" />
+        <meta name="twitter:description" content="Turhal, Tokat'ta kuaför hizmetleri. Saç kesimi, ombre, gelin saçı ve makyaj. 2010'dan beri." />
       </Helmet>
-      {/* Loader — unmounts itself visually via GSAP, state removes it */}
-      {!ready && <AwardsLoader onComplete={() => setReady(true)} />}
+      {!ready && <AwardsLoader onComplete={handleLoaderComplete} />}
 
-      {/* Custom cursor (desktop only) */}
       <AwardsCursor />
 
-      {/* Sticky nav */}
       <AwardsNav ready={ready} />
 
       <main>
-        {/* 1. Fullscreen video hero */}
         <AwardsHero active={ready} />
-
-        {/* 2. Rose-gold scrolling marquee */}
         <AwardsMarquee />
-
-        {/* 3. Word-by-word statement */}
         <AwardsStatement />
-
-        {/* 4. Services list with staggered reveals */}
         <AwardsServices />
-
-        {/* 5. Pinned horizontal scroll gallery */}
         <AwardsGallery />
-
-        {/* 6. Reversed marquee */}
         <AwardsMarquee reverse />
-
-        {/* 7. Story / About */}
         <AwardsStory />
-
-        {/* 8. Testimonials carousel */}
         <AwardsTestimonials />
-
-        {/* 9. Trust signals */}
         <AwardsTrust />
-
-        {/* 10. Booking CTA */}
         <AwardsCTA />
       </main>
 

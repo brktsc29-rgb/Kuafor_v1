@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hulyastudio.com/sitemap.xml
+Sitemap: https://www.hulyastudio.com/sitemap.xml

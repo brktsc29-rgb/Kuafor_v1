@@ -6,27 +6,43 @@ export default function AwardsCursor() {
   const ringRef = useRef<HTMLDivElement>(null)
   const [visible, setVisible] = useState(false)
 
+  // Effect 1: detect mouse device and hide native cursor
   useEffect(() => {
-    if (window.matchMedia('(hover: none)').matches) return
-
+    if (!window.matchMedia('(pointer: fine)').matches) return
     setVisible(true)
+    document.body.style.cursor = 'none'
+    return () => { document.body.style.cursor = '' }
+  }, [])
 
-    const dot  = dotRef.current!
-    const ring = ringRef.current!
+  // Effect 2: set up GSAP after cursor divs are actually in the DOM (visible=true)
+  useEffect(() => {
+    if (!visible) return
+    const dot  = dotRef.current
+    const ring = ringRef.current
+    if (!dot || !ring) return
 
-    let mx = -200, my = -200
-    let rx = -200, ry = -200
+    const DOT_HALF  = 3   // half of 6px
+    const RING_HALF = 19  // half of 38px
+    const cx = window.innerWidth  / 2
+    const cy = window.innerHeight / 2
+
+    let mx = cx, my = cy
+    let rx = cx, ry = cy
+
+    // Start at viewport center so cursor is visible before first mouse move
+    gsap.set(dot,  { x: cx - DOT_HALF,  y: cy - DOT_HALF  })
+    gsap.set(ring, { x: cx - RING_HALF, y: cy - RING_HALF })
 
     const onMove = (e: MouseEvent) => {
       mx = e.clientX
       my = e.clientY
-      gsap.set(dot, { x: mx, y: my })
+      gsap.set(dot, { x: mx - DOT_HALF, y: my - DOT_HALF })
     }
 
     const tick = () => {
       rx += (mx - rx) * 0.10
       ry += (my - ry) * 0.10
-      gsap.set(ring, { x: rx, y: ry })
+      gsap.set(ring, { x: rx - RING_HALF, y: ry - RING_HALF })
     }
 
     const onEnterInteractive = () => {
@@ -50,7 +66,6 @@ export default function AwardsCursor() {
       })
     }
     refreshTargets()
-
     const t = setTimeout(refreshTargets, 500)
 
     return () => {
@@ -58,7 +73,7 @@ export default function AwardsCursor() {
       document.removeEventListener('mousemove', onMove)
       clearTimeout(t)
     }
-  }, [])
+  }, [visible])
 
   if (!visible) return null
 
@@ -69,8 +84,8 @@ export default function AwardsCursor() {
     pointerEvents: 'none',
     zIndex: 9999,
     mixBlendMode: 'difference',
-    transform: 'translate(-200px,-200px)',
     borderRadius: '50%',
+    willChange: 'transform',
   }
 
   return (

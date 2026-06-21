@@ -150,11 +150,6 @@
 
 /* ─── AWARDS PAGE ─── */
 
-/* Hide default cursor on awards page */
-.awards-page,
-.awards-page * {
-  cursor: none !important;
-}
 
 /* Marquee keyframes */
 @keyframes marqueeScroll {

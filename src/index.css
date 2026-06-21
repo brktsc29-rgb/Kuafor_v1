@@ -12,7 +12,8 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  /* scroll-behavior managed by Lenis on the home page; CSS smooth conflicts with GSAP pin */
+  scroll-behavior: auto;
 }
 
 body {

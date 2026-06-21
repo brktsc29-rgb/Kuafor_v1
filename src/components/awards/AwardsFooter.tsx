@@ -123,7 +123,7 @@ export default function AwardsFooter({ onOpenKVKK }: { onOpenKVKK: () => void })
           style={{ borderTop: '1px solid rgba(248,245,242,0.06)' }}
         >
           <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(248,245,242,0.18)', fontSize: '0.58rem', letterSpacing: '0.16em', textTransform: 'uppercase' }}>
-            2005&apos;ten beri Turhal&apos;ın kuaför ve güzellik adresi
+            2010&apos;dan beri Turhal&apos;ın kuaför ve güzellik adresi
           </p>
           <button
             onClick={onOpenKVKK}
