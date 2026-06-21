@@ -30,36 +30,12 @@ const TECHNIQUES = [
     accent:  '#C98F7A',
   },
   {
-    slug:    'sombre',
-    label:   'Sombre',
-    tag:     'SOMBRE',
-    desc:    'Subtle ombre — daha az kontrast, çok daha doğal ve hafif geçiş.',
-    bg:      'linear-gradient(160deg, #141008 0%, #221A0E 50%, #2E2214 100%)',
-    accent:  '#D4A090',
-  },
-  {
     slug:    'california-ombre',
     label:   'California',
     tag:     'TREND',
     desc:    'Kumlu sarı tonlarla yaz ışığı hissi. Özellikle açık ve orta saçlara yakışır.',
     bg:      'linear-gradient(160deg, #1A1208 0%, #2A1C08 50%, #3A2408 100%)',
     accent:  '#C98F7A',
-  },
-  {
-    slug:    'brunette-ombre',
-    label:   'Brunette Ombre',
-    tag:     'KLASİK',
-    desc:    'Koyu kahveden orta kahveye sıcak geçiş. Bakımlı ve zamansız.',
-    bg:      'linear-gradient(160deg, #0E0C08 0%, #1A1408 50%, #241C0A 100%)',
-    accent:  '#D4A090',
-  },
-  {
-    slug:    'copper-ombre',
-    label:   'Bakır Ombre',
-    tag:     'SICAK TON',
-    desc:    'Bakır, kızıl ve bronz tonlarıyla sıcak ışıltı. Sonbahar için ideal.',
-    bg:      'linear-gradient(160deg, #180E08 0%, #28140A 50%, #38180A 100%)',
-    accent:  '#B9816F',
   },
 ]
 
@@ -358,7 +334,7 @@ export default function TokatOmbrePage() {
             </motion.div>
             <motion.div initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.15 }}>
               <div className="relative overflow-hidden" style={{ borderRadius: 4, aspectRatio: '4/3', background: 'linear-gradient(160deg, #1A0E08 0%, #2E1A0E 100%)' }}>
-                <img src="/images/ombre/sombre.webp" alt="Tokat röfle saç renklendirme — Hülya Kuaför Turhal" className="absolute inset-0 w-full h-full" style={{ objectFit: 'cover', objectPosition: 'center top', opacity: 0.85 }} onError={e => { (e.target as HTMLImageElement).style.display = 'none' }} loading="lazy" />
+                <img src="/images/ombre/sombre.webp" alt="Tokat röfle saç renklendirme — Hülya Kuaför Turhal" className="absolute inset-0 w-full h-full" style={{ objectFit: 'cover', objectPosition: '50% 40%', opacity: 0.85 }} onError={e => { (e.target as HTMLImageElement).style.display = 'none' }} loading="lazy" />
                 <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(8,6,4,0.70) 0%, transparent 60%)' }} />
                 <div className="absolute bottom-0 left-0 right-0 p-5">
                   <span style={{ fontFamily: 'Inter, sans-serif', color: '#C98F7A', fontSize: '0.52rem', letterSpacing: '0.32em', textTransform: 'uppercase', background: 'rgba(8,6,4,0.55)', padding: '3px 8px', borderRadius: 100 }}>RÖFLE</span>
@@ -421,17 +397,18 @@ export default function TokatOmbrePage() {
         </section>
 
         {/* Google Maps */}
-        <section style={{ background: '#F8F5F2', borderTop: '1px solid rgba(42,33,29,0.08)' }}>
-          <iframe
-            title="HÜLYA Studio Turhal harita"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.999600145139!2d36.08035847639812!3d40.386701471444475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x407ded8ffd05f5e9%3A0x3bc7ace5c8e629d2!2zSMO8bHlhIEt1YWbDtnI!5e0!3m2!1str!2str!4v1780525279040!5m2!1str!2str"
-            width="100%"
-            height="360"
-            style={{ border: 0, display: 'block' }}
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          />
+        <section className="py-10 px-6 md:px-14" style={{ background: '#F8F5F2', borderTop: '1px solid rgba(42,33,29,0.08)' }}>
+          <div className="w-full max-w-2xl mx-auto overflow-hidden" style={{ borderRadius: 20, border: '1px solid rgba(42,33,29,0.10)', boxShadow: '0 8px 32px rgba(42,33,29,0.08)' }}>
+            <iframe
+              title="HÜLYA Studio Turhal harita"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.999600145139!2d36.08035847639812!3d40.386701471444475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x407ded8ffd05f5e9%3A0x3bc7ace5c8e629d2!2zSMO8bHlhIEt1YWbDtnI!5e0!3m2!1str!2str!4v1780525279040!5m2!1str!2str"
+              width="100%"
+              height="300"
+              style={{ border: 0, display: 'block' }}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+          </div>
         </section>
 
         {/* Footer */}
