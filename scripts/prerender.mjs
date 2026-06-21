@@ -170,7 +170,7 @@ const ROUTES = [
   '/tokat-gelin-saci',
   '/turhal-kuafor',
   '/tokat-ombre',
-  '/tokat-rofle',
+  '/amasya-kuafor',
   '/tokat-makyaj',
 ]
 
