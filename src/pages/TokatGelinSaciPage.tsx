@@ -14,6 +14,12 @@ const WA_SVG = (
   </svg>
 )
 
+const IG_SVG = (
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+  </svg>
+)
+
 const STYLES = [
   {
     slug:    'hollywood-waves',
@@ -59,7 +65,7 @@ const STYLES = [
     slug:    'tesettur-gelin-basi',
     label:   'Tesettür Gelin Başı',
     tag:     'ÖRTÜLÜ',
-    desc:    'Duvak ve örtü uyumlu, incelikli tesettür tasarımları.',
+    desc:    'Tülbent, şal veya boncuklu başlık uyumlu; duvak ve taç ile birlikte tasarlanan özenli tesettür başı. Örtünüzü getirmeniz yeterli — tasarımı birlikte şekillendiriyoruz.',
     accent:  '#D4A090',
     bg:      'linear-gradient(145deg, #150F0B 0%, #251A14 100%)',
   },
@@ -106,8 +112,8 @@ const FAQS: { q: string; a: string }[] = [
     a: 'Evet, duvak takma ve sabitleme gelin saçı hizmetine dahil. Duvak tutturma yöntemi düğün töreni gerekliliklerine göre belirleniyor; uzun süreli kullanım için saç iğnesi ve özel teknikler kullanılıyor.',
   },
   {
-    q: 'Tesettür gelin başı yapılıyor mu?',
-    a: 'Evet. Örtü uyumlu, başlık ve duvak ile birlikte tasarlanmış tesettür gelin başı hizmeti sunuyoruz. Düğün günü örtünüzü veya başlığınızı getirmeniz, tasarımın tam istediğiniz gibi çıkması açısından çok yardımcı oluyor.',
+    q: 'Tesettür gelin başı yapılıyor mu? Hangi örtü tipleri için tasarım yapıyorsunuz?',
+    a: 'Evet. Tülbent, dantelli şal, boncuklu başlık, taçlı örtü ve pratik hazır başlık dahil her örtü tipine uyumlu tasarım yapıyoruz. Duvak ve taç ile birlikte koordineli biçimde kurgulanıyor. Gelinliğinizin yaka yapısına ve örtünün tutuş biçimine göre önerimizi şekillendiriyoruz. Düğün günü örtünüzü veya başlığınızı yanınızda getirmeniz, tasarımın tam istediğiniz gibi çıkması açısından çok yardımcı oluyor. Saçınızın fotoğrafını ve kullanacağınız örtüyü önceden WhatsApp\'tan paylaşırsanız daha detaylı yönlendirebiliriz.',
   },
   {
     q: 'Saçım kısaysa veya ince yapılıysa ne yapılabilir?',
@@ -122,8 +128,8 @@ const FAQS: { q: string; a: string }[] = [
     a: 'Evet. Kına gecesi saç tasarımı, nişan saçı ve özel gün updo hizmetleri de yapılıyor. Düğün öncesi tüm etkinlikler için ayrı randevu planlanabilir.',
   },
   {
-    q: 'Tokat Merkez, Zile, Erbaa veya Niksar\'dan gelinlere randevu veriyor musunuz?',
-    a: 'Evet. Salonumuz Turhal\'da; Tokat Merkez\'den yaklaşık 50 km (45–50 dk), Zile\'den 40 km, Erbaa\'dan 55 km, Niksar\'dan ise yaklaşık 60 km uzaklıkta. Pek çok gelin adayı farklı ilçelerden salonumuza geliyor. Uzaktan gelen misafirlerimizin saatine özellikle önem veriyoruz.',
+    q: 'Tokat Merkez, Zile, Erbaa, Niksar, Amasya veya Merzifon\'dan gelinlere randevu veriyor musunuz?',
+    a: 'Evet. Salonumuz Turhal\'da; Tokat Merkez\'den yaklaşık 50 km (45–50 dk), Zile\'den 21 km (23 dk), Erbaa\'dan 55 km, Niksar\'dan 60 km, Amasya\'dan 65 km (60 dk), Merzifon\'dan 114 km (90 dk) uzaklıkta. Pek çok gelin adayı farklı ilçelerden salonumuza geliyor. Uzaktan gelen misafirlerimizin saatine özellikle önem veriyoruz.',
   },
   {
     q: 'Gelin saçında hangi ürünler kullanılıyor?',
@@ -227,8 +233,8 @@ const HAIRSALON_SCHEMA = {
     latitude: 40.3868,
     longitude: 36.0820,
   },
-  openingHours: 'Mo,Tu,We,Th,Fr,Sa 09:00-19:00',
-  areaServed: ['Tokat', 'Turhal', 'Zile', 'Erbaa', 'Niksar', 'Tokat Merkez'],
+  openingHours: 'Mo,Tu,We,Th,Fr,Sa 08:00-19:00',
+  areaServed: ['Tokat', 'Turhal', 'Zile', 'Erbaa', 'Niksar', 'Amasya', 'Merzifon', 'Tokat Merkez'],
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
     name: 'Gelin Saçı Hizmetleri',
@@ -276,6 +282,14 @@ export default function TokatGelinSaciPage() {
           <Link to="/" style={{ fontFamily: 'Instrument Serif, serif', color: '#F8F5F2', fontSize: '1.35rem', letterSpacing: '-0.3px', textDecoration: 'none' }}>
             HÜLYA
           </Link>
+          <a
+            href="https://www.instagram.com/hulyaakuafor"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: 'rgba(248,245,242,0.60)', display: 'flex', alignItems: 'center', lineHeight: 1 }}
+          >
+            {IG_SVG}
+          </a>
           <a
             href={WHATSAPP}
             target="_blank"
@@ -469,6 +483,71 @@ export default function TokatGelinSaciPage() {
           </div>
         </section>
 
+        {/* ── Tesettür Gelin Başı ── */}
+        <section className="py-16 md:py-24 px-6 md:px-14" style={{ background: '#2A211D', borderTop: '1px solid rgba(248,245,242,0.06)' }}>
+          <div className="max-w-screen-xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+            <motion.div
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.7 }}
+            >
+              <p style={{ fontFamily: 'Inter, sans-serif', color: '#C98F7A', fontSize: '0.6rem', letterSpacing: '0.36em', textTransform: 'uppercase', marginBottom: 18 }}>
+                Tesettür Gelin Başı
+              </p>
+              <h2 style={{ fontFamily: 'Instrument Serif, serif', color: '#F8F5F2', fontSize: 'clamp(2rem, 4.5vw, 5rem)', lineHeight: 1.0, letterSpacing: '-0.8px' }}>
+                Örtünüze Uygun<br />
+                <em style={{ color: '#C98F7A', fontStyle: 'italic' }}>Özel Tasarım</em>
+              </h2>
+              <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(248,245,242,0.60)', fontSize: '0.88rem', lineHeight: 1.85, marginTop: 20 }}>
+                Tesettür gelin başı, örtünün bir parçası olarak değil, tasarımın merkezinde kurgulanır. Gelinliğin yaka yapısı, duvak boyu ve başlık tercihine göre bütünlüklü bir görünüm elde edilir.
+              </p>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.7, delay: 0.15 }}
+            >
+              {[
+                {
+                  title: 'Örtü Çeşitleri',
+                  body: 'Tülbent, dantelli şal, boncuklu başlık, taçlı örtü ve pratik hazır başlık — her örtü tipine göre farklı sabitleme ve şekillendirme teknikleri uygulanıyor. Örtünüzü düğün günü getirmeniz yeterli.',
+                },
+                {
+                  title: 'Duvak ve Taç Uyumu',
+                  body: 'Duvak uzunluğu ve taç konumu örtünün üstüne ya da altına göre planlanıyor. Düşen duvak, tiara veya klasik tarak tutturma; seçim gelinliğin ve örtünün yapısına göre önerilir.',
+                },
+                {
+                  title: 'Stil Önerileri',
+                  body: 'Ön tarafta hacimli şekillendirme, arkada sıkı topuz ya da dalgalı form — tesettür başında görünür saçın stilini, örtünün nasıl oturacağını belirler. Tercihlerinizi WhatsApp\'tan fotoğrafla paylaşmanız işlemi kolaylaştırır.',
+                },
+                {
+                  title: 'Hazırlık Önerileri',
+                  body: 'Saçınızı yıkamış ve tamamen kurumuş halde gelmenizi öneririz. Kullanacağınız örtü, taç veya başlığı yanınızda getirin. Saçınızın uzunluğunu önceden paylaşırsanız süreye dair doğru bir tahmin verebiliriz.',
+                },
+              ].map((item, i) => (
+                <motion.div
+                  key={item.title}
+                  initial={{ opacity: 0, x: 12 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: i * 0.09 }}
+                  className="flex gap-5 mb-7"
+                >
+                  <div style={{ flexShrink: 0, width: 28, height: 28, borderRadius: '50%', background: 'rgba(201,143,122,0.15)', border: '1px solid rgba(201,143,122,0.30)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: 2 }}>
+                    <span style={{ fontFamily: 'Instrument Serif, serif', color: '#C98F7A', fontSize: '0.85rem' }}>{i + 1}</span>
+                  </div>
+                  <div>
+                    <p style={{ fontFamily: 'Inter, sans-serif', color: '#F8F5F2', fontSize: '0.82rem', fontWeight: 500, letterSpacing: '0.03em', marginBottom: 5 }}>{item.title}</p>
+                    <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(248,245,242,0.55)', fontSize: '0.82rem', lineHeight: 1.75 }}>{item.body}</p>
+                  </div>
+                </motion.div>
+              ))}
+            </motion.div>
+          </div>
+        </section>
+
         {/* ── Consultation ── */}
         <section className="py-16 md:py-28 px-6 md:px-14" style={{ background: '#F3ECE7', borderTop: '1px solid rgba(42,33,29,0.08)' }}>
           <div className="max-w-screen-xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
@@ -548,16 +627,18 @@ export default function TokatGelinSaciPage() {
                 <em style={{ color: '#C98F7A', fontStyle: 'italic' }}>Yanından Gelinler</em>
               </h2>
               <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.68)', fontSize: '0.92rem', lineHeight: 1.85 }}>
-                Salonumuz Turhal'da. Tokat Merkez, Zile, Erbaa ve Niksar'dan gelin adayları yıllardır buraya geliyor. Uzaklık farklı; beklenti hep aynı: düğün gününde tam istenen sonuç.
+                Salonumuz Turhal'da. Tokat Merkez, Zile, Erbaa, Niksar, Amasya ve Merzifon'dan gelin adayları yıllardır buraya geliyor. Uzaklık farklı; beklenti hep aynı: düğün gününde tam istenen sonuç.
               </p>
             </motion.div>
 
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-4">
               {[
                 { city: 'Tokat Merkez', dist: '~50 km', time: '45–50 dk' },
-                { city: 'Zile',         dist: '~40 km', time: '~40 dk'  },
-                { city: 'Erbaa',        dist: '~55 km', time: '~55 dk'  },
-                { city: 'Niksar',       dist: '~60 km', time: '~60 dk'  },
+                { city: 'Zile',         dist: '21 km',  time: '23 dk'    },
+                { city: 'Erbaa',        dist: '~55 km', time: '~55 dk'   },
+                { city: 'Niksar',       dist: '~60 km', time: '~60 dk'   },
+                { city: 'Amasya',       dist: '65 km',  time: '60 dk'    },
+                { city: 'Merzifon',     dist: '114 km', time: '90 dk'    },
                 { city: 'Turhal',       dist: 'Merkez', time: 'Buradayız' },
               ].map((loc, i) => (
                 <motion.div
@@ -771,9 +852,23 @@ export default function TokatGelinSaciPage() {
               className="mt-10"
               style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.40)', fontSize: '0.72rem', letterSpacing: '0.08em' }}
             >
-              Turhal, Tokat &nbsp;·&nbsp; Pzt – Cmt 09:00 – 19:00
+              Turhal, Tokat &nbsp;·&nbsp; Pzt – Cmt 08:00 – 19:00
             </motion.p>
           </div>
+        </section>
+
+        {/* ── Google Maps ── */}
+        <section style={{ background: '#F8F5F2', borderTop: '1px solid rgba(42,33,29,0.08)' }}>
+          <iframe
+            title="HÜLYA Studio Turhal harita"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.999600145139!2d36.08035847639812!3d40.386701471444475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x407ded8ffd05f5e9%3A0x3bc7ace5c8e629d2!2zSMO8bHlhIEt1YWbDtnI!5e0!3m2!1str!2str!4v1780525279040!5m2!1str!2str"
+            width="100%"
+            height="360"
+            style={{ border: 0, display: 'block' }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
         </section>
 
         {/* ── Footer ── */}
@@ -791,7 +886,7 @@ export default function TokatGelinSaciPage() {
                 <Link to="/tokat-gelin-saci" style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(201,143,122,0.80)', fontSize: '0.65rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none' }}>Gelin Saçı</Link>
                 <Link to="/turhal-kuafor" style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(248,245,242,0.42)', fontSize: '0.65rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none' }}>Turhal</Link>
                 <Link to="/tokat-ombre" style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(248,245,242,0.42)', fontSize: '0.65rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none' }}>Ombre</Link>
-                <Link to="/tokat-rofle" style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(248,245,242,0.42)', fontSize: '0.65rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none' }}>Röfle</Link>
+                <Link to="/amasya-kuafor" style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(248,245,242,0.42)', fontSize: '0.65rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none' }}>Amasya</Link>
                 <Link to="/tokat-makyaj" style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(201,143,122,0.65)', fontSize: '0.65rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none' }}>Makyaj</Link>
               </nav>
 
@@ -805,7 +900,7 @@ export default function TokatGelinSaciPage() {
               style={{ borderTop: '1px solid rgba(248,245,242,0.06)' }}
             >
               <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(248,245,242,0.18)', fontSize: '0.58rem', letterSpacing: '0.16em', textTransform: 'uppercase' }}>
-                2005&apos;ten beri Turhal&apos;ın kuaför ve güzellik adresi
+                2010&apos;dan beri Turhal&apos;ın kuaför ve güzellik adresi
               </p>
               <button
                 onClick={() => setKvkkOpen(true)}

@@ -1,13 +1,13 @@
-import { Routes, Route, useLocation } from 'react-router-dom'
+import { Routes, Route, useLocation, Navigate } from 'react-router-dom'
 import { useEffect } from 'react'
 import { lenisInstance } from './hooks/useLenis'
-import AwardsPage       from './components/AwardsPage'
-import TokatKuaforPage  from './pages/TokatKuaforPage'
+import AwardsPage         from './components/AwardsPage'
+import TokatKuaforPage    from './pages/TokatKuaforPage'
 import TokatGelinSaciPage from './pages/TokatGelinSaciPage'
-import TurhalKuaforPage from './pages/TurhalKuaforPage'
-import TokatOmbrePage   from './pages/TokatOmbrePage'
-import TokatRoflePage   from './pages/TokatRoflePage'
-import TokatMakyajPage  from './pages/TokatMakyajPage'
+import TurhalKuaforPage   from './pages/TurhalKuaforPage'
+import TokatOmbrePage     from './pages/TokatOmbrePage'
+import AmasyaKuaforPage   from './pages/AmasyaKuaforPage'
+import TokatMakyajPage    from './pages/TokatMakyajPage'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -31,7 +31,8 @@ export default function AppRoutes() {
         <Route path="/tokat-gelin-saci" element={<TokatGelinSaciPage />} />
         <Route path="/turhal-kuafor"    element={<TurhalKuaforPage />} />
         <Route path="/tokat-ombre"      element={<TokatOmbrePage />} />
-        <Route path="/tokat-rofle"      element={<TokatRoflePage />} />
+        <Route path="/amasya-kuafor"    element={<AmasyaKuaforPage />} />
+        <Route path="/tokat-rofle"      element={<Navigate to="/amasya-kuafor" replace />} />
         <Route path="/tokat-makyaj"     element={<TokatMakyajPage />} />
       </Routes>
     </>

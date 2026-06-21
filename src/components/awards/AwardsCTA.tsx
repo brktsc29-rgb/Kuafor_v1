@@ -230,9 +230,9 @@ export default function AwardsCTA() {
         >
           <span>Turhal, Tokat</span>
           <span style={{ color: 'rgba(201,143,122,0.5)' }}>·</span>
-          <span>Pzt – Cmt &nbsp; 09:00 – 19:00</span>
+          <span>Pzt – Cmt &nbsp; 08:00 – 19:00</span>
           <span style={{ color: 'rgba(201,143,122,0.5)' }}>·</span>
-          <span>2005&apos;ten beri hizmetinizdeyiz</span>
+          <span>2010&apos;dan beri hizmetinizdeyiz</span>
         </motion.div>
 
         {/* Google Maps */}

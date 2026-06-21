@@ -2,7 +2,7 @@ import { useRef } from 'react'
 import { motion } from 'framer-motion'
 
 const STATS = [
-  { value: '20+',  label: 'Yıllık Deneyim',     sub: '2005\'ten beri Turhal\'da' },
+  { value: '16+',  label: 'Yıllık Deneyim',     sub: '2010\'dan beri Turhal\'da' },
   { value: '5',     label: 'İlçe Müşteri Tabanı', sub: 'Tokat, Turhal, Zile, Erbaa, Niksar' },
   { value: '6',    label: 'Uzman Hizmet',         sub: 'Kesim, renk, bakım ve daha fazlası' },
   { value: '100%', label: 'Kişiye Özel',          sub: 'Her işlem saça göre planlanır' },
@@ -15,8 +15,8 @@ const SIGNALS = [
         <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
       </svg>
     ),
-    title: '2005\'ten Beri',
-    body: 'Turhal\'da yirmi yılı aşkın süredir aynı özenle hizmet veriyoruz. Güven, tekrarlayan müşterilerimizle ölçülür.',
+    title: '2010\'dan Beri',
+    body: 'Turhal\'da on altı yılı aşkın süredir aynı özenle hizmet veriyoruz. Güven, tekrarlayan müşterilerimizle ölçülür.',
   },
   {
     icon: (
@@ -94,7 +94,7 @@ export default function AwardsTrust() {
           </div>
           <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(248,245,242,0.5)', fontSize: '0.83rem', lineHeight: 1.75, maxWidth: 320 }}>
             Tokat'ta güzellik deneyimini fark yaratan detaylar belirler. Biz bu detaylara
-            yirmi yıldır önem veriyoruz.
+            on altı yıldır önem veriyoruz.
           </p>
         </div>
 

@@ -14,6 +14,12 @@ const WA_SVG = (
   </svg>
 )
 
+const IG_SVG = (
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+  </svg>
+)
+
 const TECHNIQUES = [
   {
     slug:    'klasik-ombre',
@@ -30,14 +36,6 @@ const TECHNIQUES = [
     desc:    'Subtle ombre — daha az kontrast, çok daha doğal ve hafif geçiş.',
     bg:      'linear-gradient(160deg, #141008 0%, #221A0E 50%, #2E2214 100%)',
     accent:  '#D4A090',
-  },
-  {
-    slug:    'balayage',
-    label:   'Balayage',
-    tag:     'BALAYAGE',
-    desc:    'Fırça ile serbest uygulama. Organik, güneşin değdiği saç efekti.',
-    bg:      'linear-gradient(160deg, #180D08 0%, #281508 50%, #381C0A 100%)',
-    accent:  '#B9816F',
   },
   {
     slug:    'california-ombre',
@@ -69,7 +67,7 @@ const PROCESS_STEPS = [
   {
     n: '01',
     title: 'Renk Analizi',
-    body: 'Saçın mevcut rengi, daha önce boyama yapılıp yapılmadığı ve saç sağlığı değerlendiriliyor. Hangi tekniğin — ombre, sombre veya balayage — size ve saçınıza en uygun olduğunu bu aşamada belirliyoruz.',
+    body: 'Saçın mevcut rengi, daha önce boyama yapılıp yapılmadığı ve saç sağlığı değerlendiriliyor. Hangi tekniğin — ombre, sombre veya röfle — size ve saçınıza en uygun olduğunu bu aşamada belirliyoruz.',
   },
   {
     n: '02',
@@ -79,7 +77,7 @@ const PROCESS_STEPS = [
   {
     n: '03',
     title: 'Uygulama',
-    body: 'Seçilen tekniğe göre uygulama yapılıyor. Ombre için gradyan geçiş, balayage için fırça uygulaması farklı süre alıyor. İşlem sırasında saç sağlığını koruyacak ürünler kullanılıyor.',
+    body: 'Seçilen tekniğe göre uygulama yapılıyor. Ombre için gradyan geçiş, röfle için parçalı açma tekniği farklı süre alıyor. İşlem sırasında saç sağlığını koruyacak ürünler kullanılıyor.',
   },
   {
     n: '04',
@@ -97,10 +95,10 @@ const CARE_TIPS = [
 ]
 
 const FAQS = [
-  { q: 'Ombre uygulaması ne kadar sürer?', a: 'Saçın uzunluğuna ve tekniğe göre 2–4 saat arasında değişir. Balayage genellikle daha hızlı, tam boyama daha uzun sürer. Randevu öncesinde tahmini süreyi paylaşıyoruz.' },
+  { q: 'Ombre uygulaması ne kadar sürer?', a: 'Saçın uzunluğuna ve tekniğe göre 2–6 saat arasında değişir. Kısa saçta daha hızlı, uzun veya çok koyu saçta daha uzun sürer. Randevu öncesinde tahmini süreyi paylaşıyoruz.' },
   { q: 'Koyu saça ombre olur mu?', a: 'Olur, ama doğal siyah ya da çok koyu saçta açık ton elde edebilmek için önce açma işlemi gerekiyor. Bu durumda süreç birden fazla seans alabilir. Saçın sağlığını korumak için aşamalı yaklaşım öneriyoruz.' },
   { q: 'Ombre ile sombre arasındaki fark nedir?', a: 'Ombre daha belirgin, koyudan açığa keskin bir geçiş. Sombre (subtle ombre) çok daha yumuşak ve az fark edilir bir geçiş. Hangi görünümü tercih ettiğinize bağlı olarak ikisini de yapıyoruz.' },
-  { q: 'Balayage aynı şey mi?', a: 'Hayır, farklı bir teknik. Balayage fırça ile elle uygulanıyor; yani geçiş çizgisi daha organik ve düzensiz çıkıyor. Sonuç daha serbest, doğal güneş altında açılmış gibi bir görünüm. Ombre ise daha yapılandırılmış bir geçiş.' },
+  { q: 'Röfle ile ombre arasındaki fark nedir?', a: 'Röfle parçalı açma/renklendirme tekniğidir; saçın belirli bölgelerine kontrast veya aydınlık ekler. Ombre ise kökten uca sürekli bir gradyan geçiştir. İkisi farklı görünüm verir ve zaman zaman birlikte uygulanabilir.' },
   { q: 'Kaç seansta tamamlanır?', a: 'Hedef renge göre değişir. Koyudan çok açığa geçmek isteyenler için iki seans gerekebilir. Orta tonlarda tek seansta çok güzel sonuç alınabiliyor. Saçınızın mevcut durumunu görünce daha net söyleyebiliyoruz.' },
   { q: 'Sonraki bakım ne zaman gerekir?', a: 'Ombre ve balayage diğer boyama tekniklerine göre bakımı daha kolay. Kök belirginleşme olmadığı için 3–5 ayda bir bakım yeterli olabiliyor. Bu da önemli bir avantaj.' },
   { q: 'Saçım hasar görür mü?', a: 'Her boyama işlemi saçı bir mikro etkiler. Ancak doğru ürünler, doğru teknik ve seans aralarında yeterli bakım yapılırsa bu etki minimumda kalıyor. Saçınızın mevcut sağlık durumuna göre size açıkça bilgi veriyoruz.' },
@@ -136,8 +134,8 @@ const HAIRSALON_SCHEMA = {
   telephone: '+905412757160',
   address: { '@type': 'PostalAddress', streetAddress: 'Turhal', addressLocality: 'Turhal', addressRegion: 'Tokat', addressCountry: 'TR' },
   geo: { '@type': 'GeoCoordinates', latitude: 40.3868, longitude: 36.0820 },
-  openingHours: 'Mo,Tu,We,Th,Fr,Sa 09:00-19:00',
-  areaServed: ['Tokat', 'Turhal', 'Zile', 'Erbaa', 'Niksar'],
+  openingHours: 'Mo,Tu,We,Th,Fr,Sa 08:00-19:00',
+  areaServed: ['Tokat', 'Turhal', 'Zile', 'Erbaa', 'Niksar', 'Amasya', 'Merzifon'],
 }
 
 function FAQItem({ q, a, open, onToggle }: { q: string; a: string; open: boolean; onToggle: () => void }) {
@@ -170,11 +168,11 @@ export default function TokatOmbrePage() {
   return (
     <>
       <Helmet>
-        <title>Tokat Ombre | Hülya Kuaför Saç Renklendirme ve Balayage</title>
-        <meta name="description" content="Tokat'ta ombre, sombre ve balayage saç renklendirme hizmetleri. Turhal'daki salonumuzda kişiye özel renk analizi ve profesyonel uygulama." />
+        <title>Tokat Ombre | Hülya Kuaför Saç Renklendirme ve Röfle</title>
+        <meta name="description" content="Tokat'ta ombre, sombre ve röfle saç renklendirme hizmetleri. Turhal'daki salonumuzda kişiye özel renk analizi ve profesyonel uygulama." />
         <link rel="canonical" href="https://www.hulyastudio.com/tokat-ombre" />
         <meta property="og:title" content="Tokat Ombre | Hülya Kuaför" />
-        <meta property="og:description" content="Tokat ombre, sombre ve balayage. Turhal'da kişiye özel renk analizi." />
+        <meta property="og:description" content="Tokat ombre, sombre ve röfle. Turhal'da kişiye özel renk analizi." />
         <meta property="og:url" content="https://www.hulyastudio.com/tokat-ombre" />
         <script type="application/ld+json">{JSON.stringify(FAQ_SCHEMA)}</script>
         <script type="application/ld+json">{JSON.stringify(BREADCRUMB_SCHEMA)}</script>
@@ -186,6 +184,14 @@ export default function TokatOmbrePage() {
         {/* Nav */}
         <nav className="fixed top-0 left-0 right-0 z-50 px-6 md:px-14 py-4 flex items-center justify-between" style={{ background: 'rgba(8,6,4,0.85)', backdropFilter: 'blur(12px)', borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
           <Link to="/" style={{ fontFamily: 'Instrument Serif, serif', color: '#F8F5F2', fontSize: '1.35rem', letterSpacing: '-0.3px', textDecoration: 'none' }}>HÜLYA</Link>
+          <a
+            href="https://www.instagram.com/hulyaakuafor"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: 'rgba(248,245,242,0.60)', display: 'flex', alignItems: 'center', lineHeight: 1 }}
+          >
+            {IG_SVG}
+          </a>
           <a href={WHATSAPP} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 rounded-full px-5 py-2 text-[0.75rem] font-medium" style={{ fontFamily: 'Inter, sans-serif', background: '#C98F7A', color: '#FFF8F5', textDecoration: 'none' }}>
             {WA_SVG} Randevu Al
           </a>
@@ -335,13 +341,39 @@ export default function TokatOmbrePage() {
           </div>
         </section>
 
+        {/* Röfle */}
+        <section className="py-16 md:py-24 px-6 md:px-14" style={{ background: '#2A211D', borderTop: '1px solid rgba(248,245,242,0.06)' }}>
+          <div className="max-w-screen-xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            <motion.div initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }}>
+              <p style={{ fontFamily: 'Inter, sans-serif', color: '#C98F7A', fontSize: '0.6rem', letterSpacing: '0.36em', textTransform: 'uppercase', marginBottom: 18 }}>Röfle</p>
+              <h2 style={{ fontFamily: 'Instrument Serif, serif', color: '#F8F5F2', fontSize: 'clamp(2rem, 4.5vw, 5rem)', lineHeight: 1.0, letterSpacing: '-0.8px' }}>
+                Parçalı Işıltı<br /><em style={{ color: '#C98F7A', fontStyle: 'italic' }}>Röfle Uygulaması</em>
+              </h2>
+              <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(248,245,242,0.60)', fontSize: '0.88rem', lineHeight: 1.85, marginTop: 20 }}>
+                Röfle, saçın belirli bölgelerine kontrast veya aydınlık tonu ekleyerek derinlik ve hareket yaratır. Klasik streaks veya parçalı açma olarak uygulanabilir; ombrenin sürekli gradyanından farklı olarak seçili noktalara odaklanır.
+              </p>
+              <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(248,245,242,0.60)', fontSize: '0.88rem', lineHeight: 1.85, marginTop: 12 }}>
+                Zaman zaman ombre ile birlikte uygulanarak daha zengin, katmanlı bir renk elde edilir. Saçınızın rengine ve istediğiniz efekte göre en uygun kombinasyonu öneriyoruz.
+              </p>
+            </motion.div>
+            <motion.div initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.15 }}>
+              <div className="relative overflow-hidden" style={{ borderRadius: 4, aspectRatio: '4/3', background: 'linear-gradient(160deg, #1A0E08 0%, #2E1A0E 100%)' }}>
+                <img src="/images/ombre/rofle.webp" alt="Tokat röfle saç renklendirme — Hülya Kuaför Turhal" className="absolute inset-0 w-full h-full" style={{ objectFit: 'cover', objectPosition: 'center top', opacity: 0.85 }} onError={e => { (e.target as HTMLImageElement).style.display = 'none' }} loading="lazy" />
+                <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(8,6,4,0.70) 0%, transparent 60%)' }} />
+                <div className="absolute bottom-0 left-0 right-0 p-5">
+                  <span style={{ fontFamily: 'Inter, sans-serif', color: '#C98F7A', fontSize: '0.52rem', letterSpacing: '0.32em', textTransform: 'uppercase', background: 'rgba(8,6,4,0.55)', padding: '3px 8px', borderRadius: 100 }}>RÖFLE</span>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </section>
+
         {/* Related services */}
         <section className="py-10 px-6 md:px-14" style={{ background: '#F3ECE7', borderTop: '1px solid rgba(42,33,29,0.08)' }}>
           <div className="max-w-screen-xl mx-auto">
             <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.45)', fontSize: '0.65rem', letterSpacing: '0.28em', textTransform: 'uppercase', marginBottom: 12 }}>İlgili Hizmetler</p>
             <div className="flex flex-wrap gap-6">
               {[
-                { to: '/tokat-rofle', label: 'Tokat Röfle →' },
                 { to: '/tokat-gelin-saci', label: 'Tokat Gelin Saçı →' },
                 { to: '/tokat-makyaj', label: 'Tokat Makyaj →' },
                 { to: '/tokat-kuafor', label: 'Tüm Hizmetler →' },
@@ -384,8 +416,22 @@ export default function TokatOmbrePage() {
               <a href={WHATSAPP} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 rounded-full px-8 py-4 text-[0.82rem] font-medium" style={{ fontFamily: 'Inter, sans-serif', background: '#C98F7A', color: '#FFF8F5', textDecoration: 'none' }}>{WA_SVG} WhatsApp&apos;tan Randevu Al</a>
               <a href={PHONE} className="flex items-center gap-2 rounded-full px-8 py-4 text-[0.82rem]" style={{ fontFamily: 'Inter, sans-serif', border: '1px solid rgba(201,143,122,0.45)', color: '#C98F7A', textDecoration: 'none' }}>+90 (541) 275 71 60</a>
             </motion.div>
-            <motion.p initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.45 }} className="mt-10" style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.40)', fontSize: '0.72rem', letterSpacing: '0.08em' }}>Turhal, Tokat &nbsp;·&nbsp; Pzt – Cmt 09:00 – 19:00</motion.p>
+            <motion.p initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.45 }} className="mt-10" style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.40)', fontSize: '0.72rem', letterSpacing: '0.08em' }}>Turhal, Tokat &nbsp;·&nbsp; Pzt – Cmt 08:00 – 19:00</motion.p>
           </div>
+        </section>
+
+        {/* Google Maps */}
+        <section style={{ background: '#F8F5F2', borderTop: '1px solid rgba(42,33,29,0.08)' }}>
+          <iframe
+            title="HÜLYA Studio Turhal harita"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.999600145139!2d36.08035847639812!3d40.386701471444475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x407ded8ffd05f5e9%3A0x3bc7ace5c8e629d2!2zSMO8bHlhIEt1YWbDtnI!5e0!3m2!1str!2str!4v1780525279040!5m2!1str!2str"
+            width="100%"
+            height="360"
+            style={{ border: 0, display: 'block' }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
         </section>
 
         {/* Footer */}
@@ -397,14 +443,14 @@ export default function TokatOmbrePage() {
                 <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(248,245,242,0.38)', fontSize: '0.56rem', letterSpacing: '0.32em', textTransform: 'uppercase', marginTop: 3 }}>Hair &amp; Beauty Studio</p>
               </div>
               <nav className="flex items-center gap-6 flex-wrap justify-center">
-                {([['/', 'Ana Sayfa'], ['/tokat-kuafor', 'Tokat Kuaför'], ['/tokat-gelin-saci', 'Gelin Saçı'], ['/tokat-ombre', 'Ombre'], ['/tokat-rofle', 'Röfle'], ['/tokat-makyaj', 'Makyaj']] as [string, string][]).map(([to, label]) => (
+                {([['/', 'Ana Sayfa'], ['/tokat-kuafor', 'Tokat Kuaför'], ['/tokat-gelin-saci', 'Gelin Saçı'], ['/tokat-ombre', 'Ombre'], ['/amasya-kuafor', 'Amasya'], ['/tokat-makyaj', 'Makyaj']] as [string, string][]).map(([to, label]) => (
                   <Link key={to} to={to} style={{ fontFamily: 'Inter, sans-serif', color: to === '/tokat-ombre' ? 'rgba(201,143,122,0.85)' : 'rgba(248,245,242,0.42)', fontSize: '0.65rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none' }}>{label}</Link>
                 ))}
               </nav>
               <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(248,245,242,0.32)', fontSize: '0.68rem' }}>&copy; {new Date().getFullYear()} HÜLYA Studio</p>
             </div>
             <div className="flex flex-col sm:flex-row items-center justify-between gap-2 pt-5" style={{ borderTop: '1px solid rgba(248,245,242,0.06)' }}>
-              <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(248,245,242,0.18)', fontSize: '0.58rem', letterSpacing: '0.16em', textTransform: 'uppercase' }}>2005&apos;ten beri Turhal&apos;ın kuaför ve güzellik adresi</p>
+              <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(248,245,242,0.18)', fontSize: '0.58rem', letterSpacing: '0.16em', textTransform: 'uppercase' }}>2010&apos;dan beri Turhal&apos;ın kuaför ve güzellik adresi</p>
               <button onClick={() => setKvkkOpen(true)} style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(201,143,122,0.55)', fontSize: '0.58rem', letterSpacing: '0.12em', background: 'none', border: 'none', cursor: 'pointer', padding: 0 }}>Gizlilik Politikası · KVKK</button>
             </div>
           </div>

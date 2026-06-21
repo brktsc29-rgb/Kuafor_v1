@@ -14,6 +14,12 @@ const WA_SVG = (
   </svg>
 )
 
+const IG_SVG = (
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+  </svg>
+)
+
 const SERVICES = [
   {
     slug:   'gelin-makyaji',
@@ -118,7 +124,7 @@ const FAQS = [
   },
   {
     q: 'Hangi markalar kullanıyorsunuz?',
-    a: 'Cilt tipine ve işlem türüne göre profesyonel seri ürünler tercih ediyoruz. Hassas cilt için hipoalerjenik alternatifler de mevcut. Kullandığımız ürünler hakkında önceden bilgi almak isterseniz yazabilirsiniz.',
+    a: 'Hizmet türüne ve cilt ihtiyacına göre farklı profesyonel markalar kullanıyoruz. Portföyümüzde Dior, Misha, Natasha Denona, KIKO, Huda Beauty, Rare Beauty, Benefit Cosmetics, NARS, Sephora Collection, Too Faced, Estée Lauder, Kryolan, Joïa, ZFC, Maybelline, Flormar, NYX ve Fenty Beauty yer alıyor. Hassas cilt için hipoalerjenik alternatifler de mevcut.',
   },
   {
     q: 'Saç ve makyajı birlikte yaptırabilir miyim?',
@@ -217,9 +223,9 @@ export default function TokatMakyajPage() {
     },
     geo: { '@type': 'GeoCoordinates', latitude: 40.3868, longitude: 36.0820 },
     openingHoursSpecification: [
-      { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'], opens: '09:00', closes: '19:00' },
+      { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'], opens: '08:00', closes: '19:00' },
     ],
-    areaServed: ['Tokat', 'Turhal', 'Zile', 'Erbaa', 'Niksar'],
+    areaServed: ['Tokat', 'Turhal', 'Zile', 'Erbaa', 'Niksar', 'Amasya', 'Merzifon'],
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
       name: 'Makyaj Hizmetleri',
@@ -238,10 +244,10 @@ export default function TokatMakyajPage() {
     <>
       <Helmet>
         <title>Tokat Makyaj | Gelin Makyajı ve Profesyonel Makyaj | HÜLYA Studio Turhal</title>
-        <meta name="description" content="Tokat'ta profesyonel makyaj hizmeti. Gelin makyajı, nişan, gece ve fotoğraf makyajı. Turhal'da 2005'ten beri hizmet veren HÜLYA Studio. Randevu için WhatsApp." />
+        <meta name="description" content="Tokat'ta profesyonel makyaj hizmeti. Gelin makyajı, nişan, gece ve fotoğraf makyajı. Turhal'da 2010'dan beri hizmet veren HÜLYA Studio. Randevu için WhatsApp." />
         <link rel="canonical" href="https://www.hulyastudio.com/tokat-makyaj" />
         <meta property="og:title" content="Tokat Makyaj | Gelin Makyajı ve Profesyonel Makyaj | HÜLYA Studio" />
-        <meta property="og:description" content="Tokat ve Turhal'da profesyonel makyaj hizmeti. Gelin, nişan, gece ve fotoğraf makyajı. 2005'ten beri güvenilir güzellik salonu." />
+        <meta property="og:description" content="Tokat ve Turhal'da profesyonel makyaj hizmeti. Gelin, nişan, gece ve fotoğraf makyajı. 2010'dan beri güvenilir güzellik salonu." />
         <meta property="og:url" content="https://www.hulyastudio.com/tokat-makyaj" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">{JSON.stringify(schemaFAQ)}</script>
@@ -266,6 +272,14 @@ export default function TokatMakyajPage() {
           >
             Tokat Kuaför
           </Link>
+          <a
+            href="https://www.instagram.com/hulyaakuafor"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: 'rgba(248,245,242,0.60)', display: 'flex', alignItems: 'center', lineHeight: 1 }}
+          >
+            {IG_SVG}
+          </a>
           <a
             href={WHATSAPP}
             target="_blank"
@@ -330,7 +344,7 @@ export default function TokatMakyajPage() {
             style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(248,245,242,0.7)', fontSize: '0.92rem', lineHeight: 1.75, maxWidth: 460, marginBottom: 36 }}
           >
             Gelin makyajından nişan ve gece makyajına, fotoğraf makyajından
-            günlük uygulamalara kadar her özel ana özel dokunuş. Turhal'da 2005'ten beri.
+            günlük uygulamalara kadar her özel ana özel dokunuş. Turhal'da 2010'dan beri.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 12 }}
@@ -669,7 +683,7 @@ export default function TokatMakyajPage() {
           </h2>
           <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(248,245,242,0.55)', fontSize: '0.87rem', lineHeight: 1.8, marginBottom: 36 }}>
             Tokat'ın profesyonel makyaj adresi HÜLYA Studio.<br />
-            Turhal, Tokat — Pazartesi ile Cumartesi arası 09:00 ile 19:00 arası.
+            Turhal, Tokat — Pazartesi ile Cumartesi arası 08:00 ile 19:00 arası.
           </p>
           <div className="flex flex-wrap gap-3 justify-center">
             <a
@@ -694,6 +708,20 @@ export default function TokatMakyajPage() {
         </div>
       </section>
 
+      {/* Google Maps */}
+      <section style={{ background: '#F8F5F2', borderTop: '1px solid rgba(42,33,29,0.08)' }}>
+        <iframe
+          title="HÜLYA Studio Turhal harita"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.999600145139!2d36.08035847639812!3d40.386701471444475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x407ded8ffd05f5e9%3A0x3bc7ace5c8e629d2!2zSMO8bHlhIEt1YWbDtnI!5e0!3m2!1str!2str!4v1780525279040!5m2!1str!2str"
+          width="100%"
+          height="360"
+          style={{ border: 0, display: 'block' }}
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        />
+      </section>
+
       {/* Footer */}
       <footer style={{ background: '#2A211D', borderTop: '1px solid rgba(248,245,242,0.06)', padding: '48px 24px 32px' }}>
         <div className="max-w-screen-xl mx-auto">
@@ -708,7 +736,7 @@ export default function TokatMakyajPage() {
                 { label: 'Tokat Kuaför',  to: '/tokat-kuafor'    },
                 { label: 'Gelin Saçı',    to: '/tokat-gelin-saci'},
                 { label: 'Ombre',         to: '/tokat-ombre'     },
-                { label: 'Röfle',         to: '/tokat-rofle'     },
+                { label: 'Amasya',        to: '/amasya-kuafor'   },
                 { label: 'Turhal Kuaför', to: '/turhal-kuafor'   },
               ].map(link => (
                 <Link key={link.to} to={link.to}
@@ -723,7 +751,7 @@ export default function TokatMakyajPage() {
             </nav>
             <div>
               <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(248,245,242,0.42)', fontSize: '0.65rem', lineHeight: 1.7, textAlign: 'right' }}>
-                Pzt ile Cmt arası 09:00 ile 19:00<br />
+                Pzt ile Cmt arası 08:00 ile 19:00<br />
                 Turhal, Tokat
               </p>
               <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(248,245,242,0.25)', fontSize: '0.62rem', marginTop: 8, textAlign: 'right' }}>
@@ -733,7 +761,7 @@ export default function TokatMakyajPage() {
           </div>
           <div className="flex flex-col sm:flex-row items-center justify-between gap-2 pt-5" style={{ borderTop: '1px solid rgba(248,245,242,0.06)' }}>
             <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(248,245,242,0.18)', fontSize: '0.58rem', letterSpacing: '0.16em', textTransform: 'uppercase' }}>
-              2005'ten beri Turhal'ın kuaför ve güzellik adresi
+              2010'dan beri Turhal'ın kuaför ve güzellik adresi
             </p>
             <button
               onClick={() => setKvkkOpen(true)}

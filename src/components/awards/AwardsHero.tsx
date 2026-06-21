@@ -212,7 +212,7 @@ export default function AwardsHero({ active }: { active: boolean }) {
           className="mb-6 md:mb-8"
           style={{ fontFamily: 'Inter, sans-serif', color: '#B9816F', fontSize: '0.62rem', letterSpacing: '0.38em', textTransform: 'uppercase' }}
         >
-          Turhal, Tokat · Est. 2005
+          Turhal, Tokat · Est. 2010
         </p>
 
         <h1

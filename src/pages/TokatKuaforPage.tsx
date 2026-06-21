@@ -14,6 +14,12 @@ const WA_SVG = (
   </svg>
 )
 
+const IG_SVG = (
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+  </svg>
+)
+
 const SERVICES = [
   { title: 'Gelin Saçı',                    desc: 'Düğün günü için kişiye özel saç tasarımı; stil önceden WhatsApp ile netleştiriliyor.' },
   { title: 'Ombre & Balayage',               desc: 'Saç yapısına göre yumuşak renk geçişleri ve doğal görünüm.'                   },
@@ -28,7 +34,7 @@ const SERVICES = [
 const FAQS = [
   {
     q: 'Tokat Merkez veya diğer ilçelerden ulaşım nasıl?',
-    a: 'Tokat Merkez\'den Turhal yaklaşık 50 km, D100 karayolu üzerinden 45–50 dakika. Zile\'den yaklaşık 40 km, Erbaa\'dan 55 km, Niksar\'dan 60 km. Turhal\'a düzenli minibüs ve otobüs seferleri de var.',
+    a: 'Tokat Merkez\'den Turhal yaklaşık 50 km, D100 karayolu üzerinden 45–50 dakika. Zile\'den yaklaşık 21 km / 23 dakika, Erbaa\'dan 55 km, Niksar\'dan 60 km. Turhal\'a düzenli minibüs ve otobüs seferleri de var.',
   },
   {
     q: 'Randevu almak için ne yapmalıyım?',
@@ -107,7 +113,7 @@ export default function TokatKuaforPage() {
           alternateName: 'HÜLYA Hair & Beauty Studio',
           url: 'https://www.hulyastudio.com/tokat-kuafor',
           telephone: '+905412757160',
-          foundingDate: '2005',
+          foundingDate: '2010',
           address: {
             '@type': 'PostalAddress',
             addressLocality: 'Turhal',
@@ -122,7 +128,7 @@ export default function TokatKuaforPage() {
           openingHoursSpecification: [{
             '@type': 'OpeningHoursSpecification',
             dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'],
-            opens: '09:00',
+            opens: '08:00',
             closes: '19:00',
           }],
           areaServed: [
@@ -131,6 +137,8 @@ export default function TokatKuaforPage() {
             { '@type': 'City', name: 'Zile' },
             { '@type': 'City', name: 'Erbaa' },
             { '@type': 'City', name: 'Niksar' },
+            { '@type': 'City', name: 'Amasya' },
+            { '@type': 'City', name: 'Merzifon' },
             { '@type': 'AdministrativeArea', name: 'Tokat Merkez' },
           ],
           sameAs: ['https://www.instagram.com/hulyaakuafor'],
@@ -157,6 +165,15 @@ export default function TokatKuaforPage() {
           >
             ← Ana Sayfa
           </Link>
+
+          <a
+            href="https://www.instagram.com/hulyaakuafor"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: 'rgba(248,245,242,0.60)', display: 'flex', alignItems: 'center', lineHeight: 1 }}
+          >
+            {IG_SVG}
+          </a>
 
           <a
             href={WHATSAPP}
@@ -195,7 +212,7 @@ export default function TokatKuaforPage() {
               transition={{ duration: 0.5 }}
               style={{ fontFamily: 'Inter, sans-serif', color: '#C98F7A', fontSize: '0.6rem', letterSpacing: '0.38em', textTransform: 'uppercase', marginBottom: 20 }}
             >
-              Turhal, Tokat · Est. 2005
+              Turhal, Tokat · Est. 2010
             </motion.p>
 
             <motion.h1
@@ -269,7 +286,7 @@ export default function TokatKuaforPage() {
                 Hakkımızda
               </p>
               <h2 style={{ fontFamily: 'Instrument Serif, serif', color: '#2A211D', fontSize: 'clamp(2rem, 4vw, 4rem)', lineHeight: 1.08, letterSpacing: '-0.5px', marginBottom: 24 }}>
-                2005'ten Bu Yana<br />
+                2010'dan Bu Yana<br />
                 <em style={{ color: '#C98F7A', fontStyle: 'italic' }}>Turhal'dayız</em>
               </h2>
             </motion.div>
@@ -281,7 +298,7 @@ export default function TokatKuaforPage() {
               transition={{ duration: 0.7, delay: 0.15 }}
             >
               <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.72)', fontSize: '0.92rem', lineHeight: 1.85, marginBottom: 16 }}>
-                Sibel Erturhan, bu salonu kurarken büyük bir şey hedeflemiyordu; iyi iş yapmak ve her müşteriyle tek tek ilgilenmek yeterliydi. Yirmi yılın ardından hâlâ aynı anlayışla devam ediyoruz.
+                Sibel Erturhan, bu salonu kurarken büyük bir şey hedeflemiyordu; iyi iş yapmak ve her müşteriyle tek tek ilgilenmek yeterliydi. On altı yılın ardından hâlâ aynı anlayışla devam ediyoruz.
               </p>
               <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.72)', fontSize: '0.92rem', lineHeight: 1.85, marginBottom: 16 }}>
                 Damla Erturhan ile ikimiz bu salonu yürütüyoruz. Küçük bir ekip olmak bir kısıtlama değil, avantaj: her randevuya gerçekten zaman ayırabiliyoruz, kalabalık sıra bekletmiyoruz.
@@ -604,7 +621,7 @@ export default function TokatKuaforPage() {
               className="mt-12"
               style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(248,245,242,0.50)', fontSize: '0.88rem', lineHeight: 1.82, maxWidth: 620 }}
             >
-              Hata da yapıyoruz zaman zaman; herkes yapar. Ama önemli olan o hatayı kabul etmek ve düzeltmek. Yirmi yıldır süren güven bu dürüstlükten geliyor.
+              Hata da yapıyoruz zaman zaman; herkes yapar. Ama önemli olan o hatayı kabul etmek ve düzeltmek. On altı yıldır süren güven bu dürüstlükten geliyor.
             </motion.p>
           </div>
         </section>
@@ -758,9 +775,23 @@ export default function TokatKuaforPage() {
               className="mt-10"
               style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.40)', fontSize: '0.72rem', letterSpacing: '0.08em' }}
             >
-              Turhal, Tokat &nbsp;·&nbsp; Pzt – Cmt 09:00 – 19:00
+              Turhal, Tokat &nbsp;·&nbsp; Pzt – Cmt 08:00 – 19:00
             </motion.p>
           </div>
+        </section>
+
+        {/* ── Google Maps ── */}
+        <section style={{ background: '#F8F5F2', borderTop: '1px solid rgba(42,33,29,0.08)' }}>
+          <iframe
+            title="HÜLYA Studio Turhal harita"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.999600145139!2d36.08035847639812!3d40.386701471444475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x407ded8ffd05f5e9%3A0x3bc7ace5c8e629d2!2zSMO8bHlhIEt1YWbDtnI!5e0!3m2!1str!2str!4v1780525279040!5m2!1str!2str"
+            width="100%"
+            height="360"
+            style={{ border: 0, display: 'block' }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
         </section>
 
         {/* ── Footer ── */}
@@ -777,7 +808,7 @@ export default function TokatKuaforPage() {
                 <Link to="/tokat-gelin-saci" style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(248,245,242,0.42)', fontSize: '0.65rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none' }}>Gelin Saçı</Link>
                 <Link to="/turhal-kuafor" style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(248,245,242,0.42)', fontSize: '0.65rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none' }}>Turhal</Link>
                 <Link to="/tokat-ombre" style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(248,245,242,0.42)', fontSize: '0.65rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none' }}>Ombre</Link>
-                <Link to="/tokat-rofle" style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(248,245,242,0.42)', fontSize: '0.65rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none' }}>Röfle</Link>
+                <Link to="/amasya-kuafor" style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(248,245,242,0.42)', fontSize: '0.65rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none' }}>Amasya</Link>
                 <Link to="/tokat-makyaj" style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(201,143,122,0.65)', fontSize: '0.65rem', letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none' }}>Makyaj</Link>
               </nav>
 
@@ -791,7 +822,7 @@ export default function TokatKuaforPage() {
               style={{ borderTop: '1px solid rgba(248,245,242,0.06)' }}
             >
               <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(248,245,242,0.18)', fontSize: '0.58rem', letterSpacing: '0.16em', textTransform: 'uppercase' }}>
-                2005&apos;ten beri Turhal&apos;ın kuaför ve güzellik adresi
+                2010&apos;dan beri Turhal&apos;ın kuaför ve güzellik adresi
               </p>
               <button
                 onClick={() => setKvkkOpen(true)}
