@@ -24,7 +24,7 @@ const IG_SVG = (
 const SERVICES = [
   { slug: 'gelin-saci',   label: 'Gelin Saçı',    tag: 'DÜĞÜN',   desc: 'Hollywood waves, topuz, romantik ve tesettür gelin başı tasarımları.', bg: 'linear-gradient(160deg, #1A0E08 0%, #2E1A0E 50%, #3D2010 100%)', accent: '#C98F7A', to: '/tokat-gelin-saci', img: '/images/gelin/romantik-gelin-saci.webp' },
   { slug: 'ombre',        label: 'Ombre & Röfle',  tag: 'RENK',    desc: 'Klasik ombre, sombre, röfle ve kişiye özel renk tasarımı.', bg: 'linear-gradient(160deg, #141008 0%, #221A0E 50%, #2E2214 100%)', accent: '#D4A090', to: '/tokat-ombre',       img: '/images/ombre/klasik-ombre.webp' },
-  { slug: 'makyaj',       label: 'Makyaj',         tag: 'GÜZELLİK', desc: 'Gelin, nişan, gece ve fotoğraf makyajı.', bg: 'linear-gradient(160deg, #0E0C08 0%, #1A1408 50%, #241C0A 100%)', accent: '#C98F7A', to: '/tokat-makyaj',      img: '/images/makyaj/gelin-makyaji.webp' },
+  { slug: 'makyaj',       label: 'Makyaj',         tag: 'GÜZELLİK', desc: 'Gelin, nişan, gece ve fotoğraf makyajı.', bg: 'linear-gradient(160deg, #0E0C08 0%, #1A1408 50%, #241C0A 100%)', accent: '#C98F7A', to: '/tokat-makyaj',      img: '/images/makyaj/dogal-makyaj.webp' },
   { slug: 'sac-kesimi',   label: 'Saç Kesimi',     tag: 'BAKIM',   desc: 'Kişiye özel saç kesimi, fön ve bakım uygulamaları.', bg: 'linear-gradient(160deg, #180E08 0%, #281608 50%, #381E0A 100%)', accent: '#B9816F', to: '/tokat-kuafor',     img: '/images/4E3D1939-0CFB-4C8B-8CE3-7A787126B37C.webp' },
 ]
 
