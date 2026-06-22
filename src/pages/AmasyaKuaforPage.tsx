@@ -298,7 +298,7 @@ export default function AmasyaKuaforPage() {
             <div className="grid gap-3" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))' }}>
               {SERVICES.map((s, i) => (
                 <motion.div key={s.slug} initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.55, delay: i * 0.07 }} className="relative overflow-hidden" style={{ background: s.bg, borderRadius: 4, aspectRatio: '4/3' }}>
-                  <img src={s.img} alt={`${s.label} — Hülya Kuaför Turhal`} className="absolute inset-0 w-full h-full" style={{ objectFit: 'cover', objectPosition: 'center top', opacity: 0.82 }} onError={e => { (e.target as HTMLImageElement).style.display = 'none' }} loading="lazy" />
+                  <img src={s.img} alt={`${s.label} — Hülya Kuaför Turhal`} className="absolute inset-0 w-full h-full" style={{ objectFit: 'cover', objectPosition: '50% 30%', opacity: 0.82 }} onError={e => { (e.target as HTMLImageElement).style.display = 'none' }} loading="lazy" />
                   <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(8,6,4,0.88) 0%, transparent 60%)' }} />
                   <div className="absolute top-4 left-4">
                     <span style={{ fontFamily: 'Inter, sans-serif', color: s.accent, fontSize: '0.52rem', letterSpacing: '0.32em', textTransform: 'uppercase', background: 'rgba(8,6,4,0.55)', padding: '3px 8px', borderRadius: 100 }}>{s.tag}</span>
