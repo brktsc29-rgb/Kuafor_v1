@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import KVKKModal from '../components/awards/KVKKModal'
+import LandingNavHizmetler from '../components/LandingNavHizmetler'
 import CookieBanner from '../components/awards/CookieBanner'
 
 const WHATSAPP = 'https://wa.me/905412757160'
@@ -282,6 +283,7 @@ export default function TokatGelinSaciPage() {
           <Link to="/" style={{ fontFamily: 'Instrument Serif, serif', color: '#F8F5F2', fontSize: '1.35rem', letterSpacing: '-0.3px', textDecoration: 'none' }}>
             HÜLYA
           </Link>
+          <LandingNavHizmetler current="/tokat-gelin-saci" />
           <a
             href="https://www.instagram.com/hulyaakuafor"
             target="_blank"

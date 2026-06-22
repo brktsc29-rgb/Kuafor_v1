@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import KVKKModal from '../components/awards/KVKKModal'
+import LandingNavHizmetler from '../components/LandingNavHizmetler'
 import CookieBanner from '../components/awards/CookieBanner'
 
 const WHATSAPP = 'https://wa.me/905412757160'
@@ -165,6 +166,7 @@ export default function TurhalKuaforPage() {
             ← Ana Sayfa
           </Link>
 
+          <LandingNavHizmetler current="/turhal-kuafor" />
           <a
             href="https://www.instagram.com/hulyaakuafor"
             target="_blank"
@@ -456,7 +458,7 @@ export default function TurhalKuaforPage() {
               {[
                 { to: '/tokat-gelin-saci', label: 'Gelin Saçı Tasarımları →' },
                 { to: '/tokat-ombre',      label: 'Tokat Ombre →' },
-                { to: '/tokat-rofle',      label: 'Tokat Röfle →' },
+                { to: '/amasya-kuafor',    label: 'Amasya Kuaför →' },
                 { to: '/tokat-kuafor',     label: 'Tokat Kuaför Hizmetleri →' },
                 { to: '/tokat-makyaj',     label: 'Tokat Makyaj →' },
               ].map(link => (

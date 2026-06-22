@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import KVKKModal from '../components/awards/KVKKModal'
+import LandingNavHizmetler from '../components/LandingNavHizmetler'
 import CookieBanner from '../components/awards/CookieBanner'
 
 const WHATSAPP = 'https://wa.me/905412757160'
@@ -165,8 +166,7 @@ export default function AmasyaKuaforPage() {
           HÜLYA
         </Link>
         <div className="flex items-center gap-5">
-          <Link to="/tokat-gelin-saci" style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(248,245,242,0.50)', fontSize: '0.65rem', letterSpacing: '0.18em', textTransform: 'uppercase', textDecoration: 'none' }}>Gelin Saçı</Link>
-          <Link to="/tokat-ombre" style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(248,245,242,0.50)', fontSize: '0.65rem', letterSpacing: '0.18em', textTransform: 'uppercase', textDecoration: 'none' }}>Ombre</Link>
+          <LandingNavHizmetler current="/amasya-kuafor" />
           <a
             href="https://www.instagram.com/hulyaakuafor"
             target="_blank"

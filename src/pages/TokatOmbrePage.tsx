@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import KVKKModal from '../components/awards/KVKKModal'
+import LandingNavHizmetler from '../components/LandingNavHizmetler'
 import CookieBanner from '../components/awards/CookieBanner'
 
 const WHATSAPP = 'https://wa.me/905412757160'
@@ -160,6 +161,7 @@ export default function TokatOmbrePage() {
         {/* Nav */}
         <nav className="fixed top-0 left-0 right-0 z-50 px-6 md:px-14 py-4 flex items-center justify-between" style={{ background: 'rgba(8,6,4,0.85)', backdropFilter: 'blur(12px)', borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
           <Link to="/" style={{ fontFamily: 'Instrument Serif, serif', color: '#F8F5F2', fontSize: '1.35rem', letterSpacing: '-0.3px', textDecoration: 'none' }}>HÜLYA</Link>
+          <LandingNavHizmetler current="/tokat-ombre" />
           <a
             href="https://www.instagram.com/hulyaakuafor"
             target="_blank"

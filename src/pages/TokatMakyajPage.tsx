@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import KVKKModal from '../components/awards/KVKKModal'
+import LandingNavHizmetler from '../components/LandingNavHizmetler'
 import CookieBanner from '../components/awards/CookieBanner'
 
 const WHATSAPP = 'https://wa.me/905412757160'
@@ -264,14 +265,7 @@ export default function TokatMakyajPage() {
           HÜLYA
         </Link>
         <div className="flex items-center gap-4">
-          <Link
-            to="/tokat-kuafor"
-            style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(248,245,242,0.55)', fontSize: '0.7rem', letterSpacing: '0.1em', textDecoration: 'none' }}
-            onMouseEnter={e => (e.currentTarget.style.color = 'rgba(248,245,242,0.9)')}
-            onMouseLeave={e => (e.currentTarget.style.color = 'rgba(248,245,242,0.55)')}
-          >
-            Tokat Kuaför
-          </Link>
+          <LandingNavHizmetler current="/tokat-makyaj" />
           <a
             href="https://www.instagram.com/hulyaakuafor"
             target="_blank"
@@ -653,7 +647,7 @@ export default function TokatMakyajPage() {
             {[
               { label: 'Tokat Gelin Saçı', to: '/tokat-gelin-saci' },
               { label: 'Tokat Ombre',      to: '/tokat-ombre'      },
-              { label: 'Tokat Röfle',      to: '/tokat-rofle'      },
+              { label: 'Amasya Kuaför',    to: '/amasya-kuafor'    },
               { label: 'Turhal Kuaför',    to: '/turhal-kuafor'    },
               { label: 'Tokat Kuaför',     to: '/tokat-kuafor'     },
             ].map(link => (
