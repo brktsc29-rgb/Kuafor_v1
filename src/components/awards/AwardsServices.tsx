@@ -106,12 +106,12 @@ export default function AwardsServices() {
               Tokat Ombre →
             </Link>
             <Link
-              to="/tokat-rofle"
+              to="/amasya-kuafor"
               style={{ fontFamily: 'Inter, sans-serif', color: '#C98F7A', fontSize: '0.75rem', letterSpacing: '0.08em', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: 6 }}
               onMouseEnter={e => (e.currentTarget.style.opacity = '0.7')}
               onMouseLeave={e => (e.currentTarget.style.opacity = '1')}
             >
-              Tokat Röfle →
+              Amasya Kuaför →
             </Link>
             <Link
               to="/turhal-kuafor"

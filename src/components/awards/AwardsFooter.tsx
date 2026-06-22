@@ -64,13 +64,13 @@ export default function AwardsFooter({ onOpenKVKK }: { onOpenKVKK: () => void })
               Tokat Ombre
             </Link>
             <Link
-              to="/tokat-rofle"
+              to="/amasya-kuafor"
               className="text-[0.65rem] tracking-[0.14em] uppercase transition-colors duration-200"
               style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(201,143,122,0.65)', textDecoration: 'none' }}
               onMouseEnter={e => (e.currentTarget.style.color = 'rgba(201,143,122,1)')}
               onMouseLeave={e => (e.currentTarget.style.color = 'rgba(201,143,122,0.65)')}
             >
-              Tokat Röfle
+              Amasya Kuaför
             </Link>
             <Link
               to="/turhal-kuafor"
