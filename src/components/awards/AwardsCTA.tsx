@@ -232,6 +232,15 @@ export default function AwardsCTA() {
           <span style={{ color: 'rgba(201,143,122,0.5)' }}>·</span>
           <span>Pzt – Cmt &nbsp; 08:00 – 19:00</span>
           <span style={{ color: 'rgba(201,143,122,0.5)' }}>·</span>
+          <a
+            href="mailto:hulyahairbeauty@gmail.com"
+            style={{ color: 'rgba(42,33,29,0.45)', textDecoration: 'none', transition: 'color 0.2s' }}
+            onMouseEnter={e => (e.currentTarget.style.color = '#C98F7A')}
+            onMouseLeave={e => (e.currentTarget.style.color = 'rgba(42,33,29,0.45)')}
+          >
+            hulyahairbeauty@gmail.com
+          </a>
+          <span style={{ color: 'rgba(201,143,122,0.5)' }}>·</span>
           <span>2010&apos;dan beri hizmetinizdeyiz</span>
         </motion.div>
 
