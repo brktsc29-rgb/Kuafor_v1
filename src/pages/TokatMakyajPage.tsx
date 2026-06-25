@@ -251,6 +251,7 @@ export default function TokatMakyajPage() {
         <meta property="og:description" content="Tokat ve Turhal'da profesyonel makyaj hizmeti. Gelin, nişan, gece ve fotoğraf makyajı. 2010'dan beri güvenilir güzellik salonu." />
         <meta property="og:url" content="https://www.hulyastudio.com/tokat-makyaj" />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://www.hulyastudio.com/images/makyaj/gelin-makyaji.webp" />
         <script type="application/ld+json">{JSON.stringify(schemaFAQ)}</script>
         <script type="application/ld+json">{JSON.stringify(schemaBreadcrumb)}</script>
         <script type="application/ld+json">{JSON.stringify(schemaHairSalon)}</script>

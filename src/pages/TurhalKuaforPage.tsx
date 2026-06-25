@@ -97,6 +97,11 @@ export default function TurhalKuaforPage() {
         <title>Turhal Kuaför | Hülya Hair &amp; Beauty Studio</title>
         <meta name="description" content="Turhal'da bayan kuaförü ve güzellik salonu. Saç kesimi, gelin saçı, ombre, röfle ve profesyonel saç tasarımı. Pzt–Cmt 08:00–19:00." />
         <link rel="canonical" href="https://www.hulyastudio.com/turhal-kuafor" />
+        <meta property="og:title" content="Turhal Kuaför | Hülya Hair & Beauty Studio" />
+        <meta property="og:description" content="Turhal'da bayan kuaförü ve güzellik salonu. Saç kesimi, gelin saçı, ombre, röfle ve profesyonel saç tasarımı. Tokat'ın farklı ilçelerinden misafirlere hizmet." />
+        <meta property="og:image" content="https://www.hulyastudio.com/images/4E3D1939-0CFB-4C8B-8CE3-7A787126B37C.webp" />
+        <meta property="og:url" content="https://www.hulyastudio.com/turhal-kuafor" />
+        <meta property="og:type" content="website" />
         <script type="application/ld+json">{JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'BreadcrumbList',
@@ -133,6 +138,9 @@ export default function TurhalKuaforPage() {
           areaServed: [
             { '@type': 'City', name: 'Turhal' },
             { '@type': 'City', name: 'Tokat' },
+            { '@type': 'City', name: 'Zile' },
+            { '@type': 'City', name: 'Erbaa' },
+            { '@type': 'City', name: 'Niksar' },
           ],
           founder: { '@type': 'Person', name: 'Sibel Erturhan' },
           employee: { '@type': 'Person', name: 'Damla Erturhan' },
@@ -314,7 +322,7 @@ export default function TurhalKuaforPage() {
               transition={{ duration: 0.7, delay: 0.15 }}
             >
               <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.72)', fontSize: '0.92rem', lineHeight: 1.85, marginBottom: 16 }}>
-                2010&apos;dan bu yana Turhal&apos;dayız. Sibel Erturhan tarafından kurulan salon, bugün Damla Erturhan ile birlikte yürütülüyor.
+                2010&apos;dan bu yana Turhal&apos;dayız. Sibel Erturhan tarafından kurulan bu güzellik salonu, bugün Damla Erturhan ile birlikte yürütülüyor.
               </p>
               <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.72)', fontSize: '0.92rem', lineHeight: 1.85, marginBottom: 16 }}>
                 Küçük bir ekip, kişisel bir hizmet. Her randevuya zaman ayrılıyor; kalabalık bekleme yok. Kapıdan girdiğinizde adınızı biliyoruz, aceleyle değil.

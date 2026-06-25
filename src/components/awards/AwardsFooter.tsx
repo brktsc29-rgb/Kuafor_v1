@@ -108,7 +108,7 @@ export default function AwardsFooter({ onOpenKVKK }: { onOpenKVKK: () => void })
               <span style={{ fontFamily: 'Inter, sans-serif', fontSize: '0.65rem', letterSpacing: '0.08em' }}>@hulyaakuafor</span>
             </a>
             <div style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(248,245,242,0.42)', fontSize: '0.65rem', lineHeight: 1.7, textAlign: 'right' }}>
-              <p>Pzt – Cmt &nbsp;09:00 – 19:00</p>
+              <p>Pzt – Cmt &nbsp;08:00 – 19:00</p>
               <p>Turhal, Tokat</p>
             </div>
             <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(248,245,242,0.32)', fontSize: '0.68rem' }}>

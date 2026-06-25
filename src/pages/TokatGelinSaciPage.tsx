@@ -267,6 +267,7 @@ export default function TokatGelinSaciPage() {
         <meta property="og:description" content="Tokat'ta gelin saçı ve özel gün saç tasarımı. Hollywood waves, topuz, romantik ve tesettür gelin başı. WhatsApp ile stil görüşmesi." />
         <meta property="og:url" content="https://www.hulyastudio.com/tokat-gelin-saci" />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://www.hulyastudio.com/images/gelin/romantik-gelin-saci.webp" />
         <meta name="twitter:card" content="summary_large_image" />
         <script type="application/ld+json">{JSON.stringify(FAQ_SCHEMA)}</script>
         <script type="application/ld+json">{JSON.stringify(BREADCRUMB_SCHEMA)}</script>

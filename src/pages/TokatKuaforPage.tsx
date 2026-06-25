@@ -99,6 +99,11 @@ export default function TokatKuaforPage() {
         <title>Tokat Kuaför | Hülya Kuaför Gelin Saçı, Ombre ve Saç Tasarımı</title>
         <meta name="description" content="Tokat'ta gelin saçı, ombre, röfle, saç boyama ve profesyonel saç tasarımı hizmetleri. Hülya Kuaför, Turhal'daki salonunda Tokat merkez ve çevre ilçelerden gelen misafirlerini ağırlamaktadır." />
         <link rel="canonical" href="https://www.hulyastudio.com/tokat-kuafor" />
+        <meta property="og:title" content="Tokat Kuaför | Hülya Kuaför Gelin Saçı, Ombre ve Saç Tasarımı" />
+        <meta property="og:description" content="Tokat'ta gelin saçı, ombre, röfle ve profesyonel saç tasarımı. Turhal'daki Hülya Kuaför, Tokat merkez ve çevre ilçelerden gelen misafirlerini ağırlamaktadır." />
+        <meta property="og:image" content="https://www.hulyastudio.com/images/4E3D1939-0CFB-4C8B-8CE3-7A787126B37C.webp" />
+        <meta property="og:url" content="https://www.hulyastudio.com/tokat-kuafor" />
+        <meta property="og:type" content="website" />
         <script type="application/ld+json">{JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'BreadcrumbList',
@@ -146,6 +151,15 @@ export default function TokatKuaforPage() {
           founder: { '@type': 'Person', name: 'Sibel Erturhan' },
           employee: { '@type': 'Person', name: 'Damla Erturhan' },
           knowsAbout: ['Gelin Saçı','Ombre','Balayage','Röfle','Saç Boyama','Saç Kesimi','Profesyonel Saç Tasarımı','Saç Bakımı'],
+        })}</script>
+        <script type="application/ld+json">{JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'FAQPage',
+          mainEntity: FAQS.map(f => ({
+            '@type': 'Question',
+            name: f.q,
+            acceptedAnswer: { '@type': 'Answer', text: f.a },
+          })),
         })}</script>
       </Helmet>
 

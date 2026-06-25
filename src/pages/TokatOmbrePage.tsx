@@ -149,8 +149,10 @@ export default function TokatOmbrePage() {
         <meta name="description" content="Tokat'ta ombre, sombre ve röfle saç renklendirme hizmetleri. Turhal'daki salonumuzda kişiye özel renk analizi ve profesyonel uygulama." />
         <link rel="canonical" href="https://www.hulyastudio.com/tokat-ombre" />
         <meta property="og:title" content="Tokat Ombre | Hülya Kuaför" />
-        <meta property="og:description" content="Tokat ombre, sombre ve röfle. Turhal'da kişiye özel renk analizi." />
+        <meta property="og:description" content="Tokat'ta ombre, sombre, balayage ve röfle saç renklendirme hizmetleri. Turhal'daki salonumuzda kişiye özel renk analizi ve profesyonel uygulama." />
+        <meta property="og:image" content="https://www.hulyastudio.com/images/ombre/klasik-ombre.webp" />
         <meta property="og:url" content="https://www.hulyastudio.com/tokat-ombre" />
+        <meta property="og:type" content="website" />
         <script type="application/ld+json">{JSON.stringify(FAQ_SCHEMA)}</script>
         <script type="application/ld+json">{JSON.stringify(BREADCRUMB_SCHEMA)}</script>
         <script type="application/ld+json">{JSON.stringify(HAIRSALON_SCHEMA)}</script>
@@ -320,7 +322,7 @@ export default function TokatOmbrePage() {
         </section>
 
         {/* Röfle */}
-        <section className="py-16 md:py-24 px-6 md:px-14" style={{ background: '#2A211D', borderTop: '1px solid rgba(248,245,242,0.06)' }}>
+        <section id="rofle" className="py-16 md:py-24 px-6 md:px-14" style={{ background: '#2A211D', borderTop: '1px solid rgba(248,245,242,0.06)' }}>
           <div className="max-w-screen-xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <motion.div initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }}>
               <p style={{ fontFamily: 'Inter, sans-serif', color: '#C98F7A', fontSize: '0.6rem', letterSpacing: '0.36em', textTransform: 'uppercase', marginBottom: 18 }}>Röfle</p>
