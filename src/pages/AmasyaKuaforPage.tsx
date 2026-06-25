@@ -25,7 +25,7 @@ const SERVICES = [
   { slug: 'gelin-saci',   label: 'Gelin Saçı',    tag: 'DÜĞÜN',   desc: 'Hollywood waves, topuz, romantik ve tesettür gelin başı tasarımları.', bg: 'linear-gradient(160deg, #1A0E08 0%, #2E1A0E 50%, #3D2010 100%)', accent: '#C98F7A', to: '/tokat-gelin-saci', img: '/images/gelin/romantik-gelin-saci.webp' },
   { slug: 'ombre',        label: 'Ombre & Röfle',  tag: 'RENK',    desc: 'Klasik ombre, sombre, röfle ve kişiye özel renk tasarımı.', bg: 'linear-gradient(160deg, #141008 0%, #221A0E 50%, #2E2214 100%)', accent: '#D4A090', to: '/tokat-ombre',       img: '/images/ombre/klasik-ombre.webp' },
   { slug: 'makyaj',       label: 'Makyaj',         tag: 'GÜZELLİK', desc: 'Gelin, nişan, gece ve fotoğraf makyajı.', bg: 'linear-gradient(160deg, #0E0C08 0%, #1A1408 50%, #241C0A 100%)', accent: '#C98F7A', to: '/tokat-makyaj',      img: '/images/makyaj/dogal-makyaj.webp' },
-  { slug: 'sac-kesimi',   label: 'Saç Kesimi',     tag: 'BAKIM',   desc: 'Kişiye özel saç kesimi, fön ve bakım uygulamaları.', bg: 'linear-gradient(160deg, #180E08 0%, #281608 50%, #381E0A 100%)', accent: '#B9816F', to: '/tokat-kuafor',     img: '/images/4E3D1939-0CFB-4C8B-8CE3-7A787126B37C.webp' },
+  { slug: 'sac-kesimi',   label: 'Saç Kesimi',     tag: 'BAKIM',   desc: 'Kişiye özel saç kesimi, fön ve bakım uygulamaları.', bg: 'linear-gradient(160deg, #180E08 0%, #281608 50%, #381E0A 100%)', accent: '#B9816F', to: '/tokat-kuafor',     img: '/images/hulya-kuafor-turhal-hero.webp' },
 ]
 
 const FAQS = [
@@ -175,6 +175,8 @@ export default function AmasyaKuaforPage() {
           >{IG_SVG}</a>
           <a
             href={WHATSAPP}
+            data-cta-location="amasya-kuafor-nav"
+            data-service-name="Amasya Kuaför"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2"
@@ -191,7 +193,7 @@ export default function AmasyaKuaforPage() {
         <section
           style={{ minHeight: '100svh', background: '#080604', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '0 0 72px', position: 'relative', overflow: 'hidden' }}
         >
-          <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url(/images/4E3D1939-0CFB-4C8B-8CE3-7A787126B37C.webp)', backgroundSize: 'cover', backgroundPosition: 'center 20%', filter: 'brightness(0.45)' }} />
+          <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url(/images/hulya-kuafor-turhal-hero.webp)', backgroundSize: 'cover', backgroundPosition: 'center 20%', filter: 'brightness(0.45)' }} />
           <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(8,6,4,0.95) 0%, rgba(8,6,4,0.4) 55%, rgba(8,6,4,0.15) 100%)' }} />
           <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to right, rgba(8,6,4,0.55) 0%, transparent 60%)' }} />
           <div className="relative px-6 md:px-14 max-w-screen-xl mx-auto w-full">
@@ -226,8 +228,8 @@ export default function AmasyaKuaforPage() {
               transition={{ duration: 0.5, delay: 0.45 }}
               className="flex flex-wrap gap-3"
             >
-              <a href={WHATSAPP} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 rounded-full px-6 py-3 text-[0.78rem]" style={{ fontFamily: 'Inter, sans-serif', background: '#C98F7A', color: '#FFF8F5', textDecoration: 'none' }}>{WA_SVG} WhatsApp ile Randevu</a>
-              <a href={PHONE} className="flex items-center gap-2 rounded-full px-6 py-3 text-[0.78rem]" style={{ fontFamily: 'Inter, sans-serif', border: '1px solid rgba(248,245,242,0.25)', color: 'rgba(248,245,242,0.75)', textDecoration: 'none' }}>+90 (541) 275 71 60</a>
+              <a href={WHATSAPP} data-cta-location="amasya-kuafor-cta" data-service-name="Amasya Kuaför" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 rounded-full px-6 py-3 text-[0.78rem]" style={{ fontFamily: 'Inter, sans-serif', background: '#C98F7A', color: '#FFF8F5', textDecoration: 'none' }}>{WA_SVG} WhatsApp ile Randevu</a>
+              <a href={PHONE} data-cta-location="amasya-kuafor-cta" data-service-name="Amasya Kuaför" className="flex items-center gap-2 rounded-full px-6 py-3 text-[0.78rem]" style={{ fontFamily: 'Inter, sans-serif', border: '1px solid rgba(248,245,242,0.25)', color: 'rgba(248,245,242,0.75)', textDecoration: 'none' }}>+90 (541) 275 71 60</a>
             </motion.div>
           </div>
         </section>
@@ -378,8 +380,8 @@ export default function AmasyaKuaforPage() {
               WhatsApp'tan yazın, ne istediğinizi ve tarih tercihlerinizi paylaşın — size uygun randevuyu ayarlayalım.
             </motion.p>
             <motion.div initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.35 }} className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <a href={WHATSAPP} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 rounded-full px-8 py-4 text-[0.82rem] font-medium" style={{ fontFamily: 'Inter, sans-serif', background: '#C98F7A', color: '#FFF8F5', textDecoration: 'none' }}>{WA_SVG} WhatsApp&apos;tan Randevu Al</a>
-              <a href={PHONE} className="flex items-center gap-2 rounded-full px-8 py-4 text-[0.82rem]" style={{ fontFamily: 'Inter, sans-serif', border: '1px solid rgba(201,143,122,0.45)', color: '#C98F7A', textDecoration: 'none' }}>+90 (541) 275 71 60</a>
+              <a href={WHATSAPP} data-cta-location="amasya-kuafor-cta2" data-service-name="Amasya Kuaför" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 rounded-full px-8 py-4 text-[0.82rem] font-medium" style={{ fontFamily: 'Inter, sans-serif', background: '#C98F7A', color: '#FFF8F5', textDecoration: 'none' }}>{WA_SVG} WhatsApp&apos;tan Randevu Al</a>
+              <a href={PHONE} data-cta-location="amasya-kuafor-cta2" data-service-name="Amasya Kuaför" className="flex items-center gap-2 rounded-full px-8 py-4 text-[0.82rem]" style={{ fontFamily: 'Inter, sans-serif', border: '1px solid rgba(201,143,122,0.45)', color: '#C98F7A', textDecoration: 'none' }}>+90 (541) 275 71 60</a>
             </motion.div>
             <motion.p initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.45 }} className="mt-10" style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.40)', fontSize: '0.72rem', letterSpacing: '0.08em' }}>Turhal, Tokat &nbsp;·&nbsp; Pzt – Cmt 08:00 – 19:00</motion.p>
           </div>

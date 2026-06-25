@@ -295,6 +295,8 @@ export default function TokatGelinSaciPage() {
           </a>
           <a
             href={WHATSAPP}
+            data-cta-location="tokat-gelin-saci-nav"
+            data-service-name="Tokat Gelin Saçı"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-full px-5 py-2 text-[0.75rem] font-medium"
@@ -311,7 +313,7 @@ export default function TokatGelinSaciPage() {
         >
           <div className="absolute inset-0 pointer-events-none">
             <img
-              src="/images/4E3D1939-0CFB-4C8B-8CE3-7A787126B37C.webp"
+              src="/images/hulya-kuafor-turhal-hero.webp"
               alt="Tokat gelin saçı tasarımı — Hülya Hair & Beauty Studio"
               className="w-full h-full object-cover object-center"
               style={{ filter: 'brightness(0.72) contrast(1.08) saturate(0.95)' }}
@@ -370,6 +372,8 @@ export default function TokatGelinSaciPage() {
             >
               <a
                 href={WHATSAPP}
+                data-cta-location="tokat-gelin-saci-hero"
+                data-service-name="Tokat Gelin Saçı"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-3 rounded-full px-8 py-4 text-[0.82rem] font-medium"
@@ -379,6 +383,8 @@ export default function TokatGelinSaciPage() {
               </a>
               <a
                 href={PHONE}
+                data-cta-location="tokat-gelin-saci-hero"
+                data-service-name="Tokat Gelin Saçı"
                 className="flex items-center justify-center gap-2 rounded-full px-8 py-4 text-[0.82rem]"
                 style={{ fontFamily: 'Inter, sans-serif', border: '1px solid rgba(201,143,122,0.45)', color: '#C98F7A', textDecoration: 'none' }}
               >
@@ -831,6 +837,8 @@ export default function TokatGelinSaciPage() {
             >
               <a
                 href={WHATSAPP}
+                data-cta-location="tokat-gelin-saci-cta"
+                data-service-name="Tokat Gelin Saçı"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 rounded-full px-8 py-4 text-[0.82rem] font-medium"
@@ -840,6 +848,8 @@ export default function TokatGelinSaciPage() {
               </a>
               <a
                 href={PHONE}
+                data-cta-location="tokat-gelin-saci-cta"
+                data-service-name="Tokat Gelin Saçı"
                 className="flex items-center gap-2 rounded-full px-8 py-4 text-[0.82rem]"
                 style={{ fontFamily: 'Inter, sans-serif', border: '1px solid rgba(201,143,122,0.45)', color: '#C98F7A', textDecoration: 'none' }}
               >

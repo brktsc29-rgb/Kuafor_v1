@@ -117,6 +117,8 @@ export default function AwardsCTA() {
             href="https://wa.me/905412757160"
             target="_blank"
             rel="noopener noreferrer"
+            data-cta-location="anasayfa-cta"
+            data-service-name="HÜLYA Studio"
             className="flex items-center gap-3 rounded-full px-8 py-4 text-[0.82rem] font-medium"
             style={{ fontFamily: 'Inter, sans-serif', background: '#C98F7A', color: '#FFF8F5' }}
             whileHover={{ scale: 1.06, background: '#C9917F' } as never}
@@ -129,6 +131,8 @@ export default function AwardsCTA() {
 
           <motion.a
             href="tel:+905412757160"
+            data-cta-location="anasayfa-cta"
+            data-service-name="HÜLYA Studio"
             className="flex items-center gap-2 rounded-full px-8 py-4 text-[0.82rem]"
             style={{ fontFamily: 'Inter, sans-serif', border: '1px solid rgba(201,143,122,0.45)', color: '#C98F7A' }}
             whileHover={{ borderColor: '#B9816F', scale: 1.06 } as never}

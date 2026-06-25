@@ -99,7 +99,7 @@ export default function TurhalKuaforPage() {
         <link rel="canonical" href="https://www.hulyastudio.com/turhal-kuafor" />
         <meta property="og:title" content="Turhal Kuaför | Hülya Hair & Beauty Studio" />
         <meta property="og:description" content="Turhal'da bayan kuaförü ve güzellik salonu. Saç kesimi, gelin saçı, ombre, röfle ve profesyonel saç tasarımı. Tokat'ın farklı ilçelerinden misafirlere hizmet." />
-        <meta property="og:image" content="https://www.hulyastudio.com/images/4E3D1939-0CFB-4C8B-8CE3-7A787126B37C.webp" />
+        <meta property="og:image" content="https://www.hulyastudio.com/images/hulya-kuafor-turhal-hero.webp" />
         <meta property="og:url" content="https://www.hulyastudio.com/turhal-kuafor" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">{JSON.stringify({
@@ -186,6 +186,8 @@ export default function TurhalKuaforPage() {
 
           <a
             href={WHATSAPP}
+            data-cta-location="turhal-kuafor-nav"
+            data-service-name="Turhal Kuaför"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-full px-5 py-2"
@@ -205,7 +207,7 @@ export default function TurhalKuaforPage() {
           <div
             className="absolute inset-0"
             style={{
-              backgroundImage: 'url(/images/4E3D1939-0CFB-4C8B-8CE3-7A787126B37C.webp)',
+              backgroundImage: 'url(/images/hulya-kuafor-turhal-hero.webp)',
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               filter: 'brightness(0.72)',
@@ -264,6 +266,8 @@ export default function TurhalKuaforPage() {
             >
               <a
                 href={WHATSAPP}
+                data-cta-location="turhal-kuafor-hero"
+                data-service-name="Turhal Kuaför"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-3 rounded-full px-8 py-4 text-[0.82rem] font-medium"
@@ -273,6 +277,8 @@ export default function TurhalKuaforPage() {
               </a>
               <a
                 href={PHONE}
+                data-cta-location="turhal-kuafor-hero"
+                data-service-name="Turhal Kuaför"
                 className="flex items-center justify-center gap-2 rounded-full px-8 py-4 text-[0.82rem]"
                 style={{ fontFamily: 'Inter, sans-serif', border: '1px solid rgba(201,143,122,0.45)', color: '#C98F7A', textDecoration: 'none' }}
               >
@@ -420,6 +426,8 @@ export default function TurhalKuaforPage() {
             >
               <a
                 href={WHATSAPP}
+                data-cta-location="turhal-kuafor-mid"
+                data-service-name="Turhal Kuaför"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-3 rounded-full px-8 py-5 text-[0.82rem] font-medium"
@@ -429,6 +437,8 @@ export default function TurhalKuaforPage() {
               </a>
               <a
                 href={PHONE}
+                data-cta-location="turhal-kuafor-mid"
+                data-service-name="Turhal Kuaför"
                 className="flex items-center justify-center gap-2 rounded-full px-8 py-5 text-[0.82rem]"
                 style={{ fontFamily: 'Inter, sans-serif', border: '1px solid rgba(201,143,122,0.45)', color: '#C98F7A', textDecoration: 'none' }}
               >
@@ -582,6 +592,8 @@ export default function TurhalKuaforPage() {
             >
               <a
                 href={WHATSAPP}
+                data-cta-location="turhal-kuafor-cta"
+                data-service-name="Turhal Kuaför"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 rounded-full px-8 py-4 text-[0.82rem] font-medium"
@@ -591,6 +603,8 @@ export default function TurhalKuaforPage() {
               </a>
               <a
                 href={PHONE}
+                data-cta-location="turhal-kuafor-cta"
+                data-service-name="Turhal Kuaför"
                 className="flex items-center gap-2 rounded-full px-8 py-4 text-[0.82rem]"
                 style={{ fontFamily: 'Inter, sans-serif', border: '1px solid rgba(201,143,122,0.45)', color: '#C98F7A', textDecoration: 'none' }}
               >

@@ -73,7 +73,7 @@ export default function AwardsStory() {
         >
           <img
             ref={imgRef}
-            src="/images/75EB7243-3A51-4F0C-9018-76DEE47AC5F7.webp"
+            src="/images/hulya-studio-turhal-salon.webp"
             alt="Hülya Kuaför Turhal Tokat kadın güzellik salonu"
             loading="lazy"
             className="absolute inset-0 w-full h-full object-cover"

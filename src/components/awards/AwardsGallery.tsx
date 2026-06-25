@@ -2,11 +2,11 @@ import { useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 
 const IMAGES = [
-  { src: '/images/ChatGPT Image 4 Haz 2026 01_39_53.webp', caption: 'Saç Tasarımı',     alt: 'Hülya Kuaför Turhal saç tasarımı',            idx: '01' },
-  { src: '/images/ChatGPT Image 4 Haz 2026 01_41_20.webp', caption: 'Salon Deneyimi',    alt: 'Tokat Turhal güzellik salonu iç mekan',        idx: '02' },
-  { src: '/images/ChatGPT Image 4 Haz 2026 01_42_29.webp', caption: 'Renk Uygulaması',   alt: 'Turhal kuaför saç renklendirme ombre röfle',   idx: '03' },
-  { src: '/images/ChatGPT Image 4 Haz 2026 01_44_01.webp', caption: 'Profesyonel Kesim', alt: 'Hülya Kuaför Turhal Tokat profesyonel kesim',  idx: '04' },
-  { src: '/images/ChatGPT Image 4 Haz 2026 01_45_13.webp', caption: 'Röfle & Ombre',     alt: 'Tokat kuaför röfle ombre balayage uygulaması', idx: '05' },
+  { src: '/images/hulya-kuafor-turhal-sac-tasarimi-01.webp', caption: 'Saç Tasarımı',     alt: 'Hülya Kuaför Turhal saç tasarımı',            idx: '01' },
+  { src: '/images/hulya-kuafor-turhal-salon-deneyimi-02.webp', caption: 'Salon Deneyimi',    alt: 'Tokat Turhal güzellik salonu iç mekan',        idx: '02' },
+  { src: '/images/hulya-kuafor-turhal-sac-renklendirme-03.webp', caption: 'Renk Uygulaması',   alt: 'Turhal kuaför saç renklendirme ombre röfle',   idx: '03' },
+  { src: '/images/hulya-kuafor-turhal-sac-kesimi-04.webp', caption: 'Profesyonel Kesim', alt: 'Hülya Kuaför Turhal Tokat profesyonel kesim',  idx: '04' },
+  { src: '/images/hulya-kuafor-turhal-rofle-ombre-05.webp', caption: 'Röfle & Ombre',     alt: 'Tokat kuaför röfle ombre balayage uygulaması', idx: '05' },
 ]
 
 function PhotoCard({ img }: { img: typeof IMAGES[0] }) {

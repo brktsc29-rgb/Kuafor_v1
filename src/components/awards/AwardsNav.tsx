@@ -231,6 +231,8 @@ export default function AwardsNav({ ready }: { ready: boolean }) {
             href="https://wa.me/905412757160"
             target="_blank"
             rel="noopener noreferrer"
+            data-cta-location="anasayfa-nav"
+            data-service-name="HÜLYA Studio"
             className="rounded-full px-5 py-2 text-[0.72rem] tracking-wide"
             style={{ fontFamily: 'Inter, sans-serif', background: '#C98F7A', color: '#FFF8F5' }}
             whileHover={{ scale: 1.07 }}
