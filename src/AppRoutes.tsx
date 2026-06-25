@@ -36,7 +36,7 @@ export default function AppRoutes() {
         <Route path="/turhal-kuafor"    element={<TurhalKuaforPage />} />
         <Route path="/tokat-ombre"      element={<TokatOmbrePage />} />
         <Route path="/amasya-kuafor"    element={<AmasyaKuaforPage />} />
-        <Route path="/tokat-rofle"      element={<Navigate to="/amasya-kuafor" replace />} />
+        <Route path="/tokat-rofle"      element={<Navigate to="/tokat-ombre#rofle" replace />} />
         <Route path="/tokat-makyaj"     element={<TokatMakyajPage />} />
       </Routes>
     </>

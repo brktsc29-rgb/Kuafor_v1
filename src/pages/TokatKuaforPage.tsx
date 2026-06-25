@@ -99,6 +99,11 @@ export default function TokatKuaforPage() {
         <title>Tokat Kuaför | Hülya Kuaför Gelin Saçı, Ombre ve Saç Tasarımı</title>
         <meta name="description" content="Tokat'ta gelin saçı, ombre, röfle, saç boyama ve profesyonel saç tasarımı hizmetleri. Hülya Kuaför, Turhal'daki salonunda Tokat merkez ve çevre ilçelerden gelen misafirlerini ağırlamaktadır." />
         <link rel="canonical" href="https://www.hulyastudio.com/tokat-kuafor" />
+        <meta property="og:title" content="Tokat Kuaför | Hülya Kuaför Gelin Saçı, Ombre ve Saç Tasarımı" />
+        <meta property="og:description" content="Tokat'ta gelin saçı, ombre, röfle ve profesyonel saç tasarımı. Turhal'daki Hülya Kuaför, Tokat merkez ve çevre ilçelerden gelen misafirlerini ağırlamaktadır." />
+        <meta property="og:image" content="https://www.hulyastudio.com/images/hulya-kuafor-turhal-hero.webp" />
+        <meta property="og:url" content="https://www.hulyastudio.com/tokat-kuafor" />
+        <meta property="og:type" content="website" />
         <script type="application/ld+json">{JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'BreadcrumbList',
@@ -117,9 +122,11 @@ export default function TokatKuaforPage() {
           foundingDate: '2010',
           address: {
             '@type': 'PostalAddress',
+            streetAddress: 'Yavuz Selim Mah. Şirin Sk. No:6/B',
             addressLocality: 'Turhal',
             addressRegion: 'Tokat',
             addressCountry: 'TR',
+        postalCode: '60300',
           },
           geo: {
             '@type': 'GeoCoordinates',
@@ -146,6 +153,15 @@ export default function TokatKuaforPage() {
           founder: { '@type': 'Person', name: 'Sibel Erturhan' },
           employee: { '@type': 'Person', name: 'Damla Erturhan' },
           knowsAbout: ['Gelin Saçı','Ombre','Balayage','Röfle','Saç Boyama','Saç Kesimi','Profesyonel Saç Tasarımı','Saç Bakımı'],
+        })}</script>
+        <script type="application/ld+json">{JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'FAQPage',
+          mainEntity: FAQS.map(f => ({
+            '@type': 'Question',
+            name: f.q,
+            acceptedAnswer: { '@type': 'Answer', text: f.a },
+          })),
         })}</script>
       </Helmet>
 
@@ -179,6 +195,8 @@ export default function TokatKuaforPage() {
 
           <a
             href={WHATSAPP}
+            data-cta-location="tokat-kuafor-nav"
+            data-service-name="Tokat Kuaför"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-full px-5 py-2"
@@ -197,7 +215,7 @@ export default function TokatKuaforPage() {
           <div
             className="absolute inset-0"
             style={{
-              backgroundImage: 'url(/images/4E3D1939-0CFB-4C8B-8CE3-7A787126B37C.webp)',
+              backgroundImage: 'url(/images/hulya-kuafor-turhal-hero.webp)',
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               filter: 'brightness(0.72)',
@@ -244,6 +262,8 @@ export default function TokatKuaforPage() {
             >
               <a
                 href={WHATSAPP}
+                data-cta-location="tokat-kuafor-hero"
+                data-service-name="Tokat Kuaför"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-3 rounded-full px-8 py-4 text-[0.82rem] font-medium"
@@ -253,6 +273,8 @@ export default function TokatKuaforPage() {
               </a>
               <a
                 href={PHONE}
+                data-cta-location="tokat-kuafor-hero"
+                data-service-name="Tokat Kuaför"
                 className="flex items-center justify-center gap-2 rounded-full px-8 py-4 text-[0.82rem]"
                 style={{ fontFamily: 'Inter, sans-serif', border: '1px solid rgba(201,143,122,0.45)', color: '#C98F7A', textDecoration: 'none' }}
               >
@@ -753,6 +775,8 @@ export default function TokatKuaforPage() {
             >
               <a
                 href={WHATSAPP}
+                data-cta-location="tokat-kuafor-cta"
+                data-service-name="Tokat Kuaför"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 rounded-full px-8 py-4 text-[0.82rem] font-medium"
@@ -762,6 +786,8 @@ export default function TokatKuaforPage() {
               </a>
               <a
                 href={PHONE}
+                data-cta-location="tokat-kuafor-cta"
+                data-service-name="Tokat Kuaför"
                 className="flex items-center gap-2 rounded-full px-8 py-4 text-[0.82rem]"
                 style={{ fontFamily: 'Inter, sans-serif', border: '1px solid rgba(201,143,122,0.45)', color: '#C98F7A', textDecoration: 'none' }}
               >

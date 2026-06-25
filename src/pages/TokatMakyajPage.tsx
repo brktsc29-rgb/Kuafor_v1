@@ -218,9 +218,11 @@ export default function TokatMakyajPage() {
     telephone: '+90-541-275-71-60',
     address: {
       '@type': 'PostalAddress',
+      streetAddress: 'Yavuz Selim Mah. Şirin Sk. No:6/B',
       addressLocality: 'Turhal',
       addressRegion: 'Tokat',
       addressCountry: 'TR',
+        postalCode: '60300',
     },
     geo: { '@type': 'GeoCoordinates', latitude: 40.3868, longitude: 36.0820 },
     openingHoursSpecification: [
@@ -251,6 +253,7 @@ export default function TokatMakyajPage() {
         <meta property="og:description" content="Tokat ve Turhal'da profesyonel makyaj hizmeti. Gelin, nişan, gece ve fotoğraf makyajı. 2010'dan beri güvenilir güzellik salonu." />
         <meta property="og:url" content="https://www.hulyastudio.com/tokat-makyaj" />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://www.hulyastudio.com/images/makyaj/gelin-makyaji.webp" />
         <script type="application/ld+json">{JSON.stringify(schemaFAQ)}</script>
         <script type="application/ld+json">{JSON.stringify(schemaBreadcrumb)}</script>
         <script type="application/ld+json">{JSON.stringify(schemaHairSalon)}</script>
@@ -276,6 +279,8 @@ export default function TokatMakyajPage() {
           </a>
           <a
             href={WHATSAPP}
+            data-cta-location="tokat-makyaj-nav"
+            data-service-name="Tokat Makyaj"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2"
@@ -303,7 +308,7 @@ export default function TokatMakyajPage() {
         <div
           style={{
             position: 'absolute', inset: 0,
-            backgroundImage: 'url(/images/4E3D1939-0CFB-4C8B-8CE3-7A787126B37C.webp)',
+            backgroundImage: 'url(/images/hulya-kuafor-turhal-hero.webp)',
             backgroundSize: 'cover',
             backgroundPosition: 'center 20%',
             filter: 'brightness(0.45)',
@@ -348,6 +353,8 @@ export default function TokatMakyajPage() {
           >
             <a
               href={WHATSAPP}
+              data-cta-location="tokat-makyaj-hero"
+              data-service-name="Tokat Makyaj"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2"
@@ -358,6 +365,8 @@ export default function TokatMakyajPage() {
             </a>
             <a
               href={PHONE}
+              data-cta-location="tokat-makyaj-hero"
+              data-service-name="Tokat Makyaj"
               style={{ fontFamily: 'Inter, sans-serif', background: 'transparent', color: '#F8F5F2', fontSize: '0.75rem', letterSpacing: '0.1em', padding: '13px 26px', borderRadius: 100, textDecoration: 'none', border: '1px solid rgba(248,245,242,0.22)' }}
               onMouseEnter={e => (e.currentTarget.style.borderColor = 'rgba(248,245,242,0.55)')}
               onMouseLeave={e => (e.currentTarget.style.borderColor = 'rgba(248,245,242,0.22)')}
@@ -503,6 +512,8 @@ export default function TokatMakyajPage() {
 
               <a
                 href={WHATSAPP}
+                data-cta-location="tokat-makyaj-mid"
+                data-service-name="Tokat Makyaj"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 self-start mt-2"
@@ -682,6 +693,8 @@ export default function TokatMakyajPage() {
           <div className="flex flex-wrap gap-3 justify-center">
             <a
               href={WHATSAPP}
+              data-cta-location="tokat-makyaj-cta"
+              data-service-name="Tokat Makyaj"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2"
@@ -692,6 +705,8 @@ export default function TokatMakyajPage() {
             </a>
             <a
               href={PHONE}
+              data-cta-location="tokat-makyaj-cta"
+              data-service-name="Tokat Makyaj"
               style={{ fontFamily: 'Inter, sans-serif', color: '#F8F5F2', fontSize: '0.78rem', letterSpacing: '0.1em', padding: '14px 30px', borderRadius: 100, textDecoration: 'none', border: '1px solid rgba(248,245,242,0.18)' }}
               onMouseEnter={e => (e.currentTarget.style.borderColor = 'rgba(248,245,242,0.45)')}
               onMouseLeave={e => (e.currentTarget.style.borderColor = 'rgba(248,245,242,0.18)')}

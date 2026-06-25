@@ -97,6 +97,11 @@ export default function TurhalKuaforPage() {
         <title>Turhal Kuaför | Hülya Hair &amp; Beauty Studio</title>
         <meta name="description" content="Turhal'da bayan kuaförü ve güzellik salonu. Saç kesimi, gelin saçı, ombre, röfle ve profesyonel saç tasarımı. Pzt–Cmt 08:00–19:00." />
         <link rel="canonical" href="https://www.hulyastudio.com/turhal-kuafor" />
+        <meta property="og:title" content="Turhal Kuaför | Hülya Hair & Beauty Studio" />
+        <meta property="og:description" content="Turhal'da bayan kuaförü ve güzellik salonu. Saç kesimi, gelin saçı, ombre, röfle ve profesyonel saç tasarımı. Tokat'ın farklı ilçelerinden misafirlere hizmet." />
+        <meta property="og:image" content="https://www.hulyastudio.com/images/hulya-kuafor-turhal-hero.webp" />
+        <meta property="og:url" content="https://www.hulyastudio.com/turhal-kuafor" />
+        <meta property="og:type" content="website" />
         <script type="application/ld+json">{JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'BreadcrumbList',
@@ -115,9 +120,11 @@ export default function TurhalKuaforPage() {
           telephone: '+905412757160',
           address: {
             '@type': 'PostalAddress',
+            streetAddress: 'Yavuz Selim Mah. Şirin Sk. No:6/B',
             addressLocality: 'Turhal',
             addressRegion: 'Tokat',
             addressCountry: 'TR',
+        postalCode: '60300',
           },
           geo: {
             '@type': 'GeoCoordinates',
@@ -133,6 +140,9 @@ export default function TurhalKuaforPage() {
           areaServed: [
             { '@type': 'City', name: 'Turhal' },
             { '@type': 'City', name: 'Tokat' },
+            { '@type': 'City', name: 'Zile' },
+            { '@type': 'City', name: 'Erbaa' },
+            { '@type': 'City', name: 'Niksar' },
           ],
           founder: { '@type': 'Person', name: 'Sibel Erturhan' },
           employee: { '@type': 'Person', name: 'Damla Erturhan' },
@@ -178,6 +188,8 @@ export default function TurhalKuaforPage() {
 
           <a
             href={WHATSAPP}
+            data-cta-location="turhal-kuafor-nav"
+            data-service-name="Turhal Kuaför"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-full px-5 py-2"
@@ -197,7 +209,7 @@ export default function TurhalKuaforPage() {
           <div
             className="absolute inset-0"
             style={{
-              backgroundImage: 'url(/images/4E3D1939-0CFB-4C8B-8CE3-7A787126B37C.webp)',
+              backgroundImage: 'url(/images/hulya-kuafor-turhal-hero.webp)',
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               filter: 'brightness(0.72)',
@@ -256,6 +268,8 @@ export default function TurhalKuaforPage() {
             >
               <a
                 href={WHATSAPP}
+                data-cta-location="turhal-kuafor-hero"
+                data-service-name="Turhal Kuaför"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-3 rounded-full px-8 py-4 text-[0.82rem] font-medium"
@@ -265,6 +279,8 @@ export default function TurhalKuaforPage() {
               </a>
               <a
                 href={PHONE}
+                data-cta-location="turhal-kuafor-hero"
+                data-service-name="Turhal Kuaför"
                 className="flex items-center justify-center gap-2 rounded-full px-8 py-4 text-[0.82rem]"
                 style={{ fontFamily: 'Inter, sans-serif', border: '1px solid rgba(201,143,122,0.45)', color: '#C98F7A', textDecoration: 'none' }}
               >
@@ -314,7 +330,7 @@ export default function TurhalKuaforPage() {
               transition={{ duration: 0.7, delay: 0.15 }}
             >
               <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.72)', fontSize: '0.92rem', lineHeight: 1.85, marginBottom: 16 }}>
-                2010&apos;dan bu yana Turhal&apos;dayız. Sibel Erturhan tarafından kurulan salon, bugün Damla Erturhan ile birlikte yürütülüyor.
+                2010&apos;dan bu yana Turhal&apos;dayız. Sibel Erturhan tarafından kurulan bu güzellik salonu, bugün Damla Erturhan ile birlikte yürütülüyor.
               </p>
               <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.72)', fontSize: '0.92rem', lineHeight: 1.85, marginBottom: 16 }}>
                 Küçük bir ekip, kişisel bir hizmet. Her randevuya zaman ayrılıyor; kalabalık bekleme yok. Kapıdan girdiğinizde adınızı biliyoruz, aceleyle değil.
@@ -412,6 +428,8 @@ export default function TurhalKuaforPage() {
             >
               <a
                 href={WHATSAPP}
+                data-cta-location="turhal-kuafor-mid"
+                data-service-name="Turhal Kuaför"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-3 rounded-full px-8 py-5 text-[0.82rem] font-medium"
@@ -421,6 +439,8 @@ export default function TurhalKuaforPage() {
               </a>
               <a
                 href={PHONE}
+                data-cta-location="turhal-kuafor-mid"
+                data-service-name="Turhal Kuaför"
                 className="flex items-center justify-center gap-2 rounded-full px-8 py-5 text-[0.82rem]"
                 style={{ fontFamily: 'Inter, sans-serif', border: '1px solid rgba(201,143,122,0.45)', color: '#C98F7A', textDecoration: 'none' }}
               >
@@ -574,6 +594,8 @@ export default function TurhalKuaforPage() {
             >
               <a
                 href={WHATSAPP}
+                data-cta-location="turhal-kuafor-cta"
+                data-service-name="Turhal Kuaför"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 rounded-full px-8 py-4 text-[0.82rem] font-medium"
@@ -583,6 +605,8 @@ export default function TurhalKuaforPage() {
               </a>
               <a
                 href={PHONE}
+                data-cta-location="turhal-kuafor-cta"
+                data-service-name="Turhal Kuaför"
                 className="flex items-center gap-2 rounded-full px-8 py-4 text-[0.82rem]"
                 style={{ fontFamily: 'Inter, sans-serif', border: '1px solid rgba(201,143,122,0.45)', color: '#C98F7A', textDecoration: 'none' }}
               >

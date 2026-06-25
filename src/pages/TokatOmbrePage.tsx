@@ -109,7 +109,7 @@ const HAIRSALON_SCHEMA = {
   description: 'Tokat Turhal\'da ombre, sombre ve balayage saç renklendirme hizmetleri. Profesyonel teknik, kişiye özel renk analizi.',
   url: 'https://www.hulyastudio.com/tokat-ombre',
   telephone: '+905412757160',
-  address: { '@type': 'PostalAddress', streetAddress: 'Turhal', addressLocality: 'Turhal', addressRegion: 'Tokat', addressCountry: 'TR' },
+  address: { '@type': 'PostalAddress', streetAddress: 'Yavuz Selim Mah. Şirin Sk. No:6/B', addressLocality: 'Turhal', addressRegion: 'Tokat', addressCountry: 'TR', postalCode: '60300' },
   geo: { '@type': 'GeoCoordinates', latitude: 40.3868, longitude: 36.0820 },
   openingHours: 'Mo,Tu,We,Th,Fr,Sa 08:00-19:00',
   areaServed: ['Tokat', 'Turhal', 'Zile', 'Erbaa', 'Niksar', 'Amasya', 'Merzifon'],
@@ -149,8 +149,10 @@ export default function TokatOmbrePage() {
         <meta name="description" content="Tokat'ta ombre, sombre ve röfle saç renklendirme hizmetleri. Turhal'daki salonumuzda kişiye özel renk analizi ve profesyonel uygulama." />
         <link rel="canonical" href="https://www.hulyastudio.com/tokat-ombre" />
         <meta property="og:title" content="Tokat Ombre | Hülya Kuaför" />
-        <meta property="og:description" content="Tokat ombre, sombre ve röfle. Turhal'da kişiye özel renk analizi." />
+        <meta property="og:description" content="Tokat'ta ombre, sombre, balayage ve röfle saç renklendirme hizmetleri. Turhal'daki salonumuzda kişiye özel renk analizi ve profesyonel uygulama." />
+        <meta property="og:image" content="https://www.hulyastudio.com/images/ombre/klasik-ombre.webp" />
         <meta property="og:url" content="https://www.hulyastudio.com/tokat-ombre" />
+        <meta property="og:type" content="website" />
         <script type="application/ld+json">{JSON.stringify(FAQ_SCHEMA)}</script>
         <script type="application/ld+json">{JSON.stringify(BREADCRUMB_SCHEMA)}</script>
         <script type="application/ld+json">{JSON.stringify(HAIRSALON_SCHEMA)}</script>
@@ -170,7 +172,7 @@ export default function TokatOmbrePage() {
           >
             {IG_SVG}
           </a>
-          <a href={WHATSAPP} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 rounded-full px-5 py-2 text-[0.75rem] font-medium" style={{ fontFamily: 'Inter, sans-serif', background: '#C98F7A', color: '#FFF8F5', textDecoration: 'none' }}>
+          <a href={WHATSAPP} data-cta-location="tokat-ombre-nav" data-service-name="Tokat Ombre" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 rounded-full px-5 py-2 text-[0.75rem] font-medium" style={{ fontFamily: 'Inter, sans-serif', background: '#C98F7A', color: '#FFF8F5', textDecoration: 'none' }}>
             {WA_SVG} Randevu Al
           </a>
         </nav>
@@ -206,10 +208,10 @@ export default function TokatOmbrePage() {
               Koyudan açığa yumuşak geçiş. Saçınıza özel teknik ve ton seçimiyle doğal, sürdürülebilir renk.
             </motion.p>
             <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.7 }} className="flex flex-col sm:flex-row gap-3">
-              <a href={WHATSAPP} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-3 rounded-full px-8 py-4 text-[0.82rem] font-medium" style={{ fontFamily: 'Inter, sans-serif', background: '#C98F7A', color: '#FFF8F5', textDecoration: 'none' }}>
+              <a href={WHATSAPP} data-cta-location="tokat-ombre-hero" data-service-name="Tokat Ombre" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-3 rounded-full px-8 py-4 text-[0.82rem] font-medium" style={{ fontFamily: 'Inter, sans-serif', background: '#C98F7A', color: '#FFF8F5', textDecoration: 'none' }}>
                 {WA_SVG} Randevu Al
               </a>
-              <a href={PHONE} className="flex items-center justify-center gap-2 rounded-full px-8 py-4 text-[0.82rem]" style={{ fontFamily: 'Inter, sans-serif', border: '1px solid rgba(201,143,122,0.45)', color: '#C98F7A', textDecoration: 'none' }}>
+              <a href={PHONE} data-cta-location="tokat-ombre-hero" data-service-name="Tokat Ombre" className="flex items-center justify-center gap-2 rounded-full px-8 py-4 text-[0.82rem]" style={{ fontFamily: 'Inter, sans-serif', border: '1px solid rgba(201,143,122,0.45)', color: '#C98F7A', textDecoration: 'none' }}>
                 +90 (541) 275 71 60
               </a>
             </motion.div>
@@ -320,12 +322,12 @@ export default function TokatOmbrePage() {
         </section>
 
         {/* Röfle */}
-        <section className="py-16 md:py-24 px-6 md:px-14" style={{ background: '#2A211D', borderTop: '1px solid rgba(248,245,242,0.06)' }}>
+        <section id="rofle" className="py-16 md:py-24 px-6 md:px-14" style={{ background: '#2A211D', borderTop: '1px solid rgba(248,245,242,0.06)' }}>
           <div className="max-w-screen-xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <motion.div initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }}>
               <p style={{ fontFamily: 'Inter, sans-serif', color: '#C98F7A', fontSize: '0.6rem', letterSpacing: '0.36em', textTransform: 'uppercase', marginBottom: 18 }}>Röfle</p>
               <h2 style={{ fontFamily: 'Instrument Serif, serif', color: '#F8F5F2', fontSize: 'clamp(2rem, 4.5vw, 5rem)', lineHeight: 1.0, letterSpacing: '-0.8px' }}>
-                Parçalı Işıltı<br /><em style={{ color: '#C98F7A', fontStyle: 'italic' }}>Röfle Uygulaması</em>
+                Tokat&apos;ta Röfle<br /><em style={{ color: '#C98F7A', fontStyle: 'italic' }}>Parçalı Işıltı Uygulaması</em>
               </h2>
               <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(248,245,242,0.60)', fontSize: '0.88rem', lineHeight: 1.85, marginTop: 20 }}>
                 Röfle, saçın belirli bölgelerine kontrast veya aydınlık tonu ekleyerek derinlik ve hareket yaratır. Klasik streaks veya parçalı açma olarak uygulanabilir; ombrenin sürekli gradyanından farklı olarak seçili noktalara odaklanır.
@@ -391,8 +393,8 @@ export default function TokatOmbrePage() {
               Bir fotoğraf gönderin — saçınızın mevcut durumuna bakarak size uygun teknik ve ton önerisi yapalım.
             </motion.p>
             <motion.div initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.35 }} className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <a href={WHATSAPP} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 rounded-full px-8 py-4 text-[0.82rem] font-medium" style={{ fontFamily: 'Inter, sans-serif', background: '#C98F7A', color: '#FFF8F5', textDecoration: 'none' }}>{WA_SVG} WhatsApp&apos;tan Randevu Al</a>
-              <a href={PHONE} className="flex items-center gap-2 rounded-full px-8 py-4 text-[0.82rem]" style={{ fontFamily: 'Inter, sans-serif', border: '1px solid rgba(201,143,122,0.45)', color: '#C98F7A', textDecoration: 'none' }}>+90 (541) 275 71 60</a>
+              <a href={WHATSAPP} data-cta-location="tokat-ombre-cta" data-service-name="Tokat Ombre" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 rounded-full px-8 py-4 text-[0.82rem] font-medium" style={{ fontFamily: 'Inter, sans-serif', background: '#C98F7A', color: '#FFF8F5', textDecoration: 'none' }}>{WA_SVG} WhatsApp&apos;tan Randevu Al</a>
+              <a href={PHONE} data-cta-location="tokat-ombre-cta" data-service-name="Tokat Ombre" className="flex items-center gap-2 rounded-full px-8 py-4 text-[0.82rem]" style={{ fontFamily: 'Inter, sans-serif', border: '1px solid rgba(201,143,122,0.45)', color: '#C98F7A', textDecoration: 'none' }}>+90 (541) 275 71 60</a>
             </motion.div>
             <motion.p initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.45 }} className="mt-10" style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.40)', fontSize: '0.72rem', letterSpacing: '0.08em' }}>Turhal, Tokat &nbsp;·&nbsp; Pzt – Cmt 08:00 – 19:00</motion.p>
           </div>
