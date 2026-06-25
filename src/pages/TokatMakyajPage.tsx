@@ -221,6 +221,7 @@ export default function TokatMakyajPage() {
       addressLocality: 'Turhal',
       addressRegion: 'Tokat',
       addressCountry: 'TR',
+        postalCode: '60300',
     },
     geo: { '@type': 'GeoCoordinates', latitude: 40.3868, longitude: 36.0820 },
     openingHoursSpecification: [

@@ -125,6 +125,7 @@ export default function TokatKuaforPage() {
             addressLocality: 'Turhal',
             addressRegion: 'Tokat',
             addressCountry: 'TR',
+        postalCode: '60300',
           },
           geo: {
             '@type': 'GeoCoordinates',

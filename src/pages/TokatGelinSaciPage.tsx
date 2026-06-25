@@ -228,6 +228,7 @@ const HAIRSALON_SCHEMA = {
     addressLocality: 'Turhal',
     addressRegion: 'Tokat',
     addressCountry: 'TR',
+        postalCode: '60300',
   },
   geo: {
     '@type': 'GeoCoordinates',
