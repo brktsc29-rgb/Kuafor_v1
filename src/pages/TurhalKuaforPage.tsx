@@ -120,6 +120,7 @@ export default function TurhalKuaforPage() {
           telephone: '+905412757160',
           address: {
             '@type': 'PostalAddress',
+            streetAddress: 'Yavuz Selim Mah. Şirin Sk. No:6/B',
             addressLocality: 'Turhal',
             addressRegion: 'Tokat',
             addressCountry: 'TR',

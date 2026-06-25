@@ -218,6 +218,7 @@ export default function TokatMakyajPage() {
     telephone: '+90-541-275-71-60',
     address: {
       '@type': 'PostalAddress',
+      streetAddress: 'Yavuz Selim Mah. Şirin Sk. No:6/B',
       addressLocality: 'Turhal',
       addressRegion: 'Tokat',
       addressCountry: 'TR',
