@@ -224,7 +224,7 @@ const HAIRSALON_SCHEMA = {
   telephone: '+905412757160',
   address: {
     '@type': 'PostalAddress',
-    streetAddress: 'Turhal',
+    streetAddress: 'Yavuz Selim Mah. Şirin Sk. No:6/B',
     addressLocality: 'Turhal',
     addressRegion: 'Tokat',
     addressCountry: 'TR',

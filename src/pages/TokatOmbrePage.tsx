@@ -109,7 +109,7 @@ const HAIRSALON_SCHEMA = {
   description: 'Tokat Turhal\'da ombre, sombre ve balayage saç renklendirme hizmetleri. Profesyonel teknik, kişiye özel renk analizi.',
   url: 'https://www.hulyastudio.com/tokat-ombre',
   telephone: '+905412757160',
-  address: { '@type': 'PostalAddress', streetAddress: 'Turhal', addressLocality: 'Turhal', addressRegion: 'Tokat', addressCountry: 'TR' },
+  address: { '@type': 'PostalAddress', streetAddress: 'Yavuz Selim Mah. Şirin Sk. No:6/B', addressLocality: 'Turhal', addressRegion: 'Tokat', addressCountry: 'TR' },
   geo: { '@type': 'GeoCoordinates', latitude: 40.3868, longitude: 36.0820 },
   openingHours: 'Mo,Tu,We,Th,Fr,Sa 08:00-19:00',
   areaServed: ['Tokat', 'Turhal', 'Zile', 'Erbaa', 'Niksar', 'Amasya', 'Merzifon'],
