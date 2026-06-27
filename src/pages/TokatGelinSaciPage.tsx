@@ -144,6 +144,22 @@ const FAQS: { q: string; a: string }[] = [
     q: 'Düğün sonrası bakım önerisinde bulunuyor musunuz?',
     a: 'Düğün günü boyunca saçın bozulmaması için hangi ürünlerin kullanıldığını paylaşıyoruz. Sonrası için saç bakım önerileri de sorarsanız memnuniyetle aktarıyoruz.',
   },
+  {
+    q: 'Düğün salonuna veya mekana gelip hizmet veriyor musunuz?',
+    a: 'Evet, opsiyonel olarak mekana gidiş hizmeti sunuyoruz. Salonumuzda hazırlanmak yerine düğün mekanında veya evde hizmet almak tercih edilirse bunu önceden planlamak yeterli. Mekan hizmetinin müsaitliği için randevu aşamasında belirtmenizi öneririz.',
+  },
+  {
+    q: 'Gelin ile birlikte nedime, anne veya yakınlar için de aynı gün randevu alınabiliyor mu?',
+    a: 'Evet. Sayı sınırı olmaksızın aynı gün için nedime, anne veya diğer yakınlar için de randevu planlanabiliyor. Grubun tamamını kapsayan bir takvim oluşturulması için düğün tarihinden önce iletişime geçmenizi öneririz; böylece herkesin hazırlığı için yeterli süre ayrılıyor.',
+  },
+  {
+    q: 'Takma kirpik hizmeti yapılıyor mu?',
+    a: 'Evet. Takma kirpik uygulaması gelin saçı veya makyaj randevusuyla birlikte alınabiliyor. Tercihlerinizi önceden belirtirseniz hazırlık buna göre planlanıyor.',
+  },
+  {
+    q: 'Gelin saçı ve makyaj aynı seansta birlikte alınabiliyor mu?',
+    a: 'Evet. Gelin saçı ve makyaj aynı randevuda birlikte planlanabiliyor. Saç ve makyajın bütünlük içinde görünmesi için her ikisini birlikte değerlendirmenizi öneririz. Takma kirpik de bu seansa eklenebilir.',
+  },
 ]
 
 function FAQItem({ q, a, open, onToggle }: { q: string; a: string; open: boolean; onToggle: () => void }) {
