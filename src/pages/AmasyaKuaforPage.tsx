@@ -53,6 +53,26 @@ const FAQS = [
     q: 'Tesettür gelin başı hizmeti var mı?',
     a: 'Evet. Tülbent, dantelli şal, boncuklu başlık ve taçlı örtü dahil her örtü tipine uyumlu tesettür gelin başı hizmeti sunuyoruz. Düğün günü örtünüzü getirmeniz tasarımın tam istediğiniz gibi çıkmasını sağlar.',
   },
+  {
+    q: 'Amasya\'dan erken sabah randevu alınabiliyor mu?',
+    a: 'Evet. Salon sabah 08:00\'de açılıyor. Amasya\'dan yola çıkıp düğün günü veya özel gün hazırlığına erken başlamak isteyenler için sabah randevusu planlanabiliyor. Yolculuk süresini göz önüne alarak randevu saatini önceden netleştiriyoruz.',
+  },
+  {
+    q: 'Ombre veya röfle için de Turhal\'a gelen müşterileriniz var mı?',
+    a: 'Evet. Ombre, balayage, sombre ve röfle için Amasya ve Merzifon\'dan düzenli misafirlerimiz var. Renk çalışması öncesinde saçınızın fotoğrafını WhatsApp\'tan paylaşırsanız uygun teknik ve süreyi önceden değerlendiriyoruz.',
+  },
+  {
+    q: 'Nişan, kına veya mezuniyet saçı için randevu alabilir miyim?',
+    a: 'Evet. Nişan saçı, kına gecesi saç tasarımı, mezuniyet saçı ve özel gün updo için ayrı randevu planlanabiliyor. Bu hizmetler için de önceden WhatsApp üzerinden iletişime geçilmesi yeterli.',
+  },
+  {
+    q: 'Salonun açık olduğu günler ve saatler?',
+    a: 'Pazartesiden cumartesiye 08:00–19:00 saatleri arasında açığız. Pazar günü kapalıyız. Yavuz Selim Mah. Şirin Sk. No:6/B, Turhal / Tokat adresindeyiz.',
+  },
+  {
+    q: 'Gelin saçı ile makyaj aynı seansta alınabiliyor mu?',
+    a: 'Evet. Gelin saçı ve makyaj aynı randevuda birlikte planlanabiliyor. Takma kirpik de bu seansa eklenebilir. Toplam hizmetleri ve süreyi önceden netleştirip buna göre takvim oluşturuyoruz.',
+  },
 ]
 
 function FAQItem({ q, a, open, onToggle }: { q: string; a: string; open: boolean; onToggle: () => void }) {
@@ -290,6 +310,36 @@ export default function AmasyaKuaforPage() {
           </div>
         </section>
 
+        {/* Hizmet tanımı */}
+        <section className="py-12 md:py-16 px-6 md:px-14" style={{ background: '#F8F5F2', borderTop: '1px solid rgba(42,33,29,0.06)' }}>
+          <div className="max-w-screen-xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
+              <div>
+                <h2 style={{ fontFamily: 'Instrument Serif, serif', color: '#2A211D', fontSize: 'clamp(1.5rem, 3vw, 2.4rem)', lineHeight: 1.12, letterSpacing: '-0.3px', marginBottom: 16 }}>
+                  Amasya&apos;dan Turhal Kuaföre
+                </h2>
+                <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.70)', fontSize: '0.90rem', lineHeight: 1.85, marginBottom: 14 }}>
+                  Amasya merkezden HÜLYA Studio&apos;ya mesafe yaklaşık 65 km, karayoluyla 60 dakika. Merzifon&apos;dan yaklaşık 114 km / 90 dakika. Gelin saçı, ombre, makyaj ve özel gün saçı için Amasya ve Merzifon&apos;dan düzenli misafirlerimiz geliyor.
+                </p>
+                <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.70)', fontSize: '0.90rem', lineHeight: 1.85 }}>
+                  Uzaktan gelen misafirler için sabah 08:00&apos;den itibaren erken randevu ayarlanabiliyor. Birden fazla hizmet alınacaksa (saç + makyaj + kirpik) toplam süre önceden hesaplanıp buna göre takvim oluşturuluyor.
+                </p>
+              </div>
+              <div>
+                <h2 style={{ fontFamily: 'Instrument Serif, serif', color: '#2A211D', fontSize: 'clamp(1.5rem, 3vw, 2.4rem)', lineHeight: 1.12, letterSpacing: '-0.3px', marginBottom: 16 }}>
+                  Sunulan Hizmetler
+                </h2>
+                <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.70)', fontSize: '0.90rem', lineHeight: 1.85, marginBottom: 14 }}>
+                  Gelin saçı modelleri: Hollywood waves, klasik topuz, dağınık topuz, romantik gelin saçı, modern gelin saçı ve tesettür gelin başı. Kına gecesi ve nişan saçı tasarımları da yapılıyor.
+                </p>
+                <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.70)', fontSize: '0.90rem', lineHeight: 1.85 }}>
+                  Renklendirme: ombre, balayage, sombre, röfle. Bakım: keratin uygulaması. Makyaj: gelin makyajı, nişan makyajı, gece makyajı, fotoğraf makyajı. Takma kirpik gelin saçı veya makyaj seansına eklenebiliyor. Salon Pzt–Cmt 08:00–19:00 saatleri arasında açık.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Services */}
         <section className="py-16 md:py-28 px-6 md:px-14" style={{ background: '#2A211D', borderTop: '1px solid rgba(248,245,242,0.06)' }}>
           <div className="max-w-screen-xl mx-auto">
@@ -335,6 +385,9 @@ export default function AmasyaKuaforPage() {
               </p>
               <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.72)', fontSize: '0.92rem', lineHeight: 1.85 }}>
                 Uzaktan gelen misafirlerimizin zamanına özellikle önem veriyoruz. Randevu saatinize dakika dakika uyuyoruz.
+              </p>
+              <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.72)', fontSize: '0.92rem', lineHeight: 1.85, marginTop: 16 }}>
+                Sunulan hizmetler: gelin saçı (Hollywood waves, topuz, romantik, tesettür gelin başı), ombre, balayage, sombre, röfle, keratin bakım, saç kesimi ve şekillendirme, nişan ve kına gecesi saçı, gelin makyajı, nişan makyajı, gece makyajı, fotoğraf makyajı ve takma kirpik. Çalışma saatleri Pzt–Cmt 08:00–19:00.
               </p>
             </motion.div>
             <motion.div initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.15 }}>

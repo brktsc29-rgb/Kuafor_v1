@@ -51,6 +51,30 @@ const FAQS = [
     q: 'Fiyatlar hakkında bilgi alabilir miyim?',
     a: 'Saç durumuna ve hizmet türüne göre değiştiği için sabit liste yayınlamıyoruz. WhatsApp üzerinden sorabilirsiniz.',
   },
+  {
+    q: 'Salon çalışma saatleri nedir?',
+    a: 'Pazartesiden cumartesiye 08:00–19:00 saatleri arasında açığız. Pazar günü kapalıyız.',
+  },
+  {
+    q: 'Tesettür gelin başı hizmeti yapılıyor mu?',
+    a: 'Evet. Tülbent, dantelli şal, boncuklu başlık ve taçlı örtü dahil her örtü tipine uyumlu tasarım yapıyoruz. Duvak ve taç ile birlikte koordineli biçimde kurgulanıyor. Düğün günü örtünüzü getirmeniz yeterli.',
+  },
+  {
+    q: 'Gelin saçı ile makyaj aynı günde alınabiliyor mu?',
+    a: 'Evet. Gelin saçı ve makyaj aynı randevuda birlikte planlanabiliyor. Takma kirpik de bu seansa eklenebilir. Toplam süreyi önceden netleştirip ona göre zaman ayrıyoruz.',
+  },
+  {
+    q: 'Kına gecesi ve nişan saçı için randevu alınabiliyor mu?',
+    a: 'Evet. Kına gecesi saç tasarımı, nişan saçı, mezuniyet saçı ve özel gün updo için ayrı randevu planlanabiliyor. Düğün öncesi tüm etkinlikler için çalışıyoruz.',
+  },
+  {
+    q: 'Keratin bakım uygulaması yapılıyor mu?',
+    a: 'Evet. Saçı besleyen, frizz\'i gideren ve uzun süre parlak tutan keratin bakım uygulaması yapılıyor. Saç tipine ve yapısına göre uygun ürün seçiliyor.',
+  },
+  {
+    q: 'Nedimeler veya anneye de aynı gün randevu verilebilir mi?',
+    a: 'Evet. Sayı sınırı olmaksızın aynı gün için gelin yakınlarına da randevu planlanabiliyor. Grubun tamamı için yeterli süre ayrılabilmesi adına düğün tarihinden önce iletişime geçilmesi yeterli.',
+  },
 ]
 
 function FAQItem({ q, a, open, onToggle }: { q: string; a: string; open: boolean; onToggle: () => void }) {
@@ -338,7 +362,40 @@ export default function TurhalKuaforPage() {
               <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.72)', fontSize: '0.92rem', lineHeight: 1.85 }}>
                 Tokat&apos;ın farklı ilçelerinden misafirler geliyor ama önce Turhal&apos;ın kendi salonuyuz. Burası bizim mahallemiz, bu işi burada yaptık ve yapmaya devam ediyoruz.
               </p>
+              <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.72)', fontSize: '0.92rem', lineHeight: 1.85, marginTop: 16 }}>
+                Sunduğumuz hizmetler: saç kesimi ve şekillendirme, gelin saçı tasarımı, kına ve nişan saçı, tesettür gelin başı, ombre, balayage, sombre, röfle, keratin bakım, makyaj (gelin, nişan, gece, fotoğraf makyajı) ve takma kirpik. Tüm hizmetler için randevu WhatsApp üzerinden alınabiliyor.
+              </p>
             </motion.div>
+          </div>
+        </section>
+
+        {/* ── Hizmet tanımı ── */}
+        <section className="py-12 md:py-16 px-6 md:px-14" style={{ background: '#F8F5F2', borderTop: '1px solid rgba(42,33,29,0.06)' }}>
+          <div className="max-w-screen-xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
+              <div>
+                <h2 style={{ fontFamily: 'Instrument Serif, serif', color: '#2A211D', fontSize: 'clamp(1.5rem, 3vw, 2.4rem)', lineHeight: 1.12, letterSpacing: '-0.3px', marginBottom: 16 }}>
+                  Turhal&apos;da Bayan Kuaförü
+                </h2>
+                <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.70)', fontSize: '0.90rem', lineHeight: 1.85, marginBottom: 14 }}>
+                  HÜLYA Studio, Turhal&apos;ın merkezinde Yavuz Selim Mahallesi&apos;nde yer alıyor. Saç kesimi ve şekillendirmeden gelin saçı tasarımına, ombre renklendirmeden makyaja kadar geniş bir hizmet yelpazesi sunuluyor. Randevular Pazartesi–Cumartesi 08:00–19:00 saatleri arasında planlanıyor.
+                </p>
+                <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.70)', fontSize: '0.90rem', lineHeight: 1.85 }}>
+                  Renklendirme hizmetleri arasında klasik ombre, balayage, sombre ve ince folyo röfle yer alıyor. Saç bakımı için keratin uygulaması yapılıyor. Gelin saçı için Hollywood waves, topuz, romantik ve tesettür gelin başı modelleri sunuluyor.
+                </p>
+              </div>
+              <div>
+                <h2 style={{ fontFamily: 'Instrument Serif, serif', color: '#2A211D', fontSize: 'clamp(1.5rem, 3vw, 2.4rem)', lineHeight: 1.12, letterSpacing: '-0.3px', marginBottom: 16 }}>
+                  Güzellik ve Bakım Hizmetleri
+                </h2>
+                <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.70)', fontSize: '0.90rem', lineHeight: 1.85, marginBottom: 14 }}>
+                  Makyaj hizmetleri arasında gelin makyajı, nişan makyajı, gece makyajı ve fotoğraf makyajı bulunuyor. Takma kirpik uygulaması gelin saçı veya makyaj randevusuyla birlikte alınabiliyor. Kına gecesi ve nişan için saç tasarımı da yapılıyor.
+                </p>
+                <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.70)', fontSize: '0.90rem', lineHeight: 1.85 }}>
+                  Gelin saçı randevusu için stil önceden WhatsApp üzerinden referans görsellerle netleştiriliyor. Nedimeler ve diğer yakınlar için de aynı gün randevu planlanabiliyor; sayı sınırı bulunmuyor.
+                </p>
+              </div>
+            </div>
           </div>
         </section>
 
