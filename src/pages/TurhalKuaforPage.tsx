@@ -142,6 +142,7 @@ export default function TurhalKuaforPage() {
           description: 'Turhal\'da bayan kuaförü ve güzellik salonu. Saç kesimi, gelin saçı, ombre, röfle ve profesyonel saç tasarımı.',
           url: 'https://www.hulyastudio.com/turhal-kuafor',
           telephone: '+905412757160',
+          email: 'hulyahairbeauty@gmail.com',
           address: {
             '@type': 'PostalAddress',
             streetAddress: 'Yavuz Selim Mah. Şirin Sk. No:6/B',

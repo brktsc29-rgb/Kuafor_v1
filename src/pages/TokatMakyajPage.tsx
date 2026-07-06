@@ -216,6 +216,7 @@ export default function TokatMakyajPage() {
     description: 'Tokat\'ta profesyonel makyaj, gelin makyaji, nisan makyaji ve ozel gun makyaji hizmeti. Turhal merkezli guzellik salonu.',
     url: 'https://www.hulyastudio.com/tokat-makyaj',
     telephone: '+90-541-275-71-60',
+    email: 'hulyahairbeauty@gmail.com',
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'Yavuz Selim Mah. Şirin Sk. No:6/B',

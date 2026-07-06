@@ -91,9 +91,11 @@ export default function KVKKModal({ isOpen, onClose }: Props) {
                 5. İletişim
               </h3>
               <p>
-                KVKK kapsamındaki talepleriniz için WhatsApp veya telefon aracılığıyla bizimle iletişime geçebilirsiniz.
+                KVKK kapsamındaki talepleriniz için WhatsApp, telefon veya e-posta aracılığıyla bizimle iletişime geçebilirsiniz.
                 <br />
                 <strong style={{ color: '#C98F7A' }}>HÜLYA Hair &amp; Beauty Studio · Turhal, Tokat</strong>
+                <br />
+                <a href="mailto:hulyahairbeauty@gmail.com" style={{ color: '#C98F7A' }}>hulyahairbeauty@gmail.com</a>
               </p>
             </div>
 

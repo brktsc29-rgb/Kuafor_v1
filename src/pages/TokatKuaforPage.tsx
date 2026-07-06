@@ -119,6 +119,7 @@ export default function TokatKuaforPage() {
           alternateName: 'HÜLYA Hair & Beauty Studio',
           url: 'https://www.hulyastudio.com/tokat-kuafor',
           telephone: '+905412757160',
+          email: 'hulyahairbeauty@gmail.com',
           foundingDate: '2010',
           address: {
             '@type': 'PostalAddress',

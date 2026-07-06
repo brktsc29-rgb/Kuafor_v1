@@ -238,6 +238,7 @@ const HAIRSALON_SCHEMA = {
   description: 'Tokat Turhal\'da gelin saçı ve özel gün saç tasarımı hizmetleri. Hollywood waves, topuz, dağınık topuz, romantik ve tesettür gelin başı.',
   url: 'https://www.hulyastudio.com/tokat-gelin-saci',
   telephone: '+905412757160',
+  email: 'hulyahairbeauty@gmail.com',
   address: {
     '@type': 'PostalAddress',
     streetAddress: 'Yavuz Selim Mah. Şirin Sk. No:6/B',

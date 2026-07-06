@@ -129,6 +129,7 @@ export default function AmasyaKuaforPage() {
     description: 'Amasya ve Merzifon\'dan Turhal\'a gelen müşterilere profesyonel saç tasarımı, gelin saçı, ombre ve makyaj hizmetleri.',
     url: 'https://www.hulyastudio.com/amasya-kuafor',
     telephone: '+905412757160',
+    email: 'hulyahairbeauty@gmail.com',
     foundingDate: '2010',
     address: {
       '@type': 'PostalAddress',

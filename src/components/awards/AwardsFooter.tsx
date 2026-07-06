@@ -107,6 +107,19 @@ export default function AwardsFooter({ onOpenKVKK }: { onOpenKVKK: () => void })
               </svg>
               <span style={{ fontFamily: 'Inter, sans-serif', fontSize: '0.65rem', letterSpacing: '0.08em' }}>@hulyaakuafor</span>
             </a>
+            <a
+              href="mailto:hulyahairbeauty@gmail.com"
+              className="flex items-center gap-2 transition-opacity duration-200 hover:opacity-100"
+              style={{ color: 'rgba(201,143,122,0.65)', opacity: 0.65, textDecoration: 'none' }}
+              onMouseEnter={e => (e.currentTarget.style.opacity = '1')}
+              onMouseLeave={e => (e.currentTarget.style.opacity = '0.65')}
+            >
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                <polyline points="2,4 12,13 22,4"/>
+              </svg>
+              <span style={{ fontFamily: 'Inter, sans-serif', fontSize: '0.65rem', letterSpacing: '0.08em' }}>hulyahairbeauty@gmail.com</span>
+            </a>
             <div style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(248,245,242,0.42)', fontSize: '0.65rem', lineHeight: 1.7, textAlign: 'right' }}>
               <p>Pzt – Cmt &nbsp;08:00 – 19:00</p>
               <p>Yavuz Selim Mah. Şirin Sk. No:6/B</p>
