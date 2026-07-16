@@ -252,7 +252,7 @@ const HAIRSALON_SCHEMA = {
     latitude: 40.3868,
     longitude: 36.0820,
   },
-  openingHours: 'Mo,Tu,We,Th,Fr,Sa 08:00-19:00',
+  openingHours: ['Mo,We,Th,Fr,Sa 08:00-19:00', 'Su 08:00-17:00'],
   areaServed: ['Tokat', 'Turhal', 'Zile', 'Erbaa', 'Niksar', 'Amasya', 'Merzifon', 'Tokat Merkez'],
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
@@ -883,7 +883,7 @@ export default function TokatGelinSaciPage() {
               className="mt-10"
               style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.40)', fontSize: '0.72rem', letterSpacing: '0.08em' }}
             >
-              Turhal, Tokat &nbsp;·&nbsp; Pzt – Cmt 08:00 – 19:00
+              Turhal, Tokat &nbsp;·&nbsp; Pzt,Çrş–Cmt 08:00–19:00 · Paz 08:00–17:00 · Sal kapalı
             </motion.p>
           </div>
         </section>

@@ -227,7 +227,8 @@ export default function TokatMakyajPage() {
     },
     geo: { '@type': 'GeoCoordinates', latitude: 40.3868, longitude: 36.0820 },
     openingHoursSpecification: [
-      { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'], opens: '08:00', closes: '19:00' },
+      { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday','Wednesday','Thursday','Friday','Saturday'], opens: '08:00', closes: '19:00' },
+      { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Sunday'], opens: '08:00', closes: '17:00' },
     ],
     areaServed: ['Tokat', 'Turhal', 'Zile', 'Erbaa', 'Niksar', 'Amasya', 'Merzifon'],
     hasOfferCatalog: {
@@ -689,7 +690,7 @@ export default function TokatMakyajPage() {
           </h2>
           <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(248,245,242,0.55)', fontSize: '0.87rem', lineHeight: 1.8, marginBottom: 36 }}>
             Tokat'ın profesyonel makyaj adresi HÜLYA Studio.<br />
-            Turhal, Tokat — Pazartesi ile Cumartesi arası 08:00 ile 19:00 arası.
+            Turhal, Tokat — Pzt,Çrş–Cmt 08:00–19:00 · Paz 08:00–17:00 · Sal kapalı.
           </p>
           <div className="flex flex-wrap gap-3 justify-center">
             <a
@@ -772,7 +773,8 @@ export default function TokatMakyajPage() {
             </nav>
             <div>
               <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(248,245,242,0.42)', fontSize: '0.65rem', lineHeight: 1.7, textAlign: 'right' }}>
-                Pzt ile Cmt arası 08:00 ile 19:00<br />
+                Pzt,Çrş–Cmt 08:00–19:00 · Paz 08:00–17:00<br />
+                Salı kapalı<br />
                 Turhal, Tokat
               </p>
               <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(248,245,242,0.25)', fontSize: '0.62rem', marginTop: 8, textAlign: 'right' }}>

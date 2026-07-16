@@ -112,7 +112,7 @@ const HAIRSALON_SCHEMA = {
   email: 'hulyahairbeauty@gmail.com',
   address: { '@type': 'PostalAddress', streetAddress: 'Yavuz Selim Mah. Şirin Sk. No:6/B', addressLocality: 'Turhal', addressRegion: 'Tokat', addressCountry: 'TR', postalCode: '60300' },
   geo: { '@type': 'GeoCoordinates', latitude: 40.3868, longitude: 36.0820 },
-  openingHours: 'Mo,Tu,We,Th,Fr,Sa 08:00-19:00',
+  openingHours: ['Mo,We,Th,Fr,Sa 08:00-19:00', 'Su 08:00-17:00'],
   areaServed: ['Tokat', 'Turhal', 'Zile', 'Erbaa', 'Niksar', 'Amasya', 'Merzifon'],
 }
 
@@ -397,7 +397,7 @@ export default function TokatOmbrePage() {
               <a href={WHATSAPP} data-cta-location="tokat-ombre-cta" data-service-name="Tokat Ombre" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 rounded-full px-8 py-4 text-[0.82rem] font-medium" style={{ fontFamily: 'Inter, sans-serif', background: '#C98F7A', color: '#FFF8F5', textDecoration: 'none' }}>{WA_SVG} WhatsApp&apos;tan Randevu Al</a>
               <a href={PHONE} data-cta-location="tokat-ombre-cta" data-service-name="Tokat Ombre" className="flex items-center gap-2 rounded-full px-8 py-4 text-[0.82rem]" style={{ fontFamily: 'Inter, sans-serif', border: '1px solid rgba(201,143,122,0.45)', color: '#C98F7A', textDecoration: 'none' }}>+90 (541) 275 71 60</a>
             </motion.div>
-            <motion.p initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.45 }} className="mt-10" style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.40)', fontSize: '0.72rem', letterSpacing: '0.08em' }}>Turhal, Tokat &nbsp;·&nbsp; Pzt – Cmt 08:00 – 19:00</motion.p>
+            <motion.p initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.45 }} className="mt-10" style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.40)', fontSize: '0.72rem', letterSpacing: '0.08em' }}>Turhal, Tokat &nbsp;·&nbsp; Pzt,Çrş–Cmt 08:00–19:00 · Paz 08:00–17:00 · Sal kapalı</motion.p>
           </div>
         </section>
 

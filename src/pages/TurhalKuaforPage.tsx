@@ -53,7 +53,7 @@ const FAQS = [
   },
   {
     q: 'Salon çalışma saatleri nedir?',
-    a: 'Pazartesiden cumartesiye 08:00–19:00 saatleri arasında açığız. Pazar günü kapalıyız.',
+    a: 'Pazartesi, Çarşamba–Cumartesi 08:00–19:00 saatleri arasında açığız. Pazar günü 08:00–17:00 arası açığız. Salı günü kapalıyız.',
   },
   {
     q: 'Tesettür gelin başı hizmeti yapılıyor mu?',
@@ -119,7 +119,7 @@ export default function TurhalKuaforPage() {
     <>
       <Helmet>
         <title>Turhal Kuaför | Hülya Hair &amp; Beauty Studio</title>
-        <meta name="description" content="Turhal'da bayan kuaförü ve güzellik salonu. Saç kesimi, gelin saçı, ombre, röfle ve profesyonel saç tasarımı. Pzt–Cmt 08:00–19:00." />
+        <meta name="description" content="Turhal'da bayan kuaförü ve güzellik salonu. Saç kesimi, gelin saçı, ombre, röfle ve profesyonel saç tasarımı. Pzt,Çrş–Cmt 08:00–19:00 · Paz 08:00–17:00." />
         <link rel="canonical" href="https://www.hulyastudio.com/turhal-kuafor" />
         <meta property="og:title" content="Turhal Kuaför | Hülya Hair & Beauty Studio" />
         <meta property="og:description" content="Turhal'da bayan kuaförü ve güzellik salonu. Saç kesimi, gelin saçı, ombre, röfle ve profesyonel saç tasarımı. Tokat'ın farklı ilçelerinden misafirlere hizmet." />
@@ -156,12 +156,10 @@ export default function TurhalKuaforPage() {
             latitude: 40.3868,
             longitude: 36.0820,
           },
-          openingHoursSpecification: [{
-            '@type': 'OpeningHoursSpecification',
-            dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'],
-            opens: '08:00',
-            closes: '19:00',
-          }],
+          openingHoursSpecification: [
+            { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday','Wednesday','Thursday','Friday','Saturday'], opens: '08:00', closes: '19:00' },
+            { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Sunday'], opens: '08:00', closes: '17:00' },
+          ],
           areaServed: [
             { '@type': 'City', name: 'Turhal' },
             { '@type': 'City', name: 'Tokat' },
@@ -379,7 +377,7 @@ export default function TurhalKuaforPage() {
                   Turhal&apos;da Bayan Kuaförü
                 </h2>
                 <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.70)', fontSize: '0.90rem', lineHeight: 1.85, marginBottom: 14 }}>
-                  HÜLYA Studio, Turhal&apos;ın merkezinde Yavuz Selim Mahallesi&apos;nde yer alıyor. Saç kesimi ve şekillendirmeden gelin saçı tasarımına, ombre renklendirmeden makyaja kadar geniş bir hizmet yelpazesi sunuluyor. Randevular Pazartesi–Cumartesi 08:00–19:00 saatleri arasında planlanıyor.
+                  HÜLYA Studio, Turhal&apos;ın merkezinde Yavuz Selim Mahallesi&apos;nde yer alıyor. Saç kesimi ve şekillendirmeden gelin saçı tasarımına, ombre renklendirmeden makyaja kadar geniş bir hizmet yelpazesi sunuluyor. Randevular Pazartesi, Çarşamba–Cumartesi 08:00–19:00, Pazar 08:00–17:00 saatleri arasında planlanıyor. Salı günü kapalı.
                 </p>
                 <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.70)', fontSize: '0.90rem', lineHeight: 1.85 }}>
                   Renklendirme hizmetleri arasında klasik ombre, balayage, sombre ve ince folyo röfle yer alıyor. Saç bakımı için keratin uygulaması yapılıyor. Gelin saçı için Hollywood waves, topuz, romantik ve tesettür gelin başı modelleri sunuluyor.
@@ -469,7 +467,7 @@ export default function TurhalKuaforPage() {
                   Turhal merkezdeyiz. Park yeri salona yakın.
                 </p>
                 <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(248,245,242,0.70)', fontSize: '0.92rem', lineHeight: 1.85, marginBottom: 12 }}>
-                  Çalışma saatleri: <span style={{ color: '#C98F7A' }}>Pzt–Cmt 08:00–19:00</span>
+                  Çalışma saatleri: <span style={{ color: '#C98F7A' }}>Pzt,Çrş–Cmt 08:00–19:00 · Paz 08:00–17:00 · Sal kapalı</span>
                 </p>
                 <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(248,245,242,0.70)', fontSize: '0.92rem', lineHeight: 1.85 }}>
                   Tokat Merkez&apos;den D100 üzerinden yaklaşık 45–50 dakika. Zile&apos;den 21 km / 23 dk, Erbaa&apos;dan 55 km, Niksar&apos;dan 60 km.
@@ -680,7 +678,7 @@ export default function TurhalKuaforPage() {
               className="mt-10"
               style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.40)', fontSize: '0.72rem', letterSpacing: '0.08em' }}
             >
-              Turhal, Tokat &nbsp;·&nbsp; Pzt – Cmt 08:00 – 19:00
+              Turhal, Tokat &nbsp;·&nbsp; Pzt,Çrş–Cmt 08:00–19:00 · Paz 08:00–17:00 · Sal kapalı
             </motion.p>
           </div>
         </section>

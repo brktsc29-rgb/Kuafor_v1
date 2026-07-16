@@ -67,7 +67,7 @@ const FAQS = [
   },
   {
     q: 'Salonun açık olduğu günler ve saatler?',
-    a: 'Pazartesiden cumartesiye 08:00–19:00 saatleri arasında açığız. Pazar günü kapalıyız. Yavuz Selim Mah. Şirin Sk. No:6/B, Turhal / Tokat adresindeyiz.',
+    a: 'Pazartesi, Çarşamba–Cumartesi 08:00–19:00 saatleri arasında açığız. Pazar günü 08:00–17:00 arası açığız. Salı günü kapalıyız. Adresimiz: Yavuz Selim Mah. Şirin Sk. No:6/B, Turhal / Tokat.',
   },
   {
     q: 'Gelin saçı ile makyaj aynı seansta alınabiliyor mu?',
@@ -141,7 +141,8 @@ export default function AmasyaKuaforPage() {
     },
     geo: { '@type': 'GeoCoordinates', latitude: 40.3868, longitude: 36.0820 },
     openingHoursSpecification: [
-      { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'], opens: '08:00', closes: '19:00' },
+      { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday','Wednesday','Thursday','Friday','Saturday'], opens: '08:00', closes: '19:00' },
+      { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Sunday'], opens: '08:00', closes: '17:00' },
     ],
     areaServed: [
       { '@type': 'City', name: 'Amasya' },
@@ -334,7 +335,7 @@ export default function AmasyaKuaforPage() {
                   Gelin saçı modelleri: Hollywood waves, klasik topuz, dağınık topuz, romantik gelin saçı, modern gelin saçı ve tesettür gelin başı. Kına gecesi ve nişan saçı tasarımları da yapılıyor.
                 </p>
                 <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.70)', fontSize: '0.90rem', lineHeight: 1.85 }}>
-                  Renklendirme: ombre, balayage, sombre, röfle. Bakım: keratin uygulaması. Makyaj: gelin makyajı, nişan makyajı, gece makyajı, fotoğraf makyajı. Takma kirpik gelin saçı veya makyaj seansına eklenebiliyor. Salon Pzt–Cmt 08:00–19:00 saatleri arasında açık.
+                  Renklendirme: ombre, balayage, sombre, röfle. Bakım: keratin uygulaması. Makyaj: gelin makyajı, nişan makyajı, gece makyajı, fotoğraf makyajı. Takma kirpik gelin saçı veya makyaj seansına eklenebiliyor. Salon Pzt, Çrş–Cmt 08:00–19:00, Pazar 08:00–17:00 saatleri arasında açık; Salı kapalı.
                 </p>
               </div>
             </div>
@@ -388,7 +389,7 @@ export default function AmasyaKuaforPage() {
                 Uzaktan gelen misafirlerimizin zamanına özellikle önem veriyoruz. Randevu saatinize dakika dakika uyuyoruz.
               </p>
               <p style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.72)', fontSize: '0.92rem', lineHeight: 1.85, marginTop: 16 }}>
-                Sunulan hizmetler: gelin saçı (Hollywood waves, topuz, romantik, tesettür gelin başı), ombre, balayage, sombre, röfle, keratin bakım, saç kesimi ve şekillendirme, nişan ve kına gecesi saçı, gelin makyajı, nişan makyajı, gece makyajı, fotoğraf makyajı ve takma kirpik. Çalışma saatleri Pzt–Cmt 08:00–19:00.
+                Sunulan hizmetler: gelin saçı (Hollywood waves, topuz, romantik, tesettür gelin başı), ombre, balayage, sombre, röfle, keratin bakım, saç kesimi ve şekillendirme, nişan ve kına gecesi saçı, gelin makyajı, nişan makyajı, gece makyajı, fotoğraf makyajı ve takma kirpik. Çalışma saatleri: Pzt, Çrş–Cmt 08:00–19:00 · Paz 08:00–17:00 · Salı kapalı.
               </p>
             </motion.div>
             <motion.div initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.15 }}>
@@ -397,7 +398,7 @@ export default function AmasyaKuaforPage() {
                   { label: 'Gelin Saçı', sub: 'Hollywood waves, topuz, tesettür başı' },
                   { label: 'Ombre & Röfle', sub: 'Klasik, sombre, röfle' },
                   { label: 'Makyaj', sub: 'Gelin, nişan, gece makyajı' },
-                  { label: 'Açık Saat', sub: 'Pzt–Cmt 08:00–19:00' },
+                  { label: 'Açık Saat', sub: 'Pzt,Çrş–Cmt 08:00–19:00' },
                 ].map((item, i) => (
                   <motion.div key={item.label} initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: i * 0.08 }} className="p-5" style={{ background: 'white', borderRadius: 4, border: '1px solid rgba(42,33,29,0.08)' }}>
                     <p style={{ fontFamily: 'Instrument Serif, serif', color: '#2A211D', fontSize: '1.05rem', marginBottom: 4 }}>{item.label}</p>
@@ -439,7 +440,7 @@ export default function AmasyaKuaforPage() {
               <a href={WHATSAPP} data-cta-location="amasya-kuafor-cta2" data-service-name="Amasya Kuaför" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 rounded-full px-8 py-4 text-[0.82rem] font-medium" style={{ fontFamily: 'Inter, sans-serif', background: '#C98F7A', color: '#FFF8F5', textDecoration: 'none' }}>{WA_SVG} WhatsApp&apos;tan Randevu Al</a>
               <a href={PHONE} data-cta-location="amasya-kuafor-cta2" data-service-name="Amasya Kuaför" className="flex items-center gap-2 rounded-full px-8 py-4 text-[0.82rem]" style={{ fontFamily: 'Inter, sans-serif', border: '1px solid rgba(201,143,122,0.45)', color: '#C98F7A', textDecoration: 'none' }}>+90 (541) 275 71 60</a>
             </motion.div>
-            <motion.p initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.45 }} className="mt-10" style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.40)', fontSize: '0.72rem', letterSpacing: '0.08em' }}>Turhal, Tokat &nbsp;·&nbsp; Pzt – Cmt 08:00 – 19:00</motion.p>
+            <motion.p initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.45 }} className="mt-10" style={{ fontFamily: 'Inter, sans-serif', color: 'rgba(42,33,29,0.40)', fontSize: '0.72rem', letterSpacing: '0.08em' }}>Turhal, Tokat &nbsp;·&nbsp; Pzt,Çrş–Cmt 08:00–19:00 · Paz 08:00–17:00 · Sal kapalı</motion.p>
           </div>
         </section>
 

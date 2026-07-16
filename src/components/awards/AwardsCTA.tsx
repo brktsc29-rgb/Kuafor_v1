@@ -234,7 +234,7 @@ export default function AwardsCTA() {
         >
           <span>Turhal, Tokat</span>
           <span style={{ color: 'rgba(201,143,122,0.5)' }}>·</span>
-          <span>Pzt – Cmt &nbsp; 08:00 – 19:00</span>
+          <span>Pzt,Çrş–Cmt 08:00–19:00 · Paz 08:00–17:00 · Sal kapalı</span>
           <span style={{ color: 'rgba(201,143,122,0.5)' }}>·</span>
           <a
             href="mailto:hulyahairbeauty@gmail.com"
