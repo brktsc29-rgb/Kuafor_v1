@@ -266,6 +266,17 @@ export default function AwardsCTA() {
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           />
+          <a
+            href="https://maps.app.goo.gl/rt4Scbc17eowjUmZ6"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-cta-location="anasayfa-harita"
+            className="flex items-center justify-center gap-2"
+            style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, padding: '12px 16px', background: '#2A211D', color: '#F8F5F2', fontFamily: 'Inter, sans-serif', fontSize: '0.75rem', letterSpacing: '0.08em', textDecoration: 'none' }}
+          >
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+            Yol Tarifi Al
+          </a>
         </motion.div>
       </div>
     </section>

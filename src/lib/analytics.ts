@@ -35,6 +35,14 @@ export function initClickTracking() {
         ...(ctaLocation && { cta_location: ctaLocation }),
         ...(serviceName && { service_name: serviceName }),
       })
+    } else if (href.includes('maps.app.goo.gl') || href.includes('maps.google.com')) {
+      gtagEvent('directions_click', {
+        event_category: 'engagement',
+        event_label: 'google_maps_directions',
+        page_path: window.location.pathname,
+        page_title: document.title,
+        ...(ctaLocation && { cta_location: ctaLocation }),
+      })
     } else if (href.includes('instagram.com/hulyaakuafor')) {
       gtagEvent('instagram_click', { event_category: 'engagement', event_label: 'instagram_link' })
     }
