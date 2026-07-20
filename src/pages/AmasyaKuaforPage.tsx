@@ -126,6 +126,7 @@ export default function AmasyaKuaforPage() {
     '@context': 'https://schema.org',
     '@type': 'HairSalon',
     name: 'HÜLYA Studio',
+    alternateName: 'Hülya Kuaför',
     description: 'Amasya ve Merzifon\'dan Turhal\'a gelen müşterilere profesyonel saç tasarımı, gelin saçı, ombre ve makyaj hizmetleri.',
     url: 'https://www.hulyastudio.com/amasya-kuafor',
     telephone: '+905412757160',

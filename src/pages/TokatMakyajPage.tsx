@@ -212,7 +212,8 @@ export default function TokatMakyajPage() {
   const schemaHairSalon = {
     '@context': 'https://schema.org',
     '@type': 'BeautySalon',
-    name: 'HULYA Studio',
+    name: 'HÜLYA Studio',
+    alternateName: 'Hülya Kuaför',
     description: 'Tokat\'ta profesyonel makyaj, gelin makyaji, nisan makyaji ve ozel gun makyaji hizmeti. Turhal merkezli guzellik salonu.',
     url: 'https://www.hulyastudio.com/tokat-makyaj',
     telephone: '+90-541-275-71-60',

@@ -235,6 +235,7 @@ const HAIRSALON_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'HairSalon',
   name: 'Hülya Hair & Beauty Studio',
+  alternateName: 'Hülya Kuaför',
   description: 'Tokat Turhal\'da gelin saçı ve özel gün saç tasarımı hizmetleri. Hollywood waves, topuz, dağınık topuz, romantik ve tesettür gelin başı.',
   url: 'https://www.hulyastudio.com/tokat-gelin-saci',
   telephone: '+905412757160',

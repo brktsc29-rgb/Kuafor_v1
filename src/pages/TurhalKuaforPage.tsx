@@ -139,6 +139,7 @@ export default function TurhalKuaforPage() {
           '@context': 'https://schema.org',
           '@type': 'HairSalon',
           name: 'Hülya Kuaför',
+          alternateName: 'HÜLYA Hair & Beauty Studio',
           description: 'Turhal\'da bayan kuaförü ve güzellik salonu. Saç kesimi, gelin saçı, ombre, röfle ve profesyonel saç tasarımı.',
           url: 'https://www.hulyastudio.com/turhal-kuafor',
           telephone: '+905412757160',

@@ -106,6 +106,7 @@ const HAIRSALON_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'HairSalon',
   name: 'Hülya Hair & Beauty Studio',
+  alternateName: 'Hülya Kuaför',
   description: 'Tokat Turhal\'da ombre, sombre ve balayage saç renklendirme hizmetleri. Profesyonel teknik, kişiye özel renk analizi.',
   url: 'https://www.hulyastudio.com/tokat-ombre',
   telephone: '+905412757160',
