@@ -116,7 +116,7 @@ export default function AmasyaKuaforPage() {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Ana Sayfa', item: 'https://www.hulyastudio.com/' },
+      { '@type': 'ListItem', position: 1, name: 'Ana Sayfa', item: 'https://www.hulyastudio.com' },
       { '@type': 'ListItem', position: 2, name: 'Tokat Kuaför', item: 'https://www.hulyastudio.com/tokat-kuafor' },
       { '@type': 'ListItem', position: 3, name: 'Amasya Kuaför', item: 'https://www.hulyastudio.com/amasya-kuafor' },
     ],
@@ -125,8 +125,8 @@ export default function AmasyaKuaforPage() {
   const schemaHairSalon = {
     '@context': 'https://schema.org',
     '@type': 'HairSalon',
-    name: 'HÜLYA Studio',
-    alternateName: 'Hülya Kuaför',
+    name: 'Hülya Kuaför',
+    alternateName: 'HÜLYA Hair & Beauty Studio',
     description: 'Amasya ve Merzifon\'dan Turhal\'a gelen müşterilere profesyonel saç tasarımı, gelin saçı, ombre ve makyaj hizmetleri.',
     url: 'https://www.hulyastudio.com/amasya-kuafor',
     telephone: '+905412757160',
@@ -177,6 +177,8 @@ export default function AmasyaKuaforPage() {
         <meta property="og:description" content="Amasya ve Merzifon'dan Turhal'daki HÜLYA Studio'ya. Gelin saçı, ombre ve makyaj. 2010'dan beri güvenilir güzellik salonu." />
         <meta property="og:url" content="https://www.hulyastudio.com/amasya-kuafor" />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://www.hulyastudio.com/images/hulya-kuafor-turhal-hero.webp" />
+        <meta name="twitter:image" content="https://www.hulyastudio.com/images/hulya-kuafor-turhal-hero.webp" />
         <script type="application/ld+json">{JSON.stringify(schemaFAQ)}</script>
         <script type="application/ld+json">{JSON.stringify(schemaBreadcrumb)}</script>
         <script type="application/ld+json">{JSON.stringify(schemaHairSalon)}</script>

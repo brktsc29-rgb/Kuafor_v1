@@ -203,7 +203,7 @@ export default function TokatMakyajPage() {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Ana Sayfa',    item: 'https://www.hulyastudio.com/' },
+      { '@type': 'ListItem', position: 1, name: 'Ana Sayfa',    item: 'https://www.hulyastudio.com' },
       { '@type': 'ListItem', position: 2, name: 'Tokat Kuafor', item: 'https://www.hulyastudio.com/tokat-kuafor' },
       { '@type': 'ListItem', position: 3, name: 'Tokat Makyaj', item: 'https://www.hulyastudio.com/tokat-makyaj' },
     ],
@@ -212,11 +212,11 @@ export default function TokatMakyajPage() {
   const schemaHairSalon = {
     '@context': 'https://schema.org',
     '@type': 'BeautySalon',
-    name: 'HÜLYA Studio',
-    alternateName: 'Hülya Kuaför',
+    name: 'Hülya Kuaför',
+    alternateName: 'HÜLYA Hair & Beauty Studio',
     description: 'Tokat\'ta profesyonel makyaj, gelin makyaji, nisan makyaji ve ozel gun makyaji hizmeti. Turhal merkezli guzellik salonu.',
     url: 'https://www.hulyastudio.com/tokat-makyaj',
-    telephone: '+90-541-275-71-60',
+    telephone: '+905412757160',
     email: 'hulyahairbeauty@gmail.com',
     address: {
       '@type': 'PostalAddress',
@@ -257,6 +257,7 @@ export default function TokatMakyajPage() {
         <meta property="og:url" content="https://www.hulyastudio.com/tokat-makyaj" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://www.hulyastudio.com/images/makyaj/gelin-makyaji.webp" />
+        <meta name="twitter:image" content="https://www.hulyastudio.com/images/makyaj/gelin-makyaji.webp" />
         <script type="application/ld+json">{JSON.stringify(schemaFAQ)}</script>
         <script type="application/ld+json">{JSON.stringify(schemaBreadcrumb)}</script>
         <script type="application/ld+json">{JSON.stringify(schemaHairSalon)}</script>

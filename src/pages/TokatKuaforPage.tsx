@@ -102,13 +102,14 @@ export default function TokatKuaforPage() {
         <meta property="og:title" content="Tokat Kuaför | Hülya Kuaför Gelin Saçı, Ombre ve Saç Tasarımı" />
         <meta property="og:description" content="Tokat'ta gelin saçı, ombre, röfle ve profesyonel saç tasarımı. Turhal'daki Hülya Kuaför, Tokat merkez ve çevre ilçelerden gelen misafirlerini ağırlamaktadır." />
         <meta property="og:image" content="https://www.hulyastudio.com/images/hulya-kuafor-turhal-hero.webp" />
+        <meta name="twitter:image" content="https://www.hulyastudio.com/images/hulya-kuafor-turhal-hero.webp" />
         <meta property="og:url" content="https://www.hulyastudio.com/tokat-kuafor" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">{JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'BreadcrumbList',
           itemListElement: [
-            { '@type': 'ListItem', position: 1, name: 'Ana Sayfa', item: 'https://www.hulyastudio.com/' },
+            { '@type': 'ListItem', position: 1, name: 'Ana Sayfa', item: 'https://www.hulyastudio.com' },
             { '@type': 'ListItem', position: 2, name: 'Tokat Kuaför', item: 'https://www.hulyastudio.com/tokat-kuafor' },
           ],
         })}</script>

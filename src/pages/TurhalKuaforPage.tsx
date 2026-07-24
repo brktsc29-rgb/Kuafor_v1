@@ -124,13 +124,14 @@ export default function TurhalKuaforPage() {
         <meta property="og:title" content="Turhal Kuaför | Hülya Hair & Beauty Studio" />
         <meta property="og:description" content="Turhal'da bayan kuaförü ve güzellik salonu. Saç kesimi, gelin saçı, ombre, röfle ve profesyonel saç tasarımı. Tokat'ın farklı ilçelerinden misafirlere hizmet." />
         <meta property="og:image" content="https://www.hulyastudio.com/images/hulya-kuafor-turhal-hero.webp" />
+        <meta name="twitter:image" content="https://www.hulyastudio.com/images/hulya-kuafor-turhal-hero.webp" />
         <meta property="og:url" content="https://www.hulyastudio.com/turhal-kuafor" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">{JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'BreadcrumbList',
           itemListElement: [
-            { '@type': 'ListItem', position: 1, name: 'Ana Sayfa',    item: 'https://www.hulyastudio.com/' },
+            { '@type': 'ListItem', position: 1, name: 'Ana Sayfa',    item: 'https://www.hulyastudio.com' },
             { '@type': 'ListItem', position: 2, name: 'Tokat Kuaför', item: 'https://www.hulyastudio.com/tokat-kuafor' },
             { '@type': 'ListItem', position: 3, name: 'Turhal Kuaför', item: 'https://www.hulyastudio.com/turhal-kuafor' },
           ],

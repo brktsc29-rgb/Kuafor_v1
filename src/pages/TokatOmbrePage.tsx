@@ -96,7 +96,7 @@ const BREADCRUMB_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Ana Sayfa', item: 'https://www.hulyastudio.com/' },
+    { '@type': 'ListItem', position: 1, name: 'Ana Sayfa', item: 'https://www.hulyastudio.com' },
     { '@type': 'ListItem', position: 2, name: 'Tokat Kuaför', item: 'https://www.hulyastudio.com/tokat-kuafor' },
     { '@type': 'ListItem', position: 3, name: 'Tokat Ombre', item: 'https://www.hulyastudio.com/tokat-ombre' },
   ],
@@ -105,15 +105,18 @@ const BREADCRUMB_SCHEMA = {
 const HAIRSALON_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'HairSalon',
-  name: 'Hülya Hair & Beauty Studio',
-  alternateName: 'Hülya Kuaför',
+  name: 'Hülya Kuaför',
+  alternateName: 'HÜLYA Hair & Beauty Studio',
   description: 'Tokat Turhal\'da ombre, sombre ve balayage saç renklendirme hizmetleri. Profesyonel teknik, kişiye özel renk analizi.',
   url: 'https://www.hulyastudio.com/tokat-ombre',
   telephone: '+905412757160',
   email: 'hulyahairbeauty@gmail.com',
   address: { '@type': 'PostalAddress', streetAddress: 'Yavuz Selim Mah. Şirin Sk. No:6/B', addressLocality: 'Turhal', addressRegion: 'Tokat', addressCountry: 'TR', postalCode: '60300' },
   geo: { '@type': 'GeoCoordinates', latitude: 40.3868, longitude: 36.0820 },
-  openingHours: ['Mo,We,Th,Fr,Sa 08:00-19:00', 'Su 08:00-17:00'],
+  openingHoursSpecification: [
+    { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday','Wednesday','Thursday','Friday','Saturday'], opens: '08:00', closes: '19:00' },
+    { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Sunday'], opens: '08:00', closes: '17:00' },
+  ],
   areaServed: ['Tokat', 'Turhal', 'Zile', 'Erbaa', 'Niksar', 'Amasya', 'Merzifon'],
 }
 
@@ -154,6 +157,7 @@ export default function TokatOmbrePage() {
         <meta property="og:description" content="Tokat'ta ombre, sombre, balayage ve röfle saç renklendirme hizmetleri. Turhal'daki salonumuzda kişiye özel renk analizi ve profesyonel uygulama." />
         <meta property="og:image" content="https://www.hulyastudio.com/images/ombre/klasik-ombre.webp" />
         <meta property="og:url" content="https://www.hulyastudio.com/tokat-ombre" />
+        <meta name="twitter:image" content="https://www.hulyastudio.com/images/ombre/klasik-ombre.webp" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">{JSON.stringify(FAQ_SCHEMA)}</script>
         <script type="application/ld+json">{JSON.stringify(BREADCRUMB_SCHEMA)}</script>

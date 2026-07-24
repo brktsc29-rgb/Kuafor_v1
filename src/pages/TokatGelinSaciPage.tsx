@@ -225,7 +225,7 @@ const BREADCRUMB_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Ana Sayfa', item: 'https://www.hulyastudio.com/' },
+    { '@type': 'ListItem', position: 1, name: 'Ana Sayfa', item: 'https://www.hulyastudio.com' },
     { '@type': 'ListItem', position: 2, name: 'Tokat Kuaför', item: 'https://www.hulyastudio.com/tokat-kuafor' },
     { '@type': 'ListItem', position: 3, name: 'Tokat Gelin Saçı', item: 'https://www.hulyastudio.com/tokat-gelin-saci' },
   ],
@@ -234,8 +234,8 @@ const BREADCRUMB_SCHEMA = {
 const HAIRSALON_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'HairSalon',
-  name: 'Hülya Hair & Beauty Studio',
-  alternateName: 'Hülya Kuaför',
+  name: 'Hülya Kuaför',
+  alternateName: 'HÜLYA Hair & Beauty Studio',
   description: 'Tokat Turhal\'da gelin saçı ve özel gün saç tasarımı hizmetleri. Hollywood waves, topuz, dağınık topuz, romantik ve tesettür gelin başı.',
   url: 'https://www.hulyastudio.com/tokat-gelin-saci',
   telephone: '+905412757160',
@@ -253,7 +253,10 @@ const HAIRSALON_SCHEMA = {
     latitude: 40.3868,
     longitude: 36.0820,
   },
-  openingHours: ['Mo,We,Th,Fr,Sa 08:00-19:00', 'Su 08:00-17:00'],
+  openingHoursSpecification: [
+    { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday','Wednesday','Thursday','Friday','Saturday'], opens: '08:00', closes: '19:00' },
+    { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Sunday'], opens: '08:00', closes: '17:00' },
+  ],
   areaServed: ['Tokat', 'Turhal', 'Zile', 'Erbaa', 'Niksar', 'Amasya', 'Merzifon', 'Tokat Merkez'],
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
@@ -287,6 +290,7 @@ export default function TokatGelinSaciPage() {
         <meta property="og:url" content="https://www.hulyastudio.com/tokat-gelin-saci" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://www.hulyastudio.com/images/gelin/romantik-gelin-saci.webp" />
+        <meta name="twitter:image" content="https://www.hulyastudio.com/images/gelin/romantik-gelin-saci.webp" />
         <meta name="twitter:card" content="summary_large_image" />
         <script type="application/ld+json">{JSON.stringify(FAQ_SCHEMA)}</script>
         <script type="application/ld+json">{JSON.stringify(BREADCRUMB_SCHEMA)}</script>
