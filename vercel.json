@@ -3,9 +3,15 @@
   "trailingSlash": false,
   "redirects": [
     {
-      "source": "/:path*",
+      "source": "/",
       "has": [{ "type": "host", "value": "hulyastudio.com" }],
-      "destination": "https://www.hulyastudio.com/:path*",
+      "destination": "https://www.hulyastudio.com",
+      "statusCode": 301
+    },
+    {
+      "source": "/:path+",
+      "has": [{ "type": "host", "value": "hulyastudio.com" }],
+      "destination": "https://www.hulyastudio.com/:path+",
       "statusCode": 301
     },
     {
