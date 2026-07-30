@@ -3,19 +3,29 @@ import { motion, AnimatePresence } from 'framer-motion'
 
 const ITEMS = [
   {
-    quote:  'HÜLYA Studio\'da her ziyaret bir dönüşüm. Saçlarım hiç bu kadar sağlıklı ve güzel görünmemişti.',
-    author: 'Zeynep K.',
-    role:   'Düzenli Müşteri',
+    quote:  'İlk kez bu kadar memnun ayrıldığım bir kuaför oldu. Sarı saçı tutturması zor olmasına rağmen tam istediğim gibi yapıldı — saçımın yapısına uygun önerilerde de bulunuldu. İşçilik çok özenli, ürünler kaliteli, hijyen titiz. Gönül rahatlığıyla tavsiye ederim.',
+    author: 'Setenay',
+    role:   'Saç Boyama Müşterisi',
   },
   {
-    quote:  'Gelin saçım için hayalimdeki günü mükemmel kılan, tereddütsüz önerdiğim tek adres.',
-    author: 'Elif M.',
-    role:   'Gelin',
+    quote:  'Yıllardır giderim, yaptırdığım her işlemden çok memnunum. Her zaman ne istediğimi anlar ve en güzel şekilde yaparlar. Sibel hanım ve ekibine güler yüzleri ve müşteri ilişkileri için de ayrıca teşekkür ederim. Kesinlikle gitmenizi tavsiye ederim.',
+    author: 'İremnur G.',
+    role:   'Yıllık Müşteri',
   },
   {
-    quote:  'Profesyonellik ve kişisel ilginin mükemmel birleşimi. Artık başka bir yere gitmeyi düşünemiyorum.',
-    author: 'Selin A.',
-    role:   'Sadık Müşteri',
+    quote:  'Kayseri\'den Tokat\'a kızımın gelin saçı ve makyajı için geldik — harika ilgilendiler. Güler yüzlü personelleri, özellikle Sibel hanım ve kızları olağanüstüydü. Tanıdığım kuaförlerin içinde tek derim. Tokata geldikçe uğrayacağım, tek adres benim için Hülya Kuaför.',
+    author: 'Fatma Durdu K.',
+    role:   'Gelin Annesi · Kayseri',
+  },
+  {
+    quote:  'Çok hoş ve güler yüzle karşılandık, her saniye ilgililerdi. Saç ve makyaj tam istediğim gibi oldu — memnuniyetle çıktım. Bundan sonra benim için Hülya Kuaför.',
+    author: 'Müşteri',
+    role:   'Saç & Makyaj Müşterisi',
+  },
+  {
+    quote:  'Turhal\'da kuaför bilmiyordum, iyi ki tanıştık. Gelin saçımı ve makyajımı yaptılar, herkes bayıldı. Sürekli benimle ilgilendiler, düğün salonuna da geldiler. Hiç aynaya bile bakmadım, o kadar kusursuzdu her şey. Ailecek çok memnunuz, herkese tavsiye ediyoruz.',
+    author: 'Esra E.',
+    role:   'Gelin · Mekan Hizmeti',
   },
 ]
 
