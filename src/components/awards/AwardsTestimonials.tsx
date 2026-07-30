@@ -19,7 +19,7 @@ const ITEMS = [
   },
   {
     quote:  'Çok hoş ve güler yüzle karşılandık, her saniye ilgililerdi. Saç ve makyaj tam istediğim gibi oldu — memnuniyetle çıktım. Bundan sonra benim için Hülya Kuaför.',
-    author: 'Müşteri',
+    author: 'Asya',
     role:   'Saç & Makyaj Müşterisi',
   },
   {
