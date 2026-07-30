@@ -153,6 +153,9 @@ export default function TokatKuaforPage() {
           founder: { '@type': 'Person', name: 'Sibel Erturhan' },
           employee: { '@type': 'Person', name: 'Damla Erturhan' },
           knowsAbout: ['Gelin Saçı','Ombre','Balayage','Röfle','Saç Boyama','Saç Kesimi','Profesyonel Saç Tasarımı','Saç Bakımı'],
+          priceRange: '₺₺',
+          paymentAccepted: ['Cash', 'CreditCard'],
+          aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.6', reviewCount: '40', bestRating: '5', worstRating: '1' },
         })}</script>
         <script type="application/ld+json">{JSON.stringify({
           '@context': 'https://schema.org',

@@ -273,6 +273,29 @@ const HAIRSALON_SCHEMA = {
   knowsAbout: ['gelin saçı', 'düğün saçı', 'nişan saçı', 'tesettür gelin başı', 'hollywood waves', 'topuz', 'duvak'],
   founder: { '@type': 'Person', name: 'Sibel Erturhan' },
   employee: { '@type': 'Person', name: 'Damla Erturhan' },
+  priceRange: '₺₺',
+  paymentAccepted: ['Cash', 'CreditCard'],
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '4.6',
+    reviewCount: '40',
+    bestRating: '5',
+    worstRating: '1',
+  },
+}
+
+const HOWTO_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  name: 'Gelin Saçı Randevusu Nasıl Alınır — Hülya Kuaför, Turhal',
+  description: 'Tokat ve Turhal\'da gelin saçı hazırlık süreci adım adım.',
+  step: [
+    { '@type': 'HowToStep', position: 1, name: 'İletişime Geçin', text: 'WhatsApp veya telefon ile randevu talebi oluşturun. Düğün tarihinizi ve ilgilendiğiniz stil hakkında kısa bilgi verin.' },
+    { '@type': 'HowToStep', position: 2, name: 'Stilinizi Belirleyin', text: 'Pinterest veya Instagram\'dan referans görseller seçin ve WhatsApp üzerinden paylaşın. Gelinliğinize ve aksesuar tercihlerinize göre birlikte stil kararlaştırılır.' },
+    { '@type': 'HowToStep', position: 3, name: 'Randevunuzu Ayırtın', text: 'Bahar–yaz dönemi için en az 3 ay öncesinden rezervasyon yapın. Düğün günü saatinizi sabitleyin.' },
+    { '@type': 'HowToStep', position: 4, name: 'Düğün Günü Hazırlık', text: 'Düğün sabahı salonumuza gelin veya ev/mekan hizmeti için önceden bildirin. Hazırlık 1,5–3 saat arasında tamamlanır.' },
+    { '@type': 'HowToStep', position: 5, name: 'Son Dokunuşlar', text: 'Duvak, taç ve aksesuar yerleşimi tamamlandıktan sonra her açıdan kontrol edilir. Gün boyu bozulmadan kalması için profesyonel fikse ürünleri kullanılır.' },
+  ],
 }
 
 export default function TokatGelinSaciPage() {
@@ -295,6 +318,7 @@ export default function TokatGelinSaciPage() {
         <script type="application/ld+json">{JSON.stringify(FAQ_SCHEMA)}</script>
         <script type="application/ld+json">{JSON.stringify(BREADCRUMB_SCHEMA)}</script>
         <script type="application/ld+json">{JSON.stringify(HAIRSALON_SCHEMA)}</script>
+        <script type="application/ld+json">{JSON.stringify(HOWTO_SCHEMA)}</script>
       </Helmet>
 
       <div style={{ minHeight: '100svh', background: '#F8F5F2' }}>

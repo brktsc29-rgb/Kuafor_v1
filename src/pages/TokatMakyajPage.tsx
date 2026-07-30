@@ -232,6 +232,9 @@ export default function TokatMakyajPage() {
       { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Sunday'], opens: '08:00', closes: '17:00' },
     ],
     areaServed: ['Tokat', 'Turhal', 'Zile', 'Erbaa', 'Niksar', 'Amasya', 'Merzifon'],
+    priceRange: '₺₺',
+    paymentAccepted: ['Cash', 'CreditCard'],
+    aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.6', reviewCount: '40', bestRating: '5', worstRating: '1' },
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
       name: 'Makyaj Hizmetleri',

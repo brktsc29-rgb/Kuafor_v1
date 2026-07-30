@@ -118,6 +118,29 @@ const HAIRSALON_SCHEMA = {
     { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Sunday'], opens: '08:00', closes: '17:00' },
   ],
   areaServed: ['Tokat', 'Turhal', 'Zile', 'Erbaa', 'Niksar', 'Amasya', 'Merzifon'],
+  priceRange: '₺₺',
+  paymentAccepted: ['Cash', 'CreditCard'],
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '4.6',
+    reviewCount: '40',
+    bestRating: '5',
+    worstRating: '1',
+  },
+}
+
+const HOWTO_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  name: 'Tokat\'ta Ombre Saç Nasıl Yapılır — Hülya Kuaför',
+  description: 'Turhal\'da ombre, sombre ve balayage saç renklendirme süreci adım adım.',
+  step: [
+    { '@type': 'HowToStep', position: 1, name: 'Randevu ve Renk Analizi', text: 'WhatsApp üzerinden mevcut saç fotoğrafınızı ve istediğiniz rengi paylaşın. Saç tipi ve mevcut renge göre uygun teknik (ombre, sombre veya balayage) belirlenir.' },
+    { '@type': 'HowToStep', position: 2, name: 'Saç Hazırlığı', text: 'Salonumuzda saç analizi yapılır, uygulanacak renk tonu netleştirilir. Saç koruyucu ürünler ile hazırlık tamamlanır.' },
+    { '@type': 'HowToStep', position: 3, name: 'Boyama Uygulaması', text: 'Seçilen tekniğe göre ombre boyama uygulanır. İşlem saçın uzunluğuna ve tekniğe göre 2–4 saat sürer.' },
+    { '@type': 'HowToStep', position: 4, name: 'Durulama ve Nötralizasyon', text: 'Boya sabitlenir, renk koruyucu bakım uygulanır. Sonuç doğal geçişli, istenen tonla tamamlanır.' },
+    { '@type': 'HowToStep', position: 5, name: 'Bakım Önerileri', text: 'Rengi uzun süre korumak için uygun şampuan ve bakım rutini önerilir. Bir sonraki seans için tavsiye edilen süre bildirilir.' },
+  ],
 }
 
 function FAQItem({ q, a, open, onToggle }: { q: string; a: string; open: boolean; onToggle: () => void }) {
@@ -162,6 +185,7 @@ export default function TokatOmbrePage() {
         <script type="application/ld+json">{JSON.stringify(FAQ_SCHEMA)}</script>
         <script type="application/ld+json">{JSON.stringify(BREADCRUMB_SCHEMA)}</script>
         <script type="application/ld+json">{JSON.stringify(HAIRSALON_SCHEMA)}</script>
+        <script type="application/ld+json">{JSON.stringify(HOWTO_SCHEMA)}</script>
       </Helmet>
 
       <div style={{ minHeight: '100svh', background: '#F8F5F2' }}>

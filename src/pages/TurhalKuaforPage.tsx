@@ -171,6 +171,9 @@ export default function TurhalKuaforPage() {
           ],
           founder: { '@type': 'Person', name: 'Sibel Erturhan' },
           employee: { '@type': 'Person', name: 'Damla Erturhan' },
+          priceRange: '₺₺',
+          paymentAccepted: ['Cash', 'CreditCard'],
+          aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.6', reviewCount: '40', bestRating: '5', worstRating: '1' },
         })}</script>
         <script type="application/ld+json">{JSON.stringify({
           '@context': 'https://schema.org',
