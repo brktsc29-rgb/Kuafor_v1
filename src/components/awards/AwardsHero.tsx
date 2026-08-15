@@ -217,7 +217,7 @@ export default function AwardsHero({ active }: { active: boolean }) {
 
         <h1
           ref={titleRef}
-          aria-label="Hülya Kuaför | Tokat Saç Tasarımı ve Gelin Saçı Uzmanı"
+          aria-label="Hülya Kuaför — Turhal Kadın Kuaförü · Tokat Gelin Saçı ve Saç Tasarımı"
           style={{
             fontFamily: 'Instrument Serif, serif',
             color: '#FFF8F5',

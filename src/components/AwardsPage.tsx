@@ -45,11 +45,11 @@ export default function AwardsPage() {
   return (
     <div className="awards-page" style={{ background: '#F8F5F2' }}>
       <Helmet>
-        <title>Hülya Kuaför | Tokat Gelin Saçı, Ombre ve Profesyonel Saç Tasarımı</title>
-        <meta name="description" content="Tokat'ta profesyonel kuaför hizmetleri. Gelin saçı, ombre, röfle, saç boyama ve modern saç tasarımı için Hülya Kuaför ile güzelliğinizi öne çıkarın." />
+        <title>Turhal Kadın Kuaförü | Hülya Kuaför · Tokat Gelin Saçı ve Ombre</title>
+        <meta name="description" content="Turhal'ın kadın kuaförü Hülya Kuaför'de gelin saçı, ombre, röfle ve saç boyama. Tokat'ta 16+ yıllık deneyim, mekan hizmeti mevcut." />
         <link rel="canonical" href="https://www.hulyastudio.com" />
-        <meta property="og:title" content="Hülya Kuaför | Tokat Gelin Saçı ve Profesyonel Saç Tasarımı" />
-        <meta property="og:description" content="Turhal, Tokat'ta 16+ yıllık deneyimle gelin saçı, ombre, röfle ve saç bakım hizmetleri." />
+        <meta property="og:title" content="Turhal Kadın Kuaförü | Hülya Kuaför · Tokat Gelin Saçı ve Ombre" />
+        <meta property="og:description" content="Turhal'ın kadın kuaförü Hülya Kuaför'de gelin saçı, ombre, röfle ve saç boyama. Tokat'ta 16+ yıllık deneyim." />
         <meta property="og:url" content="https://www.hulyastudio.com" />
         <meta property="og:image" content="https://www.hulyastudio.com/images/hulya-kuafor-turhal-hero.webp" />
         <meta name="twitter:title" content="Hülya Kuaför | Hair & Beauty Studio — Turhal, Tokat" />
