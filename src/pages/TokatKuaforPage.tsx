@@ -96,11 +96,11 @@ export default function TokatKuaforPage() {
   return (
     <>
       <Helmet>
-        <title>Tokat Kuaför | Hülya Kuaför Gelin Saçı, Ombre ve Saç Tasarımı</title>
-        <meta name="description" content="Tokat'ta gelin saçı, ombre, röfle, saç boyama ve profesyonel saç tasarımı hizmetleri. Hülya Kuaför, Turhal'daki salonunda Tokat merkez ve çevre ilçelerden gelen misafirlerini ağırlamaktadır." />
+        <title>Tokat Kadın Kuaförü | Hülya Kuaför · Gelin Saçı, Ombre ve Saç Tasarımı</title>
+        <meta name="description" content="Tokat kadın kuaförü Hülya Kuaför'de gelin saçı, ombre, röfle ve saç boyama. Turhal'daki salonumuzda Tokat merkez ve çevre ilçelerden misafirlerimizi ağırlıyoruz. 16+ yıl deneyim." />
         <link rel="canonical" href="https://www.hulyastudio.com/tokat-kuafor" />
-        <meta property="og:title" content="Tokat Kuaför | Hülya Kuaför Gelin Saçı, Ombre ve Saç Tasarımı" />
-        <meta property="og:description" content="Tokat'ta gelin saçı, ombre, röfle ve profesyonel saç tasarımı. Turhal'daki Hülya Kuaför, Tokat merkez ve çevre ilçelerden gelen misafirlerini ağırlamaktadır." />
+        <meta property="og:title" content="Tokat Kadın Kuaförü | Hülya Kuaför · Gelin Saçı, Ombre ve Saç Tasarımı" />
+        <meta property="og:description" content="Tokat kadın kuaförü Hülya Kuaför'de gelin saçı, ombre, röfle ve profesyonel saç tasarımı. Tokat merkez ve çevre ilçelerden misafirlerimizi ağırlıyoruz." />
         <meta property="og:image" content="https://www.hulyastudio.com/images/hulya-kuafor-turhal-hero.webp" />
         <meta name="twitter:image" content="https://www.hulyastudio.com/images/hulya-kuafor-turhal-hero.webp" />
         <meta property="og:url" content="https://www.hulyastudio.com/tokat-kuafor" />
@@ -244,8 +244,8 @@ export default function TokatKuaforPage() {
               transition={{ duration: 0.7, delay: 0.1 }}
               style={{ fontFamily: 'Instrument Serif, serif', color: '#F8F5F2', fontSize: 'clamp(2.8rem, 8vw, 8rem)', lineHeight: 0.95, letterSpacing: '-1.5px', marginBottom: 28 }}
             >
-              Tokat Kuaför<br />
-              <em style={{ color: '#C98F7A', fontStyle: 'italic' }}>Hizmetleri</em>
+              Tokat Kadın<br />
+              <em style={{ color: '#C98F7A', fontStyle: 'italic' }}>Kuaförü</em>
             </motion.h1>
 
             <motion.p
